@@ -1,0 +1,1344 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Servlet, HALO">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Servlet | HALO</title>
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">HALO</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">HALO</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://img.whl123456.top/image/wallhaven-96kg7d.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Servlet</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/Servlet/">
+                                <span class="chip bg-color">Servlet</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-05-26
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>JavaWeb之Servlet，开发动态Web的技术</p>
+<hr>
+<h2 id="Servlet简介"><a href="#Servlet简介" class="headerlink" title="Servlet简介"></a>Servlet简介</h2><p>Servlet其实就是一个遵循Servlet开发的java类。Servlet是由服务器调用的，运行在服务器端。</p>
+<p>开发Servlet需要实现的步骤：</p>
+<ul>
+<li>编写一个类实现Servlet接口</li>
+<li>把开发好的Java类部署到Web服务器中</li>
+</ul>
+<h2 id="Tomcat下的Servlet案例"><a href="#Tomcat下的Servlet案例" class="headerlink" title="Tomcat下的Servlet案例"></a>Tomcat下的Servlet案例</h2><p>启动Tomcat，进入<a target="_blank" rel="noopener" href="http://localhost:8080/examples/">http://localhost:8080/examples/</a></p>
+<p>可以看到Tomcat为我们提供的Examples</p>
+<p><img src="http://img.whl123456.top/image/Examples.png" alt="Examples"></p>
+<p>选择<a target="_blank" rel="noopener" href="http://localhost:8080/examples/servlets">Servlets examples</a>，就可以看到实例以及源码</p>
+<p>选择<a target="_blank" rel="noopener" href="http://localhost:8080/examples/servlets/helloworld.html">HelloWorld Example</a>源码可以看到</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class HelloWorld extends HttpServlet &#123;
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response)
+    throws IOException, ServletException
+    &#123;
+        response.setContentType(&quot;text&#x2F;html&quot;);
+        PrintWriter out &#x3D; response.getWriter();
+        out.println(&quot;&lt;html&gt;&quot;);
+        out.println(&quot;&lt;head&gt;&quot;);
+        out.println(&quot;&lt;title&gt;Hello World!&lt;&#x2F;title&gt;&quot;);
+        out.println(&quot;&lt;&#x2F;head&gt;&quot;);
+        out.println(&quot;&lt;body&gt;&quot;);
+        out.println(&quot;&lt;h1&gt;Hello World!&lt;&#x2F;h1&gt;&quot;);
+        out.println(&quot;&lt;&#x2F;body&gt;&quot;);
+        out.println(&quot;&lt;&#x2F;html&gt;&quot;);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+<h2 id="初使用Servlet"><a href="#初使用Servlet" class="headerlink" title="初使用Servlet"></a>初使用Servlet</h2><p>使用Maven将Servlet有关的包</p>
+<p>去<a target="_blank" rel="noopener" href="https://mvnrepository.com/">Maven资源库网站</a>寻找需要的包，搜索servlet api（<a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api">搜索结果</a>）</p>
+<p>已<a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api/4.0.1">4.0.1为例</a>，复制Maven格式的项目依赖到pom.xml中的<code>&lt;dependencies&gt;...&lt;/dependencies&gt;</code>内</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api --></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>javax.servlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>javax.servlet-api<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>4.0.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!--作用域--></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>scope</span><span class="token punctuation">></span></span>provided<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>scope</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>在IEDA中刷新本地项目依赖的pom.xml，便会自动下载需要的依赖</p>
+<hr>
+<p>创建Servlet项目</p>
+<p><img src="http://img.whl123456.top/image/image-20200526224208126.png" alt="image-20200526224208126"></p>
+<p>在HelloServlet文件中输入</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class HelloServlet extends HttpServlet &#123;
+
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>IDEA会进行自动导包</p>
+<hr>
+<p>重写<code>doGet</code>和<code>doPost</code>方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class HelloServlet extends HttpServlet &#123;
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        resp.setContentType(&quot;text&#x2F;html&quot;);
+        &#x2F;&#x2F;响应的类型：HTML
+        resp.setContentType(&quot;text&#x2F;html&quot;);
+        resp.setCharacterEncoding(&quot;utf-8&quot;);
+        &#x2F;&#x2F;获取响应的输出流
+        PrintWriter out &#x3D; resp.getWriter();  &#x2F;&#x2F;resp.getOutputStream()
+        out.println(&quot;&lt;html&gt;&quot;);
+        out.println(&quot;&lt;head&gt;&quot;);
+        out.println(&quot;&lt;title&gt;Hello World!&lt;&#x2F;title&gt;&quot;);
+        out.println(&quot;&lt;&#x2F;head&gt;&quot;);
+        out.println(&quot;&lt;body&gt;&quot;);
+        out.println(&quot;&lt;h1&gt;Hello World!&lt;&#x2F;h1&gt;&quot;);
+        out.println(&quot;&lt;&#x2F;body&gt;&quot;);
+        out.println(&quot;&lt;&#x2F;html&gt;&quot;);
+    &#125;
+
+    &#125;
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        super.doGet(req, resp);
+    &#125;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<p>去<code>webapp→WEB-INF→web.xml</code>注册Servlet，将以下内容放入<code>&lt;web-app&gt;...&lt;/web-app&gt;</code>内</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!--注册Servlet--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-name</span><span class="token punctuation">></span></span>helloServlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-name</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-class</span><span class="token punctuation">></span></span>top.whl123456.servlet.HelloServlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-class</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet</span><span class="token punctuation">></span></span>
+
+<span class="token comment">&lt;!--设置Mapping（映射）--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-mapping</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>servlet-name</span><span class="token punctuation">></span></span>helloServlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-name</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!--请求路径--></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>url-pattern</span><span class="token punctuation">></span></span>/hello<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>url-pattern</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>servlet-mapping</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<hr>
+<p>启动Tomcat，访问web.xml中设置的映射<a target="_blank" rel="noopener" href="http://localhost:8080/hello">http://localhost:8080/hello</a>便可以进入到动态页面</p>
+<p>到此的<a target="_blank" rel="noopener" href="https://github.com/Lanqilu/JavaWeb/commit/98152c4fa0058deed28a3fd48c61e000fec65b65">项目源码</a>已在GitHub中</p>
+<h2 id="HelloServlet"><a href="#HelloServlet" class="headerlink" title="HelloServlet"></a>HelloServlet</h2><ol>
+<li><p>创建一个普通Maven项目，删除src文件夹</p>
+</li>
+<li><p>在pom.xml文件中添加依赖</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependencies</span><span class="token punctuation">></span></span>
+    <span class="token comment">&lt;!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api --></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>javax.servlet<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>javax.servlet-api<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">></span></span>4.0.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependencies</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>通过创建Module建立子模块</p>
+<blockquote>
+<p>在父项目中的pom.xml中自动生成<code>&lt;modules&gt;...&lt;/modules&gt;</code></p>
+<p>在子项目中的pom.xml中自动生成<code>&lt;parent&gt;...&lt;/parent&gt;</code></p>
+<p>父项目中的jar包子项目可以直接使用，反之不可以</p>
+</blockquote>
+</li>
+<li><p>更换web.xml文件内容至最新内容</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token prolog">&lt;?xml version="1.0" encoding="UTF-8"?></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>web-app</span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://xmlns.jcp.org/xml/ns/javaee<span class="token punctuation">"</span></span>
+         <span class="token attr-name"><span class="token namespace">xmlns:</span>xsi</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2001/XMLSchema-instance<span class="token punctuation">"</span></span>
+         <span class="token attr-name"><span class="token namespace">xsi:</span>schemaLocation</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd<span class="token punctuation">"</span></span>
+         <span class="token attr-name">version</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>4.0<span class="token punctuation">"</span></span>
+         <span class="token attr-name">metadata-complete</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>web-app</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>在main文件夹中建立java和resources文件夹，文件结构图如下所示</p>
+<pre class="line-numbers language-none"><code class="language-none">JavaWeb02
+ ├── JavaWeb02.iml
+ ├── pom.xml
+ └── servlet01
+     ├── pom.xml
+     └── src
+         └── main
+             ├── java
+             ├── resources
+             └── webapp
+                 ├── index.jsp
+                 └── WEB-INF
+                     └── web.xml<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>创建一个简单的Servlet Demo</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class HelloServlet extends HttpServlet &#123;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>Servlet有两个默认的实现类：HttpServlet，GenericServlet</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<ol start="7">
+<li><p>重写<code>doPost()</code>和<code>doGet()</code>方法</p>
+<blockquote>
+<p>IDEA中重写方法的快捷键是Ctrl+O</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;get和post只是请求方式的不同，业务逻辑一样，可以相互调用
+@Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+    &#x2F;&#x2F;ServletOutputStream outputStream &#x3D; resp.getOutputStream();
+    PrintWriter writer &#x3D; resp.getWriter();&#x2F;&#x2F;响应流
+    writer.print(&quot;hello,servlet&quot;);
+
+&#125;
+
+@Override
+protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+    doGet(req, resp);
+    &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>编写Servlet的映射，见上节配置</p>
+</li>
+<li><p>配置Tomcat，配置项目发布路径</p>
+<blockquote>
+<p>对于artifact配置可参考，该<a target="_blank" rel="noopener" href="https://www.cnblogs.com/gbb123/p/6782227.html">博客</a></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="ServletContext"><a href="#ServletContext" class="headerlink" title="ServletContext"></a>ServletContext</h2><h2 id="HttpServletResponse"><a href="#HttpServletResponse" class="headerlink" title="HttpServletResponse"></a>HttpServletResponse</h2><p>Web服务器接收到客户端的Http请求，针对这个请求，分别创建一个代表请求的 HttpServletRequest对象，代表响应的一个 HttpServletResponse</p>
+<ul>
+<li>获取客户端请求的参数：HttpServletRequest</li>
+<li>给客户端响应一些信息：HttpServletResponse</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface HttpServletResponse extends ServletResponse &#123;
+&#x2F;&#x2F;...
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+<p><img src="http://img.whl123456.top/image/servletResponse.png" alt="HttpServletResponse&amp;ServletResponse"></p>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><p>向浏览器发送数据的方法：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface ServletResponse &#123;
+    public ServletOutputStream getOutputStream() throws IOException;
+    public PrintWriter getWriter() throws IOException;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>向浏览器发送响应头的方法</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface ServletResponse &#123;
+    public void setCharacterEncoding(String charset);
+    public void setContentLength(int len);
+    public void setContentLengthLong(long len);
+    public void setContentType(String type);
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface HttpServletResponse extends ServletResponse &#123;
+    public void setDateHeader(String name, long date);
+    public void addDateHeader(String name, long date);
+    public void setHeader(String name, String value);
+    public void addHeader(String name, String value);
+    public void setIntHeader(String name, int value);
+    public void addIntHeader(String name, int value);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>状态码常量</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">public interface HttpServletResponse extends ServletResponse &#123;
+    public static final int SC_CONTINUE &#x3D; 100;
+    public static final int SC_SWITCHING_PROTOCOLS &#x3D; 101;
+    public static final int SC_OK &#x3D; 200;
+    public static final int SC_CREATED &#x3D; 201;
+    public static final int SC_ACCEPTED &#x3D; 202;
+    public static final int SC_NON_AUTHORITATIVE_INFORMATION &#x3D; 203;
+    public static final int SC_NO_CONTENT &#x3D; 204;
+    public static final int SC_RESET_CONTENT &#x3D; 205;
+    public static final int SC_PARTIAL_CONTENT &#x3D; 206;
+    public static final int SC_MULTIPLE_CHOICES &#x3D; 300;
+    public static final int SC_MOVED_PERMANENTLY &#x3D; 301;
+    public static final int SC_MOVED_TEMPORARILY &#x3D; 302;
+    public static final int SC_FOUND &#x3D; 302;
+    public static final int SC_SEE_OTHER &#x3D; 303;
+    public static final int SC_NOT_MODIFIED &#x3D; 304;
+    public static final int SC_USE_PROXY &#x3D; 305;
+    public static final int SC_TEMPORARY_REDIRECT &#x3D; 307;
+    public static final int SC_BAD_REQUEST &#x3D; 400;
+    public static final int SC_UNAUTHORIZED &#x3D; 401;
+    public static final int SC_PAYMENT_REQUIRED &#x3D; 402;
+    public static final int SC_FORBIDDEN &#x3D; 403;
+    public static final int SC_NOT_FOUND &#x3D; 404;
+    public static final int SC_METHOD_NOT_ALLOWED &#x3D; 405;
+    public static final int SC_NOT_ACCEPTABLE &#x3D; 406;
+    public static final int SC_PROXY_AUTHENTICATION_REQUIRED &#x3D; 407;
+    public static final int SC_REQUEST_TIMEOUT &#x3D; 408;
+    public static final int SC_CONFLICT &#x3D; 409;
+    public static final int SC_GONE &#x3D; 410;
+    public static final int SC_LENGTH_REQUIRED &#x3D; 411;
+    public static final int SC_PRECONDITION_FAILED &#x3D; 412;
+    public static final int SC_REQUEST_ENTITY_TOO_LARGE &#x3D; 413;
+    public static final int SC_REQUEST_URI_TOO_LONG &#x3D; 414;
+    public static final int SC_UNSUPPORTED_MEDIA_TYPE &#x3D; 415;
+    public static final int SC_REQUESTED_RANGE_NOT_SATISFIABLE &#x3D; 416;
+    public static final int SC_EXPECTATION_FAILED &#x3D; 417;
+    public static final int SC_INTERNAL_SERVER_ERROR &#x3D; 500;
+    public static final int SC_NOT_IMPLEMENTED &#x3D; 501;
+    public static final int SC_BAD_GATEWAY &#x3D; 502;
+    public static final int SC_SERVICE_UNAVAILABLE &#x3D; 503;
+    public static final int SC_GATEWAY_TIMEOUT &#x3D; 504;
+    public static final int SC_HTTP_VERSION_NOT_SUPPORTED &#x3D; 505;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="常见应用"><a href="#常见应用" class="headerlink" title="常见应用"></a>常见应用</h3><ol>
+<li>向浏览器输出消息</li>
+<li>下载文件<ul>
+<li>获取下载文件的路径</li>
+<li>下载文件的文件名</li>
+<li>浏览器支持</li>
+<li>获取下载文件的输入流</li>
+<li>创建缓冲区</li>
+<li>获取OutPutStream对象</li>
+<li>将文件OutPutStream流写入到buffer缓冲区</li>
+<li>使用OutPutStream将缓冲区中的数据输出到客户端</li>
+</ul>
+</li>
+</ol>
+<h4 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h4><pre class="line-numbers language-java" data-language="java"><code class="language-java">public class fileServlet extends HttpServlet &#123;
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        &#x2F;&#x2F;  获取下载文件的路径
+        String realPath &#x3D; &quot;E:\\Desktop\\JavaWeb02\\response\\src\\main\\resources\\1.png&quot;;
+        &#x2F;&#x2F;String realPath &#x3D; this.getServletContext().getRealPath(filePath);
+        System.out.println(&quot;下载文件的路径：&quot;+ realPath);
+        &#x2F;&#x2F;  下载文件的文件名
+        String fileName &#x3D; realPath.substring(realPath.lastIndexOf(&quot;\\&quot;) + 1);
+        &#x2F;&#x2F;  浏览器支持
+        resp.setHeader(&quot;Content-Disposition&quot;,&quot;attachment;filename&#x3D;&quot;+ URLEncoder.encode(fileName,&quot;utf-8&quot;));
+        &#x2F;&#x2F;  获取下载文件的输入流
+        FileInputStream fileInputStream &#x3D; new FileInputStream(realPath);
+        &#x2F;&#x2F;  创建缓冲区
+        int len &#x3D; 0;
+        byte[] buffer &#x3D; new byte[1024];
+        &#x2F;&#x2F;  获取OutPutStream对象
+        ServletOutputStream outputStream &#x3D; resp.getOutputStream();
+        &#x2F;&#x2F;  将文件OutPutStream流写入到buffer缓冲区,使用OutPutStream将缓冲区中的数据输出到客户端
+        while ((len&#x3D;fileInputStream.read(buffer)) !&#x3D; -1)&#123;
+            outputStream.write(buffer,0,len);
+        &#125;
+        &#x2F;&#x2F;  关闭流
+        fileInputStream.close();
+        outputStream.close();
+
+    &#125;
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+        doGet(req, resp);
+    &#125;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="验证码功能"><a href="#验证码功能" class="headerlink" title="验证码功能"></a>验证码功能</h4><ul>
+<li>前端实现，js</li>
+<li>后端实现，java图片类，生成一张图片</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+    &#x2F;&#x2F;浏览器5s自动刷新
+    resp.setHeader(&quot;refresh&quot;,&quot;3&quot;);
+
+    &#x2F;&#x2F;在内存中创建图片
+    BufferedImage bufferedImage &#x3D; new BufferedImage(80,20,BufferedImage.TYPE_3BYTE_BGR);
+    &#x2F;&#x2F;得到图片
+    Graphics2D graphics &#x3D; (Graphics2D) bufferedImage.getGraphics();&#x2F;&#x2F;笔
+    &#x2F;&#x2F;设置图片的背景颜色
+    graphics.setColor(Color.white);
+    graphics.fillRect(0,0,80,20);
+    &#x2F;&#x2F;给图片写数据
+    graphics.setColor(Color.BLUE);
+    graphics.setFont(new Font(null, Font.BOLD, 20));
+    graphics.drawString(makeNum(),0,20);
+
+    &#x2F;&#x2F;告诉浏览器，这个请求用浏览器打开
+    resp.setContentType(&quot;image&#x2F;jpeg&quot;);
+    &#x2F;&#x2F;网站缓存，不让浏览器设置缓存
+    resp.setDateHeader(&quot;expires&quot;,-1);
+    &#x2F;&#x2F;缓存控制
+    resp.setHeader(&quot;Cache-Control&quot;,&quot;no-cache&quot;);
+    resp.setHeader(&quot;Pragma&quot;,&quot;no-cache&quot;);
+
+    &#x2F;&#x2F;把图片写给浏览器
+    boolean write &#x3D; ImageIO.write(bufferedImage,&quot;jpg&quot;, resp.getOutputStream());
+&#125;
+
+&#x2F;&#x2F;生成随机数
+private String makeNum()&#123;
+    Random random &#x3D; new Random();
+    String num &#x3D; random.nextInt(9999999) + &quot;&quot;;
+    StringBuffer stringBuffer &#x3D; new StringBuffer();
+    for (int i &#x3D; 0; i &lt; 7 - num.length(); i++) &#123;
+        stringBuffer.append(&quot;0&quot;);
+    &#125;
+    num &#x3D; stringBuffer.toString() + num;
+    return num;
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="Response实现重定向"><a href="#Response实现重定向" class="headerlink" title="Response实现重定向"></a>Response实现重定向</h3><p>重定向：一个Web资源B收到客户端A的请求后，B通知客户端A访问另外一个web资源C的过程</p>
+<p>使用场景：用户登录</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">void sendRedirect(String var1) throws IOException;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">@Override
+protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException &#123;
+    resp.sendRedirect(&quot;&#x2F;response_war&#x2F;img&quot;);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Status Code:302</p>
+<p>Location:/response_war/img</p>
+<p>实现原理</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">resp.setHeader(&quot;Location&quot;,&quot;&#x2F;response_war&#x2F;img&quot;);
+resp.setStatus(302);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<blockquote>
+<p>重定向url会发生变化</p>
+<p>转发url不会发生变化</p>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;处理请求
+String username &#x3D; req.getParameter(&quot;username&quot;);
+String password &#x3D; req.getParameter(&quot;password&quot;);
+
+System.out.println(&quot;username &#x3D; &quot; + username);
+System.out.println(&quot;password &#x3D; &quot; + password);
+
+resp.sendRedirect(&quot;&#x2F;response_war&#x2F;success.jsp&quot;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意文件路径</p>
+<h2 id="HttpServletRequest"><a href="#HttpServletRequest" class="headerlink" title="HttpServletRequest"></a>HttpServletRequest</h2><p>HttpServletRequest代表客户端的请求，用户通过Http协议访问服务器，Http请求中的所有信息会被封装到HttpServletRequest，通过这个 HttpServletRequest的方法，获得客户端的所有信息</p>
+<h3 id="获取前端传递的参数"><a href="#获取前端传递的参数" class="headerlink" title="获取前端传递的参数"></a>获取前端传递的参数</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">String username &#x3D; req.getParameter(&quot;username&quot;);
+String password &#x3D; req.getParameter(&quot;password&quot;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="请求转发"><a href="#请求转发" class="headerlink" title="请求转发"></a>请求转发</h3><pre class="line-numbers language-java" data-language="java"><code class="language-java">req.getRequestDispatcher(&quot;&#x2F;success.jsp&quot;).forward(req,resp);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Cookie和Session"><a href="#Cookie和Session" class="headerlink" title="Cookie和Session"></a>Cookie和Session</h2><h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><ul>
+<li>从请求中拿到 cookie信息</li>
+<li>服务器响应给客户端 cookie</li>
+</ul>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;服务端从客户端获取Cookie
+Cookie[] cookies &#x3D; req.getCookies();
+
+&#x2F;&#x2F;判断Cookie是否存在
+if (cookies !&#x3D; null) &#123;
+    out.write(&quot;上次访问时间是:&quot;);
+    &#x2F;&#x2F;遍历数组
+    for (int i &#x3D; 0; i &lt; cookies.length; i++) &#123;
+        Cookie cookie &#x3D; cookies[i];
+        &#x2F;&#x2F;获取Cookie名字
+        if(cookie.getName().equals(&quot;time&quot;))&#123;
+            &#x2F;&#x2F;获取Cookie中的值
+            long time &#x3D; Long.parseLong(cookie.getValue());
+            Date date &#x3D; new Date(time);
+            out.write(date.toLocaleString());
+        &#125;
+    &#125;
+&#125;else &#123;
+    out.write(&quot;第一次访问&quot;);
+&#125;
+
+&#x2F;&#x2F;服务器给客户端响应Cookie
+Cookie cookie &#x3D; new Cookie(&quot;time&quot;, System.currentTimeMillis()+&quot;&quot;);
+
+&#x2F;&#x2F;cookie有效期
+cookie.setMaxAge(24*60*60);
+resp.addCookie(cookie);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="session"><a href="#session" class="headerlink" title="session"></a>session</h3><ul>
+<li><p>一次登录多次使用，保存用户信息</p>
+</li>
+<li><p>购物车信息</p>
+</li>
+<li><p>网站经常使用的信息</p>
+</li>
+</ul>
+<blockquote>
+<p>与Cookie的区别</p>
+<ul>
+<li>Cookie是把用户的数据写给用户的浏览器，浏览器保存（可以保存多个）</li>
+<li>Session把用户的数据写到用户独占 Session中，服务器端保存（保存重要的信息，减少服务器资源的浪费</li>
+<li>Session对象由服务创建；</li>
+</ul>
+</blockquote>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;得到Session
+HttpSession session &#x3D; req.getSession();
+
+&#x2F;&#x2F;存信息
+session.setAttribute(&quot;name&quot;,new Person(&quot;Lanqilu&quot;,18));
+
+&#x2F;&#x2F;获取Session的ID
+String id &#x3D; session.getId();
+
+boolean aNew &#x3D; session.isNew();
+if (aNew) &#123;
+resp.getWriter().write(&quot;session创建成功&quot; + id);
+&#125;else &#123;
+resp.getWriter().write(&quot;session已经存在&quot; + id);
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F;得到Session
+HttpSession session &#x3D; req.getSession();
+
+&#x2F;&#x2F;取Session
+Person person &#x3D; (Person) session.getAttribute(&quot;name&quot;);
+System.out.println(&quot;person.toString() &#x3D; &quot; + person.toString());<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">HttpSession session &#x3D; req.getSession();
+session.removeAttribute(&quot;name&quot;);
+&#x2F;&#x2F;手动注销
+session.invalidate();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Session自动过期，web.xml</p>
+<pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!--设置Session默认的失效时间--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>session-config</span><span class="token punctuation">></span></span>
+    <span class="token comment">&lt;!--15分钟后自动失效--></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>session-timeout</span><span class="token punctuation">></span></span>15<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>session-timeout</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>session-config</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/Servlet/">
+                                    <span class="chip bg-color">Servlet</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/06/11/Java%E5%90%8E%E7%AB%AFLinux%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://img.whl123456.top/image/wallhaven-ympj97.png" class="responsive-img" alt="Java后端Linux环境搭建">
+                        
+                        <span class="card-title">Java后端Linux环境搭建</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-11
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Linux/" class="post-category">
+                                    Linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/05/25/C%E8%AF%AD%E8%A8%80%E7%AC%94%E8%AE%B0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://img.whl123456.top/image/wallhaven-g8gmde.png" class="responsive-img" alt="C语言学习笔记">
+                        
+                        <span class="card-title">C语言学习笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/C%E8%AF%AD%E8%A8%80/" class="post-category">
+                                    C语言
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2020</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Lanqulu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

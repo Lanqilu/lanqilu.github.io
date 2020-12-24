@@ -1,0 +1,1193 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="正则表达式, HALO">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>正则表达式 | HALO</title>
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">HALO</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">HALO</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://img.whl123456.top/image/wallhaven-j527gm.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">正则表达式</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Python/">
+                                <span class="chip bg-color">Python</span>
+                            </a>
+                        
+                            <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                                <span class="chip bg-color">正则表达式</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Python/" class="post-category">
+                                Python
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-03-27
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>有人在碰到问题时,就想：“我知道,我可以用正则表达式。”现在，他就有了两个问题。</p>
+<hr>
+<p><img src="http://img.whl123456.top/image/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.png" alt="正则表达式"></p>
+<p>正则表达式是一个特殊的字符序列，它能帮助你方便的检查一个字符串是否与某种模式匹配。为高级的文本模式匹配、抽取、与/或文本形式的搜索和替换提供了基础。</p>
+<p>re 模块使 Python 语言拥有全部的正则表达式功能。</p>
+<ul>
+<li>搜索，在字符串任意部分中搜索匹配的模式。<code>search()</code></li>
+<li>匹配，是判断一个字符串能否从起始处全部或者部分地匹配某个模式。<code>match()</code></li>
+</ul>
+<p><code>compile</code>函数根据一个模式字符串和可选的标志参数生成一个正则表达式对象。<br>该对象拥有一系列方法用于正则表达式匹配和替换。</p>
+<p>re 模块也提供了与这些方法功能完全一致的函数，这些函数使用一个模式字符串做为它们的第一个参数。</p>
+<h2 id="特殊符号和字符"><a href="#特殊符号和字符" class="headerlink" title="特殊符号和字符"></a>特殊符号和字符</h2><center>常见正则表达式符号和特殊字符</center>
+
+
+<table>
+<thead>
+<tr>
+<th align="left">表示法</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><em>literal</em></td>
+<td align="left">匹配文本字符串的字面值<em>literal</em></td>
+</tr>
+<tr>
+<td align="left">re1`</td>
+<td align="left">`re2</td>
+</tr>
+<tr>
+<td align="left"><code>.</code></td>
+<td align="left">匹配任何字符（除了<code>\n</code>之外）</td>
+</tr>
+<tr>
+<td align="left"><code>^</code></td>
+<td align="left">匹配字符串起始部分</td>
+</tr>
+<tr>
+<td align="left"><code>$</code></td>
+<td align="left">匹配字符串终止部分</td>
+</tr>
+<tr>
+<td align="left"><code>*</code></td>
+<td align="left">匹配 0 次或者多次前面出现的正则表达式</td>
+</tr>
+<tr>
+<td align="left"><code>+</code></td>
+<td align="left">匹配 1 次或者多次前面出现的正则表达式</td>
+</tr>
+<tr>
+<td align="left"><code>?</code></td>
+<td align="left">匹配 0 次或者 1 次前面出现的正则表达式，<strong>非贪婪</strong></td>
+</tr>
+<tr>
+<td align="left"><code>&#123;</code>N<code>&#125;</code></td>
+<td align="left">匹配 N 次前面出现的正则表达式</td>
+</tr>
+<tr>
+<td align="left"><code>&#123;</code>M<code>,</code>N<code>&#125;</code></td>
+<td align="left">匹配 M～N 次前面出现的正则表达式</td>
+</tr>
+<tr>
+<td align="left"><code>[</code>…<code>]</code></td>
+<td align="left">匹配来自字符集的任意单一字符</td>
+</tr>
+<tr>
+<td align="left"><code>[</code>..x−y..<code>]</code></td>
+<td align="left">匹配 x ～ y 范围中的任意单一字符</td>
+</tr>
+<tr>
+<td align="left"><code>[^</code>…<code>]</code></td>
+<td align="left">不匹配此字符集中出现的任何一个字符，包括某一范围的字符</td>
+</tr>
+<tr>
+<td align="left"><code>(</code>…<code>)</code></td>
+<td align="left">匹配封闭的正则表达式，然后另存为子组</td>
+</tr>
+<tr>
+<td align="left"><code>\d</code></td>
+<td align="left">匹配任何十进制数字，与<code>[0-9]</code>一致(<code>\D</code>与之相反)</td>
+</tr>
+<tr>
+<td align="left"><code>\b</code></td>
+<td align="left">匹配任何单词边界，指单词和空格间的位置（<code>\B</code>与之相反）</td>
+</tr>
+<tr>
+<td align="left"><code>\w</code></td>
+<td align="left">匹配任何字母数字字符，与<code>[A-Za-z0-9_]</code>相同(<code>\W</code>与之相反)</td>
+</tr>
+<tr>
+<td align="left"><code>\s</code></td>
+<td align="left">匹配任何空格字符，与<code>[\n\t\r\v\f]</code>相同（<code>\S</code>与之相反）</td>
+</tr>
+<tr>
+<td align="left"><code>\N</code></td>
+<td align="left">匹配已保存的子组 N（参见上面的<code>(</code>…<code>)</code>)</td>
+</tr>
+<tr>
+<td align="left"><code>\</code><em>c</em></td>
+<td align="left">逐字匹配任何特殊字符<em>c</em>(即仅按照字面意义匹配，不匹配特殊含义)</td>
+</tr>
+<tr>
+<td align="left"><code>\A(\Z)</code></td>
+<td align="left">匹配字符串的起始（结束）（另见上面介绍的<code>^</code>和<code>$</code>）</td>
+</tr>
+<tr>
+<td align="left"><code>(?</code>iLmsux<code>)</code></td>
+<td align="left">嵌入一个或者多个特殊“标记”参数（或者通过函数/方法）</td>
+</tr>
+<tr>
+<td align="left"><code>(?:</code>…<code>)</code></td>
+<td align="left">表示一个匹配不用保存的分组</td>
+</tr>
+<tr>
+<td align="left"><code>(?P</code>&lt;*name*&gt;…<code>)</code></td>
+<td align="left">像一个仅由name标识而不是数字 ID 标识的正则分组匹配</td>
+</tr>
+<tr>
+<td align="left"><code>(?P=</code><em>name</em><code>)</code></td>
+<td align="left">在同一字符串中匹配由<code>(?P&lt;name)</code>分组的之前文本</td>
+</tr>
+<tr>
+<td align="left"><code>(?#</code>…<code>)</code></td>
+<td align="left">表示注释，所有内容都被忽略</td>
+</tr>
+<tr>
+<td align="left"><code>(?=</code>…<code>)</code></td>
+<td align="left">匹配条件是如果…出现在之后的位置，而不使用输入字符串；称作正向前视断言</td>
+</tr>
+<tr>
+<td align="left"><code>(?!</code>…<code>)</code></td>
+<td align="left">匹配条件是如果…不出现在之后的位置，而不使用输入字符串；称作负向前视断言</td>
+</tr>
+<tr>
+<td align="left"><code>(?&lt;=</code>…<code>)</code></td>
+<td align="left">匹配条件是如果…出现在之前的位置，而不使用输入字符串；称作正向后视断言</td>
+</tr>
+<tr>
+<td align="left"><code>(?&lt;!</code>…<code>)</code></td>
+<td align="left">匹配条件是如果…不出现在之前的位置，而不使用输入字符串；称作负向后视断言</td>
+</tr>
+</tbody></table>
+<h2 id="常用正则表达式"><a href="#常用正则表达式" class="headerlink" title="常用正则表达式"></a>常用正则表达式</h2><table>
+<thead>
+<tr>
+<th align="center">用处</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">用户名</td>
+<td><code>/^\[a-z0-9_-\]&#123;3,16&#125;$/</code></td>
+</tr>
+<tr>
+<td align="center">密码</td>
+<td><code>/^\[a-z0-9_-\]&#123;6,18&#125;$/</code></td>
+</tr>
+<tr>
+<td align="center">十六进制值</td>
+<td><code>/^#?(\[a-f0-9\]&#123;6&#125;|\[a-f0-9\]&#123;3&#125;)$/</code></td>
+</tr>
+<tr>
+<td align="center">电子邮箱</td>
+<td><code>/^(\[a-z0-9_\.-]+)@(\[\da-z\.-\]+)\.(\[a-z\.\]&#123;2,6&#125;)\$/ </code><br /><code>/^\[a-z\d\]+(\.\[a-z\d\]+)*@(\[\da-z](-\[\da-z\])?)+(\.&#123;1,2&#125;\[a-z\]+)+$/</code></td>
+</tr>
+<tr>
+<td align="center">URL</td>
+<td><code>/^(https?:\/\/)?(\[\da-z\.-\]+)\.(\[a-z\.\]&#123;2,6&#125;)([\/\w \.-]*)*\/?$/</code></td>
+</tr>
+<tr>
+<td align="center">IP 地址</td>
+<td><code>/((2\[0-4\]\d|25\[0-5\]|[01]?\d\d?)\.)&#123;3&#125;(2[0-4]\d|25[0-5]|[01]?\d\d?)/ &lt;br /&gt;/^(?:(?:25[0-5]|2\[0-4][0-9]|[01]?\[0-9][0-9]?)\.)&#123;3&#125;(?:25[0-5]|2\[0-4][0-9]|[01]?\[0-9][0-9]?)$/</code></td>
+</tr>
+<tr>
+<td align="center">HTML 标签</td>
+<td><code>/\^&lt;([a-z]+)(\[^&lt;]+)\*(?:&gt;(.*)&lt;\/\1&gt;|\s+\/&gt;)$/</code></td>
+</tr>
+<tr>
+<td align="center">删除代码\注释</td>
+<td><code>(?&lt;!http:|\S)//.*$</code></td>
+</tr>
+<tr>
+<td align="center">Unicode编码中的汉字范围</td>
+<td><code>/^[\u2E80-\u9FFF]+$/</code></td>
+</tr>
+</tbody></table>
+<h2 id="re-search"><a href="#re-search" class="headerlink" title="re.search()"></a><code>re.search()</code></h2><p><code>re.search</code> 扫描整个字符串并返回第一个成功的匹配。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">print(re.search(&#39;www&#39;, &#39;www.runoob.com&#39;).span())
+print(re.search(&#39;com&#39;, &#39;www.runoob.com&#39;).span())
+print(re.search(&#39;com&#39;, &#39;www.runoob.com.com&#39;).span())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">(0, 3)
+(11, 14)
+(11, 14)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="re-match"><a href="#re-match" class="headerlink" title="re.match()"></a><code>re.match()</code></h2><p><code>re.match</code>尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，<code>match()</code>就返回none。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">import re
+print(re.match(&#39;www&#39;, &#39;www.runoob.com&#39;).span())  # 在起始位置匹配
+print(re.match(&#39;com&#39;, &#39;www.runoob.com&#39;))         # 不在起始位置匹配<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre><code>(0, 3)
+None</code></pre>
+<h2 id="group-和groups"><a href="#group-和groups" class="headerlink" title="group()和groups()"></a><code>group()</code>和<code>groups()</code></h2><p><code>group(num)</code>或<code>groups() </code>匹配对象函数来获取匹配表达式。</p>
+<p><code>group(num=0)</code>匹配的整个表达式的字符串，<code>group()</code>可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</p>
+<p><code>groups()</code>返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">line &#x3D; &quot;Cats are smarter than dogs&quot;
+# .* 表示任意匹配除换行符（\n、\r）之外的任何单个或多个字符
+matchObj &#x3D; re.match( r&#39;(.*) are (.*?) .*&#39;, line, re.M|re.I)
+ 
+if matchObj:
+   print (&quot;matchObj.group() : &quot;, matchObj.group())
+   print (&quot;matchObj.group(1) : &quot;, matchObj.group(1))
+   print (&quot;matchObj.group(2) : &quot;, matchObj.group(2))
+   print (&quot;matchObj.groups() :&quot;,matchObj.groups())
+else:
+   print (&quot;No match!!&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre><code>matchObj.group() :  Cats are smarter than dogs
+matchObj.group(1) :  Cats
+matchObj.group(2) :  smarter
+matchObj.groups() : (&#39;Cats&#39;, &#39;smarter&#39;)</code></pre>
+<h2 id="re-sub"><a href="#re-sub" class="headerlink" title="re.sub()"></a><code>re.sub()</code></h2><p><code>re.sub</code>用于替换字符串中的匹配项。</p>
+<p><code>re.sub(pattern, repl, string, count=0, flags=0)</code></p>
+<ul>
+<li><code>pattern</code> : 正则中的模式字符串。</li>
+<li><code>repl</code> : 替换的字符串，也可为一个函数。</li>
+<li><code>string</code> : 要被查找替换的原始字符串。</li>
+<li><code>count</code> : 模式匹配后替换的最大次数，默认 0 表示替换所有的匹配。</li>
+<li><code>flags</code> : 编译时用的匹配模式，数字形式。</li>
+</ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">phone &#x3D; &quot;2004-959-559 # 这是一个电话号码&quot;
+ 
+# 删除注释
+num &#x3D; re.sub(r&#39;#.*$&#39;, &quot;&quot;, phone)
+print (&quot;电话号码 : &quot;, num)  # 电话号码 :  2004-959-559 
+ 
+# 移除非数字的内容
+num &#x3D; re.sub(r&#39;\D&#39;, &quot;&quot;, phone)
+print (&quot;电话号码 : &quot;, num)  # 电话号码 :  2004959559<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 将匹配的数字乘于 2
+def double(matched):
+    value &#x3D; int(matched.group(&#39;value&#39;))
+    return str(value * 2)
+ 
+s &#x3D; &#39;A23G4HFD567&#39;
+print(re.sub(&#39;(?P&lt;value&gt;\d+)&#39;, double, s))  # A46G8HFD1134<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="re-compile"><a href="#re-compile" class="headerlink" title="re.compile"></a><code>re.compile</code></h2><p><code>compile</code>函数用于编译正则表达式,生成一个正则表达式(Pattern)对象,供<code>match()</code>和<code>search()</code>这两个函数使用。<br><code>re.compile(pattern[, flags])</code></p>
+<ul>
+<li><code>pattern</code> : 一个字符串形式的正则表达式</li>
+<li><code>flags</code> 可选，表示匹配模式，比如忽略大小写，多行模式等，具体参数为：<ul>
+<li><code>re.I</code> 忽略大小写</li>
+<li><code>re.L</code> 表示特殊字符集 \w, \W, \b, \B, \s, \S 依赖于当前环境</li>
+<li><code>re.M</code> 多行模式</li>
+<li><code>re.S</code> 即为’ . ‘并且包括换行符在内的任意字符（’ . ‘不包括换行符）</li>
+<li><code>re.U</code>表示特殊字符集 \w, \W, \b, \B, \d, \D, \s, \S 依赖于 Unicode 字符属性数据库</li>
+<li><code>re.X</code> 为了增加可读性，忽略空格和’ # ‘后面的注释</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">pattern &#x3D; re.compile(r&#39;\d+&#39;)                    # 用于匹配至少一个数字
+pattern &#x3D; re.compile(r&#39;\d+&#39;)                    # 用于匹配至少一个数字
+m &#x3D; pattern.match(&#39;one12twothree34four&#39;)        # 查找头部，没有匹配
+print(&quot;从头部开始匹配&quot;,m)  # 从头部开始匹配 None
+m &#x3D; pattern.match(&#39;one12twothree34four&#39;, 3, 10) # 从&#39;1&#39;的位置开始匹配，正好匹配
+print(m)  # &lt;re.Match object; span&#x3D;(3, 5), match&#x3D;&#39;12&#39;&gt;     # 返回一个 Match 对象
+print(m.group())  # 12<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="re-findall"><a href="#re-findall" class="headerlink" title="re.findall()"></a><code>re.findall()</code></h2><p>在字符串中找到正则表达式所匹配的所有子串，并返回一个列表，如果没有找到匹配的，则返回空列表。</p>
+<p><code>re.findall(string[, pos[, endpos]])</code></p>
+<ul>
+<li><code>string</code> 待匹配的字符串。</li>
+<li><code>pos</code> 可选参数，指定字符串的起始位置，默认为 0。</li>
+<li><code>endpos</code> 可选参数，指定字符串的结束位置，默认为字符串的长度。</li>
+</ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">pattern &#x3D; re.compile(r&#39;\d+&#39;)   # 查找数字
+result1 &#x3D; pattern.findall(&#39;runoob 123 google 456&#39;)
+result2 &#x3D; pattern.findall(&#39;run88oob123google456&#39;, 0, 10)
+ 
+print(result1)  # [&#39;123&#39;, &#39;456&#39;]
+print(result2)  # [&#39;88&#39;, &#39;12&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="re-finditer"><a href="#re-finditer" class="headerlink" title="re.finditer()"></a><code>re.finditer()</code></h2><p>和 <code>findall</code> 类似，在字符串中找到正则表达式所匹配的所有子串，并把它们作为一个迭代器返回。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">it &#x3D; re.finditer(r&quot;\d+&quot;,&quot;12a32bc43jf3&quot;) 
+for match in it: 
+    print (match.group() ) ## 12 32 43 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="re-split"><a href="#re-split" class="headerlink" title="re.split"></a><code>re.split</code></h2><p><code>split</code>方法按照能够匹配的子串将字符串分割后返回列表，它的使用形式如下：</p>
+<p><code>re.split(pattern, string[, maxsplit=0, flags=0])</code></p>
+<ul>
+<li><code>pattern</code>匹配的正则表达式</li>
+<li><code>string</code>要匹配的字符串。</li>
+<li><code>maxsplit</code>分隔次数，<code>maxsplit=1</code>分隔一次，默认为 0，不限制次数。</li>
+<li><code>flags</code>标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等</li>
+</ul>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">re.split(&#39;\W+&#39;, &#39;runoob, runoob, runoob.&#39;)  # [&#39;runoob&#39;, &#39;runoob&#39;, &#39;runoob&#39;, &#39;&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>当匹配成功时返回一个 Match 对象，其中：</p>
+<ul>
+<li><code>group(\[group1, …])</code> 方法用于获得一个或多个分组匹配的字符串，当要获得整个匹配的子串时，可直接使用 <code>group() </code>或 <code>group(0)</code>；</li>
+<li><code>start(\[group])</code> 方法用于获取分组匹配的子串在整个字符串中的起始位置（子串第一个字符的索引），参数默认值为 0；</li>
+<li><code>end(\[group])</code> 方法用于获取分组匹配的子串在整个字符串中的结束位置（子串最后一个字符的索引+1），参数默认值为 0；</li>
+<li><code>span(\[group])</code>方法返回<code>(start(group), end(group))</code>。</li>
+</ul>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Python/">
+                                    <span class="chip bg-color">Python</span>
+                                </a>
+                            
+                                <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                                    <span class="chip bg-color">正则表达式</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/04/06/Django/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://img.whl123456.top/image/wallhaven-mdwvmy.jpg" class="responsive-img" alt="Django">
+                        
+                        <span class="card-title">Django</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-06
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            <a href="/categories/Python/Django/" class="post-category">
+                                    Django
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Django/">
+                        <span class="chip bg-color">Django</span>
+                    </a>
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/24/Python%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://img.whl123456.top/image/wallhaven-832852.jpg" class="responsive-img" alt="Python网络数据采集">
+                        
+                        <span class="card-title">Python网络数据采集</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%88%AC%E8%99%AB/">
+                        <span class="chip bg-color">爬虫</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2020</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Lanqulu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

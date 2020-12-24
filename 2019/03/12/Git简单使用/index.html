@@ -1,0 +1,1030 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Git的常见使用, HALO">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Git的常见使用 | HALO</title>
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">HALO</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">HALO</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('http://img.whl123456.top/image/wallhaven-5wr3m7.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Git的常见使用</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Git/">
+                                <span class="chip bg-color">Git</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Git/" class="post-category">
+                                Git
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2019-03-12
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>Git的常见使用</p>
+<hr>
+<h2 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h2><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git config --global user.name &quot;your_name&quot;
+git config --global user.email &quot;your_email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>在windows系统中的<code>C:\Users\用户名\.ssh</code>中会产生<code>.ssh</code>文件夹中会生成一对密钥包括<code>id_rsa</code>私钥和<code>id_rsa.pub</code>公钥文件</p>
+<p>如果不存在，在Git Bash使用以下命令生成</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>将会弹出以下信息</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Generating public&#x2F;private rsa key pair.
+Enter file in which to save the key (&#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa):  回车
+Created directory &#39;&#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#39;.
+Enter passphrase (empty for no passphrase):    回车或输密码
+Enter same passphrase again:                   回车或再一次输密码
+Your identification has been saved in &#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa
+Your public key has been saved in &#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub
+The key fingerprint is:
+SHA256:JAldGP+8XXXXXXXXXXXRhzaEpUd5hJfTn0zrJxhXbFYM your_email@example.com
+The key&#39;s randomart image is:
++---[RSA 3072]----+
+|    ..o&#x3D;*..   .o |
+|     +o&#x3D; +   E  o|
+|    . + &#x3D; . . . .|
+|     . B + o . +.|
+|    + O S o o + .|
+|   &#x3D; @ o . &#x3D; &#x3D;   |
+|  . B o   o B    |
+|     o     . .   |
+|                 |
++----[SHA256]-----+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>将<code>id_rsa.pub</code>公钥文件放到Setting中的SSH and GPG keys中</p>
+<p><img src="http://img.whl123456.top/image/GitHubSSH.png" alt="GitHub"></p>
+<p>在Git Bash中输入以下命令，验证是否成功</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果成功则会显示以下消息</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Hi your_name! You&#39;ve successfully authenticated, but GitHub does not provide shell access.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &lt;文件夹名&gt;
+cd &lt;文件名&gt;
+pwd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><code>git init</code> 把这个目录变成Git可以管理的仓库</p>
+<p>结果生成.git 隐藏文件夹 （不要手动修改文件夹的内容）</p>
+<blockquote>
+<p>注意事项<br>不要使用Windows自带的记事本编辑任何文件<br>默认编码设置成UTF-8 without BOM</p>
+</blockquote>
+<p><img src="http://img.whl123456.top/image/image-20200613103720281.png" alt="image-20200613103720281"></p>
+<h3 id="文件放到Git仓库目录下"><a href="#文件放到Git仓库目录下" class="headerlink" title="文件放到Git仓库目录下"></a>文件放到Git仓库目录下</h3><p><code>git status</code></p>
+<p><code>git add &lt;file&gt;</code></p>
+<p><code>git add .</code>提交新文件和被修改文件，不包括被删除文件</p>
+<p><code>git add -u</code>提交被修改和被删除文件，不包括新文件</p>
+<p><code>git add -A</code>提交所有变化</p>
+<p><code>git add -i</code></p>
+<blockquote>
+<p>Unix哲学 “没有消息就是好消息”</p>
+</blockquote>
+<h3 id="把文件提交到仓库"><a href="#把文件提交到仓库" class="headerlink" title="把文件提交到仓库"></a>把文件提交到仓库</h3><p><code>git commit -m &lt;message&gt;</code>-m 后面输入本次提交的说明</p>
+<p><code>git commit --amend</code>修改最近一次提交的注释信息</p>
+<h3 id="vim编辑器的使用"><a href="#vim编辑器的使用" class="headerlink" title="vim编辑器的使用"></a>vim编辑器的使用</h3><p><code>vi &lt;filename&gt;</code></p>
+<p>输入字母<code>i</code>或Insert键进入最常用的插入编辑模式<br>按下字母键 <code>c</code>（此时进入编辑状态），可以开始修改注释信息了<br>按下Esc (退出编辑状态)<br>接着连按两次大写字母<code>Z</code>，保存并退出<br>只想保存文件，则键入:<code>w</code><br>放弃所有文件修改：按下ESC键进入命令模式，键入:<code>q!</code>回车后放弃修改并退出vi<br><code>.</code>放弃所有文件修改，但不退出 vi:<br>按下ESC键进入命令模式，键入:<code>e!</code>，回车后回到命令模式</p>
+<h3 id="修改文件后"><a href="#修改文件后" class="headerlink" title="修改文件后"></a>修改文件后</h3><p><code>git stautus</code> 掌握仓库当前的状态</p>
+<blockquote>
+<p>On branch master<br>nothing to commit, working tree clean</p>
+</blockquote>
+<p><code>git diff &lt;file&gt;</code>#看具体修改了什么内容<br>再<code>git add &lt;file&gt;</code></p>
+<p><code>git log</code>#历史记录 显示从最近到最远的提交日志  </p>
+<p><code>git log --pretty=oneline</code>oneline 压缩模式</p>
+<h3 id="退回之前的版本"><a href="#退回之前的版本" class="headerlink" title="退回之前的版本"></a>退回之前的版本</h3><p>就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100<br><code>git reset --hard HEAD^</code></p>
+<p><code>git reflog</code>#记录你的每一次命令<br><code>git reset --hard &lt;commit id&gt;</code>（id不必写全）</p>
+<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3><p><code>git checkout -- &lt;file&gt;</code><br>丢弃 工作区 的修改  在工作区的修改全部撤销，<br>让这个文件回到最近一次git commit或git add时的状态</p>
+<p><code>git reset HEAD &lt;file&gt;</code><br>既可以回退版本，也可以把暂存区的修改回退到工作区</p>
+<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><p><code>rm &lt;file&gt;</code>     #删除工作区文件<br><code>git rm &lt;file&gt;</code> #从版本库中删除该文件</p>
+<p>先手动删除文件，然后使用git add<file>效果是一样的<br>git checkout  – <file>   #把误删的文件恢复到最新版本（用版本库里的版本替换工作区的版本）</p>
+<h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p><code>git checkout -b &lt;branchname&gt;</code> #创建分支,然后切换到分支<br><code>git branch &lt;branchname&gt;</code>      #创建分支<br><code>git checkout &lt;branchname&gt;</code>    #切换到分支<br><code>git branch</code>                   #查看当前分支<br><code>git checkout master</code>          #换回master分支<br><code>git merge &lt;branchname&gt;</code>       #合并指定分支到当前分支<br><code>git branch -d &lt;branchname&gt;</code>   #删除分支<br><code>git branch -m &lt;branchname&gt;</code>   #重命名分支</p>
+<h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>关联一个远程库并推送</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git remote add origin git@Lanqilu:path&#x2F;&lt;repo-name&gt;.git
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h3><p><code>git clone &lt;url&gt;</code></p>
+<h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><p><code>git pull</code></p>
+<ol>
+<li><p>服务器代码合并本地代码</p>
+ <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git stash     &#x2F;&#x2F;暂存当前正在进行的工作。
+git pull origin master &#x2F;&#x2F;拉取服务器的代码
+git stash pop &#x2F;&#x2F;合并暂存的代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+<li><p>服务器代码覆盖本地代码</p>
+ <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git reset --hard  &#x2F;&#x2F;回滚到上一个版本
+git pull origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3></li>
+</ol>
+<p><code>git log</code></p>
+<p><code>git log --pretty=oneline</code></p>
+<p><code>git log --oneline</code></p>
+<p><code>git reflog</code></p>
+<p><code>git reset --hard [部分索引值]</code></p>
+<h3 id="隐藏文件"><a href="#隐藏文件" class="headerlink" title="隐藏文件"></a>隐藏文件</h3><p>exclude</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># git ls-files --others --exclude-from&#x3D;.git&#x2F;info&#x2F;exclude
+# Lines that start with &#39;#&#39; are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+.*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h3><p><code>touch .gitignore</code><br><code>.git/info/exclude`` ``vi .git/info/exclude</code></p>
+<ol>
+<li>忽略文件中的空行或以井号( #告开始的行将会被忽略。</li>
+<li>可以使用Linux通配符。例如:星号(* )代表任意多个字符,问号( ? ) 代表-一个字符 ,方括号( [abc] )代表可选字符范围,<br>大括号( {string1,string…. )代表可选的字符串等。</li>
+<li>如果名称的最前面有一一个感叹号(!) , 表示例外规则,将不被忽略。</li>
+<li>如果名称的最前面是一个路径分隔符 (/ ) , 表示要忽略的文件在此目录下,而子目录中的文件不忽略。</li>
+<li>如果名称的最后面是一个路径分隔符(/) , 表示要忽略的是此目录下该名称的子目录,而非文件(默认文件或目录都忽略)。</li>
+</ol>
+<h3 id="删除远程文件"><a href="#删除远程文件" class="headerlink" title="删除远程文件"></a>删除远程文件</h3><p>方法一<br>这里以删除 test文件夹为案例</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git rm -r --cached test &#x2F;&#x2F;--cached不会把本地的test删除
+git commit -m &#39;delete test &#39;
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>方法二<br>如果误提交的文件夹比较多，方法一也较繁琐<br>直接修改.gitignore文件,将不需要的文件过滤掉，然后执行命令:</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git rm -r --cached .
+git add .
+git commit
+git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cui130/article/details/84033966">参考博客</a></p>
+</blockquote>
+<h3 id="下载文件"><a href="#下载文件" class="headerlink" title="下载文件"></a>下载文件</h3><p>单个文件<a target="_blank" rel="noopener" href="https://minhaskamal.github.io/DownGit/#/home">DownGit</a>，国内访问较慢</p>
+<p>将仓库克隆到码云上在下载</p>
+<p>使用迅雷</p>
+<h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><ol>
+<li>原因是因为上传时间太长了，导致ssh连接超时断开</li>
+</ol>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">fatal: sha1 file &#39;&lt;stdout&gt;&#39; write error: Broken pipe KiB&#x2F;s
+fatal: the remote end hung up unexpectedly
+fatal: the remote end hung up unexpectedly
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_31803503/article/details/88323527">解决方案</a></p>
+</blockquote>
+<h3 id="push问题"><a href="#push问题" class="headerlink" title="push问题"></a>push问题</h3><h4 id="rejected-master-gt-master-non-fast-forward"><a href="#rejected-master-gt-master-non-fast-forward" class="headerlink" title="! [rejected] master -&gt; master (non-fast-forward)"></a>! [rejected] master -&gt; master (non-fast-forward)</h4><h5 id="错误-1"><a href="#错误-1" class="headerlink" title="错误"></a>错误</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">$ git push
+To github.com:Lanqilu&#x2F;BiliBilil-Leaderboard.git
+ ! [rejected]        master -&gt; master (non-fast-forward)
+error: failed to push some refs to &#39;git@github.com:Lanqilu&#x2F;BiliBilil-Leaderboard.git&#39;
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: &#39;git pull ...&#39;) before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去</p>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>利用强覆盖方式用你本地的代码替代git仓库内的内容</p>
+<blockquote>
+<p>不推荐使用，需要解决冲突再提交</p>
+</blockquote>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git push -f<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lujinjian605894472/article/details/8443403">参考地址</a></p>
+<!--hexo clean && hexo g && hexo d-->
+
+<h3 id="pull问题"><a href="#pull问题" class="headerlink" title="pull问题"></a>pull问题</h3><h4 id="问题描述：本地内容有修改但要与pull"><a href="#问题描述：本地内容有修改但要与pull" class="headerlink" title="问题描述：本地内容有修改但要与pull"></a>问题描述：本地内容有修改但要与pull</h4><h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>先git status暂存</p>
+<p>再pull之后git status pop 选择修改</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Git/">
+                                    <span class="chip bg-color">Git</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2019/05/08/Markdown%E8%AF%AD%E6%B3%95/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://img.whl123456.top/image/wallhaven-p8ek6p.png" class="responsive-img" alt="Markdown基本语法">
+                        
+                        <span class="card-title">Markdown基本语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2019-05-08
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Markdown/" class="post-category">
+                                    Markdown
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Markdown/">
+                        <span class="chip bg-color">Markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2019/03/12/Git%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="http://img.whl123456.top/image/wallhaven-5wr3m7.jpg" class="responsive-img" alt="Git的常见使用">
+                        
+                        <span class="card-title">Git的常见使用</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-03-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Git/" class="post-category">
+                                    Git
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Git/">
+                        <span class="chip bg-color">Git</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2020</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Lanqulu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
