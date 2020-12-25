@@ -1,10 +1,8 @@
 /* Here is your custom css styles. */
 
-
-.row .col.l8 {
-  width: 80%;
+.col.s12.m8.l8.copy-right {
+  width: 100%;
 }
-
 
 /* 目录*/
 .toc-widget.card.toc-fixed {
@@ -176,3 +174,4 @@ article a:hover {
 #toc-content .is-active-link {
   color: #395ca3;
 }
+
