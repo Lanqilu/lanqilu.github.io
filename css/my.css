@@ -20,7 +20,11 @@
     line-height: 1.8rem;
     font-size: 1.12rem;
 }
-
+#articleContent ul li{
+  display: list-item;
+  line-height: 1.8rem;
+  font-size: 1.12rem;
+}
 /* 4~6级标题前置设置 */
 h1 {
     font-size: 1.625em;
