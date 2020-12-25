@@ -1,1 +1,91 @@
 /* Here is your custom css styles. */
+
+
+/* 目录*/
+.toc-widget.card.toc-fixed {
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#articleContent p {
+    margin: 2px 2px 10px;
+    font-size: 1.12rem;
+    line-height: 1.95rem;
+}
+
+#articleContent ol li {
+    display: list-item;
+    line-height: 1.8rem;
+    font-size: 1.12rem;
+}
+
+/* 4~6级标题前置设置 */
+h1 {
+    font-size: 1.625em;
+  }
+  
+h2 {
+font-size: 1.525em;
+}
+
+h3 {
+font-size: 1.425em;
+}
+
+.posts-expand h4 {
+font-size: 1.325em;
+}
+
+h5 {
+font-size: 1.225em;
+}
+
+h6 {
+font-size: 1.125em;
+}
+
+p {
+line-height: 185%;
+}
+
+.waves-effect {
+    border-radius: 15px;
+}
+
+u:hover {
+    background-color: #fff;
+    color: #555 !important;
+    text-decoration: none;
+  }
+  
+u {
+color: #395ca3 !important;
+background: #395ca3;
+}
+
+/* 字体设置 */
+.post-body {
+    font-family: 'Source Han Sans SC', Helvetica;
+  }
+/* 鼠标放在链接上的样式 */
+a:hover { /* 鼠标放在链接上的样式 */
+    color: #395ca3;
+  }
+
+/* 字体设置 */
+.post-body {
+    font-family: 'Source Han Sans SC', Helvetica;
+  }
+
+/* 修改选择字体块背景颜色 */
+::selection { /* 修改选择字体块背景颜色 */
+    background: #395ca3;
+    color: #ffffff;
+}
+
+u {
+    color: #395ca3 !important;
+    background: #395ca3;
+}
