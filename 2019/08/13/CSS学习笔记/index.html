@@ -1,463 +1,25 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="CSS学习笔记, HALO">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>CSS学习笔记 | HALO</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/apple-touch-icon-next.png">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/css/my.css">
-
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.3.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">HALO</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">HALO</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/featureimages/7.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">CSS学习笔记</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<main class="post-container content">
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/CSS/">
-                                <span class="chip bg-color">CSS</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Web/" class="post-category">
-                                Web
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="post-info">
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-08-13
-                </div>
-                
-
-                
-
-                
-
-                
-
-                
-            </div>
-        </div>
-        <hr class="clearfix">
-
-        
-        <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/prism/prism.css">
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_jianjie.asp">CSS</a>学习笔记</p>
-<hr>
-<h2 id="CSS-概述"><a href="#CSS-概述" class="headerlink" title="CSS 概述"></a>CSS 概述</h2><ul>
-<li>CSS 指层叠样式表 (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)</li>
-<li>样式定义<strong>如何显示</strong> HTML 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一</li>
-</ul>
-<h3 id="样式解决了一个普遍的问题"><a href="#样式解决了一个普遍的问题" class="headerlink" title="样式解决了一个普遍的问题"></a>样式解决了一个普遍的问题</h3><p>HTML 标签原本被设计为用于定义文档内容。通过使用 <code>&lt;h1&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;table&gt;</code> 这样的标签，HTML 的初衷是表达“这是标题”、“这是段落”、“这是表格”之类的信息。同时文档布局由浏览器来完成，而不使用任何的格式化标签。</p>
-<p>由于两种主要的浏览器（Netscape 和 Internet Explorer）不断地将新的 HTML 标签和属性（比如字体标签和颜色属性）添加到 HTML 规范中，创建文档内容清晰地独立于文档表现层的站点变得越来越困难。</p>
-<p>为了解决这个问题，万维网联盟（W3C），这个非营利的标准化联盟，肩负起了 HTML 标准化的使命，并在 HTML 4.0 之外创造出样式（Style）。</p>
-<p>所有的主流浏览器均支持层叠样式表。</p>
-<h3 id="样式表极大地提高了工作效率"><a href="#样式表极大地提高了工作效率" class="headerlink" title="样式表极大地提高了工作效率"></a>样式表极大地提高了工作效率</h3><p>样式表定义如何显示 HTML 元素，就像 HTML 3.2 的字体标签和颜色属性所起的作用那样。样式通常保存在外部的 .css 文件中。通过仅仅编辑一个简单的 CSS 文档，外部样式表使你有能力同时改变站点中所有页面的布局和外观。</p>
-<p>由于允许同时控制多重页面的样式和布局，CSS 可以称得上 WEB 设计领域的一个突破。作为网站开发者，你能够为每个 HTML 元素定义样式，并将之应用于你希望的任意多的页面中。如需进行全局的更新，只需简单地改变样式，然后网站中的所有元素均会自动地更新。</p>
-<h3 id="多重样式将层叠为一个"><a href="#多重样式将层叠为一个" class="headerlink" title="多重样式将层叠为一个"></a>多重样式将层叠为一个</h3><p>样式表允许以多种方式规定样式信息。样式可以规定在单个的 HTML 元素中，在 HTML 页的头元素中，或在一个外部的 CSS 文件中。甚至可以在同一个 HTML 文档内部引用多个外部样式表。</p>
-<h4 id="层叠次序-优先顺序"><a href="#层叠次序-优先顺序" class="headerlink" title="层叠次序(优先顺序)"></a>层叠次序(优先顺序)</h4><p><strong>当同一个 HTML 元素被不止一个样式定义时，会使用哪个样式呢？</strong></p>
-<p>一般而言，所有的样式会根据下面的规则层叠于一个新的虚拟样式表中，其中数字 4 拥有最高的优先权。</p>
-<ol>
-<li>浏览器缺省设置</li>
-<li>外部样式表</li>
-<li>内部样式表（位于 <code>&lt;head&gt; </code>标签内部）</li>
-<li>内联样式（在 HTML 元素内部）</li>
-</ol>
-<p>因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明：<code>&lt;head&gt;</code> 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。</p>
-<h2 id="CSS-基础语法"><a href="#CSS-基础语法" class="headerlink" title="CSS 基础语法"></a>CSS 基础语法</h2><h3 id="CSS-语法"><a href="#CSS-语法" class="headerlink" title="CSS 语法"></a>CSS 语法</h3><p>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">&#123;</span>declaration1<span class="token punctuation">;</span> declaration2<span class="token punctuation">;</span> ... declarationN <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>选择器通常是您需要改变样式的 HTML 元素。</p>
-<p>每条声明由一个属性和一个值组成。</p>
-<p>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">&#123;</span><span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>下面这行代码的作用是将 h1 元素内的文字颜色定义为红色，同时将字体大小设置为 14 像素。</p>
-<p>在这个例子中，h1 是选择器，color 和 font-size 是属性，red 和 14px 是值。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h1</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span>14px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="值的不同写法和单位"><a href="#值的不同写法和单位" class="headerlink" title="值的不同写法和单位"></a>值的不同写法和单位</h3><p>除了英文单词 red，我们还可以使用十六进制的颜色值 #ff0000：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> #ff0000<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>为了节约字节，我们可以使用 CSS 的缩写形式：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>我们还可以通过两种方法使用 RGB 值：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
-<span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>100%<span class="token punctuation">,</span>0%<span class="token punctuation">,</span>0%<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>请注意，当使用 RGB 百分比时，即使当值为 0 时也要写百分比符号。但是在其他的情况下就不需要这么做了。比如说，当尺寸为 0 像素时，0 之后不需要使用 px 单位，因为 0 就是 0，无论单位是什么。</p>
-<h3 id="记得写引号"><a href="#记得写引号" class="headerlink" title="记得写引号"></a>记得写引号</h3><p><strong>提示：</strong>如果值为若干单词，则要给值加引号：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"sans serif"</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="多重声明："><a href="#多重声明：" class="headerlink" title="多重声明："></a>多重声明：</h3><p><strong>提示：</strong>如果要定义不止一个声明，则需要用分号将每个声明分开。下面的例子展示出如何定义一个红色文字的居中段落。最后一条规则是不需要加分号的，因为分号在英语中是一个分隔符号，不是结束符号。然而，大多数有经验的设计师会在每条声明的末尾都加上分号，这么做的好处是，当你从现有的规则中增减声明时，会尽可能地减少出错的可能性。就像这样：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">text-align</span><span class="token punctuation">:</span>center<span class="token punctuation">;</span> <span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>	<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>你应该在每行只描述一个属性，这样可以增强样式定义的可读性，就像这样：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span>
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="CSS学习笔记, HALO"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>CSS学习笔记 | HALO</title><link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/apple-touch-icon-next.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/awesome/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/animate/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/matery.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/my.css"><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.3.0"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">HALO</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">HALO</div><div class="logo-desc">Never really desperate, only the lost of the soul.</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/7.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">CSS学习笔记</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/CSS/"><span class="chip bg-color">CSS</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Web/" class="post-category">Web</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2019-08-13</div></div></div><hr class="clearfix"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_jianjie.asp">CSS</a>学习笔记</p><hr><h2 id="CSS-概述"><a href="#CSS-概述" class="headerlink" title="CSS 概述"></a>CSS 概述</h2><ul><li>CSS 指层叠样式表 (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets)</li><li>样式定义<strong>如何显示</strong> HTML 元素</li><li>样式通常存储在<strong>样式表</strong>中</li><li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li><li><strong>外部样式表</strong>可以极大提高工作效率</li><li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li><li>多个样式定义可<strong>层叠</strong>为一</li></ul><h3 id="样式解决了一个普遍的问题"><a href="#样式解决了一个普遍的问题" class="headerlink" title="样式解决了一个普遍的问题"></a>样式解决了一个普遍的问题</h3><p>HTML 标签原本被设计为用于定义文档内容。通过使用 <code>&lt;h1&gt;</code>、<code>&lt;p&gt;</code>、<code>&lt;table&gt;</code> 这样的标签，HTML 的初衷是表达“这是标题”、“这是段落”、“这是表格”之类的信息。同时文档布局由浏览器来完成，而不使用任何的格式化标签。</p><p>由于两种主要的浏览器（Netscape 和 Internet Explorer）不断地将新的 HTML 标签和属性（比如字体标签和颜色属性）添加到 HTML 规范中，创建文档内容清晰地独立于文档表现层的站点变得越来越困难。</p><p>为了解决这个问题，万维网联盟（W3C），这个非营利的标准化联盟，肩负起了 HTML 标准化的使命，并在 HTML 4.0 之外创造出样式（Style）。</p><p>所有的主流浏览器均支持层叠样式表。</p><h3 id="样式表极大地提高了工作效率"><a href="#样式表极大地提高了工作效率" class="headerlink" title="样式表极大地提高了工作效率"></a>样式表极大地提高了工作效率</h3><p>样式表定义如何显示 HTML 元素，就像 HTML 3.2 的字体标签和颜色属性所起的作用那样。样式通常保存在外部的 .css 文件中。通过仅仅编辑一个简单的 CSS 文档，外部样式表使你有能力同时改变站点中所有页面的布局和外观。</p><p>由于允许同时控制多重页面的样式和布局，CSS 可以称得上 WEB 设计领域的一个突破。作为网站开发者，你能够为每个 HTML 元素定义样式，并将之应用于你希望的任意多的页面中。如需进行全局的更新，只需简单地改变样式，然后网站中的所有元素均会自动地更新。</p><h3 id="多重样式将层叠为一个"><a href="#多重样式将层叠为一个" class="headerlink" title="多重样式将层叠为一个"></a>多重样式将层叠为一个</h3><p>样式表允许以多种方式规定样式信息。样式可以规定在单个的 HTML 元素中，在 HTML 页的头元素中，或在一个外部的 CSS 文件中。甚至可以在同一个 HTML 文档内部引用多个外部样式表。</p><h4 id="层叠次序-优先顺序"><a href="#层叠次序-优先顺序" class="headerlink" title="层叠次序(优先顺序)"></a>层叠次序(优先顺序)</h4><p><strong>当同一个 HTML 元素被不止一个样式定义时，会使用哪个样式呢？</strong></p><p>一般而言，所有的样式会根据下面的规则层叠于一个新的虚拟样式表中，其中数字 4 拥有最高的优先权。</p><ol><li>浏览器缺省设置</li><li>外部样式表</li><li>内部样式表（位于 <code>&lt;head&gt;</code> 标签内部）</li><li>内联样式（在 HTML 元素内部）</li></ol><p>因此，内联样式（在 HTML 元素内部）拥有最高的优先权，这意味着它将优先于以下的样式声明：<code>&lt;head&gt;</code> 标签中的样式声明，外部样式表中的样式声明，或者浏览器中的样式声明（缺省值）。</p><h2 id="CSS-基础语法"><a href="#CSS-基础语法" class="headerlink" title="CSS 基础语法"></a>CSS 基础语法</h2><h3 id="CSS-语法"><a href="#CSS-语法" class="headerlink" title="CSS 语法"></a>CSS 语法</h3><p>CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">&#123;</span>declaration1<span class="token punctuation">;</span> declaration2<span class="token punctuation">;</span> ... declarationN <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>选择器通常是您需要改变样式的 HTML 元素。</p><p>每条声明由一个属性和一个值组成。</p><p>属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">&#123;</span><span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>下面这行代码的作用是将 h1 元素内的文字颜色定义为红色，同时将字体大小设置为 14 像素。</p><p>在这个例子中，h1 是选择器，color 和 font-size 是属性，red 和 14px 是值。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h1</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span> <span class="token property">font-size</span><span class="token punctuation">:</span>14px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="值的不同写法和单位"><a href="#值的不同写法和单位" class="headerlink" title="值的不同写法和单位"></a>值的不同写法和单位</h3><p>除了英文单词 red，我们还可以使用十六进制的颜色值 #ff0000：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> #ff0000<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>为了节约字节，我们可以使用 CSS 的缩写形式：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> #f00<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>我们还可以通过两种方法使用 RGB 值：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+<span class="token selector">p</span> <span class="token punctuation">&#123;</span> <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>100%<span class="token punctuation">,</span>0%<span class="token punctuation">,</span>0%<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>请注意，当使用 RGB 百分比时，即使当值为 0 时也要写百分比符号。但是在其他的情况下就不需要这么做了。比如说，当尺寸为 0 像素时，0 之后不需要使用 px 单位，因为 0 就是 0，无论单位是什么。</p><h3 id="记得写引号"><a href="#记得写引号" class="headerlink" title="记得写引号"></a>记得写引号</h3><p><strong>提示：</strong>如果值为若干单词，则要给值加引号：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"sans serif"</span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="多重声明："><a href="#多重声明：" class="headerlink" title="多重声明："></a>多重声明：</h3><p><strong>提示：</strong>如果要定义不止一个声明，则需要用分号将每个声明分开。下面的例子展示出如何定义一个红色文字的居中段落。最后一条规则是不需要加分号的，因为分号在英语中是一个分隔符号，不是结束符号。然而，大多数有经验的设计师会在每条声明的末尾都加上分号，这么做的好处是，当你从现有的规则中增减声明时，会尽可能地减少出错的可能性。就像这样：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">text-align</span><span class="token punctuation">:</span>center<span class="token punctuation">;</span> <span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>	<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>你应该在每行只描述一个属性，这样可以增强样式定义的可读性，就像这样：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span>
   <span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
   <span class="token property">font-family</span><span class="token punctuation">:</span> arial<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="空格和大小写"><a href="#空格和大小写" class="headerlink" title="空格和大小写"></a>空格和大小写</h3><p>大多数样式表包含不止一条规则，而大多数规则包含不止一个声明。多重声明和空格的使用使得样式表更容易被编辑：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="空格和大小写"><a href="#空格和大小写" class="headerlink" title="空格和大小写"></a>空格和大小写</h3><p>大多数样式表包含不止一条规则，而大多数规则包含不止一个声明。多重声明和空格的使用使得样式表更容易被编辑：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> #000<span class="token punctuation">;</span>
   <span class="token property">background</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
   <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
   <span class="token property">padding</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
   <span class="token property">font-family</span><span class="token punctuation">:</span> Georgia<span class="token punctuation">,</span> Palatino<span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>是否包含空格不会影响 CSS 在浏览器的工作效果，同样，与 XHTML 不同，CSS 对大小写不敏感。不过存在一个例外：如果涉及到与 HTML 文档一起工作的话，class 和 id 名称对大小写是敏感的。</p>
-<h2 id="CSS-高级语法"><a href="#CSS-高级语法" class="headerlink" title="CSS 高级语法"></a>CSS 高级语法</h2><h3 id="选择器的分组"><a href="#选择器的分组" class="headerlink" title="选择器的分组"></a>选择器的分组</h3><p>你可以对选择器进行分组，这样，被分组的选择器就可以分享相同的声明。用逗号将需要分组的选择器分开。在下面的例子中，我们对所有的标题元素进行了分组。所有的标题元素都是绿色的。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h1,h2,h3,h4,h5,h6</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>是否包含空格不会影响 CSS 在浏览器的工作效果，同样，与 XHTML 不同，CSS 对大小写不敏感。不过存在一个例外：如果涉及到与 HTML 文档一起工作的话，class 和 id 名称对大小写是敏感的。</p><h2 id="CSS-高级语法"><a href="#CSS-高级语法" class="headerlink" title="CSS 高级语法"></a>CSS 高级语法</h2><h3 id="选择器的分组"><a href="#选择器的分组" class="headerlink" title="选择器的分组"></a>选择器的分组</h3><p>你可以对选择器进行分组，这样，被分组的选择器就可以分享相同的声明。用逗号将需要分组的选择器分开。在下面的例子中，我们对所有的标题元素进行了分组。所有的标题元素都是绿色的。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h1,h2,h3,h4,h5,h6</span> <span class="token punctuation">&#123;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="继承及其问题"><a href="#继承及其问题" class="headerlink" title="继承及其问题"></a>继承及其问题</h3><p>根据 CSS，子元素从父元素继承属性。但是它并不总是按此方式工作。看看下面这条规则：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="继承及其问题"><a href="#继承及其问题" class="headerlink" title="继承及其问题"></a>继承及其问题</h3><p>根据 CSS，子元素从父元素继承属性。但是它并不总是按此方式工作。看看下面这条规则：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span>
      <span class="token property">font-family</span><span class="token punctuation">:</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>根据上面这条规则，站点的 body 元素将使用 Verdana 字体（假如访问者的系统中存在该字体的话）。</p>
-<p>通过 CSS 继承，子元素将继承最高级元素（在本例中是 body）所拥有的属性（这些子元素诸如 p, td, ul, ol, ul, li, dl, dt,和 dd）。不需要另外的规则，所有 body 的子元素都应该显示 Verdana 字体，子元素的子元素也一样。并且在大部分的现代浏览器中，也确实是这样的。</p>
-<p>但是在那个浏览器大战的血腥年代里，这种情况就未必会发生，那时候对标准的支持并不是企业的优先选择。比方说，Netscape 4 就不支持继承，它不仅忽略继承，而且也忽略应用于 body 元素的规则。IE/Windows 直到 IE6 还存在相关的问题，在表格内的字体样式会被忽略。我们又该如何是好呢？</p>
-<h3 id="友善地对待Netscape-4"><a href="#友善地对待Netscape-4" class="headerlink" title="友善地对待Netscape 4"></a>友善地对待Netscape 4</h3><p>幸运地是，你可以通过使用我们称为 “Be Kind to Netscape 4” 的冗余法则来处理旧式浏览器无法理解继承的问题。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>  <span class="token punctuation">&#123;</span>
+     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>根据上面这条规则，站点的 body 元素将使用 Verdana 字体（假如访问者的系统中存在该字体的话）。</p><p>通过 CSS 继承，子元素将继承最高级元素（在本例中是 body）所拥有的属性（这些子元素诸如 p, td, ul, ol, ul, li, dl, dt,和 dd）。不需要另外的规则，所有 body 的子元素都应该显示 Verdana 字体，子元素的子元素也一样。并且在大部分的现代浏览器中，也确实是这样的。</p><p>但是在那个浏览器大战的血腥年代里，这种情况就未必会发生，那时候对标准的支持并不是企业的优先选择。比方说，Netscape 4 就不支持继承，它不仅忽略继承，而且也忽略应用于 body 元素的规则。IE/Windows 直到 IE6 还存在相关的问题，在表格内的字体样式会被忽略。我们又该如何是好呢？</p><h3 id="友善地对待Netscape-4"><a href="#友善地对待Netscape-4" class="headerlink" title="友善地对待Netscape 4"></a>友善地对待Netscape 4</h3><p>幸运地是，你可以通过使用我们称为 “Be Kind to Netscape 4” 的冗余法则来处理旧式浏览器无法理解继承的问题。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>  <span class="token punctuation">&#123;</span>
      <span class="token property">font-family</span><span class="token punctuation">:</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
      <span class="token punctuation">&#125;</span>
 
 <span class="token selector">p, td, ul, ol, li, dl, dt, dd</span>  <span class="token punctuation">&#123;</span>
      <span class="token property">font-family</span><span class="token punctuation">:</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
-     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>4.0 浏览器无法理解继承，不过他们可以理解组选择器。这么做虽然会浪费一些用户的带宽，但是如果需要对 Netscape 4 用户进行支持，就不得不这么做。</p>
-<h3 id="继承是一个诅咒吗？"><a href="#继承是一个诅咒吗？" class="headerlink" title="继承是一个诅咒吗？"></a>继承是一个诅咒吗？</h3><p>如果你不希望 “Verdana, sans-serif” 字体被所有的子元素继承，又该怎么做呢？比方说，你希望段落的字体是 Times。没问题。创建一个针对 p 的特殊规则，这样它就会摆脱父元素的规则：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>  <span class="token punctuation">&#123;</span>
+     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>4.0 浏览器无法理解继承，不过他们可以理解组选择器。这么做虽然会浪费一些用户的带宽，但是如果需要对 Netscape 4 用户进行支持，就不得不这么做。</p><h3 id="继承是一个诅咒吗？"><a href="#继承是一个诅咒吗？" class="headerlink" title="继承是一个诅咒吗？"></a>继承是一个诅咒吗？</h3><p>如果你不希望 “Verdana, sans-serif” 字体被所有的子元素继承，又该怎么做呢？比方说，你希望段落的字体是 Times。没问题。创建一个针对 p 的特殊规则，这样它就会摆脱父元素的规则：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>  <span class="token punctuation">&#123;</span>
      <span class="token property">font-family</span><span class="token punctuation">:</span> Verdana<span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span>
      <span class="token punctuation">&#125;</span>
 
@@ -467,25 +29,15 @@
 
 <span class="token selector">p</span>  <span class="token punctuation">&#123;</span>
      <span class="token property">font-family</span><span class="token punctuation">:</span> Times<span class="token punctuation">,</span> <span class="token string">"Times New Roman"</span><span class="token punctuation">,</span> serif<span class="token punctuation">;</span>
-     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="CSS-派生选择器"><a href="#CSS-派生选择器" class="headerlink" title="CSS 派生选择器"></a>CSS 派生选择器</h2><h3 id="派生选择器"><a href="#派生选择器" class="headerlink" title="派生选择器"></a>派生选择器</h3><p><strong>通过依据元素在其位置的上下文关系来定义样式，你可以使标记更加简洁。</strong></p>
-<p>在 CSS1 中，通过这种方式来应用规则的选择器被称为上下文选择器 (contextual selectors)，这是由于它们依赖于上下文关系来应用或者避免某项规则。在 CSS2 中，它们称为派生选择器，但是无论你如何称呼它们，它们的作用都是相同的。</p>
-<p>派生选择器允许你根据文档的上下文关系来确定某个标签的样式。通过合理地使用派生选择器，我们可以使 HTML 代码变得更加整洁。</p>
-<p>比方说，你希望列表中的 strong 元素变为斜体字，而不是通常的粗体字，可以这样定义一个派生选择器：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">li strong</span> <span class="token punctuation">&#123;</span>
+     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="CSS-派生选择器"><a href="#CSS-派生选择器" class="headerlink" title="CSS 派生选择器"></a>CSS 派生选择器</h2><h3 id="派生选择器"><a href="#派生选择器" class="headerlink" title="派生选择器"></a>派生选择器</h3><p><strong>通过依据元素在其位置的上下文关系来定义样式，你可以使标记更加简洁。</strong></p><p>在 CSS1 中，通过这种方式来应用规则的选择器被称为上下文选择器 (contextual selectors)，这是由于它们依赖于上下文关系来应用或者避免某项规则。在 CSS2 中，它们称为派生选择器，但是无论你如何称呼它们，它们的作用都是相同的。</p><p>派生选择器允许你根据文档的上下文关系来确定某个标签的样式。通过合理地使用派生选择器，我们可以使 HTML 代码变得更加整洁。</p><p>比方说，你希望列表中的 strong 元素变为斜体字，而不是通常的粗体字，可以这样定义一个派生选择器：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">li strong</span> <span class="token punctuation">&#123;</span>
     <span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
     <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>请注意标记为 <code>&lt;strong&gt;</code> 的蓝色代码的上下文关系：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;p>&lt;strong>我是粗体字，不是斜体字，因为我不在列表当中，所以这个规则对我不起作用&lt;/strong>&lt;/p>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>请注意标记为 <code>&lt;strong&gt;</code> 的蓝色代码的上下文关系：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;p>&lt;strong>我是粗体字，不是斜体字，因为我不在列表当中，所以这个规则对我不起作用&lt;/strong>&lt;/p>
 
 &lt;ol>
 &lt;li>&lt;strong>我是斜体字。这是因为 strong 元素位于 li 元素内。&lt;/strong>&lt;/li>
 &lt;li>我是正常的字体。&lt;/li>
-&lt;/ol><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在上面的例子中，只有 li 元素中的 strong 元素的样式为斜体字，无需为 strong 元素定义特别的 class 或 id，代码更加简洁。</p>
-<p>再看看下面的 CSS 规则：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">strong</span> <span class="token punctuation">&#123;</span>
+&lt;/ol><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在上面的例子中，只有 li 元素中的 strong 元素的样式为斜体字，无需为 strong 元素定义特别的 class 或 id，代码更加简洁。</p><p>再看看下面的 CSS 规则：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">strong</span> <span class="token punctuation">&#123;</span>
      <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
      <span class="token punctuation">&#125;</span>
 
@@ -495,29 +47,15 @@
 
 <span class="token selector">h2 strong</span> <span class="token punctuation">&#123;</span>
      <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下面是它施加影响的 HTML：</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>The strongly emphasized word in this paragraph is<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>red<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+     <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>下面是它施加影响的 HTML：</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>The strongly emphasized word in this paragraph is<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>red<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>This subhead is also red.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>The strongly emphasized word in this subhead is<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>blue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="CSS-id-选择器"><a href="#CSS-id-选择器" class="headerlink" title="CSS id 选择器"></a>CSS id 选择器</h2><h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><p><strong>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</strong></p>
-<p><strong>id 选择器以 “#” 来定义。</strong></p>
-<p>下面的两个 id 选择器，第一个可以定义元素的颜色为红色，第二个定义元素的颜色为绿色：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#red</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
-<span class="token selector">#green</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>green<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>下面的 HTML 代码中，id 属性为 red 的 p 元素显示为红色，而 id 属性为 green 的 p 元素显示为绿色。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;p id=<span class="token string">"red"</span>>这个段落是红色。&lt;/p>
-&lt;p id=<span class="token string">"green"</span>>这个段落是绿色。&lt;/p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p><strong>注意：</strong>id 属性只能在每个 HTML 文档中出现一次。想知道原因吗，请参阅 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/xhtml/xhtml_structural_01.asp">XHTML:网站重构</a>。</p>
-<h3 id="id-选择器和派生选择器"><a href="#id-选择器和派生选择器" class="headerlink" title="id 选择器和派生选择器"></a>id 选择器和派生选择器</h3><p><strong>在现代布局中，id 选择器常常用于建立派生选择器。</strong></p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#sidebar p</span> <span class="token punctuation">&#123;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h2</span><span class="token punctuation">></span></span>The strongly emphasized word in this subhead is<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">></span></span>blue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">></span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h2</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h2 id="CSS-id-选择器"><a href="#CSS-id-选择器" class="headerlink" title="CSS id 选择器"></a>CSS id 选择器</h2><h3 id="id-选择器"><a href="#id-选择器" class="headerlink" title="id 选择器"></a>id 选择器</h3><p><strong>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</strong></p><p><strong>id 选择器以 “#” 来定义。</strong></p><p>下面的两个 id 选择器，第一个可以定义元素的颜色为红色，第二个定义元素的颜色为绿色：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#red</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token selector">#green</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>green<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>下面的 HTML 代码中，id 属性为 red 的 p 元素显示为红色，而 id 属性为 green 的 p 元素显示为绿色。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;p id=<span class="token string">"red"</span>>这个段落是红色。&lt;/p>
+&lt;p id=<span class="token string">"green"</span>>这个段落是绿色。&lt;/p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><strong>注意：</strong>id 属性只能在每个 HTML 文档中出现一次。想知道原因吗，请参阅 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/xhtml/xhtml_structural_01.asp">XHTML:网站重构</a>。</p><h3 id="id-选择器和派生选择器"><a href="#id-选择器和派生选择器" class="headerlink" title="id 选择器和派生选择器"></a>id 选择器和派生选择器</h3><p><strong>在现代布局中，id 选择器常常用于建立派生选择器。</strong></p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#sidebar p</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
 	<span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
 	<span class="token property">margin-top</span><span class="token punctuation">:</span> 0.5em<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>上面的样式只会应用于出现在 id 是 sidebar 的元素内的段落。这个元素很可能是 div 或者是表格单元，尽管它也可能是一个表格或者其他块级元素。它甚至可以是一个内联元素，比如<code> &lt;em&gt;</code> <code>&lt;/em&gt;</code> 或者<code> &lt;span&gt;</code> <code>&lt;/span&gt;</code>，不过这样的用法是非法的，因为不可以在内联元素 <code>&lt;span&gt;</code> 中嵌入<code> &lt;p&gt;</code> （如果你忘记了原因，请参阅 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/xhtml/xhtml_structural_01.asp">XHTML:网站重构</a>）。</p>
-<h4 id="一个选择器，多种用法"><a href="#一个选择器，多种用法" class="headerlink" title="一个选择器，多种用法"></a>一个选择器，多种用法</h4><p><strong>即使被标注为 sidebar 的元素只能在文档中出现一次，这个 id 选择器作为派生选择器也可以被使用很多次：</strong></p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#sidebar p</span> <span class="token punctuation">&#123;</span>
+	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>上面的样式只会应用于出现在 id 是 sidebar 的元素内的段落。这个元素很可能是 div 或者是表格单元，尽管它也可能是一个表格或者其他块级元素。它甚至可以是一个内联元素，比如 <code>&lt;em&gt;</code> <code>&lt;/em&gt;</code> 或者 <code>&lt;span&gt;</code> <code>&lt;/span&gt;</code>，不过这样的用法是非法的，因为不可以在内联元素 <code>&lt;span&gt;</code> 中嵌入 <code>&lt;p&gt;</code> （如果你忘记了原因，请参阅 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/xhtml/xhtml_structural_01.asp">XHTML:网站重构</a>）。</p><h4 id="一个选择器，多种用法"><a href="#一个选择器，多种用法" class="headerlink" title="一个选择器，多种用法"></a>一个选择器，多种用法</h4><p><strong>即使被标注为 sidebar 的元素只能在文档中出现一次，这个 id 选择器作为派生选择器也可以被使用很多次：</strong></p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#sidebar p</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">font-style</span><span class="token punctuation">:</span> italic<span class="token punctuation">;</span>
 	<span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
 	<span class="token property">margin-top</span><span class="token punctuation">:</span> 0.5em<span class="token punctuation">;</span>
@@ -530,689 +68,89 @@
 	<span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
 	<span class="token property">line-height</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
 	<span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在这里，与页面中的其他 p 元素明显不同的是，sidebar 内的 p 元素得到了特殊的处理，同时，与页面中其他所有 h2 元素明显不同的是，sidebar 中的 h2 元素也得到了不同的特殊处理。</p>
-<h3 id="单独的选择器"><a href="#单独的选择器" class="headerlink" title="单独的选择器"></a>单独的选择器</h3><p><strong>id 选择器即使不被用来创建派生选择器，它也可以独立发挥作用：</strong></p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#sidebar</span> <span class="token punctuation">&#123;</span>
+	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在这里，与页面中的其他 p 元素明显不同的是，sidebar 内的 p 元素得到了特殊的处理，同时，与页面中其他所有 h2 元素明显不同的是，sidebar 中的 h2 元素也得到了不同的特殊处理。</p><h3 id="单独的选择器"><a href="#单独的选择器" class="headerlink" title="单独的选择器"></a>单独的选择器</h3><p><strong>id 选择器即使不被用来创建派生选择器，它也可以独立发挥作用：</strong></p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">#sidebar</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> 1px dotted #000<span class="token punctuation">;</span>
 	<span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>根据这条规则，id 为 sidebar 的元素将拥有一个像素宽的黑色点状边框，同时其周围会有 10 个像素宽的内边距（padding，内部空白）。老版本的 Windows/IE 浏览器可能会忽略这条规则，除非你特别地定义这个选择器所属的元素：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">div #sidebar</span> <span class="token punctuation">&#123;</span>
+	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>根据这条规则，id 为 sidebar 的元素将拥有一个像素宽的黑色点状边框，同时其周围会有 10 个像素宽的内边距（padding，内部空白）。老版本的 Windows/IE 浏览器可能会忽略这条规则，除非你特别地定义这个选择器所属的元素：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">div #sidebar</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">border</span><span class="token punctuation">:</span> 1px dotted #000<span class="token punctuation">;</span>
 	<span class="token property">padding</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="CSS-类选择器"><a href="#CSS-类选择器" class="headerlink" title="CSS 类选择器"></a>CSS 类选择器</h3><p><strong>在 CSS 中，类选择器以一个点号显示：</strong></p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.center</span> <span class="token punctuation">&#123;</span><span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在上面的例子中，所有拥有 center 类的 HTML 元素均为居中。</p>
-<p>在下面的 HTML 代码中，h1 和 p 元素都有 center 类。这意味着两者都将遵守 “.center” 选择器中的规则。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;h1 class=<span class="token string">"center"</span>>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="CSS-类选择器"><a href="#CSS-类选择器" class="headerlink" title="CSS 类选择器"></a>CSS 类选择器</h3><p><strong>在 CSS 中，类选择器以一个点号显示：</strong></p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.center</span> <span class="token punctuation">&#123;</span><span class="token property">text-align</span><span class="token punctuation">:</span> center<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在上面的例子中，所有拥有 center 类的 HTML 元素均为居中。</p><p>在下面的 HTML 代码中，h1 和 p 元素都有 center 类。这意味着两者都将遵守 “.center” 选择器中的规则。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;h1 class=<span class="token string">"center"</span>>
 This heading will be center-aligned
 &lt;/h1>
 
 &lt;p class=<span class="token string">"center"</span>>
 This paragraph will also be center-aligned.
-&lt;/p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p><strong>注意：</strong>类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p>
-<p><strong>和 id 一样，class 也可被用作派生选择器：</strong></p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.fancy td</span> <span class="token punctuation">&#123;</span>
+&lt;/p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><strong>注意：</strong>类名的第一个字符不能使用数字！它无法在 Mozilla 或 Firefox 中起作用。</p><p><strong>和 id 一样，class 也可被用作派生选择器：</strong></p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">.fancy td</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">color</span><span class="token punctuation">:</span> #f60<span class="token punctuation">;</span>
 	<span class="token property">background</span><span class="token punctuation">:</span> #666<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在上面这个例子中，类名为 fancy 的更大的元素内部的表格单元都会以灰色背景显示橙色文字。（名为 fancy 的更大的元素可能是一个表格或者一个 div）</p>
-<p><strong>元素也可以基于它们的类而被选择：</strong></p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">td.fancy</span> <span class="token punctuation">&#123;</span>
+	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>在上面这个例子中，类名为 fancy 的更大的元素内部的表格单元都会以灰色背景显示橙色文字。（名为 fancy 的更大的元素可能是一个表格或者一个 div）</p><p><strong>元素也可以基于它们的类而被选择：</strong></p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">td.fancy</span> <span class="token punctuation">&#123;</span>
 	<span class="token property">color</span><span class="token punctuation">:</span> #f60<span class="token punctuation">;</span>
 	<span class="token property">background</span><span class="token punctuation">:</span> #666<span class="token punctuation">;</span>
-	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在上面的例子中，类名为 fancy 的表格单元将是带有灰色背景的橙色。</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;td class=<span class="token string">"fancy"</span>><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>你可以将类 fancy 分配给任何一个表格元素任意多的次数。那些以 fancy 标注的单元格都会是带有灰色背景的橙色。那些没有被分配名为 fancy 的类的单元格不会受这条规则的影响。还有一点值得注意，class 为 fancy 的段落也不会是带有灰色背景的橙色，当然，任何其他被标注为 fancy 的元素也不会受这条规则的影响。这都是由于我们书写这条规则的方式，这个效果被限制于被标注为 fancy 的表格单元（即使用 td 元素来选择 fancy 类）。</p>
-<h2 id="创建-CSS"><a href="#创建-CSS" class="headerlink" title="创建 CSS"></a>创建 CSS</h2><h3 id="如何插入样式表"><a href="#如何插入样式表" class="headerlink" title="如何插入样式表"></a>如何插入样式表</h3><p><strong>当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。插入样式表的方法有三种：</strong></p>
-<h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3><p>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用 <code>&lt;link&gt; </code>标签链接到样式表。<code>&lt;link&gt;</code> 标签在（文档的）头部：</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+	<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>在上面的例子中，类名为 fancy 的表格单元将是带有灰色背景的橙色。</p><pre class="line-numbers language-css" data-language="css"><code class="language-css">&lt;td class=<span class="token string">"fancy"</span>><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>你可以将类 fancy 分配给任何一个表格元素任意多的次数。那些以 fancy 标注的单元格都会是带有灰色背景的橙色。那些没有被分配名为 fancy 的类的单元格不会受这条规则的影响。还有一点值得注意，class 为 fancy 的段落也不会是带有灰色背景的橙色，当然，任何其他被标注为 fancy 的元素也不会受这条规则的影响。这都是由于我们书写这条规则的方式，这个效果被限制于被标注为 fancy 的表格单元（即使用 td 元素来选择 fancy 类）。</p><h2 id="创建-CSS"><a href="#创建-CSS" class="headerlink" title="创建 CSS"></a>创建 CSS</h2><h3 id="如何插入样式表"><a href="#如何插入样式表" class="headerlink" title="如何插入样式表"></a>如何插入样式表</h3><p><strong>当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。插入样式表的方法有三种：</strong></p><h3 id="外部样式表"><a href="#外部样式表" class="headerlink" title="外部样式表"></a>外部样式表</h3><p>当样式需要应用于很多页面时，外部样式表将是理想的选择。在使用外部样式表的情况下，你可以通过改变一个文件来改变整个站点的外观。每个页面使用 <code>&lt;link&gt;</code> 标签链接到样式表。<code>&lt;link&gt;</code> 标签在（文档的）头部：</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mystyle.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。</p>
-<p>外部样式表可以在任何文本编辑器中进行编辑。文件不能包含任何的 html 标签。样式表应该以 .css 扩展名进行保存。下面是一个样式表文件的例子：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">hr</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span> sienna<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。</p><p>外部样式表可以在任何文本编辑器中进行编辑。文件不能包含任何的 html 标签。样式表应该以 .css 扩展名进行保存。下面是一个样式表文件的例子：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">hr</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span> sienna<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
 <span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">margin-left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
-<span class="token selector">body</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"images/back40.gif"</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>不要在属性值与单位之间留有空格。假如你使用 “margin-left: 20 px” 而不是 “margin-left: 20px” ，它仅在 IE 6 中有效，但是在 Mozilla/Firefox 或 Netscape 中却无法正常工作。</p>
-<h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3><p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 <code>&lt;style&gt;</code> 标签在文档头部定义内部样式表，就像这样:</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+<span class="token selector">body</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"images/back40.gif"</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>不要在属性值与单位之间留有空格。假如你使用 “margin-left: 20 px” 而不是 “margin-left: 20px” ，它仅在 IE 6 中有效，但是在 Mozilla/Firefox 或 Netscape 中却无法正常工作。</p><h3 id="内部样式表"><a href="#内部样式表" class="headerlink" title="内部样式表"></a>内部样式表</h3><p>当单个文档需要特殊的样式时，就应该使用内部样式表。你可以使用 <code>&lt;style&gt;</code> 标签在文档头部定义内部样式表，就像这样:</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
   <span class="token selector">hr</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span> sienna<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
   <span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">margin-left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
   <span class="token selector">body</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"images/back40.gif"</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
 </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h3><p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。</p>
-<p>要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：</p>
-<pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> sienna<span class="token punctuation">;</span> <span class="token property">margin-left</span><span class="token punctuation">:</span> 20px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h3><p>由于要将表现和内容混杂在一起，内联样式会损失掉样式表的许多优势。请慎用这种方法，例如当样式仅需要在一个元素上应用一次时。</p><p>要使用内联样式，你需要在相关的标签内使用样式（style）属性。Style 属性可以包含任何 CSS 属性。本例展示如何改变段落的颜色和左外边距：</p><pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> sienna<span class="token punctuation">;</span> <span class="token property">margin-left</span><span class="token punctuation">:</span> 20px</span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 This is a paragraph
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h3 id="多重样式"><a href="#多重样式" class="headerlink" title="多重样式"></a>多重样式</h3><p>如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。</p>
-<p>例如，外部样式表拥有针对 h3 选择器的三个属性：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h3</span> <span class="token punctuation">&#123;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h3 id="多重样式"><a href="#多重样式" class="headerlink" title="多重样式"></a>多重样式</h3><p>如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。</p><p>例如，外部样式表拥有针对 h3 选择器的三个属性：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h3</span> <span class="token punctuation">&#123;</span>
   <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
   <span class="token property">text-align</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
   <span class="token property">font-size</span><span class="token punctuation">:</span> 8pt<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>而内部样式表拥有针对 h3 选择器的两个属性：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h3</span> <span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>而内部样式表拥有针对 h3 选择器的两个属性：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">h3</span> <span class="token punctuation">&#123;</span>
   <span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span> 
   <span class="token property">font-size</span><span class="token punctuation">:</span> 20pt<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>假如拥有内部样式表的这个页面同时与外部样式表链接，那么 h3 得到的样式是：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>假如拥有内部样式表的这个页面同时与外部样式表链接，那么 h3 得到的样式是：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span> 
 <span class="token property">text-align</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span> 
-<span class="token property">font-size</span><span class="token punctuation">:</span> 20pt<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>即颜色属性将被继承于外部样式表，而文字排列（text-alignment）和字体尺寸（font-size）会被内部样式表中的规则取代。</p>
-<h1 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h1><h2 id="CSS-背景"><a href="#CSS-背景" class="headerlink" title="CSS 背景"></a>CSS 背景</h2><p><strong>CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。</strong></p>
-<p><strong>CSS 在这方面的能力远远在 HTML 之上。</strong></p>
-<h3 id="背景色"><a href="#背景色" class="headerlink" title="背景色"></a>背景色</h3><p>可以使用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-color.asp">background-color 属性</a>为元素设置背景色。这个属性接受任何合法的颜色值。</p>
-<p>这条规则把元素的背景设置为灰色：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>可以为所有元素设置背景色，这包括 body 一直到 em 和 a 等行内元素。</p>
-<p>background-color 不能继承，其默认值是 transparent。transparent 有“透明”之意。也就是说，如果一个元素没有指定背景色，那么背景就是透明的，这样其祖先元素的背景才能可见。</p>
-<h3 id="背景图像"><a href="#背景图像" class="headerlink" title="背景图像"></a>背景图像</h3><p>要把图像放入背景，需要使用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-image.asp">background-image 属性</a>。background-image 属性的默认值是 none，表示背景上没有放置任何图像。</p>
-<p>如果需要设置一个背景图像，必须为这个属性设置一个 URL 值：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_04.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>大多数背景都应用到 body 元素，不过并不仅限于此。</p>
-<p>下面例子为一个段落应用了一个背景，而不会对文档的其他部分应用背景：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p.flower</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_03.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>您甚至可以为行内元素设置背景图像，下面的例子为一个链接设置了背景图像：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a.radio</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_07.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>理论上讲，甚至可以向 textareas 和 select 等替换元素的背景应用图像，不过并不是所有用户代理都能很好地处理这种情况。</p>
-<p>另外还要补充一点，background-image 也不能继承。事实上，所有背景属性都不能继承。</p>
-<h3 id="背景重复"><a href="#背景重复" class="headerlink" title="背景重复"></a>背景重复</h3><p>如果需要在页面上对背景图像进行平铺，可以使用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-repeat.asp">background-repeat 属性</a>。</p>
-<p>属性值 repeat 导致图像在水平垂直方向上都平铺，就像以往背景图像的通常做法一样。repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复，no-repeat 则不允许图像在任何方向上平铺。</p>
-<p>默认地，背景图像将从一个元素的左上角开始。请看下面的例子：</p>
-<pre class="line-numbers language-none"><code class="language-none">body
+<span class="token property">font-size</span><span class="token punctuation">:</span> 20pt<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>即颜色属性将被继承于外部样式表，而文字排列（text-alignment）和字体尺寸（font-size）会被内部样式表中的规则取代。</p><h1 id="CSS样式"><a href="#CSS样式" class="headerlink" title="CSS样式"></a>CSS样式</h1><h2 id="CSS-背景"><a href="#CSS-背景" class="headerlink" title="CSS 背景"></a>CSS 背景</h2><p><strong>CSS 允许应用纯色作为背景，也允许使用背景图像创建相当复杂的效果。</strong></p><p><strong>CSS 在这方面的能力远远在 HTML 之上。</strong></p><h3 id="背景色"><a href="#背景色" class="headerlink" title="背景色"></a>背景色</h3><p>可以使用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-color.asp">background-color 属性</a>为元素设置背景色。这个属性接受任何合法的颜色值。</p><p>这条规则把元素的背景设置为灰色：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span> <span class="token property">padding</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>可以为所有元素设置背景色，这包括 body 一直到 em 和 a 等行内元素。</p><p>background-color 不能继承，其默认值是 transparent。transparent 有“透明”之意。也就是说，如果一个元素没有指定背景色，那么背景就是透明的，这样其祖先元素的背景才能可见。</p><h3 id="背景图像"><a href="#背景图像" class="headerlink" title="背景图像"></a>背景图像</h3><p>要把图像放入背景，需要使用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-image.asp">background-image 属性</a>。background-image 属性的默认值是 none，表示背景上没有放置任何图像。</p><p>如果需要设置一个背景图像，必须为这个属性设置一个 URL 值：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_04.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>大多数背景都应用到 body 元素，不过并不仅限于此。</p><p>下面例子为一个段落应用了一个背景，而不会对文档的其他部分应用背景：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p.flower</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_03.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>您甚至可以为行内元素设置背景图像，下面的例子为一个链接设置了背景图像：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a.radio</span> <span class="token punctuation">&#123;</span><span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_07.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>理论上讲，甚至可以向 textareas 和 select 等替换元素的背景应用图像，不过并不是所有用户代理都能很好地处理这种情况。</p><p>另外还要补充一点，background-image 也不能继承。事实上，所有背景属性都不能继承。</p><h3 id="背景重复"><a href="#背景重复" class="headerlink" title="背景重复"></a>背景重复</h3><p>如果需要在页面上对背景图像进行平铺，可以使用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-repeat.asp">background-repeat 属性</a>。</p><p>属性值 repeat 导致图像在水平垂直方向上都平铺，就像以往背景图像的通常做法一样。repeat-x 和 repeat-y 分别导致图像只在水平或垂直方向上重复，no-repeat 则不允许图像在任何方向上平铺。</p><p>默认地，背景图像将从一个元素的左上角开始。请看下面的例子：</p><pre class="line-numbers language-none"><code class="language-none">body
   &#123; 
   background-image: url(&#x2F;i&#x2F;eg_bg_03.gif);
   background-repeat: repeat-y;
-  &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="背景定位"><a href="#背景定位" class="headerlink" title="背景定位"></a>背景定位</h3><p>可以利用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-position.asp">background-position 属性</a>改变图像在背景中的位置。</p>
-<p>下面的例子在 body 元素中将一个背景图像居中放置：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
+  &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="背景定位"><a href="#背景定位" class="headerlink" title="背景定位"></a>背景定位</h3><p>可以利用 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-position.asp">background-position 属性</a>改变图像在背景中的位置。</p><p>下面的例子在 body 元素中将一个背景图像居中放置：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
   <span class="token punctuation">&#123;</span> 
     <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'/i/eg_bg_03.gif'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
     <span class="token property">background-repeat</span><span class="token punctuation">:</span>no-repeat<span class="token punctuation">;</span>
     <span class="token property">background-position</span><span class="token punctuation">:</span>center<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>为 background-position 属性提供值有很多方法。首先，可以使用一些关键字：top、bottom、left、right 和 center。通常，这些关键字会成对出现，不过也不总是这样。还可以使用长度值，如 100px 或 5cm，最后也可以使用百分数值。不同类型的值对于背景图像的放置稍有差异。</p>
-<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>图像放置关键字最容易理解，其作用如其名称所表明的。例如，top right 使图像放置在元素内边距区的右上角。</p>
-<p>根据规范，位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。</p>
-<p>如果只出现一个关键字，则认为另一个关键字是 center。</p>
-<p>所以，如果希望每个段落的中部上方出现一个图像，只需声明如下：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>为 background-position 属性提供值有很多方法。首先，可以使用一些关键字：top、bottom、left、right 和 center。通常，这些关键字会成对出现，不过也不总是这样。还可以使用长度值，如 100px 或 5cm，最后也可以使用百分数值。不同类型的值对于背景图像的放置稍有差异。</p><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>图像放置关键字最容易理解，其作用如其名称所表明的。例如，top right 使图像放置在元素内边距区的右上角。</p><p>根据规范，位置关键字可以按任何顺序出现，只要保证不超过两个关键字 - 一个对应水平方向，另一个对应垂直方向。</p><p>如果只出现一个关键字，则认为另一个关键字是 center。</p><p>所以，如果希望每个段落的中部上方出现一个图像，只需声明如下：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">p</span>
   <span class="token punctuation">&#123;</span> 
     <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'bgimg.gif'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
     <span class="token property">background-repeat</span><span class="token punctuation">:</span>no-repeat<span class="token punctuation">;</span>
     <span class="token property">background-position</span><span class="token punctuation">:</span>top<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>下面是等价的位置关键字：</p>
-<table>
-<thead>
-<tr>
-<th align="left">单一关键字</th>
-<th align="left">等价的关键字</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">center</td>
-<td align="left">center center</td>
-</tr>
-<tr>
-<td align="left">top</td>
-<td align="left">top center 或 center top</td>
-</tr>
-<tr>
-<td align="left">bottom</td>
-<td align="left">bottom center 或 center bottom</td>
-</tr>
-<tr>
-<td align="left">right</td>
-<td align="left">right center 或 center right</td>
-</tr>
-<tr>
-<td align="left">left</td>
-<td align="left">left center 或 center left</td>
-</tr>
-</tbody></table>
-<h3 id="百分数值"><a href="#百分数值" class="headerlink" title="百分数值"></a>百分数值</h3><p>百分数值的表现方式更为复杂。假设你希望用百分数值将图像在其元素中居中，这很容易：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>下面是等价的位置关键字：</p><table><thead><tr><th align="left">单一关键字</th><th align="left">等价的关键字</th></tr></thead><tbody><tr><td align="left">center</td><td align="left">center center</td></tr><tr><td align="left">top</td><td align="left">top center 或 center top</td></tr><tr><td align="left">bottom</td><td align="left">bottom center 或 center bottom</td></tr><tr><td align="left">right</td><td align="left">right center 或 center right</td></tr><tr><td align="left">left</td><td align="left">left center 或 center left</td></tr></tbody></table><h3 id="百分数值"><a href="#百分数值" class="headerlink" title="百分数值"></a>百分数值</h3><p>百分数值的表现方式更为复杂。假设你希望用百分数值将图像在其元素中居中，这很容易：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
   <span class="token punctuation">&#123;</span> 
     <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'/i/eg_bg_03.gif'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
     <span class="token property">background-repeat</span><span class="token punctuation">:</span>no-repeat<span class="token punctuation">;</span>
     <span class="token property">background-position</span><span class="token punctuation">:</span>50% 50%<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>这会导致图像适当放置，其中心与其元素的中心对齐。<strong>换句话说，百分数值同时应用于元素和图像。</strong>也就是说，图像中描述为 50% 50% 的点（中心点）与元素中描述为 50% 50% 的点（中心点）对齐。</p>
-<p>如果图像位于 0% 0%，其左上角将放在元素内边距区的左上角。如果图像位置是 100% 100%，会使图像的右下角放在右边距的右下角。</p>
-<p>因此，如果你想把一个图像放在水平方向 2/3、垂直方向 1/3 处，可以这样声明：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这会导致图像适当放置，其中心与其元素的中心对齐。<strong>换句话说，百分数值同时应用于元素和图像。</strong>也就是说，图像中描述为 50% 50% 的点（中心点）与元素中描述为 50% 50% 的点（中心点）对齐。</p><p>如果图像位于 0% 0%，其左上角将放在元素内边距区的左上角。如果图像位置是 100% 100%，会使图像的右下角放在右边距的右下角。</p><p>因此，如果你想把一个图像放在水平方向 2/3、垂直方向 1/3 处，可以这样声明：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
   <span class="token punctuation">&#123;</span> 
     <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'/i/eg_bg_03.gif'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
     <span class="token property">background-repeat</span><span class="token punctuation">:</span>no-repeat<span class="token punctuation">;</span>
     <span class="token property">background-position</span><span class="token punctuation">:</span>66% 33%<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%。这一点与关键字类似。</p>
-<p>background-position 的默认值是 0% 0%，在功能上相当于 top left。这就解释了背景图像为什么总是从元素内边距区的左上角开始平铺，除非您设置了不同的位置值。</p>
-<h3 id="长度值"><a href="#长度值" class="headerlink" title="长度值"></a>长度值</h3><p>长度值解释的是元素内边距区左上角的偏移。偏移点是图像的左上角。</p>
-<p>比如，如果设置值为 50px 100px，图像的左上角将在元素内边距区左上角向右 50 像素、向下 100 像素的位置上：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果只提供一个百分数值，所提供的这个值将用作水平值，垂直值将假设为 50%。这一点与关键字类似。</p><p>background-position 的默认值是 0% 0%，在功能上相当于 top left。这就解释了背景图像为什么总是从元素内边距区的左上角开始平铺，除非您设置了不同的位置值。</p><h3 id="长度值"><a href="#长度值" class="headerlink" title="长度值"></a>长度值</h3><p>长度值解释的是元素内边距区左上角的偏移。偏移点是图像的左上角。</p><p>比如，如果设置值为 50px 100px，图像的左上角将在元素内边距区左上角向右 50 像素、向下 100 像素的位置上：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span>
   <span class="token punctuation">&#123;</span> 
     <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'/i/eg_bg_03.gif'</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
     <span class="token property">background-repeat</span><span class="token punctuation">:</span>no-repeat<span class="token punctuation">;</span>
     <span class="token property">background-position</span><span class="token punctuation">:</span>50px 100px<span class="token punctuation">;</span>
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>注意，这一点与百分数值不同，因为偏移只是从一个左上角到另一个左上角。也就是说，图像的左上角与 background-position 声明中的指定的点对齐。</p>
-<h3 id="背景关联"><a href="#背景关联" class="headerlink" title="背景关联"></a>背景关联</h3><p>如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。</p>
-<p>您可以通过 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-attachment.asp">background-attachment 属性</a>防止这种滚动。通过这个属性，可以声明图像相对于可视区是固定的（fixed），因此不会受到滚动的影响：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> 
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>注意，这一点与百分数值不同，因为偏移只是从一个左上角到另一个左上角。也就是说，图像的左上角与 background-position 声明中的指定的点对齐。</p><h3 id="背景关联"><a href="#背景关联" class="headerlink" title="背景关联"></a>背景关联</h3><p>如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。</p><p>您可以通过 <a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-attachment.asp">background-attachment 属性</a>防止这种滚动。通过这个属性，可以声明图像相对于可视区是固定的（fixed），因此不会受到滚动的影响：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">body</span> 
   <span class="token punctuation">&#123;</span>
   <span class="token property">background-image</span><span class="token punctuation">:</span><span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>/i/eg_bg_02.gif<span class="token punctuation">)</span></span><span class="token punctuation">;</span>
   <span class="token property">background-repeat</span><span class="token punctuation">:</span>no-repeat<span class="token punctuation">;</span>
   <span class="token property">background-attachment</span><span class="token punctuation">:</span>fixed
-  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="CSS-背景属性"><a href="#CSS-背景属性" class="headerlink" title="CSS 背景属性"></a>CSS 背景属性</h3><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background.asp">background</a></td>
-<td align="left">简写属性，作用是将背景属性设置在一个声明中。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-attachment.asp">background-attachment</a></td>
-<td align="left">背景图像是否固定或者随着页面的其余部分滚动。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-color.asp">background-color</a></td>
-<td align="left">设置元素的背景颜色。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-image.asp">background-image</a></td>
-<td align="left">把图像设置为背景。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-position.asp">background-position</a></td>
-<td align="left">设置背景图像的起始位置。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-repeat.asp">background-repeat</a></td>
-<td align="left">设置背景图像是否及如何重复。</td>
-</tr>
-</tbody></table>
-<h3 id="CSS-背景实例"><a href="#CSS-背景实例" class="headerlink" title="CSS 背景实例"></a>CSS 背景实例</h3><ul>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-color">设置背景颜色</a></p>
-<p>本例演示如何为元素设置背景颜色。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_text_background">设置文本的背景颜色</a></p>
-<p>本例颜色如何设置部分文本的背景颜色。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-image">将图像设置为背景</a></p>
-<p>本例演示如何将图像设置为背景。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-image_2">将图像设置为背景 2</a></p>
-<p>本例演示如何为多个元素同时设置背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeat">如何重复背景图像</a></p>
-<p>本例演示如何重复背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeaty">如何在垂直方向重复背景图像</a></p>
-<p>本例演示如何垂直地重复背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeatx">如何在水平方向重复背景图像</a></p>
-<p>本例演示如何水平地重复背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeat_no-repeat">如何仅显示一次背景图像</a></p>
-<p>本例演示如何仅显示一次背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-position">如何放置背景图像</a></p>
-<p>本例演示如何在页面上放置背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-position_percent">如何使用%来定位背景图像</a></p>
-<p>本例演示如何使用百分比来在页面上定位背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-position_pixel">如何使用像素来定位背景图像</a></p>
-<p>本例演示如何使用像素来在页面上定位背景图像。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-attachment">如何设置固定的背景图像</a></p>
-<p>本例演示如何设置固定的背景图像。图像不会随着页面的其他部分滚动。</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background">所有背景属性在一个声明之中</a></p>
-<p>本例演示如何使用简写属性来将所有背景属性设置在一个声明之中。</p>
-</li>
-</ul>
-<h2 id="CSS-文本"><a href="#CSS-文本" class="headerlink" title="CSS 文本"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_text.asp">CSS 文本</a></h2><p><strong>CSS 文本属性可定义文本的外观。</strong></p>
-<p><strong>通过文本属性，您可以改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进，等等。</strong></p>
-<h2 id="CSS-文本属性"><a href="#CSS-文本属性" class="headerlink" title="CSS 文本属性"></a>CSS 文本属性</h2><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_color.asp">color</a></td>
-<td align="left">设置文本颜色</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_direction.asp">direction</a></td>
-<td align="left">设置文本方向。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_dim_line-height.asp">line-height</a></td>
-<td align="left">设置行高。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp">letter-spacing</a></td>
-<td align="left">设置字符间距。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-align.asp">text-align</a></td>
-<td align="left">对齐元素中的文本。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-decoration.asp">text-decoration</a></td>
-<td align="left">向文本添加修饰。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-indent.asp">text-indent</a></td>
-<td align="left">缩进元素中文本的首行。</td>
-</tr>
-<tr>
-<td align="left">text-shadow</td>
-<td align="left">设置文本阴影。CSS2 包含该属性，但是 CSS2.1 没有保留该属性。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-transform.asp">text-transform</a></td>
-<td align="left">控制元素中的字母。</td>
-</tr>
-<tr>
-<td align="left">unicode-bidi</td>
-<td align="left">设置文本方向。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_white-space.asp">white-space</a></td>
-<td align="left">设置元素中空白的处理方式。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp">word-spacing</a></td>
-<td align="left">设置字间距。</td>
-</tr>
-</tbody></table>
-<h2 id="CSS-字体"><a href="#CSS-字体" class="headerlink" title="CSS 字体"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_font.asp">CSS 字体</a></h2><p><strong>CSS 字体属性定义文本的字体系列、大小、加粗、风格（如斜体）和变形（如小型大写字母）。</strong></p>
-<h3 id="CSS-字体属性"><a href="#CSS-字体属性" class="headerlink" title="CSS 字体属性"></a>CSS 字体属性</h3><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font.asp">font</a></td>
-<td align="left">简写属性。作用是把所有针对字体的属性设置在一个声明中。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-family.asp">font-family</a></td>
-<td align="left">设置字体系列。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-size.asp">font-size</a></td>
-<td align="left">设置字体的尺寸。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-size-adjust.asp">font-size-adjust</a></td>
-<td align="left">当首选字体不可用时，对替换字体进行智能缩放。（CSS2.1 已删除该属性。）</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-stretch.asp">font-stretch</a></td>
-<td align="left">对字体进行水平拉伸。（CSS2.1 已删除该属性。）</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-style.asp">font-style</a></td>
-<td align="left">设置字体风格。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-variant.asp">font-variant</a></td>
-<td align="left">以小型大写字体或者正常字体显示文本。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_weight.asp">font-weight</a></td>
-<td align="left">设置字体的粗细。</td>
-</tr>
-</tbody></table>
-<h2 id="CSS-链接"><a href="#CSS-链接" class="headerlink" title="CSS 链接"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_link.asp">CSS 链接</a></h2><p><strong>我们能够以不同的方法为链接设置样式。</strong></p>
-<h3 id="设置链接的样式"><a href="#设置链接的样式" class="headerlink" title="设置链接的样式"></a>设置链接的样式</h3><p>能够设置链接样式的 CSS 属性有很多种（例如 color, font-family, background 等等）。</p>
-<p>链接的特殊性在于能够根据它们所处的状态来设置它们的样式。</p>
-<p>链接的四种状态：</p>
-<ul>
-<li>a:link - 普通的、未被访问的链接</li>
-<li>a:visited - 用户已访问的链接</li>
-<li>a:hover - 鼠标指针位于链接的上方</li>
-<li>a:active - 链接被点击的时刻</li>
-</ul>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a:link</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>#FF0000<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>		<span class="token comment">/* 未被访问的链接 */</span>
+  <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="CSS-背景属性"><a href="#CSS-背景属性" class="headerlink" title="CSS 背景属性"></a>CSS 背景属性</h3><table><thead><tr><th align="left">属性</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background.asp">background</a></td><td align="left">简写属性，作用是将背景属性设置在一个声明中。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-attachment.asp">background-attachment</a></td><td align="left">背景图像是否固定或者随着页面的其余部分滚动。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-color.asp">background-color</a></td><td align="left">设置元素的背景颜色。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-image.asp">background-image</a></td><td align="left">把图像设置为背景。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-position.asp">background-position</a></td><td align="left">设置背景图像的起始位置。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_background-repeat.asp">background-repeat</a></td><td align="left">设置背景图像是否及如何重复。</td></tr></tbody></table><h3 id="CSS-背景实例"><a href="#CSS-背景实例" class="headerlink" title="CSS 背景实例"></a>CSS 背景实例</h3><ul><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-color">设置背景颜色</a></p><p>本例演示如何为元素设置背景颜色。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_text_background">设置文本的背景颜色</a></p><p>本例颜色如何设置部分文本的背景颜色。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-image">将图像设置为背景</a></p><p>本例演示如何将图像设置为背景。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-image_2">将图像设置为背景 2</a></p><p>本例演示如何为多个元素同时设置背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeat">如何重复背景图像</a></p><p>本例演示如何重复背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeaty">如何在垂直方向重复背景图像</a></p><p>本例演示如何垂直地重复背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeatx">如何在水平方向重复背景图像</a></p><p>本例演示如何水平地重复背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-repeat_no-repeat">如何仅显示一次背景图像</a></p><p>本例演示如何仅显示一次背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-position">如何放置背景图像</a></p><p>本例演示如何在页面上放置背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-position_percent">如何使用%来定位背景图像</a></p><p>本例演示如何使用百分比来在页面上定位背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-position_pixel">如何使用像素来定位背景图像</a></p><p>本例演示如何使用像素来在页面上定位背景图像。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background-attachment">如何设置固定的背景图像</a></p><p>本例演示如何设置固定的背景图像。图像不会随着页面的其他部分滚动。</p></li><li><p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tiy/t.asp?f=csse_background">所有背景属性在一个声明之中</a></p><p>本例演示如何使用简写属性来将所有背景属性设置在一个声明之中。</p></li></ul><h2 id="CSS-文本"><a href="#CSS-文本" class="headerlink" title="CSS 文本"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_text.asp">CSS 文本</a></h2><p><strong>CSS 文本属性可定义文本的外观。</strong></p><p><strong>通过文本属性，您可以改变文本的颜色、字符间距，对齐文本，装饰文本，对文本进行缩进，等等。</strong></p><h2 id="CSS-文本属性"><a href="#CSS-文本属性" class="headerlink" title="CSS 文本属性"></a>CSS 文本属性</h2><table><thead><tr><th align="left">属性</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_color.asp">color</a></td><td align="left">设置文本颜色</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_direction.asp">direction</a></td><td align="left">设置文本方向。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_dim_line-height.asp">line-height</a></td><td align="left">设置行高。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_letter-spacing.asp">letter-spacing</a></td><td align="left">设置字符间距。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-align.asp">text-align</a></td><td align="left">对齐元素中的文本。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-decoration.asp">text-decoration</a></td><td align="left">向文本添加修饰。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-indent.asp">text-indent</a></td><td align="left">缩进元素中文本的首行。</td></tr><tr><td align="left">text-shadow</td><td align="left">设置文本阴影。CSS2 包含该属性，但是 CSS2.1 没有保留该属性。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_text-transform.asp">text-transform</a></td><td align="left">控制元素中的字母。</td></tr><tr><td align="left">unicode-bidi</td><td align="left">设置文本方向。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_white-space.asp">white-space</a></td><td align="left">设置元素中空白的处理方式。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_text_word-spacing.asp">word-spacing</a></td><td align="left">设置字间距。</td></tr></tbody></table><h2 id="CSS-字体"><a href="#CSS-字体" class="headerlink" title="CSS 字体"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_font.asp">CSS 字体</a></h2><p><strong>CSS 字体属性定义文本的字体系列、大小、加粗、风格（如斜体）和变形（如小型大写字母）。</strong></p><h3 id="CSS-字体属性"><a href="#CSS-字体属性" class="headerlink" title="CSS 字体属性"></a>CSS 字体属性</h3><table><thead><tr><th align="left">属性</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font.asp">font</a></td><td align="left">简写属性。作用是把所有针对字体的属性设置在一个声明中。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-family.asp">font-family</a></td><td align="left">设置字体系列。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-size.asp">font-size</a></td><td align="left">设置字体的尺寸。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-size-adjust.asp">font-size-adjust</a></td><td align="left">当首选字体不可用时，对替换字体进行智能缩放。（CSS2.1 已删除该属性。）</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-stretch.asp">font-stretch</a></td><td align="left">对字体进行水平拉伸。（CSS2.1 已删除该属性。）</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-style.asp">font-style</a></td><td align="left">设置字体风格。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_font-variant.asp">font-variant</a></td><td align="left">以小型大写字体或者正常字体显示文本。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_font_weight.asp">font-weight</a></td><td align="left">设置字体的粗细。</td></tr></tbody></table><h2 id="CSS-链接"><a href="#CSS-链接" class="headerlink" title="CSS 链接"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_link.asp">CSS 链接</a></h2><p><strong>我们能够以不同的方法为链接设置样式。</strong></p><h3 id="设置链接的样式"><a href="#设置链接的样式" class="headerlink" title="设置链接的样式"></a>设置链接的样式</h3><p>能够设置链接样式的 CSS 属性有很多种（例如 color, font-family, background 等等）。</p><p>链接的特殊性在于能够根据它们所处的状态来设置它们的样式。</p><p>链接的四种状态：</p><ul><li>a:link - 普通的、未被访问的链接</li><li>a:visited - 用户已访问的链接</li><li>a:hover - 鼠标指针位于链接的上方</li><li>a:active - 链接被点击的时刻</li></ul><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a:link</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>#FF0000<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>		<span class="token comment">/* 未被访问的链接 */</span>
 <span class="token selector">a:visited</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>#00FF00<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>	<span class="token comment">/* 已被访问的链接 */</span>
 <span class="token selector">a:hover</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>#FF00FF<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>	<span class="token comment">/* 鼠标指针移动到链接上 */</span>
-<span class="token selector">a:active</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>#0000FF<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>	<span class="token comment">/* 正在被点击的链接 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>当为链接的不同状态设置样式时，请按照以下次序规则：</p>
-<ul>
-<li>a:hover 必须位于 a:link 和 a:visited 之后</li>
-<li>a:active 必须位于 a:hover 之后</li>
-</ul>
-<h3 id="常见的链接样式"><a href="#常见的链接样式" class="headerlink" title="常见的链接样式"></a>常见的链接样式</h3><p>在上面的例子中，链接根据其状态改变颜色。</p>
-<p>让我们看看其他几种常见的设置链接样式的方法：</p>
-<h4 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h4><p>text-decoration 属性大多用于去掉链接中的下划线：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a:link</span> <span class="token punctuation">&#123;</span><span class="token property">text-decoration</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token selector">a:active</span> <span class="token punctuation">&#123;</span><span class="token property">color</span><span class="token punctuation">:</span>#0000FF<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>	<span class="token comment">/* 正在被点击的链接 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>当为链接的不同状态设置样式时，请按照以下次序规则：</p><ul><li>a:hover 必须位于 a:link 和 a:visited 之后</li><li>a:active 必须位于 a:hover 之后</li></ul><h3 id="常见的链接样式"><a href="#常见的链接样式" class="headerlink" title="常见的链接样式"></a>常见的链接样式</h3><p>在上面的例子中，链接根据其状态改变颜色。</p><p>让我们看看其他几种常见的设置链接样式的方法：</p><h4 id="文本修饰"><a href="#文本修饰" class="headerlink" title="文本修饰"></a>文本修饰</h4><p>text-decoration 属性大多用于去掉链接中的下划线：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a:link</span> <span class="token punctuation">&#123;</span><span class="token property">text-decoration</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
 <span class="token selector">a:visited</span> <span class="token punctuation">&#123;</span><span class="token property">text-decoration</span><span class="token punctuation">:</span>none<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
 <span class="token selector">a:hover</span> <span class="token punctuation">&#123;</span><span class="token property">text-decoration</span><span class="token punctuation">:</span>underline<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
-<span class="token selector">a:active</span> <span class="token punctuation">&#123;</span><span class="token property">text-decoration</span><span class="token punctuation">:</span>underline<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="背景色-1"><a href="#背景色-1" class="headerlink" title="背景色"></a>背景色</h3><p>background-color 属性规定链接的背景色：</p>
-<pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a:link</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#B2FF99<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token selector">a:active</span> <span class="token punctuation">&#123;</span><span class="token property">text-decoration</span><span class="token punctuation">:</span>underline<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="背景色-1"><a href="#背景色-1" class="headerlink" title="背景色"></a>背景色</h3><p>background-color 属性规定链接的背景色：</p><pre class="line-numbers language-css" data-language="css"><code class="language-css"><span class="token selector">a:link</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#B2FF99<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
 <span class="token selector">a:visited</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#FFFF85<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
 <span class="token selector">a:hover</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#FF704D<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
-<span class="token selector">a:active</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#FF704D<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="CSS-列表"><a href="#CSS-列表" class="headerlink" title="CSS 列表"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_list.asp">CSS 列表</a></h2><p><strong>CSS 列表属性允许你放置、改变列表项标志，或者将图像作为列表项标志。</strong></p>
-<h3 id="CSS-列表属性"><a href="#CSS-列表属性" class="headerlink" title="CSS 列表属性"></a>CSS 列表属性</h3><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style.asp">list-style</a></td>
-<td align="left">简写属性。用于把所有用于列表的属性设置于一个声明中。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style-image.asp">list-style-image</a></td>
-<td align="left">将图象设置为列表项标志。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style-position.asp">list-style-position</a></td>
-<td align="left">设置列表中列表项标志的位置。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style-type.asp">list-style-type</a></td>
-<td align="left">设置列表项标志的类型。</td>
-</tr>
-</tbody></table>
-<h2 id="CSS-表格"><a href="#CSS-表格" class="headerlink" title="CSS 表格"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_table.asp">CSS 表格</a></h2><p><strong>CSS 表格属性可以帮助您极大地改善表格的外观。</strong></p>
-<h3 id="CSS-表格属性"><a href="#CSS-表格属性" class="headerlink" title="CSS 表格属性"></a>CSS 表格属性</h3><table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_border-collapse.asp">border-collapse</a></td>
-<td align="left">设置是否把表格边框合并为单一的边框。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_border-spacing.asp">border-spacing</a></td>
-<td align="left">设置分隔单元格边框的距离。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_caption-side.asp">caption-side</a></td>
-<td align="left">设置表格标题的位置。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp">empty-cells</a></td>
-<td align="left">设置是否显示表格中的空单元格。</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_table-layout.asp">table-layout</a></td>
-<td align="left">设置显示单元、行和列的算法。</td>
-</tr>
-</tbody></table>
-<h2 id="CSS-轮廓"><a href="#CSS-轮廓" class="headerlink" title="CSS 轮廓"></a>CSS 轮廓</h2><p><strong>轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。</strong></p>
-<p><strong>CSS outline 属性规定元素轮廓的样式、颜色和宽度。</strong></p>
-<h3 id="CSS-边框属性"><a href="#CSS-边框属性" class="headerlink" title="CSS 边框属性"></a>CSS 边框属性</h3><p>“CSS” 列中的数字指示哪个 CSS 版本定义了该属性。</p>
-<table>
-<thead>
-<tr>
-<th align="left">属性</th>
-<th align="left">描述</th>
-<th align="left">CSS</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline.asp">outline</a></td>
-<td align="left">在一个声明中设置所有的轮廓属性。</td>
-<td align="left">2</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline-color.asp">outline-color</a></td>
-<td align="left">设置轮廓的颜色。</td>
-<td align="left">2</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline-style.asp">outline-style</a></td>
-<td align="left">设置轮廓的样式。</td>
-<td align="left">2</td>
-</tr>
-<tr>
-<td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline-width.asp">outline-width</a></td>
-<td align="left">设置轮廓的宽度。</td>
-<td align="left">2</td>
-</tr>
-</tbody></table>
-<h1 id="CSS-框模型"><a href="#CSS-框模型" class="headerlink" title="CSS 框模型"></a>CSS 框模型</h1><h2 id="CSS-框模型概述"><a href="#CSS-框模型概述" class="headerlink" title="CSS 框模型概述"></a>CSS 框模型概述</h2><p><strong>CSS 框模型 (Box Model) 规定了元素框处理元素内容、内边距、边框 和 外边距 的方式。</strong></p>
-<p>元素框的最内部分是实际的内容，直接包围内容的是内边距。内边距呈现了元素的背景。内边距的边缘是边框。边框以外是外边距，外边距默认是透明的，因此不会遮挡其后的任何元素。</p>
-<p><strong>提示：</strong>背景应用于由内容和内边距、边框组成的区域。</p>
-<p>内边距、边框和外边距都是可选的，默认值是零。但是，许多元素将由用户代理样式表设置外边距和内边距。可以通过将元素的 margin 和 padding 设置为零来覆盖这些浏览器样式。这可以分别进行，也可以使用通用选择器对所有元素进行设置：</p>
-<h2 id="背景与边框"><a href="#背景与边框" class="headerlink" title="背景与边框"></a>背景与边框</h2>
-                
-            </div>
-            <hr/>
-
-            
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            
-                                <a href="/tags/CSS/">
-                                    <span class="chip bg-color">CSS</span>
-                                </a>
-                            
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2019/09/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7Python%E5%9F%BA%E7%A1%80/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/featureimages/7.jpg" class="responsive-img" alt="二级Python基础">
-                        
-                        <span class="card-title">二级Python基础</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2019-09-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Lanqulu
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Pyhton/">
-                        <span class="chip bg-color">Pyhton</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7/">
-                        <span class="chip bg-color">计算机二级</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/08/09/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/featureimages/3.png" class="responsive-img" alt="HTML基本内容">
-                        
-                        <span class="card-title">HTML基本内容</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-08-09
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Web/" class="post-category">
-                                    Web
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeShrink.js"></script>
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
+<span class="token selector">a:active</span> <span class="token punctuation">&#123;</span><span class="token property">background-color</span><span class="token punctuation">:</span>#FF704D<span class="token punctuation">;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="CSS-列表"><a href="#CSS-列表" class="headerlink" title="CSS 列表"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_list.asp">CSS 列表</a></h2><p><strong>CSS 列表属性允许你放置、改变列表项标志，或者将图像作为列表项标志。</strong></p><h3 id="CSS-列表属性"><a href="#CSS-列表属性" class="headerlink" title="CSS 列表属性"></a>CSS 列表属性</h3><table><thead><tr><th align="left">属性</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style.asp">list-style</a></td><td align="left">简写属性。用于把所有用于列表的属性设置于一个声明中。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style-image.asp">list-style-image</a></td><td align="left">将图象设置为列表项标志。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style-position.asp">list-style-position</a></td><td align="left">设置列表中列表项标志的位置。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_list-style-type.asp">list-style-type</a></td><td align="left">设置列表项标志的类型。</td></tr></tbody></table><h2 id="CSS-表格"><a href="#CSS-表格" class="headerlink" title="CSS 表格"></a><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/css/css_table.asp">CSS 表格</a></h2><p><strong>CSS 表格属性可以帮助您极大地改善表格的外观。</strong></p><h3 id="CSS-表格属性"><a href="#CSS-表格属性" class="headerlink" title="CSS 表格属性"></a>CSS 表格属性</h3><table><thead><tr><th align="left">属性</th><th align="left">描述</th></tr></thead><tbody><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_border-collapse.asp">border-collapse</a></td><td align="left">设置是否把表格边框合并为单一的边框。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_border-spacing.asp">border-spacing</a></td><td align="left">设置分隔单元格边框的距离。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_caption-side.asp">caption-side</a></td><td align="left">设置表格标题的位置。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_empty-cells.asp">empty-cells</a></td><td align="left">设置是否显示表格中的空单元格。</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_tab_table-layout.asp">table-layout</a></td><td align="left">设置显示单元、行和列的算法。</td></tr></tbody></table><h2 id="CSS-轮廓"><a href="#CSS-轮廓" class="headerlink" title="CSS 轮廓"></a>CSS 轮廓</h2><p><strong>轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。</strong></p><p><strong>CSS outline 属性规定元素轮廓的样式、颜色和宽度。</strong></p><h3 id="CSS-边框属性"><a href="#CSS-边框属性" class="headerlink" title="CSS 边框属性"></a>CSS 边框属性</h3><p>“CSS” 列中的数字指示哪个 CSS 版本定义了该属性。</p><table><thead><tr><th align="left">属性</th><th align="left">描述</th><th align="left">CSS</th></tr></thead><tbody><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline.asp">outline</a></td><td align="left">在一个声明中设置所有的轮廓属性。</td><td align="left">2</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline-color.asp">outline-color</a></td><td align="left">设置轮廓的颜色。</td><td align="left">2</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline-style.asp">outline-style</a></td><td align="left">设置轮廓的样式。</td><td align="left">2</td></tr><tr><td align="left"><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_outline-width.asp">outline-width</a></td><td align="left">设置轮廓的宽度。</td><td align="left">2</td></tr></tbody></table><h1 id="CSS-框模型"><a href="#CSS-框模型" class="headerlink" title="CSS 框模型"></a>CSS 框模型</h1><h2 id="CSS-框模型概述"><a href="#CSS-框模型概述" class="headerlink" title="CSS 框模型概述"></a>CSS 框模型概述</h2><p><strong>CSS 框模型 (Box Model) 规定了元素框处理元素内容、内边距、边框 和 外边距 的方式。</strong></p><p>元素框的最内部分是实际的内容，直接包围内容的是内边距。内边距呈现了元素的背景。内边距的边缘是边框。边框以外是外边距，外边距默认是透明的，因此不会遮挡其后的任何元素。</p><p><strong>提示：</strong>背景应用于由内容和内边距、边框组成的区域。</p><p>内边距、边框和外边距都是可选的，默认值是零。但是，许多元素将由用户代理样式表设置外边距和内边距。可以通过将元素的 margin 和 padding 设置为零来覆盖这些浏览器样式。这可以分别进行，也可以使用通用选择器对所有元素进行设置：</p><h2 id="背景与边框"><a href="#背景与边框" class="headerlink" title="背景与边框"></a>背景与边框</h2></div><hr><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/CSS/"><span class="chip bg-color">CSS</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/js/social-share.min.js"></script></div></div></div></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/2019/09/03/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7Python%E5%9F%BA%E7%A1%80/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/7.jpg" class="responsive-img" alt="二级Python基础"> <span class="card-title">二级Python基础</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2019-09-03</span><span class="publish-author"><i class="fas fa-user fa-fw"></i> Lanqulu</span></div></div><div class="card-action article-tags"><a href="/tags/Pyhton/"><span class="chip bg-color">Pyhton</span></a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BA%8C%E7%BA%A7/"><span class="chip bg-color">计算机二级</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/2019/08/09/HTML%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/3.png" class="responsive-img" alt="HTML基本内容"> <span class="card-title">HTML基本内容</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2019-08-09</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Web/" class="post-category">Web</a></span></div></div><div class="card-action article-tags"><a href="/tags/HTML/"><span class="chip bg-color">HTML</span></a></div></div></div></div></article></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeBlockFuction.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeLang.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeCopy.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.min.js"></script><script>$(function () {
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
@@ -1283,235 +221,4 @@ This is a paragraph
             fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
-    });
-</script>
-
-    
-
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2020</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Lanqulu</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:0!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2019-2020</span> <span id="year">2019</span> <a href="/about" target="_blank">Lanqulu</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script>$(function(){!function(t,a,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),r=document.getElementById(a),n=document.getElementById(s);r.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);n.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var r=!0,n=t.title.trim().toLowerCase(),a=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),e=t.url;e=0===e.indexOf("/")?t.url:"/"+e;var s=-1,i=-1,l=-1;if(""!==n&&""!==a&&m.forEach(function(t,e){s=n.indexOf(t),i=a.indexOf(t),s<0&&i<0?r=!1:(i<0&&(i=0),0===e&&(l=i))}),r){f+="<li><a href='"+e+"' class='search-result-title'>"+n+"</a>";var c=t.content.trim().replace(/<[^>]+>/g,"");if(0<=l){var u=l-20,o=l+80;u<0&&(u=0),0===u&&(o=100),o>c.length&&(o=c.length);var h=c.substr(u,o);m.forEach(function(t){var e=new RegExp(t,"gi");h=h.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+h+"...</p>"}f+="</li>"}}),f+="</ul>",n.innerHTML=f)})}})}("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/masonry/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/scrollprogress/scrollProgress.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/others/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/instantpage/instantpage.js" type="module"></script></body></html>

@@ -1,391 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="Django, HALO">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>Django | HALO</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/apple-touch-icon-next.png">
-
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/css/my.css">
-
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/jquery/jquery.min.js"></script>
-
-<meta name="generator" content="Hexo 5.3.0"></head>
-
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">HALO</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/logo.png" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">HALO</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
-        </div>
-    </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-    
-
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/featureimages/13.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">Django</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<main class="post-container content">
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        padding: 35px 0 15px 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        padding-bottom: 30px;
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-
-        position: absolute;
-        right: 23.5vw;
-        display: block;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Django/">
-                                <span class="chip bg-color">Django</span>
-                            </a>
-                        
-                            <a href="/tags/Python/">
-                                <span class="chip bg-color">Python</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Python/" class="post-category">
-                                Python
-                            </a>
-                        
-                            <a href="/categories/Python/Django/" class="post-category">
-                                Django
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="post-info">
-                
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-06
-                </div>
-                
-
-                
-
-                
-
-                
-
-                
-            </div>
-        </div>
-        <hr class="clearfix">
-
-        
-        <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/prism/prism.css">
-        
-
-        
-
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <p>基于Django官方文档</p>
-<hr>
-<h2 id="使用Pycharm创建Django"><a href="#使用Pycharm创建Django" class="headerlink" title="使用Pycharm创建Django"></a>使用Pycharm创建Django</h2><p><img src="http://img.whl123456.top/image/%E4%BD%BF%E7%94%A8Pycharm%E5%88%9B%E5%BB%BADjango.png" alt="使用Pycharm创建Django"></p>
-<p>Django项目结构</p>
-<pre class="line-numbers language-none"><code class="language-none">DjangoDemo				 # 根目录只是项目的容器
+<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="Django, HALO"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Django | HALO</title><link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/apple-touch-icon-next.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/awesome/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/animate/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/matery.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/my.css"><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.3.0"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">HALO</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">HALO</div><div class="logo-desc">Never really desperate, only the lost of the soul.</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/13.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">Django</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/Django/"><span class="chip bg-color">Django</span></a> <a href="/tags/Python/"><span class="chip bg-color">Python</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Python/" class="post-category">Python</a> <a href="/categories/Python/Django/" class="post-category">Django</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-04-06</div></div></div><hr class="clearfix"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><p>基于Django官方文档</p><hr><h2 id="使用Pycharm创建Django"><a href="#使用Pycharm创建Django" class="headerlink" title="使用Pycharm创建Django"></a>使用Pycharm创建Django</h2><p><img src="http://img.whl123456.top/image/%E4%BD%BF%E7%94%A8Pycharm%E5%88%9B%E5%BB%BADjango.png" alt="使用Pycharm创建Django"></p><p>Django项目结构</p><pre class="line-numbers language-none"><code class="language-none">DjangoDemo				 # 根目录只是项目的容器
  ├── db.sqlite3			 # 数据库文件 
  ├── DjangoDemo          # 纯 Python 包
  │   ├── asgi.py         # 作为项目运行在 ASGI 兼容的Web服务器上的入口
@@ -395,9 +8,7 @@
  │   └── __init__.py
  ├── manage.py           # 一个用各种方式管理 Django 项目的命令行工具
  ├── polls
- └── templates<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>Django应用结构</p>
-<pre class="line-numbers language-none"><code class="language-none">polls
+ └── templates<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>Django应用结构</p><pre class="line-numbers language-none"><code class="language-none">polls
  ├── admin.py
  ├── apps.py
  ├── migrations
@@ -405,18 +16,11 @@
  ├── models.py
  ├── tests.py
  ├── views.py
- └── __init__.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>命令行启动项目</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py runserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h2 id="创建应用视图"><a href="#创建应用视图" class="headerlink" title="创建应用视图"></a>创建应用视图</h2><p>创建视图，打开 <code>polls/views.py</code>，把下面这些 Python 代码输入进去：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.http import HttpResponse
+ └── __init__.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>命令行启动项目</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py runserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="创建应用视图"><a href="#创建应用视图" class="headerlink" title="创建应用视图"></a>创建应用视图</h2><p>创建视图，打开 <code>polls/views.py</code>，把下面这些 Python 代码输入进去：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse(&quot;Hello, world. You&#39;re at the polls index.&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>如果想看见效果，我们需要将一个 URL 映射到它——这就是我们需要 URLconf 的原因了。</p>
-<p>创建 URLconf，在polls中新建<code>urls.py</code>文件</p>
-<pre class="line-numbers language-none"><code class="language-none">polls
+    return HttpResponse(&quot;Hello, world. You&#39;re at the polls index.&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果想看见效果，我们需要将一个 URL 映射到它——这就是我们需要 URLconf 的原因了。</p><p>创建 URLconf，在polls中新建<code>urls.py</code>文件</p><pre class="line-numbers language-none"><code class="language-none">polls
  ├── admin.py
  ├── apps.py
  ├── migrations
@@ -425,55 +29,25 @@ def index(request):
  ├── tests.py
  ├── urls.py
  ├── views.py
- └── __init__.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在<code>urls.py</code>中，输入如下代码：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.urls import path
+ └── __init__.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在<code>urls.py</code>中，输入如下代码：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.urls import path
 
 from . import views
 
 urlpatterns &#x3D; [
     path(&#39;&#39;, views.index, name&#x3D;&#39;index&#39;),
-]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>在根 URLconf 文件中指定我们创建的 <code>polls.urls</code> 模块。在 <code>DjangoDemo/urls.py</code> 文件的 <code>urlpatterns</code> 列表里插入一个 <code>include()</code>， 如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.contrib import admin
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>在根 URLconf 文件中指定我们创建的 <code>polls.urls</code> 模块。在 <code>DjangoDemo/urls.py</code> 文件的 <code>urlpatterns</code> 列表里插入一个 <code>include()</code>， 如下：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns &#x3D; [
     path(&#39;polls&#x2F;&#39;, include(&#39;polls.urls&#39;)),
     path(&#39;admin&#x2F;&#39;, admin.site.urls),
-]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>函数 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/urls/#django.urls.include"><code>include()</code></a> 允许引用其它 URLconfs。每当 Django 遇到 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/urls/#django.urls.include"><code>include()</code></a> 时，它会截断与此项匹配的 URL 的部分，并将剩余的字符串发送到 URLconf 以供进一步处理。</p>
-<p>你现在把 <code>index</code> 视图添加进了 URLconf。通过以下命令验证是否正常工作：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py runserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>访问<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/polls/%E8%80%8C%E4%B8%8D%E6%98%AFhttp://127.0.0.1:8000">http://127.0.0.1:8000/polls/而不是http://127.0.0.1:8000</a></p>
-<p><code>path()</code>函数</p>
-<p><code>path(route, view, [kwargs], [name])</code></p>
-<ul>
-<li><p><code>route</code>：是一个匹配 URL 的准则（类似正则表达式）。当 Django 响应一个请求时，它会从 <code>urlpatterns</code> 的第一项开始，按顺序依次匹配列表中的项，直到找到匹配的项。这些准则不会匹配 GET 和 POST 参数或域名。例如，URLconf 在处理请求 <code>https://www.example.com/myapp/</code> 时，它会尝试匹配 <code>myapp/</code> 。处理请求 <code>https://www.example.com/myapp/?page=3</code> 时，也只会尝试匹配 <code>myapp/</code>。</p>
-</li>
-<li><p><code>view</code>：当 Django 找到了一个匹配的准则，就会调用这个特定的视图函数，并传入一个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/request-response/#django.http.HttpRequest"><code>HttpRequest</code></a> 对象作为第一个参数，被“捕获”的参数以关键字参数的形式传入。</p>
-</li>
-<li><p> <code>kwargs</code>：任意个关键字参数可以作为一个字典传递给目标视图函数。</p>
-</li>
-<li><p><code>name</code>：为你的 URL 取名能使你在 Django 的任意地方唯一地引用它，尤其是在模板中。这个有用的特性允许你只改一个文件就能全局地修改某个 URL 模式。</p>
-</li>
-</ul>
-<h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>在 <code>DjangoDemo/settings.py</code> 中</p>
-<p>设置域名访问权限</p>
-<pre class="line-numbers language-none"><code class="language-none">myblog&#x2F;settings.py
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>函数 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/urls/#django.urls.include"><code>include()</code></a> 允许引用其它 URLconfs。每当 Django 遇到 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/urls/#django.urls.include"><code>include()</code></a> 时，它会截断与此项匹配的 URL 的部分，并将剩余的字符串发送到 URLconf 以供进一步处理。</p><p>你现在把 <code>index</code> 视图添加进了 URLconf。通过以下命令验证是否正常工作：</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py runserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>访问<a target="_blank" rel="noopener" href="http://127.0.0.1:8000/polls/%E8%80%8C%E4%B8%8D%E6%98%AFhttp://127.0.0.1:8000">http://127.0.0.1:8000/polls/而不是http://127.0.0.1:8000</a></p><p><code>path()</code>函数</p><p><code>path(route, view, [kwargs], [name])</code></p><ul><li><p><code>route</code>：是一个匹配 URL 的准则（类似正则表达式）。当 Django 响应一个请求时，它会从 <code>urlpatterns</code> 的第一项开始，按顺序依次匹配列表中的项，直到找到匹配的项。这些准则不会匹配 GET 和 POST 参数或域名。例如，URLconf 在处理请求 <code>https://www.example.com/myapp/</code> 时，它会尝试匹配 <code>myapp/</code> 。处理请求 <code>https://www.example.com/myapp/?page=3</code> 时，也只会尝试匹配 <code>myapp/</code>。</p></li><li><p><code>view</code>：当 Django 找到了一个匹配的准则，就会调用这个特定的视图函数，并传入一个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/request-response/#django.http.HttpRequest"><code>HttpRequest</code></a> 对象作为第一个参数，被“捕获”的参数以关键字参数的形式传入。</p></li><li><p><code>kwargs</code>：任意个关键字参数可以作为一个字典传递给目标视图函数。</p></li><li><p><code>name</code>：为你的 URL 取名能使你在 Django 的任意地方唯一地引用它，尤其是在模板中。这个有用的特性允许你只改一个文件就能全局地修改某个 URL 模式。</p></li></ul><h2 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h2><p>在 <code>DjangoDemo/settings.py</code> 中</p><p>设置域名访问权限</p><pre class="line-numbers language-none"><code class="language-none">myblog&#x2F;settings.py
 ALLOWED_HOSTS &#x3D; []      # 修改前
-ALLOWED_HOSTS &#x3D; [&#39;*&#39;]   # 修改后，表示任何域名都能访问。如果指定域名的话，在&#39;&#39;里放入指定的域名即可<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>设置TEMPLATES里的’DIRS’，添加模板目录templates的路径，后面我们做网站模板的时候用得着。</p>
-<pre class="line-numbers language-none"><code class="language-none"># 修改前
+ALLOWED_HOSTS &#x3D; [&#39;*&#39;]   # 修改后，表示任何域名都能访问。如果指定域名的话，在&#39;&#39;里放入指定的域名即可<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><hr><p>设置TEMPLATES里的’DIRS’，添加模板目录templates的路径，后面我们做网站模板的时候用得着。</p><pre class="line-numbers language-none"><code class="language-none"># 修改前
 &#39;DIRS&#39;: []
 # 修改后
 &#39;DIRS&#39;: [os.path.join(BASE_DIR, &#39;templates&#39;)]
-# 注：使用pycharm创建的话会自动添加<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>找到DATABASES设置网站数据库类型。这里我们使用默认的sqlite3。如果需要使用Mysql请查看文章：<a target="_blank" rel="noopener" href="https://www.django.cn/forum/forum-6.html">Django如何使用Mysql数据库</a>，其它数据库请查看官方文档。<a target="_blank" rel="noopener" href="https://docs.djangoproject.com/en/2.1/ref/settings/#databases">官方文档</a>，后期上线部署的话，也可以进行数据库与数据库之间的数据转换。具体可查看：<a target="_blank" rel="noopener" href="https://www.django.cn/article/show-17.html">如何把SQLite数据库转换为Mysql数据库</a></p>
-<p>在INSTALLED_APPS添加APP应用名称。</p>
-<pre class="line-numbers language-none"><code class="language-none">INSTALLED_APPS &#x3D; [                  # Django 的自带应用
+# 注：使用pycharm创建的话会自动添加<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><hr><p>找到DATABASES设置网站数据库类型。这里我们使用默认的sqlite3。如果需要使用Mysql请查看文章：<a target="_blank" rel="noopener" href="https://www.django.cn/forum/forum-6.html">Django如何使用Mysql数据库</a>，其它数据库请查看官方文档。<a target="_blank" rel="noopener" href="https://docs.djangoproject.com/en/2.1/ref/settings/#databases">官方文档</a>，后期上线部署的话，也可以进行数据库与数据库之间的数据转换。具体可查看：<a target="_blank" rel="noopener" href="https://www.django.cn/article/show-17.html">如何把SQLite数据库转换为Mysql数据库</a></p><p>在INSTALLED_APPS添加APP应用名称。</p><pre class="line-numbers language-none"><code class="language-none">INSTALLED_APPS &#x3D; [                  # Django 的自带应用
     &#39;django.contrib.admin&#39;,         # 管理员站点
     &#39;django.contrib.auth&#39;,          # 认证授权系统。
     &#39;django.contrib.contenttypes&#39;,  # 内容类型框架
@@ -482,10 +56,7 @@ ALLOWED_HOSTS &#x3D; [&#39;*&#39;]   # 修改后，表示任何域名都能访�
     &#39;django.contrib.staticfiles&#39;,   # 管理静态文件的框架
     &#39;polls.apps.PollsConfig&#39;,       # 注册APP应用
 ]
-# 使用pycharm创建的话，这里自动添加<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>修改项目语言和时区</p>
-<pre class="line-numbers language-none"><code class="language-none">myblog&#x2F;settings.py
+# 使用pycharm创建的话，这里自动添加<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><hr><p>修改项目语言和时区</p><pre class="line-numbers language-none"><code class="language-none">myblog&#x2F;settings.py
 # 修改前为英文
 # LANGUAGE_CODE &#x3D; &#39;en-us&#39;
 # 修改后
@@ -493,11 +64,7 @@ LANGUAGE_CODE &#x3D; &#39;zh-hans&#39;  # 语言修改为中文
 # 时区，修改前
 # TIME_ZONE &#x3D; &#39;UTC&#39;
 # 修改后
-TIME_ZONE &#x3D; &#39;Asia&#x2F;Shanghai&#39;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<hr>
-<p>在项目根目录里创建static和media，两个目录。static用来存放模板CSS、JS、图片等静态资源，media用来存放上传的文件，后面我们在讲解数据库创建的时候有说明。</p>
-<p>settings里找到STATIC_URL，然后在后面一行加上如下代码。</p>
-<pre class="line-numbers language-none"><code class="language-none"># 设置静态文件目录和名称
+TIME_ZONE &#x3D; &#39;Asia&#x2F;Shanghai&#39;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><hr><p>在项目根目录里创建static和media，两个目录。static用来存放模板CSS、JS、图片等静态资源，media用来存放上传的文件，后面我们在讲解数据库创建的时候有说明。</p><p>settings里找到STATIC_URL，然后在后面一行加上如下代码。</p><pre class="line-numbers language-none"><code class="language-none"># 设置静态文件目录和名称
 STATIC_URL &#x3D; &#39;&#x2F;static&#x2F;&#39;
 
 # 加入下面代码
@@ -508,23 +75,13 @@ STATICFILES_DIRS &#x3D; (
 )
 # 设置文件上传路径，图片上传、文件上传都会存放在此目录里
 MEDIA_URL &#x3D; &#39;&#x2F;media&#x2F;&#39;
-MEDIA_ROOT &#x3D; os.path.join(BASE_DIR, &#39;media&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>基本配置完成，更多关于配置文件的介绍，请查看文章：<a target="_blank" rel="noopener" href="https://www.django.cn/course/show-10.html">全局配置settings详解</a></p>
-<h2 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h2><p>在 <code>DjangoDemo/settings.py</code> 中</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 默认情况
+MEDIA_ROOT &#x3D; os.path.join(BASE_DIR, &#39;media&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>基本配置完成，更多关于配置文件的介绍，请查看文章：<a target="_blank" rel="noopener" href="https://www.django.cn/course/show-10.html">全局配置settings详解</a></p><h2 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h2><p>在 <code>DjangoDemo/settings.py</code> 中</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"># 默认情况
 DATABASES &#x3D; &#123;
     &#39;default&#39;: &#123;
         &#39;ENGINE&#39;: &#39;django.db.backends.sqlite3&#39;,
         &#39;NAME&#39;: os.path.join(BASE_DIR, &#39;db.sqlite3&#39;),
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li><p><code>ENGINE</code>：可选值有 <code>&#39;django.db.backends.sqlite3&#39;</code>，<code>&#39;django.db.backends.postgresql&#39;</code>，<code>&#39;django.db.backends.mysql&#39;</code>，或 <code>&#39;django.db.backends.oracle&#39;</code>。其它 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/databases/#third-party-notes">可用后端</a>。</p>
-</li>
-<li><p><code>NAME</code>：数据库的名称。如果使用的是 SQLite，数据库将是你电脑上的一个文件，在这种情况下， <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/settings/#std:setting-NAME"><code>NAME</code></a> 应该是此文件的绝对路径，包括文件名。默认值 <code>os.path.join(BASE_DIR, &#39;db.sqlite3&#39;)</code> 将会把数据库文件储存在项目的根目录。</p>
-</li>
-</ul>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">############修改成mysql如下：
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li><p><code>ENGINE</code>：可选值有 <code>&#39;django.db.backends.sqlite3&#39;</code>，<code>&#39;django.db.backends.postgresql&#39;</code>，<code>&#39;django.db.backends.mysql&#39;</code>，或 <code>&#39;django.db.backends.oracle&#39;</code>。其它 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/databases/#third-party-notes">可用后端</a>。</p></li><li><p><code>NAME</code>：数据库的名称。如果使用的是 SQLite，数据库将是你电脑上的一个文件，在这种情况下， <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/settings/#std:setting-NAME"><code>NAME</code></a> 应该是此文件的绝对路径，包括文件名。默认值 <code>os.path.join(BASE_DIR, &#39;db.sqlite3&#39;)</code> 将会把数据库文件储存在项目的根目录。</p></li></ul><pre class="line-numbers language-python" data-language="python"><code class="language-python">############修改成mysql如下：
 DATABASES &#x3D; &#123;
     &#39;default&#39;: &#123;
         &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
@@ -539,15 +96,8 @@ DATABASES &#x3D; &#123;
 #在python3中须替换为pymysql,可在主配置文件（和项目同名的文件下，不是app配置文件）中增加如下代码
 #import pymysql
 #pymysql.install_as_MySQLdb()
-#如果找不到pymysql板块，则通过pip install pymysql进行安装。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>数据库设置好之后，我们就依次输入下面的命令进行数据库迁移：</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py makemigrations
-python manage.py migrate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<p>这个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/django-admin/#django-admin-migrate"><code>migrate</code></a> 命令检查 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/settings/#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a> 设置，为其中的每个应用创建需要的数据表，至于具体会创建什么，这取决于你的 <code>settings.py</code> 设置文件和每个应用的数据库迁移文件。</p>
-<h2 id="创建模型"><a href="#创建模型" class="headerlink" title="创建模型"></a>创建模型</h2><p>在这个投票应用中，需要创建两个模型：问题 <code>Question</code> 和选项 <code>Choice</code>。</p>
-<p><code>Question</code> 模型包括问题描述和发布时间。<code>Choice</code> 模型有两个字段，选项描述和当前得票数。每个选项属于一个问题。</p>
-<p>在<code>models.py</code>文件中写入以下内容：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.db import models
+#如果找不到pymysql板块，则通过pip install pymysql进行安装。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>数据库设置好之后，我们就依次输入下面的命令进行数据库迁移：</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py makemigrations
+python manage.py migrate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/django-admin/#django-admin-migrate"><code>migrate</code></a> 命令检查 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/settings/#std:setting-INSTALLED_APPS"><code>INSTALLED_APPS</code></a> 设置，为其中的每个应用创建需要的数据表，至于具体会创建什么，这取决于你的 <code>settings.py</code> 设置文件和每个应用的数据库迁移文件。</p><h2 id="创建模型"><a href="#创建模型" class="headerlink" title="创建模型"></a>创建模型</h2><p>在这个投票应用中，需要创建两个模型：问题 <code>Question</code> 和选项 <code>Choice</code>。</p><p><code>Question</code> 模型包括问题描述和发布时间。<code>Choice</code> 模型有两个字段，选项描述和当前得票数。每个选项属于一个问题。</p><p>在<code>models.py</code>文件中写入以下内容：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.db import models
 
 # Create your models here.
 
@@ -560,234 +110,10 @@ class Question(models.Model):
 class Choice(models.Model):
     question &#x3D; models.ForeignKey(Question, on_delete&#x3D;models.CASCADE)
     choice_text &#x3D; models.CharField(max_length&#x3D;200)
-    votes &#x3D; models.IntegerField(default&#x3D;0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>每个模型被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/instances/#django.db.models.Model"><code>django.db.models.Model</code></a> 类的子类。每个模型有许多类变量，它们都表示模型里的一个数据库字段。</p>
-<p>每个字段都是 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类的实例 - 比如，字符字段被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField"><code>CharField</code></a> ，日期时间字段被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.DateTimeField"><code>DateTimeField</code></a> 。这将告诉 Django 每个字段要处理的数据类型。</p>
-<p>每个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类实例变量的名字（例如 <code>question_text</code> 或 <code>pub_date</code> ）也是字段名，所以最好使用对机器友好的格式。你将会在 Python 代码里使用它们，而数据库会将它们作为列名。</p>
-<p>你可以使用可选的选项来为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 定义一个人类可读的名字。这个功能在很多 Django 内部组成部分中都被使用了，而且作为文档的一部分。如果某个字段没有提供此名称，Django 将会使用对机器友好的名称，也就是变量名。在上面的例子中，我们只为 <code>Question.pub_date</code> 定义了对人类友好的名字。对于模型内的其它字段，它们的机器友好名也会被作为人类友好名使用。</p>
-<p>定义某些 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类实例需要参数。例如 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField"><code>CharField</code></a> 需要一个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField.max_length"><code>max_length</code></a> 参数。这个参数的用处不止于用来定义数据库结构，也用于验证数据，我们稍后将会看到这方面的内容。</p>
-<p><a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 也能够接收多个可选参数；在上面的例子中：我们将 <code>votes</code> 的 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field.default"><code>default</code></a> 也就是默认值，设为0。</p>
-<p>注意在最后，我们使用 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.ForeignKey"><code>ForeignKey</code></a> 定义了一个关系。这将告诉 Django，每个 <code>Choice</code> 对象都关联到一个 <code>Question</code> 对象。Django 支持所有常用的数据库关系：多对一、多对多和一对一。</p>
-<h2 id="激活模型"><a href="#激活模型" class="headerlink" title="激活模型"></a>激活模型</h2><p>把 <code>polls</code> 应用安装到我们的项目里，见基础配置</p>
-<p>运行下面的命令:</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py makemigrations polls<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>Terminal输出：</p>
-<pre class="line-numbers language-none"><code class="language-none">Migrations for &#39;polls&#39;:
+    votes &#x3D; models.IntegerField(default&#x3D;0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>每个模型被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/instances/#django.db.models.Model"><code>django.db.models.Model</code></a> 类的子类。每个模型有许多类变量，它们都表示模型里的一个数据库字段。</p><p>每个字段都是 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类的实例 - 比如，字符字段被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField"><code>CharField</code></a> ，日期时间字段被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.DateTimeField"><code>DateTimeField</code></a> 。这将告诉 Django 每个字段要处理的数据类型。</p><p>每个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类实例变量的名字（例如 <code>question_text</code> 或 <code>pub_date</code> ）也是字段名，所以最好使用对机器友好的格式。你将会在 Python 代码里使用它们，而数据库会将它们作为列名。</p><p>你可以使用可选的选项来为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 定义一个人类可读的名字。这个功能在很多 Django 内部组成部分中都被使用了，而且作为文档的一部分。如果某个字段没有提供此名称，Django 将会使用对机器友好的名称，也就是变量名。在上面的例子中，我们只为 <code>Question.pub_date</code> 定义了对人类友好的名字。对于模型内的其它字段，它们的机器友好名也会被作为人类友好名使用。</p><p>定义某些 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类实例需要参数。例如 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField"><code>CharField</code></a> 需要一个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField.max_length"><code>max_length</code></a> 参数。这个参数的用处不止于用来定义数据库结构，也用于验证数据，我们稍后将会看到这方面的内容。</p><p><a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 也能够接收多个可选参数；在上面的例子中：我们将 <code>votes</code> 的 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field.default"><code>default</code></a> 也就是默认值，设为0。</p><p>注意在最后，我们使用 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.ForeignKey"><code>ForeignKey</code></a> 定义了一个关系。这将告诉 Django，每个 <code>Choice</code> 对象都关联到一个 <code>Question</code> 对象。Django 支持所有常用的数据库关系：多对一、多对多和一对一。</p><h2 id="激活模型"><a href="#激活模型" class="headerlink" title="激活模型"></a>激活模型</h2><p>把 <code>polls</code> 应用安装到我们的项目里，见基础配置</p><p>运行下面的命令:</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py makemigrations polls<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>Terminal输出：</p><pre class="line-numbers language-none"><code class="language-none">Migrations for &#39;polls&#39;:
   polls\migrations\0001_initial.py
     - Create model Question
-    - Create model Choice<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<p>通过运行 <code>makemigrations</code> 命令，Django 会检测你对模型文件的修改（在这种情况下，你已经取得了新的），并且把修改的部分储存为一次迁移。</p>
-<p>迁移是 Django 对于模型定义（也就是你的数据库结构）的变化的储存形式，它们其实也只是一些你磁盘上的文件。如果你想的话，你可以阅读一下你模型的迁移数据，它被储存在 <code>polls/migrations/0001_initial.py</code> 里。别担心，你不需要每次都阅读迁移文件，但是它们被设计成人类可读的形式，这是为了便于你手动调整Django的修改方式。</p>
-<h2 id="Django-管理页面"><a href="#Django-管理页面" class="headerlink" title="Django 管理页面"></a>Django 管理页面</h2><h3 id="创建一个管理员账号"><a href="#创建一个管理员账号" class="headerlink" title="创建一个管理员账号"></a>创建一个管理员账号</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py createsuperuser<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-                
-            </div>
-            <hr/>
-
-            
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
-                            
-                                <a href="/tags/Django/">
-                                    <span class="chip bg-color">Django</span>
-                                </a>
-                            
-                                <a href="/tags/Python/">
-                                    <span class="chip bg-color">Python</span>
-                                </a>
-                            
-                        </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/share/css/share.min.css">
-<div id="article-share">
-
-    
-    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/share/js/social-share.min.js"></script>
-    
-
-    
-
-</div>
-
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2020/04/06/Java%E5%AE%B9%E5%99%A8/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/featureimages/13.jpg" class="responsive-img" alt="Java容器">
-                        
-                        <span class="card-title">Java容器</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-06
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/medias/featureimages/3.png" class="responsive-img" alt="正则表达式">
-                        
-                        <span class="card-title">正则表达式</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-27
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-                        <span class="chip bg-color">正则表达式</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/codeBlock/codeShrink.js"></script>
-
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget card" style="background-color: white;">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
+    - Create model Choice<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>通过运行 <code>makemigrations</code> 命令，Django 会检测你对模型文件的修改（在这种情况下，你已经取得了新的），并且把修改的部分储存为一次迁移。</p><p>迁移是 Django 对于模型定义（也就是你的数据库结构）的变化的储存形式，它们其实也只是一些你磁盘上的文件。如果你想的话，你可以阅读一下你模型的迁移数据，它被储存在 <code>polls/migrations/0001_initial.py</code> 里。别担心，你不需要每次都阅读迁移文件，但是它们被设计成人类可读的形式，这是为了便于你手动调整Django的修改方式。</p><h2 id="Django-管理页面"><a href="#Django-管理页面" class="headerlink" title="Django 管理页面"></a>Django 管理页面</h2><h3 id="创建一个管理员账号"><a href="#创建一个管理员账号" class="headerlink" title="创建一个管理员账号"></a>创建一个管理员账号</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py createsuperuser<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div><hr><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/Django/"><span class="chip bg-color">Django</span></a> <a href="/tags/Python/"><span class="chip bg-color">Python</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/js/social-share.min.js"></script></div></div></div></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/2020/04/06/Java%E5%AE%B9%E5%99%A8/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/13.jpg" class="responsive-img" alt="Java容器"> <span class="card-title">Java容器</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-04-06</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Java/" class="post-category">Java</a></span></div></div><div class="card-action article-tags"><a href="/tags/Java/"><span class="chip bg-color">Java</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/2020/03/27/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/3.png" class="responsive-img" alt="正则表达式"> <span class="card-title">正则表达式</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-03-27</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Python/" class="post-category">Python</a></span></div></div><div class="card-action article-tags"><a href="/tags/Python/"><span class="chip bg-color">Python</span></a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"><span class="chip bg-color">正则表达式</span></a></div></div></div></div></article></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeBlockFuction.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeLang.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeCopy.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.min.js"></script><script>$(function () {
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
@@ -858,235 +184,4 @@ class Choice(models.Model):
             fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
-    });
-</script>
-
-    
-
-</main>
-
-
-
-
-    <footer class="page-footer bg-color">
-    
-    <div class="container row center-align" style="margin-bottom: 0px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2019-2020</span>
-            
-            <span id="year">2019</span>
-            <a href="/about" target="_blank">Lanqulu</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
-            <br>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/js/matery.js"></script>
-
-    <!-- Baidu Analytics -->
-
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-
-    
-
-    
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
-</html>
+    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:0!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2019-2020</span> <span id="year">2019</span> <a href="/about" target="_blank">Lanqulu</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script>$(function(){!function(t,a,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),r=document.getElementById(a),n=document.getElementById(s);r.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);n.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var r=!0,n=t.title.trim().toLowerCase(),a=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),e=t.url;e=0===e.indexOf("/")?t.url:"/"+e;var s=-1,i=-1,l=-1;if(""!==n&&""!==a&&m.forEach(function(t,e){s=n.indexOf(t),i=a.indexOf(t),s<0&&i<0?r=!1:(i<0&&(i=0),0===e&&(l=i))}),r){f+="<li><a href='"+e+"' class='search-result-title'>"+n+"</a>";var c=t.content.trim().replace(/<[^>]+>/g,"");if(0<=l){var u=l-20,o=l+80;u<0&&(u=0),0===u&&(o=100),o>c.length&&(o=c.length);var h=c.substr(u,o);m.forEach(function(t){var e=new RegExp(t,"gi");h=h.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+h+"...</p>"}f+="</li>"}}),f+="</ul>",n.innerHTML=f)})}})}("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/masonry/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/scrollprogress/scrollProgress.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/others/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/instantpage/instantpage.js" type="module"></script></body></html>
