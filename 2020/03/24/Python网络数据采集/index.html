@@ -17,17 +17,17 @@
 
 
     <title>Python网络数据采集 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/6.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -370,7 +370,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -387,9 +387,9 @@
 <li>如果有必要，移动到另一个网页重复这个过程</li>
 </ul>
 <h2 id="Python实现网络连接"><a href="#Python实现网络连接" class="headerlink" title="Python实现网络连接"></a>Python实现网络连接</h2><p>使用python获取网页，代码实现</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from urllib.request import urlopen
-html &#x3D; urlopen(&quot;http:&#x2F;&#x2F;www.baidu.com&quot;)
-print(html.read())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen
+html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"http://www.baidu.com"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>html<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <h3 id="urllib"><a href="#urllib" class="headerlink" title="urllib"></a>urllib</h3><p>urllib 是 Python 的标准库，包含了从网络请求数据，处理cookie，甚至改变像请求头和用户代理这些元数据的函数。</p>
 <p>urlopen 用来打开并读取一个从网络获取的远程对象。</p>
 <blockquote>
@@ -399,12 +399,12 @@ print(html.read())<span aria-hidden="true" class="line-numbers-rows"><span></spa
 <p>Pycharm可以自动导入其他安装可参考该<a target="_blank" rel="noopener" href="https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/#id8">文档</a>，有关Python虚拟环境可参考该<a href="https://lanqilu.github.io/2019/10/12/Python/%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83venv/">文章</a></p>
 <pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">pip install beautifulsoup4<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>使用BeautifulSoup</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from urllib.request import urlopen
-from bs4 import BeautifulSoup
-html &#x3D; urlopen(&quot;https:&#x2F;&#x2F;lanqilu.github.io&#x2F;&quot;)
-bsObj &#x3D; BeautifulSoup(html.read())
-print(bsObj.h1)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="网络连接异常"><a href="#网络连接异常" class="headerlink" title="网络连接异常"></a>网络连接异常</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">html &#x3D; urlopen(&quot;https:&#x2F;&#x2F;lanqilu.github.io&#x2F;&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"https://lanqilu.github.io/"</span><span class="token punctuation">)</span>
+bsObj <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>html<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>bsObj<span class="token punctuation">.</span>h1<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="网络连接异常"><a href="#网络连接异常" class="headerlink" title="网络连接异常"></a>网络连接异常</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"https://lanqilu.github.io/"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>可能发生的异常有两种</p>
 <ul>
 <li>网页在服务器上不存在（或者获取页面的时候出现错误）</li>
@@ -412,85 +412,85 @@ print(bsObj.h1)<span aria-hidden="true" class="line-numbers-rows"><span></span><
 </ul>
 <p>第一种异常发生时，程序会返回 HTTP 错误。可以查看<a href="https://lanqilu.github.io/2020/03/21/Web/HTTP%E7%8A%B6%E6%80%81%E7%A0%81/">HTTP状态码</a>。所有类似情形，urlopen 函数都会抛出“HTTPError”异常</p>
 <p>处理方式</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from urllib.error import HTTPError
-from urllib.request import urlopen
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>error <span class="token keyword">import</span> HTTPError
+<span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen
 
-try:
-    html &#x3D; urlopen(&quot;https:&#x2F;&#x2F;lanqilu.github.io&#x2F;2018&quot;) # 异常网站 
-except HTTPError as e:
-    print(e)
-    # 返回空值，中断程序，或者执行另一个方案
-else:
-    print(&quot;程序继续&quot;)
-# 注意：如果你已经在上面异常捕捉那一段代码里返回或中断（break）
-# 那么就不需要使用else语句了，这段代码也不会执行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">try</span><span class="token punctuation">:</span>
+    html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"https://lanqilu.github.io/2018"</span><span class="token punctuation">)</span> <span class="token comment"># 异常网站 </span>
+<span class="token keyword">except</span> HTTPError <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    <span class="token comment"># 返回空值，中断程序，或者执行另一个方案</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"程序继续"</span><span class="token punctuation">)</span>
+<span class="token comment"># 注意：如果你已经在上面异常捕捉那一段代码里返回或中断（break）</span>
+<span class="token comment"># 那么就不需要使用else语句了，这段代码也不会执行</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如果服务器不存在（URL链接打不开），urlopen 会返回一个 None 对象。</p>
 <p>要调用的标签不存在，BeautifulSoup 就会返回 None 对象</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from urllib.request import urlopen
-from urllib.error import HTTPError
-from bs4 import BeautifulSoup
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen
+<span class="token keyword">from</span> urllib<span class="token punctuation">.</span>error <span class="token keyword">import</span> HTTPError
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
 
-def getTitle(url):
-    try:
-        html &#x3D; urlopen(url)
-    except HTTPError as e:
-        return None
-    try:
-        bsObj &#x3D; BeautifulSoup(html.read(), &quot;lxml&quot;)
-        title &#x3D; bsObj.body.h1
-    except AttributeError as e:
-        return None
-    return title
+<span class="token keyword">def</span> <span class="token function">getTitle</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+    <span class="token keyword">except</span> HTTPError <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">None</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        bsObj <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>html<span class="token punctuation">.</span>read<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"lxml"</span><span class="token punctuation">)</span>
+        title <span class="token operator">=</span> bsObj<span class="token punctuation">.</span>body<span class="token punctuation">.</span>h1
+    <span class="token keyword">except</span> AttributeError <span class="token keyword">as</span> e<span class="token punctuation">:</span>
+        <span class="token keyword">return</span> <span class="token boolean">None</span>
+    <span class="token keyword">return</span> title
 
-title &#x3D; getTitle(&quot;https:&#x2F;&#x2F;www.runoob.com&#x2F;&quot;)
-if title is None:
-    print(&quot;Title could not be found&quot;)
-else:
-    print(title)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+title <span class="token operator">=</span> getTitle<span class="token punctuation">(</span><span class="token string">"https://www.runoob.com/"</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> title <span class="token keyword">is</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Title could not be found"</span><span class="token punctuation">)</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>title<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="HTML解析"><a href="#HTML解析" class="headerlink" title="HTML解析"></a>HTML解析</h2><p>属性查找标签的方法，标签组的使用，以及标签解析树的导航过程</p>
 <p>网络爬虫可以通过 class 属性的值，轻松地区分出两种不同的标签。</p>
 <p>例如：</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html">"<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Heavens! what a virulent attack!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>" replied <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>
 <span class="token punctuation">"</span>green<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>the prince<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span>, not in the least disconcerted by this reception.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from urllib.request import urlopen
-from bs4 import BeautifulSoup
-#%%
-# 爬取页面
-html &#x3D; urlopen(&quot;http:&#x2F;&#x2F;www.pythonscraping.com&#x2F;pages&#x2F;warandpeace.html&quot;)
-bsObj &#x3D; BeautifulSoup(html, features&#x3D;&quot;lxml&quot;) # features 选择解析器
-# 以用 findAll 函数抽取只包含在 &lt;span class&#x3D;&quot;green&quot;&gt;&lt;&#x2F;span&gt; 标签里的文字
-nameList &#x3D; bsObj.findAll(&quot;span&quot;, &#123;&quot;class&quot;: &quot;green&quot;&#125;)
-# 打印输出
-for name in nameList:
-    print(name.get_text())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> urllib<span class="token punctuation">.</span>request <span class="token keyword">import</span> urlopen
+<span class="token keyword">from</span> bs4 <span class="token keyword">import</span> BeautifulSoup
+<span class="token comment">#%%</span>
+<span class="token comment"># 爬取页面</span>
+html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"http://www.pythonscraping.com/pages/warandpeace.html"</span><span class="token punctuation">)</span>
+bsObj <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>html<span class="token punctuation">,</span> features<span class="token operator">=</span><span class="token string">"lxml"</span><span class="token punctuation">)</span> <span class="token comment"># features 选择解析器</span>
+<span class="token comment"># 以用 findAll 函数抽取只包含在 &lt;span class="green">&lt;/span> 标签里的文字</span>
+nameList <span class="token operator">=</span> bsObj<span class="token punctuation">.</span>findAll<span class="token punctuation">(</span><span class="token string">"span"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token string">"class"</span><span class="token punctuation">:</span> <span class="token string">"green"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span>
+<span class="token comment"># 打印输出</span>
+<span class="token keyword">for</span> name <span class="token keyword">in</span> nameList<span class="token punctuation">:</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">.</span>get_text<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><code>get_text()</code></p>
 <p><code>.get_text() </code>会把正在处理的 HTML 文档中所有的标签都清除，然后返回 一个只包含文字的字符串。假如你正在处理一个包含许多超链接、段落和标签的大段源代码，那么<code> .get_text()</code> 会把这些超链接、段落和标签都清除掉， 只剩下一串不带标签的文字。</p>
 </blockquote>
 <h3 id="BeautifulSoup的find-和findAll"><a href="#BeautifulSoup的find-和findAll" class="headerlink" title="BeautifulSoup的find()和findAll()"></a>BeautifulSoup的<code>find()</code>和<code>findAll()</code></h3><p><code>findAll</code>函数通过标签的名称和属性来查找标签</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">findAll(tag, attributes, recursive, text, limit, keywords)
-find(tag, attributes, recursive, text, keywords)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">findAll<span class="token punctuation">(</span>tag<span class="token punctuation">,</span> attributes<span class="token punctuation">,</span> recursive<span class="token punctuation">,</span> text<span class="token punctuation">,</span> limit<span class="token punctuation">,</span> keywords<span class="token punctuation">)</span>
+find<span class="token punctuation">(</span>tag<span class="token punctuation">,</span> attributes<span class="token punctuation">,</span> recursive<span class="token punctuation">,</span> text<span class="token punctuation">,</span> keywords<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><code>tag</code>标签参数，可以传一个标签的名称或多个标签名称组成的 Python 列表做标签参数</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">.findAll(&#123;&quot;h1&quot;,&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;,&quot;h5&quot;,&quot;h6&quot;&#125;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">.</span>findAll<span class="token punctuation">(</span><span class="token punctuation">&#123;</span><span class="token string">"h1"</span><span class="token punctuation">,</span><span class="token string">"h2"</span><span class="token punctuation">,</span><span class="token string">"h3"</span><span class="token punctuation">,</span><span class="token string">"h4"</span><span class="token punctuation">,</span><span class="token string">"h5"</span><span class="token punctuation">,</span><span class="token string">"h6"</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><code>attributes</code>属性参数，是用一个 Python 字典封装一个标签的若干属性和对应的属性值</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">.findAll(&quot;span&quot;, &#123;&quot;class&quot;:&#123;&quot;green&quot;, &quot;red&quot;&#125;&#125;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">.</span>findAll<span class="token punctuation">(</span><span class="token string">"span"</span><span class="token punctuation">,</span> <span class="token punctuation">&#123;</span><span class="token string">"class"</span><span class="token punctuation">:</span><span class="token punctuation">&#123;</span><span class="token string">"green"</span><span class="token punctuation">,</span> <span class="token string">"red"</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><code>recursive</code>递归参数，是一个布尔变量，设置为True，查找标签参数的所有子标签，以及子标签的子标签；设置为 False，就只查找文档的一级标签。（默认值是 True）</p>
 <p><code>text</code>文本参数，是用标签的文本内容去匹配，而不是用标签的属性。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">#%%
-html &#x3D; urlopen(&quot;http:&#x2F;&#x2F;www.pythonscraping.com&#x2F;pages&#x2F;warandpeace.html&quot;)
-bsObj &#x3D; BeautifulSoup(html, features&#x3D;&quot;lxml&quot;)
-nameList &#x3D; bsObj.findAll(text&#x3D;&quot;the prince&quot;)
-print(len(nameList))  # 7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#%%</span>
+html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"http://www.pythonscraping.com/pages/warandpeace.html"</span><span class="token punctuation">)</span>
+bsObj <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>html<span class="token punctuation">,</span> features<span class="token operator">=</span><span class="token string">"lxml"</span><span class="token punctuation">)</span>
+nameList <span class="token operator">=</span> bsObj<span class="token punctuation">.</span>findAll<span class="token punctuation">(</span>text<span class="token operator">=</span><span class="token string">"the prince"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>nameList<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># 7</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><code>limit</code>范围限制参数，只用于<code>findAll</code>方法，获得的前几项结果是按照网页上的顺序排序</p>
 <blockquote>
 <p><code>find</code>等价于<code>findAll</code>的<code>limit</code>等于1时的情形</p>
 </blockquote>
 <p><code>keyword</code>关键词参数，用于选择具有指定属性的标签</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">#%%
-html &#x3D; urlopen(&quot;http:&#x2F;&#x2F;www.pythonscraping.com&#x2F;pages&#x2F;warandpeace.html&quot;)
-bsObj &#x3D; BeautifulSoup(html, features&#x3D;&quot;lxml&quot;)
-allText &#x3D; bsObj.findAll(id&#x3D;&quot;text&quot;)
-print(allText[0].get_text())<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">#%%</span>
+html <span class="token operator">=</span> urlopen<span class="token punctuation">(</span><span class="token string">"http://www.pythonscraping.com/pages/warandpeace.html"</span><span class="token punctuation">)</span>
+bsObj <span class="token operator">=</span> BeautifulSoup<span class="token punctuation">(</span>html<span class="token punctuation">,</span> features<span class="token operator">=</span><span class="token string">"lxml"</span><span class="token punctuation">)</span>
+allText <span class="token operator">=</span> bsObj<span class="token punctuation">.</span>findAll<span class="token punctuation">(</span><span class="token builtin">id</span><span class="token operator">=</span><span class="token string">"text"</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>allText<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>get_text<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><code>class</code>保留词问题</p>
 <p><code>bsObj.findAll(class=&quot;green&quot;)</code>语法错误，解决方案<code>bsObj.findAll(class_=&quot;green&quot;)</code>或<code>bsObj.findAll(&quot;&quot;, &#123;&quot;class&quot;:&quot;green&quot;&#125;)</code></p>
@@ -525,12 +525,12 @@ print(allText[0].get_text())<span aria-hidden="true" class="line-numbers-rows"><
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -570,7 +570,7 @@ print(allText[0].get_text())<span aria-hidden="true" class="line-numbers-rows"><
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/3.png" class="responsive-img" alt="正则表达式">
+                        <img src="/medias/featureimages/3.png" class="responsive-img" alt="正则表达式">
                         
                         <span class="card-title">正则表达式</span>
                     </div>
@@ -623,7 +623,7 @@ print(allText[0].get_text())<span aria-hidden="true" class="line-numbers-rows"><
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/5.jpg" class="responsive-img" alt="计算机书单">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="计算机书单">
                         
                         <span class="card-title">计算机书单</span>
                     </div>
@@ -678,21 +678,21 @@ print(allText[0].get_text())<span aria-hidden="true" class="line-numbers-rows"><
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -713,7 +713,7 @@ print(allText[0].get_text())<span aria-hidden="true" class="line-numbers-rows"><
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -950,12 +950,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -977,7 +977,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -993,7 +993,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

@@ -17,17 +17,17 @@
 
 
     <title>C语言学习笔记 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/0.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,7 +366,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -376,19 +376,19 @@
                 <p>参考《C Primer Plus》 第六版</p>
 <hr>
 <h2 id="C语言概述"><a href="#C语言概述" class="headerlink" title="C语言概述"></a>C语言概述</h2><p>简单的C程序示例</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">#include &lt;stdio.h&gt;
-int main(void)&#123;
-    int num;
-    num &#x3D; 1;
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> num<span class="token punctuation">;</span>
+    num <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
     
-    printf(&quot;Hello World!\n&quot;);
-    printf(&quot;My favorite number is %d because it is first.\n&quot;,num);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello World!\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"My favorite number is %d because it is first.\n"</span><span class="token punctuation">,</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span>
     
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><img src="http://img.whl123456.top/image/image-20200525231404657.png" alt="image-20200525231404657"></p>
 <hr>
-<h3 id="include-指令和头文件"><a href="#include-指令和头文件" class="headerlink" title="#include 指令和头文件"></a><code>#include</code> 指令和头文件</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt; &#x2F;&#x2F;包含另一个文件<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="include-指令和头文件"><a href="#include-指令和头文件" class="headerlink" title="#include 指令和头文件"></a><code>#include</code> 指令和头文件</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span> <span class="token comment">//包含另一个文件</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>该行告诉编译器把 <code>stdio.h</code> 中的内容包含在当前程序中。</p>
 <p><code>stdio.h</code> 是 C 编译器软件包的标准部分，它提供键盘<strong>输入</strong>和屏幕<strong>输出</strong>的支持。</p>
 <blockquote>
@@ -397,7 +397,7 @@ int main(void)&#123;
 </blockquote>
 <p>作用相当于把 <code>stdio.h</code> 文件中的所有内容都输入该行所在的位置。</p>
 <p><code>#include</code> 这行代码是一条 C <strong>预处理器指令</strong></p>
-<h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main()函数"></a><code>main()</code>函数</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">int main(void)  &#x2F;&#x2F;主函数<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="main-函数"><a href="#main-函数" class="headerlink" title="main()函数"></a><code>main()</code>函数</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>  <span class="token comment">//主函数</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>C 程序包含一个或多个函数，它们是 C 程序的基本模块。</p>
 <p>主函数是一个程序的入口位置，整个程序从主函数开始执行。一个程序最多只能有一个主函数。</p>
 <p>圆括号表明 main()是一个函数名。int 表明 main()函数返回一个整数，void 表明 main()不带任何参数。</p>
@@ -410,7 +410,7 @@ int main(void)&#123;
 <p>C99 新增了另一种风格的注释，普遍用于 C++和 Java。这种新风格使用<code>//</code>符号创建注释，仅限于单行。</p>
 <h3 id="花括号、函数体和块"><a href="#花括号、函数体和块" class="headerlink" title="花括号、函数体和块"></a>花括号、函数体和块</h3><p>一般而言，所有的 C 函数都使用花括号<code>&#123;&#125;</code>标记函数体的开始和结束。</p>
 <p>花括号还可用于把函数中的多条语句合并为一个单元或块。</p>
-<h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">int num;  &#x2F;&#x2F;声明<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> num<span class="token punctuation">;</span>  <span class="token comment">//声明</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>以前的 C 语言，还要求把变量声明在块的顶部，其他语句不能在任何声明的前面。</p>
 <p>C99 和 C11 遵循 C++的惯例，可以把声明放在块中的任何位置。尽管如此，首次使用变量之前一定要先声明它。</p>
 <blockquote>
@@ -426,10 +426,10 @@ int main(void)&#123;
 <li>声明变量有助于发现隐藏在程序中的小错误，如变量名拼写错误。</li>
 <li>如果事先未声明变量，C 程序将无法通过编译。</li>
 </ul>
-<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">num &#x3D; 1;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">num <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在执行<code>int num;</code>声明时，编译器在计算机内存中为变量<code>num</code>预留了空间，然后在执行这行赋值表达式语句时，把值储存在之前预留的位置。</p>
 <p>赋值表达式语句从右侧把值赋到左侧</p>
-<h3 id="printf-函数"><a href="#printf-函数" class="headerlink" title="printf()函数"></a><code>printf()</code>函数</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">printf(&quot;My favorite number is %d because it is first.\n&quot;, num);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="printf-函数"><a href="#printf-函数" class="headerlink" title="printf()函数"></a><code>printf()</code>函数</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"My favorite number is %d because it is first.\n"</span><span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>圆括号表明 <code>printf</code> 是一个函数名。</p>
 <p>实际参数（简称实参）是传递给函数的特定值，形式参数（简称形参）是函数中用于储存值的变量</p>
 <p><code>\n </code>组合代表一个换行符，换行符是一个转义序列（用于代表难以表示或无法输入的字符）</p>
@@ -474,13 +474,13 @@ int main(void)&#123;
 <p>ISO C 规定 <code>int</code> 的取值范围最小为-32768～32767</p>
 <p>一般而言，系统用一个特殊位的值表示有符号整数的正负号</p>
 <h5 id="声明-int-变量"><a href="#声明-int-变量" class="headerlink" title="声明 int 变量"></a>声明 <code>int</code> 变量</h5><p>要声明多个变量，可以单独声明每个变量，也可在 int 后面列出多个变量名，变量名之间用逗号分隔。</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">int erns; 
-int hogs, cows, goats;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> erns<span class="token punctuation">;</span> 
+<span class="token keyword">int</span> hogs<span class="token punctuation">,</span> cows<span class="token punctuation">,</span> goats<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>提供值方法：1. 赋值；2. 通过函数，如<code>scanf()</code>获得值；3. 初始化变量</p>
 <p>初始化（initialize）变量就是为变量赋一个初始值。</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">int hogs &#x3D; 21; 
-int cows &#x3D; 32, goats &#x3D; 14; 
-int dogs, cats &#x3D; 94; &#x2F;* 有效，但是这种格式很糟糕 *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> hogs <span class="token operator">=</span> <span class="token number">21</span><span class="token punctuation">;</span> 
+<span class="token keyword">int</span> cows <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">,</span> goats <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span> 
+<span class="token keyword">int</span> dogs<span class="token punctuation">,</span> cats <span class="token operator">=</span> <span class="token number">94</span><span class="token punctuation">;</span> <span class="token comment">/* 有效，但是这种格式很糟糕 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>以上示例的最后一行，只初始化了 cats，并未初始化 dogs。这种写法很容易让人误认为 dogs 也被初始化为 94，所以最好不要把初始化的变量和未初始化的变量放在同一条声明中。</p>
 <h5 id="打印-int-值"><a href="#打印-int-值" class="headerlink" title="打印 int 值"></a>打印 <code>int</code> 值</h5><p>可以使用 <code>printf()</code>函数打印 <code>int</code> 类型的值</p>
 <p><code>%d</code>称为<strong>转换说明</strong>，它指定了 <code>printf()</code>应使用什么格式来显示一个值。格式化字符串中的每个<code>%d</code> 都与待打印变量列表中相应的 <code>int</code> 值匹配。</p>
@@ -510,27 +510,27 @@ int dogs, cats &#x3D; 94; &#x2F;* 有效，但是这种格式很糟糕 *&#x2F;<s
 <p>然而，对于那些 <code>long</code> 占用的空间比 <code>int</code> 大的系统，使用 <code>long</code> 类型会减慢运算速度。因此，如非必要，请不要使用 <code>long</code> 类型。另外要注意一点：如果在 <code>long</code> 类型和 <code>int</code> 类型占用空间相同的机器上编写代码，当确实需要 32 位的整数时，应使用 <code>long</code> 类型而不是 <code>int</code> 类型，以便把程序移植到 16 位机后仍然可以正常工作。类似地，如果确实需要 64 位的整数，应使用 <code>long long</code> 类型。 </p>
 <p>如果在 <code>int</code> 设置为 32 位的系统中要使用 16 位的值，应使用 <code>short</code> 类型以节省存储空间。通常，只有当程序使用相对于系统可用内存较大的整型数组时，才需要重点考虑节省空间的问题。使用 <code>short</code> 类型的另一个原因是，计算机中某些组件使用的硬件寄存器是 16 位。</p>
 <h4 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a><code>char</code>类型</h4><p><code>char</code> 类型用于储存字符（如，字母或标点符号），但是从技术层面看，<code>char</code> 是整数类型。</p>
-<h5 id="声明-char-类型变量"><a href="#声明-char-类型变量" class="headerlink" title="声明 char 类型变量"></a>声明 <code>char</code> 类型变量</h5><pre class="line-numbers language-c" data-language="c"><code class="language-c">char response; 
-char itable, latan;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h5 id="声明-char-类型变量"><a href="#声明-char-类型变量" class="headerlink" title="声明 char 类型变量"></a>声明 <code>char</code> 类型变量</h5><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">char</span> response<span class="token punctuation">;</span> 
+<span class="token keyword">char</span> itable<span class="token punctuation">,</span> latan<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h5 id="字符常量和初始化"><a href="#字符常量和初始化" class="headerlink" title="字符常量和初始化"></a>字符常量和初始化</h5><p>在 C 语言中，用单引号括起来的单个字符被称为字符常量（character constant）</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">char broiled;  &#x2F;* 声明一个 char 类型的变量 *&#x2F; 
-broiled &#x3D; &#39;T&#39;; &#x2F;* 为其赋值，正确 *&#x2F; 
-broiled &#x3D; T;  &#x2F;* 错误！此时 T 是一个变量 *&#x2F; 
-broiled &#x3D; &quot;T&quot;; &#x2F;* 错误！此时&quot;T&quot;是一个字符串 *&#x2F;
-char grade &#x3D; 65; &#x2F;* 对于 ASCII，这样做没问题，但这是一种不好的编程风格 *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">char</span> broiled<span class="token punctuation">;</span>  <span class="token comment">/* 声明一个 char 类型的变量 */</span> 
+broiled <span class="token operator">=</span> <span class="token string">'T'</span><span class="token punctuation">;</span> <span class="token comment">/* 为其赋值，正确 */</span> 
+broiled <span class="token operator">=</span> T<span class="token punctuation">;</span>  <span class="token comment">/* 错误！此时 T 是一个变量 */</span> 
+broiled <span class="token operator">=</span> <span class="token string">"T"</span><span class="token punctuation">;</span> <span class="token comment">/* 错误！此时"T"是一个字符串 */</span>
+<span class="token keyword">char</span> grade <span class="token operator">=</span> <span class="token number">65</span><span class="token punctuation">;</span> <span class="token comment">/* 对于 ASCII，这样做没问题，但这是一种不好的编程风格 */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="符号常量和-const常量"><a href="#符号常量和-const常量" class="headerlink" title="符号常量和 const常量"></a>符号常量和 const常量</h5><p>符号常量通俗地讲就是“替换”，即用一个标识符来替代常量，又称为“宏定义”或者“宏替换”。</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">#define pi 3.14<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token expression">pi <span class="token number">3.14</span></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>另一种定义常量的方法是使用 <code>const</code></p>
 <pre class="line-numbers language-none"><code class="language-none">const double pi &#x3D; 3.14;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>于是在程序中凡是使用pi的地方将在程序执行前全部自动替换为3.14。</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
-#define pi 3.14
-&#x2F;&#x2F;const double pi &#x3D; 3.14;
-int main() &#123;
-	double r &#x3D; 3;
-	printf(&quot;%f\n&quot;, pi * r * r);
-	return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token expression">pi <span class="token number">3.14</span></span></span>
+<span class="token comment">//const double pi = 3.14;</span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">double</span> r <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%f\n"</span><span class="token punctuation">,</span> pi <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 <h5 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h5><ol>
@@ -543,22 +543,22 @@ int main() &#123;
 <h4 id="float、double-和-long-double"><a href="#float、double-和-long-double" class="headerlink" title="float、double 和 long double"></a><code>float</code>、<code>double</code> 和 <code>long double</code></h4><p>C 标准规定，<code>float</code> 类型必须至少能表示 6 位有效数字，且取值范围至少是 10<sup>-37</sup> ~10<sup>+37</sup>。</p>
 <p><code>double</code> 类型和 <code>float</code> 类型的最小取值范围相同，但至少必须能表示 10 位有效数字。一般情况下，<code>double</code> 占用 64 位而不是 32 位。</p>
 <p><code>long double</code>，以满足比 <code>double</code> 类型更高的精度要求。不过，C 只保证<code>long double</code> 类型至少与 <code>double</code> 类型的精度相同。</p>
-<h4 id="类型大小"><a href="#类型大小" class="headerlink" title="类型大小"></a>类型大小</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c">&#x2F;&#x2F;* typesize.c -- 打印类型大小 *&#x2F; 
-#include &lt;stdio.h&gt; 
-int main(void) 
-&#123; 
-     &#x2F;* C99 为类型大小提供%zd 转换说明 *&#x2F; 
-     printf(&quot;Type int has a size of %zd bytes.\n&quot;, sizeof(int)); 
-     printf(&quot;Type char has a size of %zd bytes.\n&quot;, sizeof(char)); 
-     printf(&quot;Type long has a size of %zd bytes.\n&quot;, sizeof(long)); 
-     printf(&quot;Type long long has a size of %zd bytes.\n&quot;, 
-               sizeof(long long)); 
-     printf(&quot;Type double has a size of %zd bytes.\n&quot;, 
-              sizeof(double)); 
-     printf(&quot;Type long double has a size of %zd bytes.\n&quot;, 
-              sizeof(long double)); 
-     return 0; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="类型大小"><a href="#类型大小" class="headerlink" title="类型大小"></a>类型大小</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">//* typesize.c -- 打印类型大小 */ </span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span> </span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> 
+<span class="token punctuation">&#123;</span> 
+     <span class="token comment">/* C99 为类型大小提供%zd 转换说明 */</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Type int has a size of %zd bytes.\n"</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Type char has a size of %zd bytes.\n"</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">char</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Type long has a size of %zd bytes.\n"</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">long</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Type long long has a size of %zd bytes.\n"</span><span class="token punctuation">,</span> 
+               <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">long</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Type double has a size of %zd bytes.\n"</span><span class="token punctuation">,</span> 
+              <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Type long double has a size of %zd bytes.\n"</span><span class="token punctuation">,</span> 
+              <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">long</span> <span class="token keyword">double</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><code>sizeof</code> 是 C 语言的内置运算符，以字节为单位给出指定类型的大小。</p>
 <p>C99 和 C11 提供<code>%zd</code> 转换说明匹配 <code>sizeof</code> 的返回类型1。一些不支持 C99 和 C11 的编译器可用<code>%u</code> 或<code>%lu</code> 代替<code>%zd</code>。</p>
 <p>该程序的输出如下： </p>
@@ -570,152 +570,152 @@ Type double has a size of 8 bytes.
 Type long double has a size of 16 bytes.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>C 语言定义了 <code>char</code> 类型是 1 字节，所以 <code>char</code> 类型的大小一定是 1 字节。</p>
 <p>而在 <code>char</code> 类型为 16 位、<code>double</code>类型为 64 位的系统中，<code>sizeof</code> 给出的 <code>double</code> 是 4 字节。</p>
-<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
-int main()&#123;
-	double r &#x3D; 12.56;
-	int a &#x3D; 3, b &#x3D; 5;
-	printf(&quot;%d\n&quot;, (int)r); &#x2F;&#x2F;r强制转换成int
-	printf(&quot;%d\n&quot;, a&#x2F;b);
-	printf(&quot;%.1f&quot;, (double)a &#x2F; (double)b);&#x2F;&#x2F;%.1f保留一位小数输出
-	return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+	<span class="token keyword">double</span> r <span class="token operator">=</span> <span class="token number">12.56</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//r强制转换成int</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%d\n"</span><span class="token punctuation">,</span> a<span class="token operator">/</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.1f"</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>a <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token keyword">double</span><span class="token punctuation">)</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//%.1f保留一位小数输出</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="字符串和格式化输入-输出"><a href="#字符串和格式化输入-输出" class="headerlink" title="字符串和格式化输入/输出"></a>字符串和格式化输入/输出</h2><h3 id="字符串简介"><a href="#字符串简介" class="headerlink" title="字符串简介"></a>字符串简介</h3><p>字符串（character string）是一个或多个字符的序列。</p>
 <p>双引号仅告知编译器它括起来的是字符串，正如单引号用于标识单个字符一样。</p>
 <h3 id="char-类型数组和-null-字符"><a href="#char-类型数组和-null-字符" class="headerlink" title="char 类型数组和 null 字符"></a><code>char</code> 类型数组和 <code>null</code> 字符</h3><p>C 语言没有专门用于储存字符串的变量类型，字符串都被储存在 <code>char</code> 类型的数组中。数组由连续的存<br>储单元组成，字符串中的字符被储存在相邻的存储单元中，每个单元储存一个字符。</p>
 <p>数组末尾位置的字符<code>\0</code>。这是空字符（null character），C 语言用它标记字符串的结束。空字符不是数字 0，它是非打印字符，其 ASCII 码值是（或等价于）0。</p>
 <h3 id="strlen-函数"><a href="#strlen-函数" class="headerlink" title="strlen()函数"></a><code>strlen()</code>函数</h3><p><code>strlen()</code>函数给出字符串中的字符长度。</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">&#x2F;* praise2.c *&#x2F; 
-&#x2F;&#x2F; 如果编译器不识别%zd，尝试换成%u 或%lu。 
-#include &lt;stdio.h&gt; 
-#include &lt;string.h&gt;      &#x2F;* 提供 strlen()函数的原型 *&#x2F; 
-#define PRAISE &quot;You are an extraordinary being.&quot; 
-int main(void) 
-&#123; 
-     char name[40]; 
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">/* praise2.c */</span> 
+<span class="token comment">// 如果编译器不识别%zd，尝试换成%u 或%lu。 </span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span> </span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string.h></span>      <span class="token comment">/* 提供 strlen()函数的原型 */</span> </span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token expression">PRAISE </span><span class="token string">"You are an extraordinary being."</span> </span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> 
+<span class="token punctuation">&#123;</span> 
+     <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">40</span><span class="token punctuation">]</span><span class="token punctuation">;</span> 
  
-     printf(&quot;What&#39;s your name? &quot;); 
-     scanf(&quot;%s&quot;, name); 
-     printf(&quot;Hello, %s. %s\n&quot;, name, PRAISE); 
-     printf(&quot;Your name of %zd letters occupies %zd memory cells.\n&quot;, 
-               strlen(name), sizeof name); 
-     printf(&quot;The phrase of praise has %zd letters &quot;, 
-               strlen(PRAISE)); 
-     printf(&quot;and occupies %zd memory cells.\n&quot;, sizeof PRAISE); 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"What's your name? "</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">"%s"</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Hello, %s. %s\n"</span><span class="token punctuation">,</span> name<span class="token punctuation">,</span> PRAISE<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Your name of %zd letters occupies %zd memory cells.\n"</span><span class="token punctuation">,</span> 
+               <span class="token function">strlen</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"The phrase of praise has %zd letters "</span><span class="token punctuation">,</span> 
+               <span class="token function">strlen</span><span class="token punctuation">(</span>PRAISE<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"and occupies %zd memory cells.\n"</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> PRAISE<span class="token punctuation">)</span><span class="token punctuation">;</span> 
  
-     return 0; 
-&#125;
-&#x2F;&#x2F;What&#39;s your name? Serendipity Chance 
-&#x2F;&#x2F;Hello, Serendipity. You are an extraordinary being. 
-&#x2F;&#x2F;Your name of 11 letters occupies 40 memory cells. 
-&#x2F;&#x2F;The phrase of praise has 31 letters and occupies 32 memory cells.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span>
+<span class="token comment">//What's your name? Serendipity Chance </span>
+<span class="token comment">//Hello, Serendipity. You are an extraordinary being. </span>
+<span class="token comment">//Your name of 11 letters occupies 40 memory cells. </span>
+<span class="token comment">//The phrase of praise has 31 letters and occupies 32 memory cells.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>一般而言，C 把函数库中相关的函数归为一类，并为每类函数提供一个头文件。例如，<code>printf()</code>和<code>scanf()</code>都隶属标准输入和输出函数，使用 <code>stdio.h</code> 头文件。<code>string.h</code> 头文件中包含了 <code>strlen()</code>函数和其他一些与字符串相关的函数（如拷贝字符串的函数和字符串查找函数）。</p>
 </blockquote>
 <h3 id="常量和-C-预处理器"><a href="#常量和-C-预处理器" class="headerlink" title="常量和 C 预处理器"></a>常量和 C 预处理器</h3><h3 id="printf-和-scanf"><a href="#printf-和-scanf" class="headerlink" title="printf()和 scanf()"></a><code>printf()</code>和 <code>scanf()</code></h3><p><img src="http://img.whl123456.top/image/image-20200528222920536.png" alt="转换说明及其打印的输出结果"></p>
 <h2 id="运算符、表达式和语句"><a href="#运算符、表达式和语句" class="headerlink" title="运算符、表达式和语句"></a>运算符、表达式和语句</h2><h3 id="基本运算符"><a href="#基本运算符" class="headerlink" title="基本运算符"></a>基本运算符</h3><h3 id="其他运算符"><a href="#其他运算符" class="headerlink" title="其他运算符"></a>其他运算符</h3><h3 id="表达式和语句"><a href="#表达式和语句" class="headerlink" title="表达式和语句"></a>表达式和语句</h3><h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><h3 id="带参数的函数"><a href="#带参数的函数" class="headerlink" title="带参数的函数"></a>带参数的函数</h3><h2 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a><code>while</code>循环</h3><h3 id="for-循环"><a href="#for-循环" class="headerlink" title="for 循环"></a><code>for</code> 循环</h3><h3 id="出口条件循环：do-while"><a href="#出口条件循环：do-while" class="headerlink" title="出口条件循环：do while"></a>出口条件循环：<code>do while</code></h3><h2 id="分支和跳转"><a href="#分支和跳转" class="headerlink" title="分支和跳转"></a>分支和跳转</h2><h3 id="if-语句"><a href="#if-语句" class="headerlink" title="if 语句"></a><code>if</code> 语句</h3><h3 id="if-else-语句"><a href="#if-else-语句" class="headerlink" title="if else 语句"></a><code>if else</code> 语句</h3><h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><h3 id="条件运算符"><a href="#条件运算符" class="headerlink" title="条件运算符"></a>条件运算符</h3><h3 id="continue-和-break"><a href="#continue-和-break" class="headerlink" title="continue 和 break"></a><code>continue</code> 和 <code>break</code></h3><h3 id="多重选择：switch-和-break"><a href="#多重选择：switch-和-break" class="headerlink" title="多重选择：switch 和 break"></a>多重选择：<code>switch</code> 和 <code>break</code></h3><h3 id="goto-语句"><a href="#goto-语句" class="headerlink" title="goto 语句"></a><code>goto</code> 语句</h3><h2 id="字符输入-输出和输入验证"><a href="#字符输入-输出和输入验证" class="headerlink" title="字符输入/输出和输入验证"></a>字符输入/输出和输入验证</h2><h3 id="单字符-I-O：getchar-和-putchar"><a href="#单字符-I-O：getchar-和-putchar" class="headerlink" title="单字符 I/O：getchar()和 putchar()"></a>单字符 I/O：<code>getchar()</code>和 <code>putchar()</code></h3><h3 id="缓冲区"><a href="#缓冲区" class="headerlink" title="缓冲区"></a>缓冲区</h3><h3 id="结束键盘输入"><a href="#结束键盘输入" class="headerlink" title="结束键盘输入"></a>结束键盘输入</h3><h3 id="重定向和文件"><a href="#重定向和文件" class="headerlink" title="重定向和文件"></a>重定向和文件</h3><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="常用math函数"><a href="#常用math函数" class="headerlink" title="常用math函数"></a>常用math函数</h3><p>需要在程序开头加上<code>math.h</code>头文件</p>
 <h4 id="fabs-double-x"><a href="#fabs-double-x" class="headerlink" title="fabs(double x)"></a><code>fabs(double x)</code></h4><p>该函数用于对 <code>double</code>型变量取绝对值</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
-#include&lt;math.h&gt;
-int main() &#123;
-	double db &#x3D; -12.56;
-	printf(&quot;%.2f\n&quot;, fabs(db)); &#x2F;&#x2F;输出：12.56
-	return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;math.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">double</span> db <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">12.56</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.2f\n"</span><span class="token punctuation">,</span> <span class="token function">fabs</span><span class="token punctuation">(</span>db<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//输出：12.56</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="floor（double-x）和-ceil（double-x）"><a href="#floor（double-x）和-ceil（double-x）" class="headerlink" title="floor（double x）和 ceil（double x）"></a><code>floor（double x）</code>和 <code>ceil（double x）</code></h4><p>分别用于 <code>double</code>型变量的向下取整和向上取整</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
-#include&lt;math.h&gt;
-int main() &#123;
-	double db1 &#x3D; -12.56;
-	double db2 &#x3D; 12.56;
-	printf(&quot;%.0f %.0f\n&quot;, floor(db1),ceil(db1)); &#x2F;&#x2F;输出：-13 -12
-	printf(&quot;%.0f %.0f\n&quot;, floor(db2),ceil(db2)); &#x2F;&#x2F;输出：12 13
-	return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;math.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">double</span> db1 <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">12.56</span><span class="token punctuation">;</span>
+	<span class="token keyword">double</span> db2 <span class="token operator">=</span> <span class="token number">12.56</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.0f %.0f\n"</span><span class="token punctuation">,</span> <span class="token function">floor</span><span class="token punctuation">(</span>db1<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">ceil</span><span class="token punctuation">(</span>db1<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//输出：-13 -12</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%.0f %.0f\n"</span><span class="token punctuation">,</span> <span class="token function">floor</span><span class="token punctuation">(</span>db2<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token function">ceil</span><span class="token punctuation">(</span>db2<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//输出：12 13</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="pow-double-r-double-p"><a href="#pow-double-r-double-p" class="headerlink" title="pow(double r,double p)"></a><code>pow(double r,double p)</code></h4><p>返回r的p次幂的值</p>
 <h4 id="sqrt（double-x）"><a href="#sqrt（double-x）" class="headerlink" title="sqrt（double x）"></a><code>sqrt（double x）</code></h4><p>该函数用于返回 double型变量的算术平方根</p>
 <h4 id="log（double-x）"><a href="#log（double-x）" class="headerlink" title="log（double x）"></a><code>log（double x）</code></h4><p>该函数用于返回 double型变量的以自然对数为底的对数</p>
-<h4 id="sin（-double-x）、cos（-double-x）和tan（-double-x）"><a href="#sin（-double-x）、cos（-double-x）和tan（-double-x）" class="headerlink" title="sin（ double x）、cos（ double x）和tan（ double x）"></a><code>sin（ double x）、cos（ double x）和tan（ double x）</code></h4><h4 id="asin（double-x），-acos（double-x）F-atan-（double-x"><a href="#asin（double-x），-acos（double-x）F-atan-（double-x" class="headerlink" title="asin（double x）， acos（double x）F atan （double x)"></a><code>asin（double x）， acos（double x）F atan （double x)</code></h4><h4 id="round（double-x）"><a href="#round（double-x）" class="headerlink" title="round（double x）"></a><code>round（double x）</code></h4><h2 id="数组和指针"><a href="#数组和指针" class="headerlink" title="数组和指针"></a>数组和指针</h2><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><h3 id="指针和数组"><a href="#指针和数组" class="headerlink" title="指针和数组"></a>指针和数组</h3><h3 id="函数、数组和指针"><a href="#函数、数组和指针" class="headerlink" title="函数、数组和指针"></a>函数、数组和指针</h3><h3 id="指针操作"><a href="#指针操作" class="headerlink" title="指针操作"></a>指针操作</h3><h2 id="字符串和字符串函数"><a href="#字符串和字符串函数" class="headerlink" title="字符串和字符串函数"></a>字符串和字符串函数</h2><h2 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c">enum color &#123;RED,YELLO,GREEN&#125;;&#x2F;&#x2F;RED &#x3D; 0,YELLO &#x3D; 1,GREEN &#x3D; 3...
-&#x2F;&#x2F; enum 枚举类型名字 &#123;名字0,…,名字n&#125;;
-&#x2F;&#x2F; 枚举类型名字可忽略
-void f(enum color c);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="sin（-double-x）、cos（-double-x）和tan（-double-x）"><a href="#sin（-double-x）、cos（-double-x）和tan（-double-x）" class="headerlink" title="sin（ double x）、cos（ double x）和tan（ double x）"></a><code>sin（ double x）、cos（ double x）和tan（ double x）</code></h4><h4 id="asin（double-x），-acos（double-x）F-atan-（double-x"><a href="#asin（double-x），-acos（double-x）F-atan-（double-x" class="headerlink" title="asin（double x）， acos（double x）F atan （double x)"></a><code>asin（double x）， acos（double x）F atan （double x)</code></h4><h4 id="round（double-x）"><a href="#round（double-x）" class="headerlink" title="round（double x）"></a><code>round（double x）</code></h4><h2 id="数组和指针"><a href="#数组和指针" class="headerlink" title="数组和指针"></a>数组和指针</h2><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><h3 id="指针和数组"><a href="#指针和数组" class="headerlink" title="指针和数组"></a>指针和数组</h3><h3 id="函数、数组和指针"><a href="#函数、数组和指针" class="headerlink" title="函数、数组和指针"></a>函数、数组和指针</h3><h3 id="指针操作"><a href="#指针操作" class="headerlink" title="指针操作"></a>指针操作</h3><h2 id="字符串和字符串函数"><a href="#字符串和字符串函数" class="headerlink" title="字符串和字符串函数"></a>字符串和字符串函数</h2><h2 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h2><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">enum</span> <span class="token class-name">color</span> <span class="token punctuation">&#123;</span>RED<span class="token punctuation">,</span>YELLO<span class="token punctuation">,</span>GREEN<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span class="token comment">//RED = 0,YELLO = 1,GREEN = 3...</span>
+<span class="token comment">// enum 枚举类型名字 &#123;名字0,…,名字n&#125;;</span>
+<span class="token comment">// 枚举类型名字可忽略</span>
+<span class="token keyword">void</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token keyword">enum</span> <span class="token class-name">color</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>用枚举而不是定义独立的const in变量</p>
 <p>常量符号，它们的类型只能是int</p>
-<h3 id="技巧：自动计数的枚举"><a href="#技巧：自动计数的枚举" class="headerlink" title="技巧：自动计数的枚举"></a>技巧：自动计数的枚举</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
-enum COLOR &#123;RED, YELLOW, GREEN, NumCOLORS&#125;;
+<h3 id="技巧：自动计数的枚举"><a href="#技巧：自动计数的枚举" class="headerlink" title="技巧：自动计数的枚举"></a>技巧：自动计数的枚举</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">enum</span> <span class="token class-name">COLOR</span> <span class="token punctuation">&#123;</span>RED<span class="token punctuation">,</span> YELLOW<span class="token punctuation">,</span> GREEN<span class="token punctuation">,</span> NumCOLORS<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
-int main(int argc, char const *argv[])
-&#123;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span> <span class="token keyword">char</span> <span class="token keyword">const</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
     
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>枚举中各常量值依次递加，故最后一个值可代表常量个数</p>
-<h3 id="指定枚举量的值"><a href="#指定枚举量的值" class="headerlink" title="指定枚举量的值"></a>指定枚举量的值</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">enum COLOR &#123;RED&#x3D;1, YELLOW, GREEN&#x3D;5, NumCOLORS&#125;;&#x2F;&#x2F;YELLOW &#x3D; 2,NumCOLORS?<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="指定枚举量的值"><a href="#指定枚举量的值" class="headerlink" title="指定枚举量的值"></a>指定枚举量的值</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">enum</span> <span class="token class-name">COLOR</span> <span class="token punctuation">&#123;</span>RED<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> YELLOW<span class="token punctuation">,</span> GREEN<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> NumCOLORS<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span class="token comment">//YELLOW = 2,NumCOLORS?</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 <h2 id="存储类别、链接和内存管理"><a href="#存储类别、链接和内存管理" class="headerlink" title="存储类别、链接和内存管理"></a>存储类别、链接和内存管理</h2><h2 id="文件输入-输出"><a href="#文件输入-输出" class="headerlink" title="文件输入/输出"></a>文件输入/输出</h2><h2 id="结构和其他数据形式"><a href="#结构和其他数据形式" class="headerlink" title="结构和其他数据形式"></a>结构和其他数据形式</h2><p>表达数据比较复杂，但需要一个整体来表达，使用结构——一个复合的数据类型</p>
-<h3 id="声明结构类型"><a href="#声明结构类型" class="headerlink" title="声明结构类型"></a>声明结构类型</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
+<h3 id="声明结构类型"><a href="#声明结构类型" class="headerlink" title="声明结构类型"></a>声明结构类型</h3><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
 
-struct date&#123;
-    int month;
-    int day;
-    int year;
-&#125;;&#x2F;&#x2F;注意分号
+<span class="token keyword">struct</span> <span class="token class-name">date</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> month<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> day<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> year<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span class="token comment">//注意分号</span>
 
-int main(int argc,char const *argv[])
-&#123;
-    struct data today;
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span><span class="token keyword">char</span> <span class="token keyword">const</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">struct</span> <span class="token class-name">data</span> today<span class="token punctuation">;</span>
     
-    today.month &#x3D; 06;
-    today.day &#x3D; 01;
-    today.year &#x3D; 2020;
+    today<span class="token punctuation">.</span>month <span class="token operator">=</span> <span class="token number">06</span><span class="token punctuation">;</span>
+    today<span class="token punctuation">.</span>day <span class="token operator">=</span> <span class="token number">01</span><span class="token punctuation">;</span>
+    today<span class="token punctuation">.</span>year <span class="token operator">=</span> <span class="token number">2020</span><span class="token punctuation">;</span>
     
-    printf(&quot;Today&#39;s date is %i-%i-%i.\n&quot;,
-           today.year,today.month,today.day);
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"Today's date is %i-%i-%i.\n"</span><span class="token punctuation">,</span>
+           today<span class="token punctuation">.</span>year<span class="token punctuation">,</span>today<span class="token punctuation">.</span>month<span class="token punctuation">,</span>today<span class="token punctuation">.</span>day<span class="token punctuation">)</span><span class="token punctuation">;</span>
     
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>另两种声明结构的形式</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">struct&#123;
-    int x;
-    int y;
-&#125;p1,p2;&#x2F;&#x2F;p和p2都是一种无名结构，里面有x和y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">struct ponit&#123;
-    int x;
-    int y;
-&#125;p1,p2;&#x2F;&#x2F;p和p2都是ponit的结构，里面有x和y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>p1<span class="token punctuation">,</span>p2<span class="token punctuation">;</span><span class="token comment">//p和p2都是一种无名结构，里面有x和y</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">ponit</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>p1<span class="token punctuation">,</span>p2<span class="token punctuation">;</span><span class="token comment">//p和p2都是ponit的结构，里面有x和y</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="结构的初始化"><a href="#结构的初始化" class="headerlink" title="结构的初始化"></a>结构的初始化</h3><p>两种方式</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">struct date&#123;
-    int month;
-    int day;
-    int year;
-&#125;;
-struct date today &#x3D; &#123;07,31,2014&#125;;
-struct date thismonth &#x3D; &#123;.month&#x3D;7, .year&#x3D;2014&#125;;&#x2F;&#x2F;此时day为0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">date</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> month<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> day<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> year<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> <span class="token class-name">date</span> today <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">07</span><span class="token punctuation">,</span><span class="token number">31</span><span class="token punctuation">,</span><span class="token number">2014</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+<span class="token keyword">struct</span> <span class="token class-name">date</span> thismonth <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">.</span>month<span class="token operator">=</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token punctuation">.</span>year<span class="token operator">=</span><span class="token number">2014</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span class="token comment">//此时day为0</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="结构成员"><a href="#结构成员" class="headerlink" title="结构成员"></a>结构成员</h3><p>数组的单元必须是相同类型，结构的成员可以是不同类型</p>
 <p>访问成员</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">#include&lt;stdio.h&gt;
-int main(int argc,char const *argv[])
-&#123;
-    struct date&#123;
-        int month;
-        int day;
-        int year;
-    &#125;;
-    struct date today &#x3D; &#123;07,31,2014&#125;;
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdio.h></span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">int</span> argc<span class="token punctuation">,</span><span class="token keyword">char</span> <span class="token keyword">const</span> <span class="token operator">*</span>argv<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">struct</span> <span class="token class-name">date</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">int</span> month<span class="token punctuation">;</span>
+        <span class="token keyword">int</span> day<span class="token punctuation">;</span>
+        <span class="token keyword">int</span> year<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token keyword">struct</span> <span class="token class-name">date</span> today <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token number">07</span><span class="token punctuation">,</span><span class="token number">31</span><span class="token punctuation">,</span><span class="token number">2014</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
     
-    printf(today.day);
+    <span class="token function">printf</span><span class="token punctuation">(</span>today<span class="token punctuation">.</span>day<span class="token punctuation">)</span><span class="token punctuation">;</span>
     
-    return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="结构运算"><a href="#结构运算" class="headerlink" title="结构运算"></a>结构运算</h3><p>要访问整个结构，直接用结构变量的名字</p>
 <p>对于整个结构，可以做赋值、取地址，也可以传递给函数参数</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">p1 &#x3D; (struct ponit)&#123;5,10&#125;;&#x2F;&#x2F;相当于p1.x&#x3D;5;p1.y&#x3D;10;
-p1&#x3D;p2;&#x2F;&#x2F;相当于p1.x&#x3D;p2.x; p1.y&#x3D;p2.y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-c" data-language="c"><code class="language-c">p1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">ponit</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span class="token comment">//相当于p1.x=5;p1.y=10;</span>
+p1<span class="token operator">=</span>p2<span class="token punctuation">;</span><span class="token comment">//相当于p1.x=p2.x; p1.y=p2.y</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="结构指针"><a href="#结构指针" class="headerlink" title="结构指针"></a>结构指针</h3><p>结构变量的名字并不是结构变量的地址，必须使用&amp;运算符</p>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">struct date today;
-struct date *pDate &#x3D; &amp;today;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h3 id="结构与函数"><a href="#结构与函数" class="headerlink" title="结构与函数"></a>结构与函数</h3><h4 id="结构作为函数的参数"><a href="#结构作为函数的参数" class="headerlink" title="结构作为函数的参数"></a>结构作为函数的参数</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c">int numberOfDays(struct date d)&#123;
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">date</span> today<span class="token punctuation">;</span>
+<span class="token keyword">struct</span> <span class="token class-name">date</span> <span class="token operator">*</span>pDate <span class="token operator">=</span> <span class="token operator">&amp;</span>today<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="结构与函数"><a href="#结构与函数" class="headerlink" title="结构与函数"></a>结构与函数</h3><h4 id="结构作为函数的参数"><a href="#结构作为函数的参数" class="headerlink" title="结构作为函数的参数"></a>结构作为函数的参数</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">int</span> <span class="token function">numberOfDays</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">date</span> d<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>整个结构可以作为参数的值传入函数</li>
 <li>在函数内<strong>新建</strong>一个结构变量，并<strong>复制</strong>调用者的结构的值</li>
@@ -724,36 +724,36 @@ struct date *pDate &#x3D; &amp;today;<span aria-hidden="true" class="line-number
 <h4 id="结构指针作为参数"><a href="#结构指针作为参数" class="headerlink" title="结构指针作为参数"></a>结构指针作为参数</h4><blockquote>
 <p>If a large structure is to be passed to a function, it is generally more efficient to pass a pointer than to copy the whole structure. ——K&amp;R</p>
 </blockquote>
-<pre class="line-numbers language-c" data-language="c"><code class="language-c">struct date &#123;
-    int month;
-    int day;
-    int year;
-&#125; myday;
+<pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">date</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> month<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> day<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> year<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span> myday<span class="token punctuation">;</span>
 
-struct date *p &#x3D; &amp;myday;
-(*p).month &#x3D; 12;&#x2F;&#x2F;方法一
-p-&gt;month &#x3D; 12;&#x2F;&#x2F;方法二<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">struct</span> <span class="token class-name">date</span> <span class="token operator">*</span>p <span class="token operator">=</span> <span class="token operator">&amp;</span>myday<span class="token punctuation">;</span>
+<span class="token punctuation">(</span><span class="token operator">*</span>p<span class="token punctuation">)</span><span class="token punctuation">.</span>month <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span><span class="token comment">//方法一</span>
+p<span class="token operator">-></span>month <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span><span class="token comment">//方法二</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>用<code>-&gt;</code>表示指针所指的结构变量中的成员</p>
-<h4 id="结构作为函数的返回值"><a href="#结构作为函数的返回值" class="headerlink" title="结构作为函数的返回值"></a>结构作为函数的返回值</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c">struct point &#123;
-    int x;
-    int y;
-&#125;
+<h4 id="结构作为函数的返回值"><a href="#结构作为函数的返回值" class="headerlink" title="结构作为函数的返回值"></a>结构作为函数的返回值</h4><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token keyword">struct</span> <span class="token class-name">point</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">int</span> x<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> y<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-struct point getstruct1(void)
-&#123;
-    struct ponit p;
-    scanf_s(&quot;%d&quot;,&amp;p.x);
-    scanf_s(&quot;%d&quot;,&amp;p.y);
-    return p;
-&#125;
+<span class="token keyword">struct</span> <span class="token class-name">point</span> <span class="token function">getstruct1</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">struct</span> <span class="token class-name">ponit</span> p<span class="token punctuation">;</span>
+    <span class="token function">scanf_s</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>p<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf_s</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>p<span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-struct point* getstruct2(struct ponit *p)
-&#123;
-    struct ponit p;
-    scanf_s(&quot;%d&quot;,&amp;p-&gt;x);
-    scanf_s(&quot;%d&quot;,&amp;p-&gt;y);
-    return p;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">struct</span> <span class="token class-name">point</span><span class="token operator">*</span> <span class="token function">getstruct2</span><span class="token punctuation">(</span><span class="token keyword">struct</span> <span class="token class-name">ponit</span> <span class="token operator">*</span>p<span class="token punctuation">)</span>
+<span class="token punctuation">&#123;</span>
+    <span class="token keyword">struct</span> <span class="token class-name">ponit</span> p<span class="token punctuation">;</span>
+    <span class="token function">scanf_s</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>p<span class="token operator">-></span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf_s</span><span class="token punctuation">(</span><span class="token string">"%d"</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>p<span class="token operator">-></span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="位操作"><a href="#位操作" class="headerlink" title="位操作"></a>位操作</h2><h2 id="C-预处理器和-C-库"><a href="#C-预处理器和-C-库" class="headerlink" title="C 预处理器和 C 库"></a>C 预处理器和 C 库</h2><h2 id="高级数据表示"><a href="#高级数据表示" class="headerlink" title="高级数据表示"></a>高级数据表示</h2>
                 
             </div>
@@ -776,12 +776,12 @@ struct point* getstruct2(struct ponit *p)
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -821,7 +821,7 @@ struct point* getstruct2(struct ponit *p)
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/15.png" class="responsive-img" alt="Servlet">
+                        <img src="/medias/featureimages/15.png" class="responsive-img" alt="Servlet">
                         
                         <span class="card-title">Servlet</span>
                     </div>
@@ -874,7 +874,7 @@ struct point* getstruct2(struct ponit *p)
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/16.jpg" class="responsive-img" alt="Java多线程">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Java多线程">
                         
                         <span class="card-title">Java多线程</span>
                     </div>
@@ -925,21 +925,21 @@ struct point* getstruct2(struct ponit *p)
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -960,7 +960,7 @@ struct point* getstruct2(struct ponit *p)
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1197,12 +1197,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1224,7 +1224,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1240,7 +1240,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

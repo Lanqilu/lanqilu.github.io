@@ -17,17 +17,17 @@
 
 
     <title>Java面向对象编程 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/4.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,7 +366,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -403,24 +403,24 @@
 <h3 id="识别类"><a href="#识别类" class="headerlink" title="识别类"></a>识别类</h3><h3 id="类之间的关系"><a href="#类之间的关系" class="headerlink" title="类之间的关系"></a>类之间的关系</h3><h2 id="使用预定义类"><a href="#使用预定义类" class="headerlink" title="使用预定义类"></a>使用预定义类</h2><h3 id="对象与对象变量"><a href="#对象与对象变量" class="headerlink" title="对象与对象变量"></a>对象与对象变量</h3><p>要想使用对象，首先必须构造对象，并指定其初始状态。然后对对象应用方法。</p>
 <p>在Java程序设计语言中，要使用构造器（constructor，或称为构造函数）构造新实例。构造器是一种特殊的方法，用来构造并初始化对象。下面看一个例子。在标准Java库中包含一个<code>Date</code>类。它的对象可以描述一个时间点。</p>
 <p>构造器的名字应该与类名相同。因此<code>Date</code>类的构造器名为<code>Date</code>。想要构造一个<code>Date</code>对象，需要在构造器前面加上<code>new</code>操作符，如下所示：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">new Date()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这个表达式构造了一个新对象。这个对象被初始化为当前的日期和时间。</p>
 <p>如果需要的话，也可以将这个对象传递给一个方法：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">System.out.println(new Date());<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>或者，也可以对刚刚创建的对象应用一个方法。<code>Date</code>类中有一个<code>toString</code>方法。这个方法将返回日期的字符串描述。下面的语句可以说明如何对新构造的<code>Date</code>对象应用<code>toString</code>方法。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">String s &#x3D; new Date().toString();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">String</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在着两个例子中，构造的对象仅使用了一次。通常你会希望构造的对象可以多次使用，因此，需要将对象存放在一个变量中：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Date birthday &#x3D; new Date();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Date</span> birthday <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在对象与对象之间存在着一个重要的区别。例如，一下语句：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Date deadline；&#x2F;&#x2F; deadline doesn&#39;t refer to any object<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Date</span> deadline；<span class="token comment">// deadline doesn't refer to any object</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>定义了一个对象变量<code>deadline</code>，它可以引用<code>Date</code>类型的对象。但是，一定要认识到：变量<code>deadline</code>不是一个对象，而且实际上它也没有引用任何对象。此时还不能在这个变量上使用任何<code>Date</code>方法。必须首先初始化变量<code>deadline</code>，这里有两个选择。</p>
 <p>可以初始化这个变量，让它引用一个新的构造的对象：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">deadline &#x3D; new Date();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">deadline <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>也可以设置这个变量，让它引用一个已有的对象：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">deadline &#x3D; birthday；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">deadline <span class="token operator">=</span> birthday；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>现在，这两个变量都引用同一个对象，要认识到重要的一点：对象变量并没有实际包含一个对象，它只是引用一个对象。</p>
 <p>在Java中，任何对象变量的值都是对存储在另外一个地方的某个对象的引用，下面的语句：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Date deadline &#x3D; new Date();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Date</span> deadline <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>有两个部分。表达式<code>new Date()</code>构造了一个<code>Date</code>类型的对象，它的</p>
 <p>P98</p>
 <h2 id="类简介"><a href="#类简介" class="headerlink" title="类简介"></a>类简介</h2><p>类是 Java 程序最基本的元素结构。编写 Java 代码不可能不定义类。所有 Java 语句都在类中，而且所有方法都在类中实现。</p>
@@ -442,9 +442,9 @@
 <li>如果类实现一个或多个接口，类名或 <code>extends</code> 子句之后要加上 <code>implements</code> 关键字和用逗号分隔的接口名。</li>
 </ul>
 <p>例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Integer extends Number implements Serializable, Comparable &#123; 
-    &#x2F;&#x2F; 这里是类的成员 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Integer</span> <span class="token keyword">extends</span> <span class="token class-name">Number</span> <span class="token keyword">implements</span> <span class="token class-name">Serializable</span><span class="token punctuation">,</span> <span class="token class-name">Comparable</span> <span class="token punctuation">&#123;</span> 
+    <span class="token comment">// 这里是类的成员 </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>定义泛型类时还可以指定类型参数和通配符。</p>
 <p>类声明可以包含修饰符关键字。除访问控制修饰符（<code>public</code>、<code>protected</code> 等）之外，还可以使用：</p>
 <ul>
@@ -455,34 +455,34 @@
 <h2 id="字段和方法"><a href="#字段和方法" class="headerlink" title="字段和方法"></a>字段和方法</h2><p>类可以看成是由一些数据（也叫状态）和操作这些状态的代码组成的。数据存储在字段中，操作数据的代码则组织在方法中。</p>
 <p>字段和方法有两种不同的类型：关联在类自身上的类成员（也叫静态成员），关联在类的单个实例（即对象）身上的实例成员。因此成员分为四类：类字段、类方法、实例字段、实例方法</p>
 <p>示例定义了一个简单的类 <code>Circle</code>，包含所有这四种成员类型：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Circle &#123; 
-  &#x2F;&#x2F; 类字段 
-  public static final double PI&#x3D; 3.14159;  &#x2F;&#x2F; 有用的常量 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">&#123;</span> 
+  <span class="token comment">// 类字段 </span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI<span class="token operator">=</span> <span class="token number">3.14159</span><span class="token punctuation">;</span>  <span class="token comment">// 有用的常量 </span>
  
-  &#x2F;&#x2F; 类方法：基于参数计算得到一个值 
-  public static double radiansToDegrees(double radians) &#123; 
-    return radians * 180 &#x2F; PI; 
-  &#125; 
+  <span class="token comment">// 类方法：基于参数计算得到一个值 </span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">radiansToDegrees</span><span class="token punctuation">(</span><span class="token keyword">double</span> radians<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">return</span> radians <span class="token operator">*</span> <span class="token number">180</span> <span class="token operator">/</span> PI<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  &#x2F;&#x2F; 实例字段 
-  public double r;               &#x2F;&#x2F; 圆的半径 
+  <span class="token comment">// 实例字段 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> r<span class="token punctuation">;</span>               <span class="token comment">// 圆的半径 </span>
  
-  &#x2F;&#x2F; 两个实例方法：处理对象的实例字段 
-  public double area() &#123;         &#x2F;&#x2F; 计算圆的面积 
-    return PI * r * r; 
-  &#125; 
+  <span class="token comment">// 两个实例方法：处理对象的实例字段 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>         <span class="token comment">// 计算圆的面积 </span>
+    <span class="token keyword">return</span> PI <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  public double circumference() &#123; &#x2F;&#x2F; 计算圆的周长 
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// 计算圆的周长 </span>
  
-    return 2 * PI * r; 
-  &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">return</span> <span class="token number">2</span> <span class="token operator">*</span> PI <span class="token operator">*</span> r<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="声明字段的句法"><a href="#声明字段的句法" class="headerlink" title="声明字段的句法"></a>声明字段的句法</h3><p>声明字段的句法和声明局部变量的句法很像，不过声明字段时还可以使用修饰符。最简单的字段声明包含字段类型和字段名。类型前面可以放零个或多个修饰符关键字或注解，名称后面可以跟着一个等号和初始化表达式，提供字段的初始值。如果两个或多个字段的类型和修饰符都相同，那么可以把一些用逗号分隔的字段名和初始化表达式放在类型后面。如下是一些有效的字段声明：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">int x &#x3D; 1; 
-private String name; 
-public static final int DAYS_PER_WEEK &#x3D; 7; 
-String[] daynames &#x3D; new String[DAYS_PER_WEEK]; 
-private int a &#x3D; 17, b &#x3D; 37, c &#x3D; 53;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> 
+<span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span> 
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> DAYS_PER_WEEK <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span> 
+<span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> daynames <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span>DAYS_PER_WEEK<span class="token punctuation">]</span><span class="token punctuation">;</span> 
+<span class="token keyword">private</span> <span class="token keyword">int</span> a <span class="token operator">=</span> <span class="token number">17</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">37</span><span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token number">53</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>字段的修饰符由零个或多个下述关键字组成。</p>
 <ul>
 <li><code>public</code>、<code>protected</code>、<code>private</code>：这些访问控制修饰符指明字段是否能在定义它的类之外使用，以及能在何处使用。</li>
@@ -492,51 +492,51 @@ private int a &#x3D; 17, b &#x3D; 37, c &#x3D; 53;<span aria-hidden="true" class
 <li><code>volatile</code>：这个修饰符指明字段有额外的语义，可被两个或多个线程同时使用。<code>volatile</code> 修饰符的意思是，字段的值必须始终从主存储器中读取和释放，不能被线程缓存（在寄存器或CPU 缓存中）。</li>
 </ul>
 <h3 id="类字段"><a href="#类字段" class="headerlink" title="类字段"></a>类字段</h3><p>类字段关联在定义它的类身上，而不是类的实例身上。下面这行代码声明一个类字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static final double PI &#x3D; 3.14159;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14159</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这行代码声明了一个字段，类型为 <code>double</code>，名称为 <code>PI</code>，并且把值设为 <code>3.14159</code>。<code>static</code> 修饰符表明这个字段是类字段。因为使用了 <code>static</code> 修饰符，所以类字段有时也叫静态字段。<code>final</code> 修饰符表明这个字段的值不会改变。因为字段 <code>PI</code> 表示一个常量，而且声明时加上了 <code>final</code>，所以无法修改它的值。在 Java（以及很多其他语言）中，习惯使用大写字母命名常量，因此这个字段的名称是 PI，而不是 pi。类字段经常用来定义常量，也就是说，<code>static</code> 和 <code>final</code> 修饰符经常放在一起使用。然而，并不是所有类字段都是常量，因此字段可以声明为<code>static</code> 但不声明为 <code>final</code>。</p>
 <p>公开的静态字段其实就是全局变量。不过，类字段的名称会被定义它的类名限定，因此，如果不同的模块定义了同名的全局变量，Java 不会出现其他语言遇到的名称冲突问题。关于静态字段，有个重点要理解，即字段的值只有一个副本。字段关联在类自身上，而不是类的实例身上。看一下 <code>Circle</code> 类中的各个方法，它们都使用了同一个字段。在<code>Circle</code> 类内部，可以直接使用 <code>PI</code> 引用这个字段。但是在类的外部，既要使用类名也要使用字段名，这样才能引用这个独一无二的字段。<code>Circle</code> 类外部的方法要使用 <code>Circle.PI</code>才能访问这个字段。</p>
 <h3 id="类方法"><a href="#类方法" class="headerlink" title="类方法"></a>类方法</h3><p>和类字段一样，类方法也使用 <code>static</code> 修饰符声明：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static double radiansToDegrees(double rads) &#123; 
-  return rads * 180 &#x2F; PI; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">radiansToDegrees</span><span class="token punctuation">(</span><span class="token keyword">double</span> rads<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">return</span> rads <span class="token operator">*</span> <span class="token number">180</span> <span class="token operator">/</span> PI<span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>上述代码声明了一个类方法，名为 <code>radiansToDegrees()</code>。这个方法只有一个参数，类型为<code>double</code>，而且会返回一个 <code>double</code> 类型的值。</p>
 <p>和类字段一样，类方法也关联在类身上，而不是对象身上。在类的外部调用类方法时，既要指定类名也要指定方法名。例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 2.0弧度等于多少角度？ 
-double d &#x3D; Circle.radiansToDegrees(2.0);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 2.0弧度等于多少角度？ </span>
+<span class="token keyword">double</span> d <span class="token operator">=</span> <span class="token class-name">Circle</span><span class="token punctuation">.</span><span class="token function">radiansToDegrees</span><span class="token punctuation">(</span><span class="token number">2.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>如果想在定义类方法的类中调用类方法，则不用指定类名。还可以使用静态成员导入声明，减少输入的代码量。<br>注意，<code>Circle.radiansToDegrees()</code> 方法的主体使用了类字段 <code>PI</code>。类方法可以使用所在类（或其他类）中的任何类字段和类方法。</p>
 <p>类方法不能使用任何实例字段或实例方法，因为类方法不关联在类的实例身上。也就是说，虽然 <code>adiansToDegrees()</code> 方法在 <code>Circle</code> 类中定义，但它不能使用 <code>Circle</code> 对象的任何实例成员。</p>
 <h3 id="实例字段"><a href="#实例字段" class="headerlink" title="实例字段"></a>实例字段</h3><p>声明时没使用 <code>static</code> 修饰符的字段是实例字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public double r;    &#x2F;&#x2F; 圆的半径<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">double</span> r<span class="token punctuation">;</span>    <span class="token comment">// 圆的半径</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>实例字段关联在类的实例身上，所以创建的每个 <code>Circle</code> 对象都有自己的一个 <code>double</code> 类型 r 字段副本。在这个例子中，r 表示某个圆的半径。每个 <code>Circle</code> 对象的半径和其他所有<code>Circle</code> 对象的都不同。</p>
 <p>在类定义内部，实例字段只通过名称引用。在实例方法 <code>circumference()</code> 的主体中有一个例子。在类外部，实例字段的名称前面必须加上包含这个字段的对象的引用。例如，如果变量 <code>c</code> 保存的是一个 <code>Circle</code> 对象的引用，那么可以使用表达式 <code>c.r</code> 引用这个圆的半径：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Circle c &#x3D; new Circle(); &#x2F;&#x2F; 创建一个Circle对象，把引用存储在c中 
-c.r &#x3D; 2.0;               &#x2F;&#x2F; 把一个值赋值给实例字段r 
-Circle d &#x3D; new Circle(); &#x2F;&#x2F; 再创建一个Circle对象 
-d.r &#x3D; c.r * 2;           &#x2F;&#x2F; 让这个圆是前一个的两倍大<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Circle</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 创建一个Circle对象，把引用存储在c中 </span>
+c<span class="token punctuation">.</span>r <span class="token operator">=</span> <span class="token number">2.0</span><span class="token punctuation">;</span>               <span class="token comment">// 把一个值赋值给实例字段r </span>
+<span class="token class-name">Circle</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 再创建一个Circle对象 </span>
+d<span class="token punctuation">.</span>r <span class="token operator">=</span> c<span class="token punctuation">.</span>r <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>           <span class="token comment">// 让这个圆是前一个的两倍大</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>实例字段是面向对象编程的关键。实例字段保存对象的状态，实例字段的值把两个对象区分开来。</p>
 <h3 id="实例方法"><a href="#实例方法" class="headerlink" title="实例方法"></a>实例方法</h3><p>实例方法处理类的具体实例（对象），只要声明方法时没使用 static 关键字，这个方法默认就是实例方法。</p>
 <p>实例方法这个特性让面向对象编程开始变得有趣。示例中定义的 Circle 类包含两个实例方法，<code>area()</code> 和 <code>circumference()</code>，分别计算指定 Circle 对象表示的圆的面积和周长。若想在定义实例方法的类之外使用实例方法，必须在方法名前加上要处理的实例引用。例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 创建一个Circle对象，存储在变量c中 
-Circle c &#x3D; new Circle(); 
-c.r &#x3D; 2.0;              &#x2F;&#x2F; 设定这个对象的实例字段 
-double a &#x3D; c.area();    &#x2F;&#x2F; 调用这个对象的实例方法<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 创建一个Circle对象，存储在变量c中 </span>
+<span class="token class-name">Circle</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+c<span class="token punctuation">.</span>r <span class="token operator">=</span> <span class="token number">2.0</span><span class="token punctuation">;</span>              <span class="token comment">// 设定这个对象的实例字段 </span>
+<span class="token keyword">double</span> a <span class="token operator">=</span> c<span class="token punctuation">.</span><span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">// 调用这个对象的实例方法</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在实例方法内部，可以自然地访问属于调用这个方法的对象的实例字段。前面说过，经常可以把对象理解为包含状态（通过对象的字段表示）和行为（处理状态的方法）的包（bundle）。<br>实现所有实例方法时都使用了一个隐式参数，方法签名里没显示这个参数。这个隐式参数是 <code>this</code>，它的值是调用这个方法的对象引用。在我们的例子中，是一个 <code>Circle</code> 对象。</p>
 <h3 id="this引用的工作方式"><a href="#this引用的工作方式" class="headerlink" title="this引用的工作方式"></a><code>this</code>引用的工作方式</h3><p>方法签名中不显示隐式参数 <code>this</code>，是因为往往用不到。只要 Java 方法在类中访问实例字段，都默认访问 <code>this</code> 参数指向的对象中的字段。实例方法调用同一个类中的其他实例方法时也一样，可以理解为“在当前对象上调用实例方法”。</p>
 <p>不过，如果想明确表明方法访问的是自己的字段或方法，可以显式使用 <code>this</code> 关键字。例如，可以改写 <code>area()</code> 方法，显式使用 <code>this</code> 引用实例字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public double area() &#123; return Circle.PI * this.r * this.r; &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token class-name">Circle</span><span class="token punctuation">.</span>PI <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>上述代码还显式使用类名引用类字段 <code>PI</code>。在这样简单的方法中，一般无需如此明确。然而，遇到复杂情况时，在不强制要求使用 <code>this</code> 的地方使用 <code>this</code>，有时可以让代码的意图更明确。</p>
 <p>不过，有些情况下必须使用 <code>this</code> 关键字。例如，如果方法的参数或方法中的局部变量和类中的某个字段同名，那么就必须使用 <code>this</code> 引用这个字段，因为只使用字段名的话，引用的是方法的参数或局部变量。</p>
 <p>例如，可以把下述方法添加到 <code>Circle</code> 类中：    </p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public void setRadius(double r) &#123; 
-  this.r &#x3D; r;      &#x2F;&#x2F; 把参数r的值赋值给字段this.r 
-                   &#x2F;&#x2F; 注意，不能写成r &#x3D; r 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setRadius</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span>      <span class="token comment">// 把参数r的值赋值给字段this.r </span>
+                   <span class="token comment">// 注意，不能写成r = r </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>有些开发者会谨慎选择方法的参数名，避免和字段名冲突，因此可以最大限度地少使用<code>this</code>。</p>
 <p>最后，注意，实例方法可以使用 <code>this</code> 关键字，但类方法不能使用。这是因为类方法不关联在单个对象身上。</p>
 <h2 id="创建和初始化对象"><a href="#创建和初始化对象" class="headerlink" title="创建和初始化对象"></a>创建和初始化对象</h2><p>构造方法是类成员，作用是初始化新建实例中的字段。</p>
 <p>再看一下创建 Circle 对象的方式：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Circle c &#x3D; new Circle();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Circle</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这行代码的意思是，调用看起来有点儿像方法的东西创建一个新 Circle 实例。其实，<code>Circle()</code> 是一种构造方法，是类中的成员，和类同名，而且像方法一样，有主体。</p>
 <p>构造方法的工作方式是这样的：</p>
 <ul>
@@ -551,25 +551,25 @@ double a &#x3D; c.area();    &#x2F;&#x2F; 调用这个对象的实例方法<span
 </ul>
 <p>Java 中的每个类都至少有一个构造方法，其作用是执行初始化新对象所需的操作。定义的 Circle 类没有显式定义构造方法，因此 javac 编译器自动为我们提供了一个构造方法（叫作默认构造方法）。这个构造方法没有参数，而且不执行任何特殊的初始化操作。</p>
 <h3 id="定义构造方法"><a href="#定义构造方法" class="headerlink" title="定义构造方法"></a>定义构造方法</h3><p>可是 <code>Circle</code> 对象显然要做些初始化操作，下面就来定义一个构造方法。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Circle &#123; 
-    public static final double PI &#x3D; 3.14159; &#x2F;&#x2F; 常量 
-    &#x2F;&#x2F; 实例字段，保存圆的半径 
-    protected double r; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14159</span><span class="token punctuation">;</span> <span class="token comment">// 常量 </span>
+    <span class="token comment">// 实例字段，保存圆的半径 </span>
+    <span class="token keyword">protected</span> <span class="token keyword">double</span> r<span class="token punctuation">;</span> 
  
-    &#x2F;&#x2F; 构造方法：初始化r字段
-    public Circle(double r) &#123; this.r &#x3D; r; &#125; 
+    <span class="token comment">// 构造方法：初始化r字段</span>
+    <span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
  
-    &#x2F;&#x2F; 实例方法：基于半径计算得到值 
-    public double circumference() &#123; return 2 * PI * r; &#125; 
-    public double area() &#123; return PI * r*r; &#125; 
-    public double radius() &#123; return r; &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token comment">// 实例方法：基于半径计算得到值 </span>
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token number">2</span> <span class="token operator">*</span> PI <span class="token operator">*</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> PI <span class="token operator">*</span> r<span class="token operator">*</span>r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">radius</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>重新定义了 <code>Circle</code> 类，包含一个构造方法，指定新建 <code>Circle</code> 对象的半径。借此机会，我们还把字段改成了受保护的（禁止对象随意访问）。</p>
 <p>如果依赖编译器提供的默认构造方法，就要编写如下的代码显式初始化半径：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Circle c &#x3D; new Circle(); 
-c.r &#x3D; 0.25;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Circle</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+c<span class="token punctuation">.</span>r <span class="token operator">=</span> <span class="token number">0.25</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>添加上述构造方法后，初始化变成创建对象过程的一部分：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Circle c &#x3D; new Circle(0.25);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Circle</span> c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token number">0.25</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>下面是一些关于命名、声明和编写构造方法的基本注意事项。</p>
 <ul>
 <li>构造方法的名称始终和类名一样。</li>
@@ -578,14 +578,14 @@ c.r &#x3D; 0.25;<span aria-hidden="true" class="line-numbers-rows"><span></span>
 <li>构造方法不能返回 <code>this</code> 或任何其他值。</li>
 </ul>
 <h3 id="定义多个构造方法"><a href="#定义多个构造方法" class="headerlink" title="定义多个构造方法"></a>定义多个构造方法</h3><p>有时，根据遇到的情况，可能想在多个不同的方式中选择一个最便利的方式初始化对象。例如，我们可能想使用指定的值初始化圆的半径，或者使用一个合理的默认值初始化。为<code>Circle</code> 类定义两个构造方法的方式如下：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public Circle() &#123; r &#x3D; 1.0; &#125; 
-public Circle(double r) &#123; this.r &#x3D; r; &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> r <span class="token operator">=</span> <span class="token number">1.0</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+<span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p><code>Circle</code> 类只有一个实例字段，由此并没有太多的初始化方式。不过在复杂的类中，经常会定义不同的构造方法。<br>只要构造方法的参数列表不同，为一个类定义多个构造方法完全是合法的。编译器会根据提供的参数数量和类型判断你想使用的是哪个构造方法。定义多个构造方法和方法重载的原理类似。</p>
 <h3 id="在一个构造方法中调用另一个构造方法"><a href="#在一个构造方法中调用另一个构造方法" class="headerlink" title="在一个构造方法中调用另一个构造方法"></a>在一个构造方法中调用另一个构造方法</h3><p>如果类有多个构造方法，会用到 <code>this</code> 关键字的一种特殊用法。在一个构造方法中可以使用<code>this</code> 关键字调用同一个类中的另一个构造方法。因此，前面 <code>Circle</code> 类的两个构造方法可以改写成：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 这是基本构造方法：初始化半径 
-public Circle(double r) &#123; this.r &#x3D; r; &#125; 
-&#x2F;&#x2F; 这个构造方法使用this()调用前一个构造方法 
-public Circle() &#123; this(1.0); &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 这是基本构造方法：初始化半径 </span>
+<span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+<span class="token comment">// 这个构造方法使用this()调用前一个构造方法 </span>
+<span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">(</span><span class="token number">1.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>如果一些构造方法共用大量的初始化代码，这种技术是有用的，因为能避免代码重复。</li>
 <li>如果构造方法执行很多初始化操作，在这种复杂的情况下，这种技术十分有用。</li>
@@ -593,110 +593,110 @@ public Circle() &#123; this(1.0); &#125;<span aria-hidden="true" class="line-num
 <p>使用 <code>this()</code> 时有个重大的限制：只能出现在构造方法的第一个语句中。但是，调用这个方法后，可以执行构造方法所需的任何其他初始化操作。这个限制的原因涉及自动调用超类的构造方法。</p>
 <h3 id="字段的默认值和初始化程序"><a href="#字段的默认值和初始化程序" class="headerlink" title="字段的默认值和初始化程序"></a>字段的默认值和初始化程序</h3><p>类中的字段不一定要初始化。如果没有指定初始值，字段自动使用默认值初始化：false、\u0000、0、0.0 或 null。具体使用哪个值，根据字段的类型而定。这些默认值由 Java 语言规范规定，实例字段和类字段都适用。</p>
 <p>如果字段的默认值不适合字段，可以显式提供其他的初始值。例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static final double PI &#x3D; 3.14159; 
-public double r &#x3D; 1.0;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14159</span><span class="token punctuation">;</span> 
+<span class="token keyword">public</span> <span class="token keyword">double</span> r <span class="token operator">=</span> <span class="token number">1.0</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>字段声明不是任何方法的一部分。Java 编译器会自动为字段生成初始化代码，然后把这些代码放在类的所有构造方法中。这些初始化代码按照字段在源码中出现的顺序插入构造方法，因此，字段的初始化程序可以使用在其之<br>前声明的任何字段的初始值。</p>
 <p>例如下述代码片段是一个假设类，定义了一个构造方法和两个实例字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class SampleClass &#123; 
-  public int len &#x3D; 10; 
-  public int[] table &#x3D; new int[len]; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SampleClass</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> table <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>len<span class="token punctuation">]</span><span class="token punctuation">;</span> 
  
-  public SampleClass() &#123; 
-    for(int i &#x3D; 0; i &lt; len; i++) table[i] &#x3D; i; 
-  &#125; 
+  <span class="token keyword">public</span> <span class="token class-name">SampleClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  &#x2F;&#x2F; 类余下的内容省略了…… 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token comment">// 类余下的内容省略了…… </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>对这个例子来说，javac 生成的构造方法其实和下述代码等效：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public SampleClass() &#123; 
-  int len &#x3D; 10; 
-  int[] table &#x3D; new int[len];
-  for(int i &#x3D; 0; i &lt; len; i++) table[i] &#x3D; i; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">SampleClass</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">int</span> len <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span> 
+  <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> table <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>len<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> table<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如果某个构造方法的开头使用 <code>this()</code> 调用其他构造方法，那么字段的初始化代码不会出现在这个构造方法中。此时，初始化由 <code>this()</code> 调用的构造方法处理。</p>
 <p>既然实例字段在构造方法中初始化，那么类字段在哪初始化呢？就算从不创建类的实例，类字段也关联在类身上。这意味着，类字段要在调用构造方法之前初始化。</p>
 <p>为此，javac 会为每个类自动生成一个类初始化方法。类字段在这个方法的主体中初始化。这个方法只在首次使用类之前调用一次（经常是在 Java 虚拟机首次加载类时）</p>
 <p>和实例字段的初始化一样，类字段的初始化表达式按照类字段在源码中的顺序插入类初始化方法。因此，类字段的初始化表达式可以使用在其之前声明的类字段。类初始化方法是内部方法，对 Java 程序员不可见。在类文件中，它的名称是 <code>&lt;clinit&gt;</code>（例如，使用 javap检查类文件时可以看到这个方法）。</p>
 <p><strong>初始化程序块</strong></p>
 <p>至此，我们知道对象可以通过字段的初始化表达式和构造方法中的任何代码初始化。类有一个类初始化方法，这个方法和构造方法不一样，不能像构造方法那样显式定义主体。不过，Java 允许编写用于初始化类字段的代码，所用的结构叫静态初始化程序。静态初始化程序由 static 关键字及随后的花括号中的代码块组成。在类定义中，静态初始化程序可以放在字段和方法定义能出现的任何位置。例如，下述代码为两个类字段执行一些重要的初始化操作：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 我们可以使用三角函数画出圆的轮廓 
-&#x2F;&#x2F; 不过，三角函数很慢，所以预先算出一些值 
-public class TrigCircle &#123; 
-  &#x2F;&#x2F; 这是静态查找表和各自的初始化程序 
-  private static final int NUMPTS &#x3D; 500; 
-  private static double sines[] &#x3D; new double[NUMPTS]; 
-  private static double cosines[] &#x3D; new double[NUMPTS]; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 我们可以使用三角函数画出圆的轮廓 </span>
+<span class="token comment">// 不过，三角函数很慢，所以预先算出一些值 </span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TrigCircle</span> <span class="token punctuation">&#123;</span> 
+  <span class="token comment">// 这是静态查找表和各自的初始化程序 </span>
+  <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> NUMPTS <span class="token operator">=</span> <span class="token number">500</span><span class="token punctuation">;</span> 
+  <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">double</span> sines<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">double</span><span class="token punctuation">[</span>NUMPTS<span class="token punctuation">]</span><span class="token punctuation">;</span> 
+  <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">double</span> cosines<span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">double</span><span class="token punctuation">[</span>NUMPTS<span class="token punctuation">]</span><span class="token punctuation">;</span> 
  
-  &#x2F;&#x2F; 这是一个静态初始化程序，填充上述数组 
-  static &#123; 
-    double x &#x3D; 0.0; 
-    double delta_x &#x3D; (Circle.PI&#x2F;2)&#x2F;(NUMPTS-1); 
-    for(int i &#x3D; 0, x &#x3D; 0.0; i &lt; NUMPTS; i++, x +&#x3D; delta_x) &#123; 
-      sines[i] &#x3D; Math.sin(x); 
-      cosines[i] &#x3D; Math.cos(x); 
-    &#125; 
-  &#125; 
-  &#x2F;&#x2F; 类余下的内容省略了…… 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token comment">// 这是一个静态初始化程序，填充上述数组 </span>
+  <span class="token keyword">static</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">double</span> x <span class="token operator">=</span> <span class="token number">0.0</span><span class="token punctuation">;</span> 
+    <span class="token keyword">double</span> delta_x <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">Circle</span><span class="token punctuation">.</span>PI<span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token punctuation">(</span>NUMPTS<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> x <span class="token operator">=</span> <span class="token number">0.0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> NUMPTS<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">,</span> x <span class="token operator">+=</span> delta_x<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+      sines<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">sin</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+      cosines<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">cos</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span> 
+  <span class="token punctuation">&#125;</span> 
+  <span class="token comment">// 类余下的内容省略了…… </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>一个类可以有任意多个静态初始化程序。各个初始化程序块的主体会和所有静态字段的初始化表达式一起合并到类初始化方法中。静态初始化程序和类方法的相同点是，不能使用this 关键字，也不能使用类中的任何实例字段或实例方法。</p>
 <p>类还可以有实例初始化程序。实例初始化程序和静态初始化程序类似，不过初始化的是对象而不是类。一个类可以有任意多个实例初始化程序，而且实例初始化程序可以放在字段和方法定义能出现的任何位置。各个实例初始化程序的主体和所有实例字段初始化表达式一起，放在类中每个构造方法的开头。实例初始化程序的外观和静态初始化程序类似，不过不使用 static 关键字。也就是说，实例初始化程序只是放在花括号里的任意 Java 代码。</p>
 <p>实例初始化程序可以初始化数组或其他需要复杂初始化操作的字段。实例初始化程序有时很有用，因为它们把初始化代码放在字段后面，而不是单独放在构造方法中。例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">private static final int NUMPTS &#x3D; 100; 
-private int[] data &#x3D; new int[NUMPTS]; 
-&#123; for(int i &#x3D; 0; i &lt; NUMPTS; i++) data[i] &#x3D; i; &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">int</span> NUMPTS <span class="token operator">=</span> <span class="token number">100</span><span class="token punctuation">;</span> 
+<span class="token keyword">private</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> data <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span>NUMPTS<span class="token punctuation">]</span><span class="token punctuation">;</span> 
+<span class="token punctuation">&#123;</span> <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> NUMPTS<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> data<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>不过，现实中很少使用实例初始化程序。</p>
 <h2 id="子类和继承"><a href="#子类和继承" class="headerlink" title="子类和继承"></a>子类和继承</h2><p>前面定义的 <code>Circle</code> 是个简单的类，只通过半径区分不同的圆。假设我们要同时使用大小和位置表示圆。例如，在笛卡儿平面中，圆心在 (0, 0)、半径为 1.0 的圆，与圆心在 (1, 2)、半径为 1.0 的圆不同。为此，需要一个新类，我们称其为 <code>PlaneCircle</code>。</p>
 <p>我们想添加表示圆所在位置的功能，但不想失去 <code>Circle</code> 类的任何现有功能。为此，可以把<code>PlaneCircle</code> 类定义为 <code>Circle</code> 类的子类，让 <code>PlaneCircle</code> 类继承超类 <code>Circle</code> 的字段和方法。</p>
 <p>通过定义子类或扩展超类向类中添加功能的能力，是面向对象编程范式的核心。</p>
 <h3 id="扩展类"><a href="#扩展类" class="headerlink" title="扩展类"></a>扩展类</h3><p>如何把 <code>PlaneCircle</code> 类定义为 <code>Circle</code> 类的子类：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class PlaneCircle extends Circle &#123; 
-  &#x2F;&#x2F; 自动继承了Circle类的字段和方法， 
-  &#x2F;&#x2F; 因此只要在这里编写新代码 
-  &#x2F;&#x2F; 新实例字段，存储圆心的位置 
-  private final double cx, cy; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">PlaneCircle</span> <span class="token keyword">extends</span> <span class="token class-name">Circle</span> <span class="token punctuation">&#123;</span> 
+  <span class="token comment">// 自动继承了Circle类的字段和方法， </span>
+  <span class="token comment">// 因此只要在这里编写新代码 </span>
+  <span class="token comment">// 新实例字段，存储圆心的位置 </span>
+  <span class="token keyword">private</span> <span class="token keyword">final</span> <span class="token keyword">double</span> cx<span class="token punctuation">,</span> cy<span class="token punctuation">;</span> 
  
-  &#x2F;&#x2F; 新构造方法，用于初始化新字段 
-  &#x2F;&#x2F; 使用特殊的句法调用构造方法Circle() 
-  public PlaneCircle(double r, double x, double y) &#123; 
-    super(r);      &#x2F;&#x2F; 调用超类的构造方法Circle() 
-    this.cx &#x3D; x;   &#x2F;&#x2F; 初始化实例字段cx 
-    this.cy &#x3D; y;   &#x2F;&#x2F; 初始化实例字段cy 
-  &#125;
-    public double getCentreX() &#123; 
-    return cx; 
-  &#125; 
+  <span class="token comment">// 新构造方法，用于初始化新字段 </span>
+  <span class="token comment">// 使用特殊的句法调用构造方法Circle() </span>
+  <span class="token keyword">public</span> <span class="token class-name">PlaneCircle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">,</span> <span class="token keyword">double</span> x<span class="token punctuation">,</span> <span class="token keyword">double</span> y<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">super</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// 调用超类的构造方法Circle() </span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>cx <span class="token operator">=</span> x<span class="token punctuation">;</span>   <span class="token comment">// 初始化实例字段cx </span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>cy <span class="token operator">=</span> y<span class="token punctuation">;</span>   <span class="token comment">// 初始化实例字段cy </span>
+  <span class="token punctuation">&#125;</span>
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getCentreX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">return</span> cx<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  public double getCentreY() &#123; 
-    return cy; 
-  &#125; 
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getCentreY</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">return</span> cy<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  &#x2F;&#x2F; area()和circumference()方法继承自Circle类 
-  &#x2F;&#x2F; 新实例方法，检查点是否在圆内 
-  &#x2F;&#x2F; 注意，这个方法使用了继承的实例字段r 
-  public boolean isInside(double x, double y) &#123; 
-    double dx &#x3D; x - cx, dy &#x3D; y - cy;            &#x2F;&#x2F; 到圆心的距离 
-    double distance &#x3D; Math.sqrt(dx*dx + dy*dy); &#x2F;&#x2F; 勾股定理 
-    return (distance &lt; r);                      &#x2F;&#x2F; 返回true或false 
-  &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token comment">// area()和circumference()方法继承自Circle类 </span>
+  <span class="token comment">// 新实例方法，检查点是否在圆内 </span>
+  <span class="token comment">// 注意，这个方法使用了继承的实例字段r </span>
+  <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isInside</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">,</span> <span class="token keyword">double</span> y<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">double</span> dx <span class="token operator">=</span> x <span class="token operator">-</span> cx<span class="token punctuation">,</span> dy <span class="token operator">=</span> y <span class="token operator">-</span> cy<span class="token punctuation">;</span>            <span class="token comment">// 到圆心的距离 </span>
+    <span class="token keyword">double</span> distance <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>dx<span class="token operator">*</span>dx <span class="token operator">+</span> dy<span class="token operator">*</span>dy<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 勾股定理 </span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>distance <span class="token operator">&lt;</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>                      <span class="token comment">// 返回true或false </span>
+  <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>第一行中使用的 <code>extends</code> 关键字。这个关键字告诉 Java，<code>PlaneCircle</code> 类扩展 <code>Circle</code> 类（或者说是 <code>Circle</code> 类的子类），这意味着 <code>PlaneCircle</code> 类会继承 <code>Circle</code> 类的字段和方法。</p>
 <blockquote>
 <p>有多种方式能表达新对象类型具有 <code>Circle</code> 的特征，而且有位置。这或许是最简单的方式，但不一定是最合适的方式，尤其是在大型系统中。</p>
 </blockquote>
 <p><code>isInside()</code> 方法的定义展示了字段继承：这个方法使用了字段 <code>r</code>（由 <code>Circle</code> 类定义），就像这个字段是在 <code>PlaneCircle</code> 中定义的一样。<code>PlaneCircle</code> 还继承了 <code>Circle</code> 的方法。因此，如果变量 <code>pc</code> 保存的值是一个 <code>PlaneCircle</code> 对象引用，那么可以编写如下代码：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">double ratio &#x3D; pc.circumference() &#x2F; pc.area();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">double</span> ratio <span class="token operator">=</span> pc<span class="token punctuation">.</span><span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">/</span> pc<span class="token punctuation">.</span><span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这么做就好像 <code>area()</code> 和 <code>circumference()</code> 两个方法是在 <code>PlaneCircle</code> 中定义的一样。</p>
 <p>子类的另一个特性是，每个 <code>PlaneCircle</code> 对象都是完全合法的 <code>Circle</code> 对象。如果 <code>pc</code> 是一个 <code>PlaneCircle</code> 对象的引用，那么可以把这个引用赋值给 <code>Circle</code> 类型的变量，忽略它表示的位置：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 位置在原点的单位圆 
-PlaneCircle pc &#x3D; new PlaneCircle(1.0, 0.0, 0.0); 
-Circle c &#x3D; pc;     &#x2F;&#x2F; 无需校正，赋值给Circle类型的变量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 位置在原点的单位圆 </span>
+<span class="token class-name">PlaneCircle</span> pc <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PlaneCircle</span><span class="token punctuation">(</span><span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token class-name">Circle</span> c <span class="token operator">=</span> pc<span class="token punctuation">;</span>     <span class="token comment">// 无需校正，赋值给Circle类型的变量</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>把 <code>PlaneCircle</code> 对象赋值给 <code>Circle</code> 类型的变量时无需校正。<code>Circle</code> 类型的变量 <code>c</code> 中保存的值仍然是有效的 <code>PlaneCircle</code> 对象，但编译器不确定这一点，因此不校正无法反向（缩小）转换：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 缩小转换需要校正（虚拟机还要做运行时检查） 
-PlaneCircle pc2 &#x3D; (PlaneCircle) c; 
-boolean origininside &#x3D; ((PlaneCircle) c).isInside(0.0, 0.0);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 缩小转换需要校正（虚拟机还要做运行时检查） </span>
+<span class="token class-name">PlaneCircle</span> pc2 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">PlaneCircle</span><span class="token punctuation">)</span> c<span class="token punctuation">;</span> 
+<span class="token keyword">boolean</span> origininside <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">PlaneCircle</span><span class="token punctuation">)</span> c<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">isInside</span><span class="token punctuation">(</span><span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>如果声明类时使用了 <code>final</code> 修饰符，那么这个类无法被扩展或定义子类。<code>java.lang.String</code> 是 final 类的一个示例。把类声明为 <code>final</code> 可以避免不需要的类扩展：在 String 对象上调用方法时，就算 String 类来自某个未知的外部源，你也知道这个方法是在 String 类中定义的。</p>
 <h3 id="超类、对象和类层次结构"><a href="#超类、对象和类层次结构" class="headerlink" title="超类、对象和类层次结构"></a>超类、对象和类层次结构</h3><p>在这个示例中，<code>PlaneCircle</code> 是 <code>Circle</code> 的子类，也可以说 <code>Circle</code> 是 <code>PlaneCircle</code> 的超类。类的超类在 <code>extends</code> 子句中指定：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class PlaneCircle extends Circle &#123; ... &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">PlaneCircle</span> <span class="token keyword">extends</span> <span class="token class-name">Circle</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>你定义的每个类都有超类。如果没使用 <code>extends</code> 子句指定超类，那么超类是 <code>java.lang.Object</code>。<code>Object</code> 是特殊的类，原因有如下两个：</p>
 <ul>
 <li>它是 Java 中唯一一个没有超类的类；</li>
@@ -704,11 +704,11 @@ boolean origininside &#x3D; ((PlaneCircle) c).isInside(0.0, 0.0);<span aria-hidd
 </ul>
 <p>因为每个类（除了 <code>Object</code> 类）都有超类，所以 Java 中的类组成一个类层次结构。</p>
 <h3 id="子类的构造方法"><a href="#子类的构造方法" class="headerlink" title="子类的构造方法"></a>子类的构造方法</h3><p>再看一下示例中的 <code>PlaneCircle()</code> 构造方法：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public PlaneCircle(double r, double x, double y) &#123; 
-  super(r);       &#x2F;&#x2F; 调用超类的构造方法Circle() 
-  this.cx &#x3D; x;    &#x2F;&#x2F; 初始化实例字段cx 
-  this.cy &#x3D; y;    &#x2F;&#x2F; 初始化实例字段cy 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">PlaneCircle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">,</span> <span class="token keyword">double</span> x<span class="token punctuation">,</span> <span class="token keyword">double</span> y<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">super</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">// 调用超类的构造方法Circle() </span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>cx <span class="token operator">=</span> x<span class="token punctuation">;</span>    <span class="token comment">// 初始化实例字段cx </span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>cy <span class="token operator">=</span> y<span class="token punctuation">;</span>    <span class="token comment">// 初始化实例字段cy </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>虽然这个构造方法显式初始化了 <code>PlaneCircle</code> 类中新定义的字段 <code>cx</code> 和 <code>cy</code>，但仍使用超类的 <code>Circle()</code> 构造方法初始化继承的字段。为了调用超类的构造方法，这个构造方法调用了<code>super()</code> 方法。</p>
 <p><code>super</code> 是 Java 的保留字。它的用法之一是，在子类的构造方法中调用超类的构造方法。这种用法和在一个构造方法中使用 <code>this()</code> 调用同一个类中的其他构造方法类似。使用<code>super()</code> 调用构造方法和使用 <code>this()</code> 调用构造方法有同样的限制：</p>
 <ul>
@@ -738,37 +738,37 @@ boolean origininside &#x3D; ((PlaneCircle) c).isInside(0.0, 0.0);<span aria-hidd
 </blockquote>
 <h3 id="默认构造方法"><a href="#默认构造方法" class="headerlink" title="默认构造方法"></a>默认构造方法</h3><p>前面对构造方法链的说明漏了一点。如果构造方法没有调用超类的构造方法，Java 会隐式调用。那么，如果类没有声明构造方法呢？此时，Java 会为类隐式添加一个构造方法。这个默认的构造方法什么也不做，只是调用超类的构造方法。</p>
 <p>例如，如果没为 <code>PlaneCircle</code> 类声明构造方法，那么 Java 会隐式插入下述构造方法：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public PlaneCircle() &#123; super(); &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">PlaneCircle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果超类 <code>Circle</code> 没有声明无参数的构造方法，那么在这个自动插入 <code>PlaneCircle()</code> 类的默认构造方法中调用 <code>super()</code> 会导致编译出错。一般来说，如果类没有定义无参数的构造方法，那么它的所有子类必须定义显式调用超类构造方法的构造方法，而且要传入所需的参数。</p>
 <p>如果类没有定义任何构造方法，默认会为其提供一个无参数的构造方法。声明为 <code>public</code> 的类，提供的构造方法也声明为 <code>public</code>。提供给其他类的默认构造方法则不使用任何可见性修饰符，这些构造方法具有默认的可见性。</p>
 <p>如果创建的 <code>public</code> 类不能公开实例化，就应该至少声明一个非 <code>public</code> 的构造方法，以此避免插入默认的 <code>public</code> 构造方法。从来不会实例化的类（例如 <code>java.lang.Math</code> 或 <code>java.lang.System</code>），应该定义一个 <code>private</code> 构造方法。这种构造方法不能在类外部调用，但可以避免自动插入默认的构造方法。</p>
 <h3 id="遮盖超类的字段"><a href="#遮盖超类的字段" class="headerlink" title="遮盖超类的字段"></a>遮盖超类的字段</h3><p>假如 <code>PlaneCircle</code> 类需要知道圆心到原点 (0, 0) 的距离，我们可以再添加一个实例字段保存这个值：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public double r;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">double</span> r<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>在构造方法中添加下述代码可以算出这个字段的值：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">this.r &#x3D; Math.sqrt(cx*cx + cy*cy); &#x2F;&#x2F; 勾股定理<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>cx<span class="token operator">*</span>cx <span class="token operator">+</span> cy<span class="token operator">*</span>cy<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 勾股定理</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>但是等一下，这个新添加的字段 <code>r</code> 和超类 <code>Circle</code> 中表示半径的字段 <code>r</code> 同名了。发生这种情况时，我们说，<code>PlaneCircle</code> 类的 <code>r</code> 字段遮盖了 <code>Circle</code> 类的 <code>r</code> 字段。（当然，这个例子是故意这么做的。新字段其实应该命名为 distanceFromOrigin。）</p>
 <blockquote>
 <p>在你编写的代码中，为字段命名时应该避免遮盖超类的字段。如果遮盖了，几乎就表明代码写得不好。</p>
 </blockquote>
 <p>这样定义 <code>PlaneCircle</code> 类之后，表达式 <code>r</code> 和 <code>this.r</code> 都引用 <code>PlaneCircle</code> 类中的这个字段。那么，如何引用 <code>Circle</code> 类中保存圆的半径的 <code>r</code> 字段呢？有一种特殊的句法可以实现这个需求——使用 <code>super</code> 关键字：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">r       &#x2F;&#x2F; 引用PlaneCircle的字段 
-this.r  &#x2F;&#x2F; 引用PlaneCircle的字段 
-super.r &#x2F;&#x2F; 引用Circle的字段<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">r       <span class="token comment">// 引用PlaneCircle的字段 </span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>r  <span class="token comment">// 引用PlaneCircle的字段 </span>
+<span class="token keyword">super</span><span class="token punctuation">.</span>r <span class="token comment">// 引用Circle的字段</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>引用被遮盖的字段还有一种方式——把 <code>this</code>（或类的实例）校正为适当的超类，然后再访问字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">((Circle) this).r &#x2F;&#x2F; 引用Circle类的字段<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">Circle</span><span class="token punctuation">)</span> <span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>r <span class="token comment">// 引用Circle类的字段</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果想引用的遮盖字段不是在类的直接超类中定义的，这种校正技术特别有用。假如有三个类 A、B 和 C，它们都定义了一个名为 x 的字段，而且 C 是 B 的子类，B 是 A 的子类。那么，在 C 类的方法中可以按照下面的方式引用这些不同的字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">x              &#x2F;&#x2F; C类的x字段 
-this.x         &#x2F;&#x2F; C类的x字段 
-super.x        &#x2F;&#x2F; B类的x字段 
-((B)this).x    &#x2F;&#x2F; B类的x字段 
-((A)this).x    &#x2F;&#x2F; A类的x字段 
-super.super.x  &#x2F;&#x2F; 非法，不能这样引用A类的x字段<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">x              <span class="token comment">// C类的x字段 </span>
+<span class="token keyword">this</span><span class="token punctuation">.</span>x         <span class="token comment">// C类的x字段 </span>
+<span class="token keyword">super</span><span class="token punctuation">.</span>x        <span class="token comment">// B类的x字段 </span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">B</span><span class="token punctuation">)</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x    <span class="token comment">// B类的x字段 </span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">A</span><span class="token punctuation">)</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x    <span class="token comment">// A类的x字段 </span>
+<span class="token keyword">super</span><span class="token punctuation">.</span><span class="token keyword">super</span><span class="token punctuation">.</span>x  <span class="token comment">// 非法，不能这样引用A类的x字段</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>类似地，如果 c 是 C 类的实例，那么可以像这样引用这三个字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">c.x           &#x2F;&#x2F; C类的x字段 
-((B)c).x      &#x2F;&#x2F; B类的x字段 
-((A)c).x      &#x2F;&#x2F; A类的x字段<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">c<span class="token punctuation">.</span>x           <span class="token comment">// C类的x字段 </span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">B</span><span class="token punctuation">)</span>c<span class="token punctuation">)</span><span class="token punctuation">.</span>x      <span class="token comment">// B类的x字段 </span>
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token class-name">A</span><span class="token punctuation">)</span>c<span class="token punctuation">)</span><span class="token punctuation">.</span>x      <span class="token comment">// A类的x字段</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>目前为止，讨论的都是实例字段。类字段也能被遮盖。引用被遮盖的类字段中的值，可以使用相同的 <code>super</code> 句法，但没必要这么做，因为始终可以把类名放在类字段前引用这个字段。假如 <code>PlaneCircle</code> 的实现方觉得 <code>Circle.PI</code> 字段没有提供足够的小数位，那么他可以自己定义 <code>PI</code> 字段：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static final double PI &#x3D; 3.14159265358979323846;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14159265358979323846</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>现在，<code>PlaneCircle</code> 类中的代码可以通过表达式 <code>PI</code> 或 <code>PlaneCircle.PI</code> 使用这个更精确的值，还可以使用表达式 <code>super.PI</code> 和 <code>Circle.PI</code> 引用精度不高的旧值。不过，<code>PlaneCircle</code>继承的 <code>area()</code> 和 <code>circumference()</code> 方法是在 <code>Circle</code> 类中定义的，所以，就算 <code>Circle.PI</code> 被<code>PlaneCircle.PI</code> 遮盖了，这两个方法还是会使用 <code>Circle.PI</code> 的值。</p>
 <h3 id="覆盖超类的方法"><a href="#覆盖超类的方法" class="headerlink" title="覆盖超类的方法"></a>覆盖超类的方法</h3><p>如果类中定义的某个实例方法和超类的某个方法有相同的名称、返回值类型和参数，那么这个方法会覆盖（override）超类中对应的方法。在这个类的对象上调用这个方法时，调用的是新定义的方法，而不是超类中定义的旧方法。</p>
 <blockquote>
@@ -779,33 +779,33 @@ super.super.x  &#x2F;&#x2F; 非法，不能这样引用A类的x字段<span aria-
 <p>下面针对方法覆盖的讨论只涉及实例方法。类方法的运作机制完全不同，无法覆盖。和字段一样，类方法也能被子类遮盖，但不能覆盖。好的编程风格是调用类方法时始终在前面加上定义这个方法的类名。如果把类名当成方法名的一部分，那么这两个方法的名称就不一样，因此其实并没有遮盖什么。</p>
 <p>在进一步讨论方法覆盖之前，要理解方法覆盖和方法重载之间的区别。方法重载指的是（在同一个类中）定义多个名称相同但参数列表不同的方法。这和方法覆盖十分不同，因此别混淆了。</p>
 <h4 id="覆盖不是遮盖"><a href="#覆盖不是遮盖" class="headerlink" title="覆盖不是遮盖"></a>覆盖不是遮盖</h4><p>虽然 Java 使用很多类似的方式对待字段和方法，但方法覆盖和字段遮盖一点儿都不一样。为了引用遮盖的字段，只需把对象校正成适当超类的实例，但不能使用这种技术调用覆盖的实例方法。下述代码展示了这个重要区别：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">class A &#123;                          &#x2F;&#x2F; 定义一个类，名为A 
-  int i &#x3D; 1;                       &#x2F;&#x2F; 一个实例字段 
-  int f() &#123; return i; &#125;            &#x2F;&#x2F; 一个实例方法 
-  static char g() &#123; return &#39;A&#39;; &#125;  &#x2F;&#x2F; 一个类方法 
-&#125; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span>                          <span class="token comment">// 定义一个类，名为A </span>
+  <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>                       <span class="token comment">// 一个实例字段 </span>
+  <span class="token keyword">int</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> i<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>            <span class="token comment">// 一个实例方法 </span>
+  <span class="token keyword">static</span> <span class="token keyword">char</span> <span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token string">'A'</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>  <span class="token comment">// 一个类方法 </span>
+<span class="token punctuation">&#125;</span> 
  
-class B extends A &#123;                &#x2F;&#x2F; 定义A的一个子类 
-  int i &#x3D; 2;                       &#x2F;&#x2F; 遮盖A类的字段i 
-  int f() &#123; return -i; &#125;           &#x2F;&#x2F; 覆盖A类的方法f 
-  static char g() &#123; return &#39;B&#39;; &#125;  &#x2F;&#x2F; 遮盖A类的类方法g() 
-&#125; 
+<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token keyword">extends</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span>                <span class="token comment">// 定义A的一个子类 </span>
+  <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>                       <span class="token comment">// 遮盖A类的字段i </span>
+  <span class="token keyword">int</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token operator">-</span>i<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>           <span class="token comment">// 覆盖A类的方法f </span>
+  <span class="token keyword">static</span> <span class="token keyword">char</span> <span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token string">'B'</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>  <span class="token comment">// 遮盖A类的类方法g() </span>
+<span class="token punctuation">&#125;</span> 
  
-public class OverrideTest &#123; 
-  public static void main(String args[]) &#123; 
-    B b &#x3D; new B();               &#x2F;&#x2F; 创建一个类型为B的新对象 
-    System.out.println(b.i);     &#x2F;&#x2F; 引用B.i，打印2 
-    System.out.println(b.f());   &#x2F;&#x2F; 引用B.f()，打印-2 
-    System.out.println(b.g());   &#x2F;&#x2F; 引用B.g()，打印B 
-    System.out.println(B.g());   &#x2F;&#x2F; 调用B.g()更好的方式 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">OverrideTest</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span> args<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token class-name">B</span> b <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">B</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token comment">// 创建一个类型为B的新对象 </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">// 引用B.i，打印2 </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 引用B.f()，打印-2 </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>b<span class="token punctuation">.</span><span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 引用B.g()，打印B </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">B</span><span class="token punctuation">.</span><span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 调用B.g()更好的方式 </span>
  
-    A a &#x3D; (A) b;                 &#x2F;&#x2F; 把b校正成A类的实例 
-    System.out.println(a.i);     &#x2F;&#x2F; 现在引用的是A.i，打印1 
-    System.out.println(a.f());   &#x2F;&#x2F; 还是引用B.f()，打印-2 
-    System.out.println(a.g());   &#x2F;&#x2F; 引用A.g()，打印A 
-    System.out.println(A.g());   &#x2F;&#x2F; 调用A.g()更好的方式 
-  &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token class-name">A</span> a <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">A</span><span class="token punctuation">)</span> b<span class="token punctuation">;</span>                 <span class="token comment">// 把b校正成A类的实例 </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">// 现在引用的是A.i，打印1 </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 还是引用B.f()，打印-2 </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">.</span><span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 引用A.g()，打印A </span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token class-name">A</span><span class="token punctuation">.</span><span class="token function">g</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 调用A.g()更好的方式 </span>
+  <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>初看起来，可能觉得方法覆盖和字段遮盖的这种区别有点奇怪，但稍微想想，确实有道理。</p>
 <p>假设我们要处理一些 <code>Circle</code> 和 <code>Ellipse</code> 对象。为了记录这些圆和椭圆，我们把它们存储在一个 <code>Circle[]</code> 类型的数组中。这么做是可以的，因为 <code>Ellipse</code> 是 <code>Circle</code> 的子类，所以所有 <code>Ellipse</code> 对象都是合法的 <code>Circle</code> 对象。</p>
 <p>遍历这个数组的元素时，不需要知道也无需关心元素是 <code>Circle</code> 对象还是 <code>Ellipse</code> 对象。不过，需要密切关注的是，在数组的元素上调用 <code>area()</code> 方法是否能得到正确的值。也就是说，如果是椭圆对象就不能使用计算圆面积的公式。</p>
@@ -815,18 +815,18 @@ public class OverrideTest &#123;
 <p>不过，javac 生成的字节码会在运行时使用“虚拟方法查找”（virtual method lookup）。解释器运行代码时，会查找适用于数组中各个对象的 <code>area()</code> 方法。即，解释器解释表达式<code>o.area()</code> 时，会检查变量 <code>o</code> 引用的对象的真正运行时类型，然后找到适用于这个类型的<code>area()</code> 方法。</p>
 <p>JVM 不会直接使用关联在变量 <code>o</code> 表示的静态类型身上的 <code>area()</code> 方法，如果这么做，前面详述的方法覆盖机制就不成立了。Java 的实例方法默认使用虚拟查找。之后会详细介绍编译时和运行时类型，以及它们对虚拟方法查找的影响。</p>
 <h4 id="调用被覆盖的方法"><a href="#调用被覆盖的方法" class="headerlink" title="调用被覆盖的方法"></a>调用被覆盖的方法</h4><p>我们已经说明了方法覆盖和字段遮盖之间的重要区别。然而，调用被覆盖的方法的 Java 句法和访问被遮盖的字段的句法十分类似——都使用 <code>super</code> 关键字。如下述代码所示：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">class A &#123; 
-  int i &#x3D; 1;                &#x2F;&#x2F; 被子类B遮盖的实例字段 
-  int f() &#123; return i; &#125;     &#x2F;&#x2F; 被子类B覆盖的实例方法
-&#125; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>                <span class="token comment">// 被子类B遮盖的实例字段 </span>
+  <span class="token keyword">int</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> i<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>     <span class="token comment">// 被子类B覆盖的实例方法</span>
+<span class="token punctuation">&#125;</span> 
  
-class B extends A &#123; 
-  int i;                    &#x2F;&#x2F; 这个字段遮盖A类的字段i 
-  int f() &#123;                 &#x2F;&#x2F; 这个方法覆盖A类的方法f() 
-    i &#x3D; super.i + 1;      &#x2F;&#x2F; 可以像这样读取A.i的值 
-    return super.f() + i; &#x2F;&#x2F; 可以像这样调用A.f() 
-  &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token keyword">extends</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">int</span> i<span class="token punctuation">;</span>                    <span class="token comment">// 这个字段遮盖A类的字段i </span>
+  <span class="token keyword">int</span> <span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>                 <span class="token comment">// 这个方法覆盖A类的方法f() </span>
+    i <span class="token operator">=</span> <span class="token keyword">super</span><span class="token punctuation">.</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>      <span class="token comment">// 可以像这样读取A.i的值 </span>
+    <span class="token keyword">return</span> <span class="token keyword">super</span><span class="token punctuation">.</span><span class="token function">f</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> i<span class="token punctuation">;</span> <span class="token comment">// 可以像这样调用A.f() </span>
+  <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>前面说过，使用 <code>super</code> 引用被遮盖的字段时，相当于把 <code>this</code> 校正为超类类型，然后通过超类类型访问字段。不过，使用 <code>super</code> 调用被覆盖的方法和校正 <code>this</code> 引用不是一回事。也就是说，在上述代码中，表达式 <code>super.f()</code> 和 <code>((A)this).f()</code> 的作用不一样。</p>
 <p>解释器使用 <code>super</code> 句法调用实例方法时，会执行一种修改过的虚拟方法查找。第一步和常规的虚拟方法查找一样，确定调用方法的对象属于哪个类。正常情况下，运行时会在这个类中寻找对应的方法定义。但是，使用 <code>super</code> 句法调用方法时，先在这个类的超类中查找。如果超类直接实现了这个方法，那就调用这个方法。如果超类继承了这个方法，那就调用继承的方法。</p>
 <p>注意，<code>super</code> 关键字调用的是方法的直接覆盖版本。假设 A 类有个子类 B，B 类有个子类C，而且这三个类都定义了同一个方法 <code>f()</code>。在 <code>C.f()</code> 方法中使用 <code>super.f()</code> 可以调用方法 <code>B.f()</code>，因为 <code>C.f()</code> 直接覆盖了 <code>B.f()</code>。但是，<code>C.f()</code> 不能直接调用 <code>A.f()</code>，因为 <code>super.super.f()</code> 不是合法的 Java 句法。当然，如果 <code>C.f()</code> 调用了 <code>B.f()</code>，有合理的理由认为，<code>B.f()</code> 可能会调用 <code>A.f()</code>。</p>
@@ -852,13 +852,13 @@ class B extends A &#123;
 <h4 id="访问包"><a href="#访问包" class="headerlink" title="访问包"></a>访问包</h4><p>Java 语言不直接支持包的访问控制。访问控制一般在类和类的成员这些层级完成</p>
 <h4 id="访问类"><a href="#访问类" class="headerlink" title="访问类"></a>访问类</h4><p>默认情况下，顶层类在定义它的包中可以访问。不过，如果顶层类声明为 <code>public</code>，那么在任何地方都能访问。</p>
 <h4 id="访问成员"><a href="#访问成员" class="headerlink" title="访问成员"></a>访问成员</h4><p>类的成员在类的主体里始终可以访问。默认情况下，在定义这个类的包中也可以访问成员。这种默认的访问等级一般叫作包访问。这只是四个可用的访问等级中的一个。其他三个等级使用 <code>public</code>、<code>protected</code> 和 <code>private</code> 修饰符定义。下面是使用这三个修饰符的示例代码：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public class Laundromat &#123;      &#x2F;&#x2F; 所有人都可以使用这个类 
-  private Laundry[] dirty;     &#x2F;&#x2F; 不能使用这个内部字段 
-  public void wash() &#123; ... &#125;   &#x2F;&#x2F; 但能使用这两个公开的方法 
-  public void dry() &#123; ... &#125;    &#x2F;&#x2F; 处理内部字段 
-  &#x2F;&#x2F; 子类可能会想调整这个字段 
-  protected int temperature; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Laundromat</span> <span class="token punctuation">&#123;</span>      <span class="token comment">// 所有人都可以使用这个类 </span>
+  <span class="token keyword">private</span> <span class="token class-name">Laundry</span><span class="token punctuation">[</span><span class="token punctuation">]</span> dirty<span class="token punctuation">;</span>     <span class="token comment">// 不能使用这个内部字段 </span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">wash</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">&#125;</span>   <span class="token comment">// 但能使用这两个公开的方法 </span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">dry</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">&#125;</span>    <span class="token comment">// 处理内部字段 </span>
+  <span class="token comment">// 子类可能会想调整这个字段 </span>
+  <span class="token keyword">protected</span> <span class="token keyword">int</span> temperature<span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>下述访问规则适用于类的成员：</p>
 <ul>
 <li>类中的所有字段和方法在类的主体里始终可以使用。</li>
@@ -872,42 +872,42 @@ class B extends A &#123;
 </blockquote>
 <p>使用 <code>protected</code> 修饰的成员时要格外小心。假设 A 类使用 <code>protected</code> 声明了一个字段 x，而且在另一个包中定义的 B 类继承 A 类（重点是 B 类在另一包中定义）。因此，B 类继承了这个 <code>protected</code> 声明的字段 x，那么，在 B 类的代码中可以访问当前实例的这个字段，而且引用 B 类实例的代码也能访问这个字段。但是，这并不意味着在 B 类的代码中能读取任何一个 A 类实例的受保护字段。</p>
 <p>下面通过代码讲解这个语言细节。A 类的定义如下：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">package javanut6.ch03; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">javanut6<span class="token punctuation">.</span>ch03</span><span class="token punctuation">;</span> 
  
-public class A &#123; 
-    protected final String name; 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">protected</span> <span class="token keyword">final</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span> 
  
-    public A(String named) &#123; 
-        name &#x3D; named; 
-    &#125; 
+    <span class="token keyword">public</span> <span class="token class-name">A</span><span class="token punctuation">(</span><span class="token class-name">String</span> named<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+        name <span class="token operator">=</span> named<span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span> 
  
-    public String getName() &#123; 
-        return name; 
-    &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+        <span class="token keyword">return</span> name<span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>B 类的定义如下：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">package javanut6.ch03.different; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">javanut6<span class="token punctuation">.</span>ch03<span class="token punctuation">.</span>different</span><span class="token punctuation">;</span> 
  
-import javanut6.ch03.A; 
+<span class="token keyword">import</span> <span class="token namespace">javanut6<span class="token punctuation">.</span>ch03<span class="token punctuation">.</span></span><span class="token class-name">A</span><span class="token punctuation">;</span> 
  
-public class B extends A &#123; 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">B</span> <span class="token keyword">extends</span> <span class="token class-name">A</span> <span class="token punctuation">&#123;</span> 
  
-    public B(String named) &#123; 
-        super(named); 
-    &#125; 
+    <span class="token keyword">public</span> <span class="token class-name">B</span><span class="token punctuation">(</span><span class="token class-name">String</span> named<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+        <span class="token keyword">super</span><span class="token punctuation">(</span>named<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span> 
  
-    @Override 
-    public String getName() &#123; 
-        return &quot;B: &quot; + name; 
-    &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    <span class="token annotation punctuation">@Override</span> 
+    <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+        <span class="token keyword">return</span> <span class="token string">"B: "</span> <span class="token operator">+</span> name<span class="token punctuation">;</span> 
+    <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p>Java 的包不能“嵌套”，所以 <code>javanut6.ch03.different</code> 和 <code>javanut6.ch03</code>是不同的包。<code>javanut6.ch03.different</code> 不以任何方式包含在 <code>javanut6.ch03</code> 中，也和 <code>javanut6.ch03</code> 没有任何关系。</p>
 </blockquote>
 <p>可是，如果我们试图把下面这个新方法添加到 B 类中，会导致编译出错，因为 B 类的实例无法访问任何一个 A 类的实例：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public String examine(A a) &#123; 
-    return &quot;B sees: &quot; + a.name; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">examine</span><span class="token punctuation">(</span><span class="token class-name">A</span> a<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">return</span> <span class="token string">"B sees: "</span> <span class="token operator">+</span> a<span class="token punctuation">.</span>name<span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>如果把这个方法改成：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public String examine(B b) &#123; 
     return &quot;B sees another B: &quot; + b.name; 
@@ -983,38 +983,38 @@ public class B extends A &#123;
 <p>如果不确定该使用 <code>protected</code>还是 <code>private</code> ，那么先使用 <code>private</code>。如果太过严格，可以稍微放松访问限制（如果是字段的话，还可以提供访问器方法）。设计 API 时这么做尤其重要，因为提高访问限制是不向后兼容的改动，可能会破坏依赖成员访问性的代码。</p>
 <h3 id="数据访问器方法"><a href="#数据访问器方法" class="headerlink" title="数据访问器方法"></a>数据访问器方法</h3><p>在 <code>Circle</code> 类那个示例中，我们使用 <code>public</code> 声明表示圆半径的字段。<code>Circle</code> 类可能有很好的理由让这个字段可以公开访问；这个类很简单，字段之间不相互依赖。但是，当前实现的 <code>Circle</code> 类允许对象的半径为负数，而半径为负数的圆肯定不存在。可是，只要半径存储在声明为 <code>public</code> 的字段中，任何程序员都能把这个字段的值设为任何想要的值，而不管这个值有多么不合理。唯一的办法是限制程序员，不让他们直接访问这个字段，然后定义<code>public</code> 方法，间接访问这个字段。提供 <code>public</code> 方法读写字段和把字段本身声明为 <code>public</code>不是一回事。目前而言，二者的区别是，方法可以检查错误。</p>
 <p>例如，我们或许不想让 <code>Circle</code> 对象的半径使用负数——负数显然不合理，但目前的实现没有阻止这么做。以下展示了使用数据隐藏和封装技术定义的 <code>Circle</code> 类，避免把半径设为负数。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">package shapes;        &#x2F;&#x2F; 为这个类指定一个包 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">package</span> <span class="token namespace">shapes</span><span class="token punctuation">;</span>        <span class="token comment">// 为这个类指定一个包 </span>
  
-public class Circle &#123;  &#x2F;&#x2F; 这个类还使用public声明 
-  &#x2F;&#x2F; 这是通用的常量，所以要保证声明为public 
-  public static final double PI &#x3D; 3.14159; 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token punctuation">&#123;</span>  <span class="token comment">// 这个类还使用public声明 </span>
+  <span class="token comment">// 这是通用的常量，所以要保证声明为public </span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14159</span><span class="token punctuation">;</span> 
   
-  protected double r;  &#x2F;&#x2F; 半径被隐藏了，但在子类中可见 
+  <span class="token keyword">protected</span> <span class="token keyword">double</span> r<span class="token punctuation">;</span>  <span class="token comment">// 半径被隐藏了，但在子类中可见 </span>
  
-  &#x2F;&#x2F; 限制半径取值的方法 
-  &#x2F;&#x2F; 这是子类可能感兴趣的实现细节 
-  protected void checkRadius(double radius) &#123; 
-    if (radius &lt; 0.0) 
-      throw new IllegalArgumentException(&quot;radius may not be negative.&quot;); 
-  &#125; 
+  <span class="token comment">// 限制半径取值的方法 </span>
+  <span class="token comment">// 这是子类可能感兴趣的实现细节 </span>
+  <span class="token keyword">protected</span> <span class="token keyword">void</span> <span class="token function">checkRadius</span><span class="token punctuation">(</span><span class="token keyword">double</span> radius<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>radius <span class="token operator">&lt;</span> <span class="token number">0.0</span><span class="token punctuation">)</span> 
+      <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">IllegalArgumentException</span><span class="token punctuation">(</span><span class="token string">"radius may not be negative."</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  &#x2F;&#x2F; 非默认的构造方法 
-  public Circle(double r) &#123;  
-    checkRadius(r); 
-    this.r &#x3D; r; 
-  &#125; 
+  <span class="token comment">// 非默认的构造方法 </span>
+  <span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>  
+    <span class="token function">checkRadius</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  &#x2F;&#x2F; 公开的数据访问器方法 
-  public double getRadius() &#123; return r; &#125; 
-  public void setRadius(double r) &#123; 
-    checkRadius(r); 
-    this.r &#x3D; r; 
-  &#125; 
+  <span class="token comment">// 公开的数据访问器方法 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getRadius</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setRadius</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> 
+    <span class="token function">checkRadius</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+    <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
  
-  &#x2F;&#x2F; 操作实例字段的方法 
-  public double area() &#123; return PI * r * r; &#125; 
-  public double circumference() &#123; return 2 * PI * r; &#125; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token comment">// 操作实例字段的方法 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> PI <span class="token operator">*</span> r <span class="token operator">*</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token number">2</span> <span class="token operator">*</span> PI <span class="token operator">*</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><code>Circle</code> 类的这个版本使用 <code>protected</code> 声明 <code>r</code> 字段，还定义了访问器方法 <code>getRadius()</code> 和<code>setRadius()</code>，用于读写这个字段的值，而且限制半径不能为负数。<code>r</code> 字段使用 <code>protected</code>声明，所以可以在子类中直接（且高效地）访问。</p>
 <p>我们在一个名为 <code>shapes</code> 的包中定义 <code>Circle</code> 类。因为 <code>r</code> 字段使用 <code>protected</code> 声明，所以<code>shapes</code> 包中的任何其他类都能直接访问这个字段，而且能把它设为任何值。这里假设<code>shapes</code> 包中的所有类都由同一个作者或者协作的多个作者编写，而且包中的类相互信任，不会滥用拥有的访问权限影响彼此的实现细节。</p>
 <p>最后，限制半径不能使用负数的代码在一个使用 <code>protected</code> 声明的方法中，这个方法是<code>checkRadius()</code>。虽然 <code>Circle</code> 类的用户无法调用这个方法，但这个类的子类可以调用，而且如果想修改对半径的限制，还可以覆盖这个方法。</p>
@@ -1038,39 +1038,39 @@ public class Circle &#123;  &#x2F;&#x2F; 这个类还使用public声明
 </li>
 </ul>
 <p>下 面 通 过 一 个 示 例 说 明 这 些 规 则 的 运 作 方 式。 如 果 定 义 <code>Shape</code> 类 时 把 <code>area()</code> 和<code>circumference()</code> 声明为 <code>abstract</code> 方法，那么 <code>Shape</code> 的子类必须实现这两个方法才能实例化。也就是说，每个 <code>Shape</code> 对象都要确保实现了这两个方法。以下示例展示了如何编写代码。在这段代码中，定义了一个抽象的 <code>Shape</code> 类和两个具体子类。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public abstract class Shape &#123; 
-  public abstract double area();                      &#x2F;&#x2F; 两个抽象方法 
-  public abstract double circumference();             &#x2F;&#x2F; 注意，没有主体，只有分号 
-&#125; 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> <span class="token class-name">Shape</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                      <span class="token comment">// 两个抽象方法 </span>
+  <span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">double</span> <span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             <span class="token comment">// 注意，没有主体，只有分号 </span>
+<span class="token punctuation">&#125;</span> 
  
-class Circle extends Shape &#123; 
-  public static final double PI &#x3D; 3.14159265358979323846; 
-  protected double r;                                 &#x2F;&#x2F; 实例字段 
-  public Circle(double r) &#123; this.r &#x3D; r; &#125;             &#x2F;&#x2F; 构造方法 
-  public double getRadius() &#123; return r; &#125;             &#x2F;&#x2F; 访问器 
-  public double area() &#123; return PI*r*r; &#125;             &#x2F;&#x2F; 实现超类中的 
-  public double circumference() &#123; return 2*PI*r; &#125;    &#x2F;&#x2F; 两个抽象方法 
-&#125; 
+<span class="token keyword">class</span> <span class="token class-name">Circle</span> <span class="token keyword">extends</span> <span class="token class-name">Shape</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">final</span> <span class="token keyword">double</span> PI <span class="token operator">=</span> <span class="token number">3.14159265358979323846</span><span class="token punctuation">;</span> 
+  <span class="token keyword">protected</span> <span class="token keyword">double</span> r<span class="token punctuation">;</span>                                 <span class="token comment">// 实例字段 </span>
+  <span class="token keyword">public</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token keyword">double</span> r<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>             <span class="token comment">// 构造方法 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getRadius</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>             <span class="token comment">// 访问器 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> PI<span class="token operator">*</span>r<span class="token operator">*</span>r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>             <span class="token comment">// 实现超类中的 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token number">2</span><span class="token operator">*</span>PI<span class="token operator">*</span>r<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>    <span class="token comment">// 两个抽象方法 </span>
+<span class="token punctuation">&#125;</span> 
  
-class Rectangle extends Shape &#123; 
-  protected double w, h;                              &#x2F;&#x2F; 实例字段 
-  public Rectangle(double w, double h) &#123;              &#x2F;&#x2F; 构造方法 
-    this.w &#x3D; w; this.h &#x3D; h; 
-  &#125; 
-  public double getWidth() &#123; return w; &#125;              &#x2F;&#x2F; 访问器方法 
-  public double getHeight() &#123; return h; &#125;             &#x2F;&#x2F; 另一个访问器 
-  public double area() &#123; return w*h; &#125;                &#x2F;&#x2F; 实现超类中的 
-  public double circumference() &#123; return 2*(w + h); &#125; &#x2F;&#x2F; 两个抽象方法 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">class</span> <span class="token class-name">Rectangle</span> <span class="token keyword">extends</span> <span class="token class-name">Shape</span> <span class="token punctuation">&#123;</span> 
+  <span class="token keyword">protected</span> <span class="token keyword">double</span> w<span class="token punctuation">,</span> h<span class="token punctuation">;</span>                              <span class="token comment">// 实例字段 </span>
+  <span class="token keyword">public</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token keyword">double</span> w<span class="token punctuation">,</span> <span class="token keyword">double</span> h<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>              <span class="token comment">// 构造方法 </span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>w <span class="token operator">=</span> w<span class="token punctuation">;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>h <span class="token operator">=</span> h<span class="token punctuation">;</span> 
+  <span class="token punctuation">&#125;</span> 
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> w<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>              <span class="token comment">// 访问器方法 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> h<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>             <span class="token comment">// 另一个访问器 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> w<span class="token operator">*</span>h<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>                <span class="token comment">// 实现超类中的 </span>
+  <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">circumference</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token keyword">return</span> <span class="token number">2</span><span class="token operator">*</span><span class="token punctuation">(</span>w <span class="token operator">+</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> <span class="token comment">// 两个抽象方法 </span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>Shape 类中每个抽象方法的括号后面都是分号，没有花括号，也没定义方法的主体。使用以上示例中定义的这几个类可以编写如下的代码：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Shape[] shapes &#x3D; new Shape[3];       &#x2F;&#x2F; 创建一个保存形状的数组 
-shapes[0] &#x3D; new Circle(2.0);         &#x2F;&#x2F; 填充这个数组 
-shapes[1] &#x3D; new Rectangle(1.0, 3.0); 
-shapes[2] &#x3D; new Rectangle(4.0, 2.0); 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Shape</span><span class="token punctuation">[</span><span class="token punctuation">]</span> shapes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Shape</span><span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span>       <span class="token comment">// 创建一个保存形状的数组 </span>
+shapes<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Circle</span><span class="token punctuation">(</span><span class="token number">2.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>         <span class="token comment">// 填充这个数组 </span>
+shapes<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">3.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+shapes<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token number">4.0</span><span class="token punctuation">,</span> <span class="token number">2.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
  
-double totalArea &#x3D; 0; 
-for(int i &#x3D; 0; i &lt; shapes.length; i++) 
-    totalArea +&#x3D; shapes[i].area();   &#x2F;&#x2F; 计算这些形状的面积<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">double</span> totalArea <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> 
+<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> shapes<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> 
+    totalArea <span class="token operator">+=</span> shapes<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">area</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 计算这些形状的面积</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>有两点要注意。</p>
 <ul>
 <li>Shape 类的子类对象可以赋值给 Shape 类型数组中的元素，无需校正。这又是一个放大转换引用类型的例子。</li>
@@ -1085,43 +1085,43 @@ for(int i &#x3D; 0; i &lt; shapes.length; i++)
 <li><p>对象可以转换成超类类型，或者任何祖先类类型。这是放大转换，因此不用校正。例如，<code>String</code> 对象可以赋值给 <code>Object</code> 类型的变量，或者传入期待 <code>Object</code> 类型参数的方法。</p>
 </li>
 <li><p>对象可以转换成子类类型，但这是缩小转换，需要校正。Java 编译器临时允许执行这种转换，但 Java 解释器在运行时会做检查，确保转换有效。根据程序的逻辑，确认对象的确是子类的实例后才会把对象校正成子类类型。否则，解释器会抛出<code>ClassCastException</code> 异常。例如，如果把一个 <code>String</code> 对象赋值给 <code>Object</code> 类型的变量，那么后面可以校正这个变量的值，再变回 <code>String</code> 类型。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Object o &#x3D; &quot;string&quot;;   &#x2F;&#x2F; 把String对象放大转换成Object类型 
-String s &#x3D; (String) o; &#x2F;&#x2F; 程序后面再把这个Object对象缩小转换成String类型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Object</span> o <span class="token operator">=</span> <span class="token string">"string"</span><span class="token punctuation">;</span>   <span class="token comment">// 把String对象放大转换成Object类型 </span>
+<span class="token class-name">String</span> s <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">)</span> o<span class="token punctuation">;</span> <span class="token comment">// 程序后面再把这个Object对象缩小转换成String类型</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <blockquote>
 <p>没有执行转换操作，而是直接把对象当成超类的实例。这种行为有时称为里氏替换原则（Liskov substitution principle）</p>
 </blockquote>
 </li>
 </ul>
 <p>数组是对象，而且有自己的一套转换规则。首先，任何数组都能放大转换成 <code>Object</code> 对象。带校正的缩小转换能把这个对象转换回数组。下面是一个示例：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 把数组放大转换成Object对象 
-Object o &#x3D; new int[] &#123;1,2,3&#125;; 
-&#x2F;&#x2F; 程序后面…… 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 把数组放大转换成Object对象 </span>
+<span class="token class-name">Object</span> o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span> 
+<span class="token comment">// 程序后面…… </span>
  
-int[] a &#x3D; (int[]) o;  &#x2F;&#x2F; 缩小转换回数组类型<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> a <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> o<span class="token punctuation">;</span>  <span class="token comment">// 缩小转换回数组类型</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>除了能把数组转换成对象之外，如果两个数组的“基类型”是可以相互转换的引用类型，那么数组还能转换成另一个类型的数组。例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 这是一个字符串数组 
-String[] strings &#x3D; new String[] &#123; &quot;hi&quot;, &quot;there&quot; &#125;; 
-&#x2F;&#x2F; 可以放大转换成CharSequence[]类型 
-&#x2F;&#x2F; 因为String类型可以放大转换成CharSequence类型 
-CharSequence[] sequences &#x3D; strings; 
-&#x2F;&#x2F; 缩小转换回String[]类型需要校正 
-strings &#x3D; (String[]) sequences; 
-&#x2F;&#x2F; 这是一个由字符串数组组成的数组 
-String[][] s &#x3D; new String[][] &#123; strings &#125;; 
-&#x2F;&#x2F; 不能转换成CharSequence[]类型，因为String[]类型 
-&#x2F;&#x2F; 不能转换成CharSequence类型：维数不匹配 
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 这是一个字符串数组 </span>
+<span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> strings <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">&#123;</span> <span class="token string">"hi"</span><span class="token punctuation">,</span> <span class="token string">"there"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">;</span> 
+<span class="token comment">// 可以放大转换成CharSequence[]类型 </span>
+<span class="token comment">// 因为String类型可以放大转换成CharSequence类型 </span>
+<span class="token class-name">CharSequence</span><span class="token punctuation">[</span><span class="token punctuation">]</span> sequences <span class="token operator">=</span> strings<span class="token punctuation">;</span> 
+<span class="token comment">// 缩小转换回String[]类型需要校正 </span>
+strings <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span> sequences<span class="token punctuation">;</span> 
+<span class="token comment">// 这是一个由字符串数组组成的数组 </span>
+<span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">&#123;</span> strings <span class="token punctuation">&#125;</span><span class="token punctuation">;</span> 
+<span class="token comment">// 不能转换成CharSequence[]类型，因为String[]类型 </span>
+<span class="token comment">// 不能转换成CharSequence类型：维数不匹配 </span>
  
-sequences &#x3D; s; &#x2F;&#x2F; 不会编译这行代码 
-&#x2F;&#x2F; s可以转换成Object类型或Object[]类型，因为所有数组类型 
-&#x2F;&#x2F; （包括String[]和String[][]类型）都能转换成Object类型 
-Object[] objects &#x3D; s;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+sequences <span class="token operator">=</span> s<span class="token punctuation">;</span> <span class="token comment">// 不会编译这行代码 </span>
+<span class="token comment">// s可以转换成Object类型或Object[]类型，因为所有数组类型 </span>
+<span class="token comment">// （包括String[]和String[][]类型）都能转换成Object类型 </span>
+<span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> objects <span class="token operator">=</span> s<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>注意，这些数组转换规则只适用于由对象或数组组成的数组。基本类型的数组不能转换为任何其他数组类型，就算基本基类型之间能相互转换也不行：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; 就算int类型能放大转换成double类型 
-&#x2F;&#x2F; 也不能把int[]类型转换成double[]类型
-&#x2F;&#x2F; 这行代码会导致编译出错 
-double[] data &#x3D; new int[] &#123;1,2,3&#125;; 
-&#x2F;&#x2F; 但是，这行代码是合法的，因为int[]类型能转换成Object类型 
-Object[] objects &#x3D; new int[][] &#123;&#123;1,2&#125;,&#123;3,4&#125;&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 就算int类型能放大转换成double类型 </span>
+<span class="token comment">// 也不能把int[]类型转换成double[]类型</span>
+<span class="token comment">// 这行代码会导致编译出错 </span>
+<span class="token keyword">double</span><span class="token punctuation">[</span><span class="token punctuation">]</span> data <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span> 
+<span class="token comment">// 但是，这行代码是合法的，因为int[]类型能转换成Object类型 </span>
+<span class="token class-name">Object</span><span class="token punctuation">[</span><span class="token punctuation">]</span> objects <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">int</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h2 id="修饰符总结"><a href="#修饰符总结" class="headerlink" title="修饰符总结"></a>修饰符总结</h2><h3 id="访问控制修饰符"><a href="#访问控制修饰符" class="headerlink" title="访问控制修饰符"></a>访问控制修饰符</h3><p>Java中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。Java 支持 4 种不同的访问权限。</p>
 <ol>
 <li><p><code>default</code> (即默认，什么也不写）：在同一包内可见，不使用任何修饰符。可以使用的对象包括类、接口、变量和方法。</p>
@@ -1328,9 +1328,9 @@ Object[] objects &#x3D; new int[][] &#123;&#123;1,2&#125;,&#123;3,4&#125;&#125;;
 </li>
 </ol>
 <p>有了对象后，就可以和对象进行互动：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">GirlFriend gf &#x3D; new GirlFriend();
-gf.name &#x3D; &quot;Alice&quot;;
-gf.send(&quot;flowers&quot;);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">GirlFriend</span> gf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">GirlFriend</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+gf<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Alice"</span><span class="token punctuation">;</span>
+gf<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">"flowers"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>因此，面向对象编程，是一种通过对象的方式，把现实世界映射到计算机模型的一种编程方法。</p>
 <h2 id="内存的分配"><a href="#内存的分配" class="headerlink" title="内存的分配"></a>内存的分配</h2><p>有六个地方可以保存数据：</p>
 <ul>
@@ -1421,17 +1421,17 @@ gf.send(&quot;flowers&quot;);<span aria-hidden="true" class="line-numbers-rows">
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h4 id="创建实例"><a href="#创建实例" class="headerlink" title="创建实例"></a>创建实例</h4><p>定义了class，只是定义了对象模版，而要根据对象模版创建出真正的对象实例，必须用new操作符。</p>
 <p>new操作符可以创建一个实例，然后，我们需要定义一个引用类型的变量来指向这个实例：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">Person ming &#x3D; new Person();<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Person</span> ming <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>上述代码创建了一个Person类型的实例，并通过变量<code>ming</code>指向它。</p>
 <p>注意区分<code>Person ming</code>是定义<code>Person</code>类型的变量<code>ming</code>，而<code>new Person()</code>是创建<code>Person</code>实例。</p>
 <p>有了指向这个实例的变量，我们就可以通过这个变量来操作实例。访问实例变量可以用<code>变量.字段</code>，例如：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">ming.name &#x3D; &quot;Xiao Ming&quot;; &#x2F;&#x2F; 对字段name赋值
-ming.age &#x3D; 12; &#x2F;&#x2F; 对字段age赋值
-System.out.println(ming.name); &#x2F;&#x2F; 访问字段name
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">ming<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Xiao Ming"</span><span class="token punctuation">;</span> <span class="token comment">// 对字段name赋值</span>
+ming<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">;</span> <span class="token comment">// 对字段age赋值</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>ming<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 访问字段name</span>
 
-Person hong &#x3D; new Person();
-hong.name &#x3D; &quot;Xiao Hong&quot;;
-hong.age &#x3D; 15;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token class-name">Person</span> hong <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hong<span class="token punctuation">.</span>name <span class="token operator">=</span> <span class="token string">"Xiao Hong"</span><span class="token punctuation">;</span>
+hong<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">15</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>上述两个变量分别指向两个不同的实例，它们在内存中的结构如下：</p>
 <pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">            ┌──────────────────┐
 ming ──────&gt;│Person instance   │
@@ -1460,42 +1460,42 @@ hong ──────&gt;│Person instance   │
 <p>方法需要参数（某种数据类型的值）并根据参数计算出某种数据类型的返回值（例如数学函数的结果）或者产生某种副作用（例如打印一个值）。</p>
 <p><img src="http://img.whl123456.top/image/%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E8%A7%A3%E6%9E%90.png" alt="静态方法解析"></p>
 <h4 id="典型静态方法的实现"><a href="#典型静态方法的实现" class="headerlink" title="典型静态方法的实现"></a>典型静态方法的实现</h4><p>计算一个整数的绝对值</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static int abs(int x)&#123;
-    if (x &lt; 0) return -x;
-    else       return x;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">abs</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>       <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>计算一个浮点数的绝对值</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static double abs(double x)&#123; 
-    if (x &lt; 0.0) return -x;
-    else         return x;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">abs</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">)</span><span class="token punctuation">&#123;</span> 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>x <span class="token operator">&lt;</span> <span class="token number">0.0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
+    <span class="token keyword">else</span>         <span class="token keyword">return</span> x<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>判定一个数是否是素数</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static boolean isPrime(int N)&#123; 
-    if (N &lt; 2) return false;
-    for (int i &#x3D; 2; i*i &lt;&#x3D; N; i++)
-        if (N % i &#x3D;&#x3D; 0) return false;
-    return true;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">boolean</span> <span class="token function">isPrime</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token class-name">N</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span> 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">N</span> <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i<span class="token operator">*</span>i <span class="token operator">&lt;=</span> <span class="token class-name">N</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token class-name">N</span> <span class="token operator">%</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>计算平方根（牛顿迭代法）</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static double sqrt(double c)&#123; 
-    if (c &lt; 0) return Double.NaN;
-    double err &#x3D; 1e-15;
-    double t &#x3D; c;
-    while (Math.abs(t - c&#x2F;t) &gt; err * t)
-        t &#x3D; (c&#x2F;t + t) &#x2F; 2.0;
-    return t;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">sqrt</span><span class="token punctuation">(</span><span class="token keyword">double</span> c<span class="token punctuation">)</span><span class="token punctuation">&#123;</span> 
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>c <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token class-name">Double</span><span class="token punctuation">.</span><span class="token class-name">NaN</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> err <span class="token operator">=</span> <span class="token number">1e-15</span><span class="token punctuation">;</span>
+    <span class="token keyword">double</span> t <span class="token operator">=</span> c<span class="token punctuation">;</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>t <span class="token operator">-</span> c<span class="token operator">/</span>t<span class="token punctuation">)</span> <span class="token operator">></span> err <span class="token operator">*</span> t<span class="token punctuation">)</span>
+        t <span class="token operator">=</span> <span class="token punctuation">(</span>c<span class="token operator">/</span>t <span class="token operator">+</span> t<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2.0</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> t<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>计算直角三角形的斜边</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static double hypotenuse(double a, double b)&#123;
-    return Math.sqrt(a*a + b*b); 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token function">hypotenuse</span><span class="token punctuation">(</span><span class="token keyword">double</span> a<span class="token punctuation">,</span> <span class="token keyword">double</span> b<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">sqrt</span><span class="token punctuation">(</span>a<span class="token operator">*</span>a <span class="token operator">+</span> b<span class="token operator">*</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>计算调和级数</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">public static double H(int N)&#123; 
-    double sum &#x3D; 0.0;
-    for (int i &#x3D; 1; i &lt;&#x3D; N; i++)
-        sum +&#x3D; 1.0 &#x2F; i;
-    return sum;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">double</span> <span class="token class-name">H</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token class-name">N</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span> 
+    <span class="token keyword">double</span> sum <span class="token operator">=</span> <span class="token number">0.0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token class-name">N</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+        sum <span class="token operator">+=</span> <span class="token number">1.0</span> <span class="token operator">/</span> i<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 
@@ -1520,12 +1520,12 @@ hong ──────&gt;│Person instance   │
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -1565,7 +1565,7 @@ hong ──────&gt;│Person instance   │
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/15.png" class="responsive-img" alt="Java常用类">
+                        <img src="/medias/featureimages/15.png" class="responsive-img" alt="Java常用类">
                         
                         <span class="card-title">Java常用类</span>
                     </div>
@@ -1614,7 +1614,7 @@ hong ──────&gt;│Person instance   │
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/16.jpg" class="responsive-img" alt="五十音图">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="五十音图">
                         
                         <span class="card-title">五十音图</span>
                     </div>
@@ -1661,21 +1661,21 @@ hong ──────&gt;│Person instance   │
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1696,7 +1696,7 @@ hong ──────&gt;│Person instance   │
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1933,12 +1933,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1960,7 +1960,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1976,7 +1976,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

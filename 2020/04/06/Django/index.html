@@ -17,17 +17,17 @@
 
 
     <title>Django | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -374,7 +374,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -409,11 +409,11 @@
 <p>命令行启动项目</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py runserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h2 id="创建应用视图"><a href="#创建应用视图" class="headerlink" title="创建应用视图"></a>创建应用视图</h2><p>创建视图，打开 <code>polls/views.py</code>，把下面这些 Python 代码输入进去：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.http import HttpResponse
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>http <span class="token keyword">import</span> HttpResponse
 
 
-def index(request):
-    return HttpResponse(&quot;Hello, world. You&#39;re at the polls index.&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> HttpResponse<span class="token punctuation">(</span><span class="token string">"Hello, world. You're at the polls index."</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如果想看见效果，我们需要将一个 URL 映射到它——这就是我们需要 URLconf 的原因了。</p>
 <p>创建 URLconf，在polls中新建<code>urls.py</code>文件</p>
 <pre class="line-numbers language-none"><code class="language-none">polls
@@ -427,21 +427,21 @@ def index(request):
  ├── views.py
  └── __init__.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在<code>urls.py</code>中，输入如下代码：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.urls import path
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path
 
-from . import views
+<span class="token keyword">from</span> <span class="token punctuation">.</span> <span class="token keyword">import</span> views
 
-urlpatterns &#x3D; [
-    path(&#39;&#39;, views.index, name&#x3D;&#39;index&#39;),
-]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    path<span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>index<span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">'index'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在根 URLconf 文件中指定我们创建的 <code>polls.urls</code> 模块。在 <code>DjangoDemo/urls.py</code> 文件的 <code>urlpatterns</code> 列表里插入一个 <code>include()</code>， 如下：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.contrib import admin
-from django.urls import path, include
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>contrib <span class="token keyword">import</span> admin
+<span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path<span class="token punctuation">,</span> include
 
-urlpatterns &#x3D; [
-    path(&#39;polls&#x2F;&#39;, include(&#39;polls.urls&#39;)),
-    path(&#39;admin&#x2F;&#39;, admin.site.urls),
-]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+    path<span class="token punctuation">(</span><span class="token string">'polls/'</span><span class="token punctuation">,</span> include<span class="token punctuation">(</span><span class="token string">'polls.urls'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    path<span class="token punctuation">(</span><span class="token string">'admin/'</span><span class="token punctuation">,</span> admin<span class="token punctuation">.</span>site<span class="token punctuation">.</span>urls<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>函数 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/urls/#django.urls.include"><code>include()</code></a> 允许引用其它 URLconfs。每当 Django 遇到 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/urls/#django.urls.include"><code>include()</code></a> 时，它会截断与此项匹配的 URL 的部分，并将剩余的字符串发送到 URLconf 以供进一步处理。</p>
 <p>你现在把 <code>index</code> 视图添加进了 URLconf。通过以下命令验证是否正常工作：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py runserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -511,35 +511,35 @@ MEDIA_URL &#x3D; &#39;&#x2F;media&#x2F;&#39;
 MEDIA_ROOT &#x3D; os.path.join(BASE_DIR, &#39;media&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>基本配置完成，更多关于配置文件的介绍，请查看文章：<a target="_blank" rel="noopener" href="https://www.django.cn/course/show-10.html">全局配置settings详解</a></p>
 <h2 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h2><p>在 <code>DjangoDemo/settings.py</code> 中</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"># 默认情况
-DATABASES &#x3D; &#123;
-    &#39;default&#39;: &#123;
-        &#39;ENGINE&#39;: &#39;django.db.backends.sqlite3&#39;,
-        &#39;NAME&#39;: os.path.join(BASE_DIR, &#39;db.sqlite3&#39;),
-    &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment"># 默认情况</span>
+DATABASES <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">'default'</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token string">'ENGINE'</span><span class="token punctuation">:</span> <span class="token string">'django.db.backends.sqlite3'</span><span class="token punctuation">,</span>
+        <span class="token string">'NAME'</span><span class="token punctuation">:</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>join<span class="token punctuation">(</span>BASE_DIR<span class="token punctuation">,</span> <span class="token string">'db.sqlite3'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li><p><code>ENGINE</code>：可选值有 <code>&#39;django.db.backends.sqlite3&#39;</code>，<code>&#39;django.db.backends.postgresql&#39;</code>，<code>&#39;django.db.backends.mysql&#39;</code>，或 <code>&#39;django.db.backends.oracle&#39;</code>。其它 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/databases/#third-party-notes">可用后端</a>。</p>
 </li>
 <li><p><code>NAME</code>：数据库的名称。如果使用的是 SQLite，数据库将是你电脑上的一个文件，在这种情况下， <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/settings/#std:setting-NAME"><code>NAME</code></a> 应该是此文件的绝对路径，包括文件名。默认值 <code>os.path.join(BASE_DIR, &#39;db.sqlite3&#39;)</code> 将会把数据库文件储存在项目的根目录。</p>
 </li>
 </ul>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">############修改成mysql如下：
-DATABASES &#x3D; &#123;
-    &#39;default&#39;: &#123;
-        &#39;ENGINE&#39;: &#39;django.db.backends.mysql&#39;,
-        &#39;NAME&#39;: &#39;test&#39;,    #你的数据库名称
-        &#39;USER&#39;: &#39;root&#39;,   #你的数据库用户名
-        &#39;PASSWORD&#39;: &#39;445813&#39;, #你的数据库密码
-        &#39;HOST&#39;: &#39;&#39;, #你的数据库主机，留空默认为localhost
-        &#39;PORT&#39;: &#39;3306&#39;, #你的数据库端口
-    &#125;&#125;
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token comment">############修改成mysql如下：</span>
+DATABASES <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    <span class="token string">'default'</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token string">'ENGINE'</span><span class="token punctuation">:</span> <span class="token string">'django.db.backends.mysql'</span><span class="token punctuation">,</span>
+        <span class="token string">'NAME'</span><span class="token punctuation">:</span> <span class="token string">'test'</span><span class="token punctuation">,</span>    <span class="token comment">#你的数据库名称</span>
+        <span class="token string">'USER'</span><span class="token punctuation">:</span> <span class="token string">'root'</span><span class="token punctuation">,</span>   <span class="token comment">#你的数据库用户名</span>
+        <span class="token string">'PASSWORD'</span><span class="token punctuation">:</span> <span class="token string">'445813'</span><span class="token punctuation">,</span> <span class="token comment">#你的数据库密码</span>
+        <span class="token string">'HOST'</span><span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token comment">#你的数据库主机，留空默认为localhost</span>
+        <span class="token string">'PORT'</span><span class="token punctuation">:</span> <span class="token string">'3306'</span><span class="token punctuation">,</span> <span class="token comment">#你的数据库端口</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span>
 
-#由于mysql默认引擎为MySQLdb，在__init__.py文件中添加下面代码
-#在python3中须替换为pymysql,可在主配置文件（和项目同名的文件下，不是app配置文件）中增加如下代码
-#import pymysql
-#pymysql.install_as_MySQLdb()
-#如果找不到pymysql板块，则通过pip install pymysql进行安装。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token comment">#由于mysql默认引擎为MySQLdb，在__init__.py文件中添加下面代码</span>
+<span class="token comment">#在python3中须替换为pymysql,可在主配置文件（和项目同名的文件下，不是app配置文件）中增加如下代码</span>
+<span class="token comment">#import pymysql</span>
+<span class="token comment">#pymysql.install_as_MySQLdb()</span>
+<span class="token comment">#如果找不到pymysql板块，则通过pip install pymysql进行安装。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>数据库设置好之后，我们就依次输入下面的命令进行数据库迁移：</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">python manage.py makemigrations
 python manage.py migrate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -547,20 +547,20 @@ python manage.py migrate<span aria-hidden="true" class="line-numbers-rows"><span
 <h2 id="创建模型"><a href="#创建模型" class="headerlink" title="创建模型"></a>创建模型</h2><p>在这个投票应用中，需要创建两个模型：问题 <code>Question</code> 和选项 <code>Choice</code>。</p>
 <p><code>Question</code> 模型包括问题描述和发布时间。<code>Choice</code> 模型有两个字段，选项描述和当前得票数。每个选项属于一个问题。</p>
 <p>在<code>models.py</code>文件中写入以下内容：</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">from django.db import models
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>db <span class="token keyword">import</span> models
 
-# Create your models here.
-
-
-class Question(models.Model):
-    question_text &#x3D; models.CharField(max_length&#x3D;200)
-    pub_date &#x3D; models.DateTimeField(&#39;date published&#39;)
+<span class="token comment"># Create your models here.</span>
 
 
-class Choice(models.Model):
-    question &#x3D; models.ForeignKey(Question, on_delete&#x3D;models.CASCADE)
-    choice_text &#x3D; models.CharField(max_length&#x3D;200)
-    votes &#x3D; models.IntegerField(default&#x3D;0)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">class</span> <span class="token class-name">Question</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    question_text <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">)</span>
+    pub_date <span class="token operator">=</span> models<span class="token punctuation">.</span>DateTimeField<span class="token punctuation">(</span><span class="token string">'date published'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">class</span> <span class="token class-name">Choice</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    question <span class="token operator">=</span> models<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span>Question<span class="token punctuation">,</span> on_delete<span class="token operator">=</span>models<span class="token punctuation">.</span>CASCADE<span class="token punctuation">)</span>
+    choice_text <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">)</span>
+    votes <span class="token operator">=</span> models<span class="token punctuation">.</span>IntegerField<span class="token punctuation">(</span>default<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>每个模型被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/instances/#django.db.models.Model"><code>django.db.models.Model</code></a> 类的子类。每个模型有许多类变量，它们都表示模型里的一个数据库字段。</p>
 <p>每个字段都是 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类的实例 - 比如，字符字段被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.CharField"><code>CharField</code></a> ，日期时间字段被表示为 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.DateTimeField"><code>DateTimeField</code></a> 。这将告诉 Django 每个字段要处理的数据类型。</p>
 <p>每个 <a target="_blank" rel="noopener" href="https://docs.djangoproject.com/zh-hans/3.0/ref/models/fields/#django.db.models.Field"><code>Field</code></a> 类实例变量的名字（例如 <code>question_text</code> 或 <code>pub_date</code> ）也是字段名，所以最好使用对机器友好的格式。你将会在 Python 代码里使用它们，而数据库会将它们作为列名。</p>
@@ -605,12 +605,12 @@ class Choice(models.Model):
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -650,7 +650,7 @@ class Choice(models.Model):
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/13.jpg" class="responsive-img" alt="Java容器">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Java容器">
                         
                         <span class="card-title">Java容器</span>
                     </div>
@@ -699,7 +699,7 @@ class Choice(models.Model):
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/3.png" class="responsive-img" alt="正则表达式">
+                        <img src="/medias/featureimages/3.png" class="responsive-img" alt="正则表达式">
                         
                         <span class="card-title">正则表达式</span>
                     </div>
@@ -750,21 +750,21 @@ class Choice(models.Model):
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -785,7 +785,7 @@ class Choice(models.Model):
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1022,12 +1022,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1049,7 +1049,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1065,7 +1065,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

@@ -17,17 +17,17 @@
 
 
     <title>Git的常见使用 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/14.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,7 +366,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -381,36 +381,36 @@ git config --global user.email &quot;your_email@example.com&quot;<span aria-hidd
 <p>如果不存在，在Git Bash使用以下命令生成</p>
 <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ssh-keygen -t rsa -C &quot;your_email@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>将会弹出以下信息</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Generating public&#x2F;private rsa key pair.
-Enter file in which to save the key (&#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa):  回车
-Created directory &#39;&#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#39;.
-Enter passphrase (empty for no passphrase):    回车或输密码
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">Generating public/private rsa key pair.
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/c/Users/用户名/.ssh/id_rsa<span class="token punctuation">)</span>:  回车
+Created directory <span class="token string">'/c/Users/用户名/.ssh'</span><span class="token builtin class-name">.</span>
+Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>:    回车或输密码
 Enter same passphrase again:                   回车或再一次输密码
-Your identification has been saved in &#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa
-Your public key has been saved in &#x2F;c&#x2F;Users&#x2F;用户名&#x2F;.ssh&#x2F;id_rsa.pub
+Your identification has been saved <span class="token keyword">in</span> /c/Users/用户名/.ssh/id_rsa
+Your public key has been saved <span class="token keyword">in</span> /c/Users/用户名/.ssh/id_rsa.pub
 The key fingerprint is:
 SHA256:JAldGP+8XXXXXXXXXXXRhzaEpUd5hJfTn0zrJxhXbFYM your_email@example.com
-The key&#39;s randomart image is:
-+---[RSA 3072]----+
-|    ..o&#x3D;*..   .o |
-|     +o&#x3D; +   E  o|
-|    . + &#x3D; . . . .|
-|     . B + o . +.|
-|    + O S o o + .|
-|   &#x3D; @ o . &#x3D; &#x3D;   |
-|  . B o   o B    |
-|     o     . .   |
-|                 |
-+----[SHA256]-----+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+The key's randomart image is:
++---<span class="token punctuation">[</span>RSA <span class="token number">3072</span><span class="token punctuation">]</span>----+
+<span class="token operator">|</span>    <span class="token punctuation">..</span>o<span class="token operator">=</span>*<span class="token punctuation">..</span>   .o <span class="token operator">|</span>
+<span class="token operator">|</span>     +o<span class="token operator">=</span> +   E  o<span class="token operator">|</span>
+<span class="token operator">|</span>    <span class="token builtin class-name">.</span> + <span class="token operator">=</span> <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span><span class="token operator">|</span>
+<span class="token operator">|</span>     <span class="token builtin class-name">.</span> B + o <span class="token builtin class-name">.</span> +.<span class="token operator">|</span>
+<span class="token operator">|</span>    + O S o o + <span class="token builtin class-name">.</span><span class="token operator">|</span>
+<span class="token operator">|</span>   <span class="token operator">=</span> @ o <span class="token builtin class-name">.</span> <span class="token operator">=</span> <span class="token operator">=</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>  <span class="token builtin class-name">.</span> B o   o B    <span class="token operator">|</span>
+<span class="token operator">|</span>     o     <span class="token builtin class-name">.</span> <span class="token builtin class-name">.</span>   <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
++----<span class="token punctuation">[</span>SHA256<span class="token punctuation">]</span>-----+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>将<code>id_rsa.pub</code>公钥文件放到Setting中的SSH and GPG keys中</p>
 <p><img src="http://img.whl123456.top/image/GitHubSSH.png" alt="GitHub"></p>
 <p>在Git Bash中输入以下命令，验证是否成功</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">ssh</span> -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>如果成功则会显示以下消息</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Hi your_name! You&#39;ve successfully authenticated, but GitHub does not provide shell access.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &lt;文件夹名&gt;
-cd &lt;文件名&gt;
-pwd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Hi your_name<span class="token operator">!</span> You've successfully authenticated, but GitHub does not provide shell access.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="创建版本库"><a href="#创建版本库" class="headerlink" title="创建版本库"></a>创建版本库</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">mkdir</span> <span class="token operator">&lt;</span>文件夹名<span class="token operator">></span>
+<span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>文件名<span class="token operator">></span>
+<span class="token builtin class-name">pwd</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p><code>git init</code> 把这个目录变成Git可以管理的仓库</p>
 <p>结果生成.git 隐藏文件夹 （不要手动修改文件夹的内容）</p>
 <blockquote>
@@ -445,18 +445,18 @@ pwd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span>
 <p>先手动删除文件，然后使用git add<file>效果是一样的<br>git checkout  – <file>   #把误删的文件恢复到最新版本（用版本库里的版本替换工作区的版本）</p>
 <h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><p><code>git checkout -b &lt;branchname&gt;</code> #创建分支,然后切换到分支<br><code>git branch &lt;branchname&gt;</code>      #创建分支<br><code>git checkout &lt;branchname&gt;</code>    #切换到分支<br><code>git branch</code>                   #查看当前分支<br><code>git checkout master</code>          #换回master分支<br><code>git merge &lt;branchname&gt;</code>       #合并指定分支到当前分支<br><code>git branch -d &lt;branchname&gt;</code>   #删除分支<br><code>git branch -m &lt;branchname&gt;</code>   #重命名分支</p>
 <h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><h3 id="推送"><a href="#推送" class="headerlink" title="推送"></a>推送</h3><p>关联一个远程库并推送</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git remote add origin git@Lanqilu:path&#x2F;&lt;repo-name&gt;.git
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> remote <span class="token function">add</span> origin git@Lanqilu:path/<span class="token operator">&lt;</span>repo-name<span class="token operator">></span>.git
+<span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h3><p><code>git clone &lt;url&gt;</code></p>
 <h3 id="拉取"><a href="#拉取" class="headerlink" title="拉取"></a>拉取</h3><p><code>git pull</code></p>
 <ol>
 <li><p>服务器代码合并本地代码</p>
- <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git stash     &#x2F;&#x2F;暂存当前正在进行的工作。
-git pull origin master &#x2F;&#x2F;拉取服务器的代码
-git stash pop &#x2F;&#x2F;合并暂存的代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
+ <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> stash     //暂存当前正在进行的工作。
+<span class="token function">git</span> pull origin master //拉取服务器的代码
+<span class="token function">git</span> stash pop //合并暂存的代码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 <li><p>服务器代码覆盖本地代码</p>
- <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git reset --hard  &#x2F;&#x2F;回滚到上一个版本
-git pull origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+ <pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> reset --hard  //回滚到上一个版本
+<span class="token function">git</span> pull origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <h3 id="版本控制"><a href="#版本控制" class="headerlink" title="版本控制"></a>版本控制</h3></li>
 </ol>
 <p><code>git log</code></p>
@@ -465,12 +465,12 @@ git pull origin master<span aria-hidden="true" class="line-numbers-rows"><span><
 <p><code>git reflog</code></p>
 <p><code>git reset --hard [部分索引值]</code></p>
 <h3 id="隐藏文件"><a href="#隐藏文件" class="headerlink" title="隐藏文件"></a>隐藏文件</h3><p>exclude</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"># git ls-files --others --exclude-from&#x3D;.git&#x2F;info&#x2F;exclude
-# Lines that start with &#39;#&#39; are comments.
-# For a project mostly in C, the following would be a good set of
-# exclude patterns (uncomment them if you want to use them):
-# *.[oa]
-# *~
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token comment"># git ls-files --others --exclude-from=.git/info/exclude</span>
+<span class="token comment"># Lines that start with '#' are comments.</span>
+<span class="token comment"># For a project mostly in C, the following would be a good set of</span>
+<span class="token comment"># exclude patterns (uncomment them if you want to use them):</span>
+<span class="token comment"># *.[oa]</span>
+<span class="token comment"># *~</span>
 .*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h3 id="忽略文件"><a href="#忽略文件" class="headerlink" title="忽略文件"></a>忽略文件</h3><p><code>touch .gitignore</code><br><code>.git/info/exclude`` ``vi .git/info/exclude</code></p>
 <ol>
@@ -481,14 +481,14 @@ git pull origin master<span aria-hidden="true" class="line-numbers-rows"><span><
 <li>如果名称的最后面是一个路径分隔符(/) , 表示要忽略的是此目录下该名称的子目录,而非文件(默认文件或目录都忽略)。</li>
 </ol>
 <h3 id="删除远程文件"><a href="#删除远程文件" class="headerlink" title="删除远程文件"></a>删除远程文件</h3><p>方法一<br>这里以删除 test文件夹为案例</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git rm -r --cached test &#x2F;&#x2F;--cached不会把本地的test删除
-git commit -m &#39;delete test &#39;
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">rm</span> -r --cached <span class="token builtin class-name">test</span> //--cached不会把本地的test删除
+<span class="token function">git</span> commit -m <span class="token string">'delete test '</span>
+<span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <p>方法二<br>如果误提交的文件夹比较多，方法一也较繁琐<br>直接修改.gitignore文件,将不需要的文件过滤掉，然后执行命令:</p>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git rm -r --cached .
-git add .
-git commit
-git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> <span class="token function">rm</span> -r --cached <span class="token builtin class-name">.</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit
+<span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/cui130/article/details/84033966">参考博客</a></p>
 </blockquote>
@@ -498,27 +498,27 @@ git push -u origin master<span aria-hidden="true" class="line-numbers-rows"><spa
 <h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><ol>
 <li>原因是因为上传时间太长了，导致ssh连接超时断开</li>
 </ol>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">fatal: sha1 file &#39;&lt;stdout&gt;&#39; write error: Broken pipe KiB&#x2F;s
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">fatal: sha1 <span class="token function">file</span> <span class="token string">'&lt;stdout>'</span> <span class="token function">write</span> error: Broken pipe KiB/s
 fatal: the remote end hung up unexpectedly
 fatal: the remote end hung up unexpectedly
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <blockquote>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_31803503/article/details/88323527">解决方案</a></p>
 </blockquote>
-<h3 id="push问题"><a href="#push问题" class="headerlink" title="push问题"></a>push问题</h3><h4 id="rejected-master-gt-master-non-fast-forward"><a href="#rejected-master-gt-master-non-fast-forward" class="headerlink" title="! [rejected] master -&gt; master (non-fast-forward)"></a>! [rejected] master -&gt; master (non-fast-forward)</h4><h5 id="错误-1"><a href="#错误-1" class="headerlink" title="错误"></a>错误</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">$ git push
-To github.com:Lanqilu&#x2F;BiliBilil-Leaderboard.git
- ! [rejected]        master -&gt; master (non-fast-forward)
-error: failed to push some refs to &#39;git@github.com:Lanqilu&#x2F;BiliBilil-Leaderboard.git&#39;
+<h3 id="push问题"><a href="#push问题" class="headerlink" title="push问题"></a>push问题</h3><h4 id="rejected-master-gt-master-non-fast-forward"><a href="#rejected-master-gt-master-non-fast-forward" class="headerlink" title="! [rejected] master -&gt; master (non-fast-forward)"></a>! [rejected] master -&gt; master (non-fast-forward)</h4><h5 id="错误-1"><a href="#错误-1" class="headerlink" title="错误"></a>错误</h5><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">$ <span class="token function">git</span> push
+To github.com:Lanqilu/BiliBilil-Leaderboard.git
+ <span class="token operator">!</span> <span class="token punctuation">[</span>rejected<span class="token punctuation">]</span>        master -<span class="token operator">></span> master <span class="token punctuation">(</span>non-fast-forward<span class="token punctuation">)</span>
+error: failed to push some refs to <span class="token string">'git@github.com:Lanqilu/BiliBilil-Leaderboard.git'</span>
 hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: &#39;git pull ...&#39;) before pushing again.
-hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+hint: its remote counterpart. Integrate the remote changes <span class="token punctuation">(</span>e.g.
+hint: <span class="token string">'git pull ...'</span><span class="token punctuation">)</span> before pushing again.
+hint: See the <span class="token string">'Note about fast-forwards'</span> <span class="token keyword">in</span> <span class="token string">'git push --help'</span> <span class="token keyword">for</span> details.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去</p>
 <h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><p>利用强覆盖方式用你本地的代码替代git仓库内的内容</p>
 <blockquote>
 <p>不推荐使用，需要解决冲突再提交</p>
 </blockquote>
-<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">git push -f<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell"><span class="token function">git</span> push -f<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lujinjian605894472/article/details/8443403">参考地址</a></p>
 <!--hexo clean && hexo g && hexo d-->
 
@@ -546,12 +546,12 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -591,7 +591,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/3.png" class="responsive-img" alt="Markdown基本语法">
+                        <img src="/medias/featureimages/3.png" class="responsive-img" alt="Markdown基本语法">
                         
                         <span class="card-title">Markdown基本语法</span>
                     </div>
@@ -640,7 +640,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/14.png" class="responsive-img" alt="Git的常见使用">
+                        <img src="/medias/featureimages/14.png" class="responsive-img" alt="Git的常见使用">
                         
                         <span class="card-title">Git的常见使用</span>
                     </div>
@@ -688,21 +688,21 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -723,7 +723,7 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -960,12 +960,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -987,7 +987,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1003,7 +1003,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

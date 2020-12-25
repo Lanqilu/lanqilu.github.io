@@ -17,17 +17,17 @@
 
 
     <title>Java函数式编程 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -370,7 +370,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -392,64 +392,64 @@
 <p>需要提醒大家的是，函数式语言背后有很多动机，这意味着描述它们可能会有些混淆。它通常取决于各种观点：为“并行编程”，“代码可靠性”和“代码创建和库复用”。 关于函数式编程能高效创建更健壮的代码这一观点仍存在部分争议。虽然已有一些好的范例，但还不足以证明纯函数式语言就是解决编程问题的最佳方法。</p>
 <p>FP 思想值得融入非 FP 语言，如 Python。Java 8 也从中吸收并支持了 FP。我们将在此章探讨。</p>
 <h2 id="新旧对比"><a href="#新旧对比" class="headerlink" title="新旧对比"></a>新旧对比</h2><p>通常，传递给方法的数据不同，结果不同。如果我们希望方法在调用时行为不同，该怎么做呢？结论是：只要能将代码传递给方法，我们就可以控制它的行为。此前，我们通过在方法中创建包含所需行为的对象，然后将该对象传递给我们想要控制的方法来完成此操作。下面我们用传统形式和 Java 8 的方法引用、Lambda 表达式分别演示。代码示例：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; functional&#x2F;Strategize.java
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// functional/Strategize.java</span>
 
-interface Strategy &#123;
-  String approach(String msg);
-&#125;
+<span class="token keyword">interface</span> <span class="token class-name">Strategy</span> <span class="token punctuation">&#123;</span>
+  <span class="token class-name">String</span> <span class="token function">approach</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-class Soft implements Strategy &#123;
-  public String approach(String msg) &#123;
-    return msg.toLowerCase() + &quot;?&quot;;
-  &#125;
-&#125;
+<span class="token keyword">class</span> <span class="token class-name">Soft</span> <span class="token keyword">implements</span> <span class="token class-name">Strategy</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">approach</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> msg<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"?"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-class Unrelated &#123;
-  static String twice(String msg) &#123;
-    return msg + &quot; &quot; + msg;
-  &#125;
-&#125;
+<span class="token keyword">class</span> <span class="token class-name">Unrelated</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">static</span> <span class="token class-name">String</span> <span class="token function">twice</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> msg <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span> msg<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-public class Strategize &#123;
-  Strategy strategy;
-  String msg;
-  Strategize(String msg) &#123;
-    strategy &#x3D; new Soft(); &#x2F;&#x2F; [1]
-    this.msg &#x3D; msg;
-  &#125;
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Strategize</span> <span class="token punctuation">&#123;</span>
+  <span class="token class-name">Strategy</span> strategy<span class="token punctuation">;</span>
+  <span class="token class-name">String</span> msg<span class="token punctuation">;</span>
+  <span class="token class-name">Strategize</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    strategy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Soft</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [1]</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>msg <span class="token operator">=</span> msg<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
 
-  void communicate() &#123;
-    System.out.println(strategy.approach(msg));
-  &#125;
+  <span class="token keyword">void</span> <span class="token function">communicate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>strategy<span class="token punctuation">.</span><span class="token function">approach</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
 
-  void changeStrategy(Strategy strategy) &#123;
-    this.strategy &#x3D; strategy;
-  &#125;
+  <span class="token keyword">void</span> <span class="token function">changeStrategy</span><span class="token punctuation">(</span><span class="token class-name">Strategy</span> strategy<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>strategy <span class="token operator">=</span> strategy<span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
 
-  public static void main(String[] args) &#123;
-    Strategy[] strategies &#x3D; &#123;
-      new Strategy() &#123; &#x2F;&#x2F; [2]
-        public String approach(String msg) &#123;
-          return msg.toUpperCase() + &quot;!&quot;;
-        &#125;
-      &#125;,
-      msg -&gt; msg.substring(0, 5), &#x2F;&#x2F; [3]
-      Unrelated::twice &#x2F;&#x2F; [4]
-    &#125;;
-    Strategize s &#x3D; new Strategize(&quot;Hello there&quot;);
-    s.communicate();
-    for(Strategy newStrategy : strategies) &#123;
-      s.changeStrategy(newStrategy); &#x2F;&#x2F; [5]
-      s.communicate(); &#x2F;&#x2F; [6]
-    &#125;
-  &#125;
-&#125;
-&#x2F;* Output
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token class-name">Strategy</span><span class="token punctuation">[</span><span class="token punctuation">]</span> strategies <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+      <span class="token keyword">new</span> <span class="token class-name">Strategy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// [2]</span>
+        <span class="token keyword">public</span> <span class="token class-name">String</span> <span class="token function">approach</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+          <span class="token keyword">return</span> msg<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"!"</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+      msg <span class="token operator">-></span> msg<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// [3]</span>
+      <span class="token class-name">Unrelated</span><span class="token operator">::</span><span class="token function">twice</span> <span class="token comment">// [4]</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+    <span class="token class-name">Strategize</span> s <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Strategize</span><span class="token punctuation">(</span><span class="token string">"Hello there"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    s<span class="token punctuation">.</span><span class="token function">communicate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token class-name">Strategy</span> newStrategy <span class="token operator">:</span> strategies<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+      s<span class="token punctuation">.</span><span class="token function">changeStrategy</span><span class="token punctuation">(</span>newStrategy<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [5]</span>
+      s<span class="token punctuation">.</span><span class="token function">communicate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [6]</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/* Output
 hello there?
 HELLO THERE!
 Hello
 Hello there Hello there
-*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>TODO ：对于程序的执行顺序有些不清楚。2020年10月14日</p>
 <p><strong>Strategy</strong> 接口提供了单一的 <code>approach()</code> 方法来承载函数式功能。通过创建不同的 <strong>Strategy</strong> 对象，我们可以创建不同的行为。</p>
 <p>我们一般通过创建一个实现<strong>Strategy</strong>接口的类来实现这种行为，正如在<strong>Soft</strong>里所做的。</p>
@@ -468,43 +468,43 @@ Hello there Hello there
 <li>Lambda 语法尽可能少，这正是为了使 Lambda 易于编写和使用。</li>
 </ol>
 <p>我们在 <strong>Strategize.java</strong> 中看到了一个 Lambda 表达式，但还有其他语法变体：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; functional&#x2F;LambdaExpressions.java
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// functional/LambdaExpressions.java</span>
 
-interface Description &#123;
-  String brief();
-&#125;
+<span class="token keyword">interface</span> <span class="token class-name">Description</span> <span class="token punctuation">&#123;</span>
+  <span class="token class-name">String</span> <span class="token function">brief</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-interface Body &#123;
-  String detailed(String head);
-&#125;
+<span class="token keyword">interface</span> <span class="token class-name">Body</span> <span class="token punctuation">&#123;</span>
+  <span class="token class-name">String</span> <span class="token function">detailed</span><span class="token punctuation">(</span><span class="token class-name">String</span> head<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-interface Multi &#123;
-  String twoArg(String head, Double d);
-&#125;
+<span class="token keyword">interface</span> <span class="token class-name">Multi</span> <span class="token punctuation">&#123;</span>
+  <span class="token class-name">String</span> <span class="token function">twoArg</span><span class="token punctuation">(</span><span class="token class-name">String</span> head<span class="token punctuation">,</span> <span class="token class-name">Double</span> d<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-public class LambdaExpressions &#123;
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">LambdaExpressions</span> <span class="token punctuation">&#123;</span>
 
-  static Body bod &#x3D; h -&gt; h + &quot; No Parens!&quot;; &#x2F;&#x2F; [1]
+  <span class="token keyword">static</span> <span class="token class-name">Body</span> bod <span class="token operator">=</span> h <span class="token operator">-></span> h <span class="token operator">+</span> <span class="token string">" No Parens!"</span><span class="token punctuation">;</span> <span class="token comment">// [1]</span>
 
-  static Body bod2 &#x3D; (h) -&gt; h + &quot; More details&quot;; &#x2F;&#x2F; [2]
+  <span class="token keyword">static</span> <span class="token class-name">Body</span> bod2 <span class="token operator">=</span> <span class="token punctuation">(</span>h<span class="token punctuation">)</span> <span class="token operator">-></span> h <span class="token operator">+</span> <span class="token string">" More details"</span><span class="token punctuation">;</span> <span class="token comment">// [2]</span>
 
-  static Description desc &#x3D; () -&gt; &quot;Short info&quot;; &#x2F;&#x2F; [3]
+  <span class="token keyword">static</span> <span class="token class-name">Description</span> desc <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token string">"Short info"</span><span class="token punctuation">;</span> <span class="token comment">// [3]</span>
 
-  static Multi mult &#x3D; (h, n) -&gt; h + n; &#x2F;&#x2F; [4]
+  <span class="token keyword">static</span> <span class="token class-name">Multi</span> mult <span class="token operator">=</span> <span class="token punctuation">(</span>h<span class="token punctuation">,</span> n<span class="token punctuation">)</span> <span class="token operator">-></span> h <span class="token operator">+</span> n<span class="token punctuation">;</span> <span class="token comment">// [4]</span>
 
-  static Description moreLines &#x3D; () -&gt; &#123; &#x2F;&#x2F; [5]
-    System.out.println(&quot;moreLines()&quot;);
-    return &quot;from moreLines()&quot;;
-  &#125;;
+  <span class="token keyword">static</span> <span class="token class-name">Description</span> moreLines <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token punctuation">&#123;</span> <span class="token comment">// [5]</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"moreLines()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token string">"from moreLines()"</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
 
-  public static void main(String[] args) &#123;
-    System.out.println(bod.detailed(&quot;Oh!&quot;));
-    System.out.println(bod2.detailed(&quot;Hi!&quot;));
-    System.out.println(desc.brief());
-    System.out.println(mult.twoArg(&quot;Pi! &quot;, 3.14159));
-    System.out.println(moreLines.brief());
-  &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>bod<span class="token punctuation">.</span><span class="token function">detailed</span><span class="token punctuation">(</span><span class="token string">"Oh!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>bod2<span class="token punctuation">.</span><span class="token function">detailed</span><span class="token punctuation">(</span><span class="token string">"Hi!"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>desc<span class="token punctuation">.</span><span class="token function">brief</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>mult<span class="token punctuation">.</span><span class="token function">twoArg</span><span class="token punctuation">(</span><span class="token string">"Pi! "</span><span class="token punctuation">,</span> <span class="token number">3.14159</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>moreLines<span class="token punctuation">.</span><span class="token function">brief</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>我们从三个接口开始，每个接口都有一个单独的方法（很快就会理解它的重要性）。但是，每个方法都有不同数量的参数，以便演示 Lambda 表达式语法。</p>
 <p>任何 Lambda 表达式的基本语法是：</p>
 <ol>
@@ -523,23 +523,23 @@ public class LambdaExpressions &#123;
 <p>Lambda 表达式通常比<strong>匿名内部类</strong>产生更易读的代码，因此我们将在本书中尽可能使用它们。</p>
 <h2 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h2><p>递归函数是一个自我调用的函数。可以编写递归的 Lambda 表达式，但需要注意：递归方法必须是实例变量或静态变量，否则会出现编译时错误。 我们将为每个案例创建一个示例。</p>
 <p>这两个示例都需要一个接受 <strong>int</strong> 型参数并生成 <strong>int</strong> 的接口：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; functional&#x2F;IntCall.java
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// functional/IntCall.java</span>
 
-interface IntCall &#123;
-  int call(int arg);
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">interface</span> <span class="token class-name">IntCall</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">int</span> <span class="token function">call</span><span class="token punctuation">(</span><span class="token keyword">int</span> arg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>整数 n 的阶乘将所有小于或等于 n 的正整数相乘。 阶乘函数是一个常见的递归示例：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; functional&#x2F;RecursiveFactorial.java
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// functional/RecursiveFactorial.java</span>
 
-public class RecursiveFactorial &#123;
-  static IntCall fact;
-  public static void main(String[] args) &#123;
-    fact &#x3D; n -&gt; n &#x3D;&#x3D; 0 ? 1 : n * fact.call(n - 1);
-    for(int i &#x3D; 0; i &lt;&#x3D; 10; i++)
-      System.out.println(fact.call(i));
-  &#125;
-&#125;
-&#x2F;* Output 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RecursiveFactorial</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">static</span> <span class="token class-name">IntCall</span> fact<span class="token punctuation">;</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    fact <span class="token operator">=</span> n <span class="token operator">-></span> n <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> n <span class="token operator">*</span> fact<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>fact<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/* Output 
 1
 1
 2
@@ -551,32 +551,32 @@ public class RecursiveFactorial &#123;
 40320
 362880
 3628800
- *&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+ */</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>这里，<code>fact</code> 是一个静态变量。 注意使用三元 <strong>if-else</strong>。 递归函数将一直调用自己，直到 <code>i == 0</code>。所有递归函数都有“停止条件”，否则将无限递归并产生异常。</p>
 <p>我们可以将 <code>Fibonacci</code> 序列用递归的 Lambda 表达式来实现，这次使用实例变量：</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; functional&#x2F;RecursiveFibonacci.java
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// functional/RecursiveFibonacci.java</span>
 
-public class RecursiveFibonacci &#123;
-    IntCall fib;
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">RecursiveFibonacci</span> <span class="token punctuation">&#123;</span>
+    <span class="token class-name">IntCall</span> fib<span class="token punctuation">;</span>
 
-    RecursiveFibonacci() &#123;
-        fib &#x3D; n -&gt; n &#x3D;&#x3D; 0 ? 0 :
-                n &#x3D;&#x3D; 1 ? 1 :
-                        fib.call(n - 1) + fib.call(n - 2);
-    &#125;
+    <span class="token class-name">RecursiveFibonacci</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        fib <span class="token operator">=</span> n <span class="token operator">-></span> n <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span>
+                n <span class="token operator">==</span> <span class="token number">1</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span>
+                        fib<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> fib<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
 
-    int fibonacci(int n) &#123;
-        return fib.call(n);
-    &#125;
+    <span class="token keyword">int</span> <span class="token function">fibonacci</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">return</span> fib<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
 
-    public static void main(String[] args) &#123;
-        RecursiveFibonacci rf &#x3D; new RecursiveFibonacci();
-        for (int i &#x3D; 0; i &lt;&#x3D; 10; i++) &#123;
-            System.out.println(rf.fibonacci(i));
-        &#125;
-    &#125;
-&#125;
-&#x2F;* Output 
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token class-name">RecursiveFibonacci</span> rf <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RecursiveFibonacci</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>rf<span class="token punctuation">.</span><span class="token function">fibonacci</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token comment">/* Output 
 1
 1
 2
@@ -587,54 +587,54 @@ public class RecursiveFibonacci &#123;
 21
 34
 55 
-*&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+*/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>将 <code>Fibonacci</code> 序列中的最后两个元素求和来产生下一个元素。</p>
 <h2 id="方法引用"><a href="#方法引用" class="headerlink" title="方法引用"></a>方法引用</h2><p>Java 8 方法引用没有历史包袱。方法引用组成：类名或对象名，后面跟 <code>::</code> ，然后跟方法名称。</p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">&#x2F;&#x2F; functional&#x2F;MethodReferences.java
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// functional/MethodReferences.java</span>
 
-import java.util.*;
+<span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token operator">*</span><span class="token punctuation">;</span>
 
-interface Callable &#123; &#x2F;&#x2F; [1]
-  void call(String s);
-&#125;
+<span class="token keyword">interface</span> <span class="token class-name">Callable</span> <span class="token punctuation">&#123;</span> <span class="token comment">// [1]</span>
+  <span class="token keyword">void</span> <span class="token function">call</span><span class="token punctuation">(</span><span class="token class-name">String</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
 
-class Describe &#123;
-  void show(String msg) &#123; &#x2F;&#x2F; [2]
-    System.out.println(msg);
-  &#125;
-&#125;
+<span class="token keyword">class</span> <span class="token class-name">Describe</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">void</span> <span class="token function">show</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// [2]</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
 
-public class MethodReferences &#123;
-  static void hello(String name) &#123; &#x2F;&#x2F; [3]
-    System.out.println(&quot;Hello, &quot; + name);
-  &#125;
-  static class Description &#123;
-    String about;
-    Description(String desc) &#123; about &#x3D; desc; &#125;
-    void help(String msg) &#123; &#x2F;&#x2F; [4]
-      System.out.println(about + &quot; &quot; + msg);
-    &#125;
-  &#125;
-  static class Helper &#123;
-    static void assist(String msg) &#123; &#x2F;&#x2F; [5]
-      System.out.println(msg);
-    &#125;
-  &#125;
-  public static void main(String[] args) &#123;
-    Describe d &#x3D; new Describe();
-    Callable c &#x3D; d::show; &#x2F;&#x2F; [6]
-    c.call(&quot;call()&quot;); &#x2F;&#x2F; [7]
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">MethodReferences</span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// [3]</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"Hello, "</span> <span class="token operator">+</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Description</span> <span class="token punctuation">&#123;</span>
+    <span class="token class-name">String</span> about<span class="token punctuation">;</span>
+    <span class="token class-name">Description</span><span class="token punctuation">(</span><span class="token class-name">String</span> desc<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> about <span class="token operator">=</span> desc<span class="token punctuation">;</span> <span class="token punctuation">&#125;</span>
+    <span class="token keyword">void</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// [4]</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>about <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span> msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Helper</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">assist</span><span class="token punctuation">(</span><span class="token class-name">String</span> msg<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token comment">// [5]</span>
+      <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    <span class="token class-name">Describe</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Describe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">Callable</span> c <span class="token operator">=</span> d<span class="token operator">::</span><span class="token function">show</span><span class="token punctuation">;</span> <span class="token comment">// [6]</span>
+    c<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">"call()"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// [7]</span>
 
-    c &#x3D; MethodReferences::hello; &#x2F;&#x2F; [8]
-    c.call(&quot;Bob&quot;);
+    c <span class="token operator">=</span> <span class="token class-name">MethodReferences</span><span class="token operator">::</span><span class="token function">hello</span><span class="token punctuation">;</span> <span class="token comment">// [8]</span>
+    c<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">"Bob"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    c &#x3D; new Description(&quot;valuable&quot;)::help; &#x2F;&#x2F; [9]
-    c.call(&quot;information&quot;);
+    c <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Description</span><span class="token punctuation">(</span><span class="token string">"valuable"</span><span class="token punctuation">)</span><span class="token operator">::</span><span class="token function">help</span><span class="token punctuation">;</span> <span class="token comment">// [9]</span>
+    c<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">"information"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    c &#x3D; Helper::assist; &#x2F;&#x2F; [10]
-    c.call(&quot;Help!&quot;);
-  &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+    c <span class="token operator">=</span> <span class="token class-name">Helper</span><span class="token operator">::</span><span class="token function">assist</span><span class="token punctuation">;</span> <span class="token comment">// [10]</span>
+    c<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span><span class="token string">"Help!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>[1]</strong> 我们从单一方法接口开始（同样，你很快就会了解到这一点的重要性）。</p>
 <p><strong>[2]</strong> <code>show()</code> 的签名（参数类型和返回类型）符合 <strong>Callable</strong> 的 <code>call()</code> 的签名。</p>
 <p><strong>[3]</strong> <code>hello()</code> 也符合 <code>call()</code> 的签名。</p>
@@ -673,12 +673,12 @@ public class MethodReferences &#123;
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -718,7 +718,7 @@ public class MethodReferences &#123;
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/3.png" class="responsive-img" alt="Java后端学习路线">
+                        <img src="/medias/featureimages/3.png" class="responsive-img" alt="Java后端学习路线">
                         
                         <span class="card-title">Java后端学习路线</span>
                     </div>
@@ -771,7 +771,7 @@ public class MethodReferences &#123;
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/medias/featureimages/12.png" class="responsive-img" alt="Java集合">
+                        <img src="/medias/featureimages/12.png" class="responsive-img" alt="Java集合">
                         
                         <span class="card-title">Java集合</span>
                     </div>
@@ -818,21 +818,21 @@ public class MethodReferences &#123;
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -853,7 +853,7 @@ public class MethodReferences &#123;
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1090,12 +1090,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1117,7 +1117,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1133,7 +1133,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.3/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>
