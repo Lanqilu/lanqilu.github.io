@@ -1,4 +1,382 @@
-<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="Java容器, HALO"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Java容器 | HALO</title><link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/apple-touch-icon-next.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/awesome/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/animate/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/matery.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/my.css"><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.3.0"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">HALO</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">HALO</div><div class="logo-desc">Never really desperate, only the lost of the soul.</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/13.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">Java容器</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/Java/"><span class="chip bg-color">Java</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Java/" class="post-category">Java</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-04-06</div></div></div><hr class="clearfix"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><p>Java数组与集合</p><hr><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>如果我们有一组类型相同的变量，例如，5位同学的成绩，可以这么写：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class Main &#123;
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Java容器, Halo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Java容器 | Halo</title>
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Halo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Halo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Java容器</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-04-06
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>Java数组与集合</p>
+<hr>
+<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>如果我们有一组类型相同的变量，例如，5位同学的成绩，可以这么写：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
         int n1 &#x3D; 68;
@@ -7,7 +385,9 @@
         int n4 &#x3D; 85;
         int n5 &#x3D; 62;
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>但其实没有必要定义5个<code>int</code>变量。可以使用数组来表示“一组”<code>int</code>类型。代码如下：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>但其实没有必要定义5个<code>int</code>变量。可以使用数组来表示“一组”<code>int</code>类型。代码如下：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
@@ -19,14 +399,33 @@ public class Main &#123;
         ns[4] &#x3D; 62;
     &#125;
 &#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>数组能够顺序存储相同类型的多个数据。除了存储数据，我们也希望能够访问数据。访问数组中的某个元素的方法是将其编号然后<strong>索引</strong>。如果我们有 N 个值，它们的编号则为 0 至 N-1。这样对于 0 到 N-1 之间任意的 i，我们就能够在 Java 代码中用 <code>a[i]</code> 唯一地表示第 i 个元素的值。在 Java中这种数组被称为一维数组。</p><h3 id="创建并初始化数组"><a href="#创建并初始化数组" class="headerlink" title="创建并初始化数组"></a>创建并初始化数组</h3><p>在 Java 程序中创建一个数组需要三步：</p><ul><li>声明数组的名字和类型；</li><li>创建数组；</li><li>初始化数组元素。</li></ul><p>定义一个数组类型的变量，使用数组类型“<code>类型[]</code>”，例如，<code>int[]</code>。和单个基本类型变量不同，数组变量初始化必须使用<code>new int[5]</code>表示创建一个可容纳5个<code>int</code>元素的数组。</p><p>Java的数组有几个特点：</p><ul><li>数组所有元素初始化为默认值，整型都是<code>0</code>，浮点型是<code>0.0</code>，布尔型是<code>false</code>；</li><li>数组一旦创建后，大小就不可改变。</li></ul><p>要访问数组中的某一个元素，需要使用索引。数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~`4`。</p><p>可以修改数组中的某一个元素，使用赋值语句，例如，<code>ns[1] = 79;</code>。</p><p>可以用<code>数组变量.length</code>获取数组大小：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>数组能够顺序存储相同类型的多个数据。除了存储数据，我们也希望能够访问数据。访问数组中的某个元素的方法是将其编号然后<strong>索引</strong>。如果我们有 N 个值，它们的编号则为 0 至 N-1。这样对于 0 到 N-1 之间任意的 i，我们就能够在 Java 代码中用 <code>a[i]</code> 唯一地表示第 i 个元素的值。在 Java中这种数组被称为一维数组。</p>
+<h3 id="创建并初始化数组"><a href="#创建并初始化数组" class="headerlink" title="创建并初始化数组"></a>创建并初始化数组</h3><p>在 Java 程序中创建一个数组需要三步：</p>
+<ul>
+<li>声明数组的名字和类型；</li>
+<li>创建数组；</li>
+<li>初始化数组元素。</li>
+</ul>
+<p>定义一个数组类型的变量，使用数组类型“<code>类型[]</code>”，例如，<code>int[]</code>。和单个基本类型变量不同，数组变量初始化必须使用<code>new int[5]</code>表示创建一个可容纳5个<code>int</code>元素的数组。</p>
+<p>Java的数组有几个特点：</p>
+<ul>
+<li>数组所有元素初始化为默认值，整型都是<code>0</code>，浮点型是<code>0.0</code>，布尔型是<code>false</code>；</li>
+<li>数组一旦创建后，大小就不可改变。</li>
+</ul>
+<p>要访问数组中的某一个元素，需要使用索引。数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~`4`。</p>
+<p>可以修改数组中的某一个元素，使用赋值语句，例如，<code>ns[1] = 79;</code>。</p>
+<p>可以用<code>数组变量.length</code>获取数组大小：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
         int[] ns &#x3D; new int[5];
         System.out.println(ns.length); &#x2F;&#x2F; 5
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>数组是引用类型，在使用索引访问数组元素时，如果索引超出范围，运行时将报错：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>数组是引用类型，在使用索引访问数组元素时，如果索引超出范围，运行时将报错：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
@@ -34,14 +433,20 @@ public class Main &#123;
         int n &#x3D; 5;
         System.out.println(ns[n]); &#x2F;&#x2F; 索引n不能超出范围
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>也可以在定义数组时直接指定初始化的元素，这样就不必写出数组大小，而是由编译器自动推算数组大小。例如：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>也可以在定义数组时直接指定初始化的元素，这样就不必写出数组大小，而是由编译器自动推算数组大小。例如：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
         int[] ns &#x3D; new int[] &#123; 68, 79, 91, 85, 62 &#125;;
         System.out.println(ns.length); &#x2F;&#x2F; 编译器自动推算数组大小为5
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>还可以进一步简写为：</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">int[] ns &#x3D; &#123; 68, 79, 91, 85, 62 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>注意数组是引用类型，并且数组大小不可变。我们观察下面的代码：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>还可以进一步简写为：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int[] ns &#x3D; &#123; 68, 79, 91, 85, 62 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>注意数组是引用类型，并且数组大小不可变。我们观察下面的代码：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
@@ -51,19 +456,30 @@ public class Main &#123;
         ns &#x3D; new int[] &#123; 1, 2, 3 &#125;;
         System.out.println(ns.length); &#x2F;&#x2F; 3
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>数组大小变了吗？看上去好像是变了，但其实根本没变。</p><p>对于数组<code>ns</code>来说，执行<code>ns = new int[] &#123; 68, 79, 91, 85, 62 &#125;;</code>时，它指向一个5个元素的数组：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">     ns
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>数组大小变了吗？看上去好像是变了，但其实根本没变。</p>
+<p>对于数组<code>ns</code>来说，执行<code>ns = new int[] &#123; 68, 79, 91, 85, 62 &#125;;</code>时，它指向一个5个元素的数组：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">     ns
       │
       ▼
 ┌───┬───┬───┬───┬───┬───┬───┐
 │   │68 │79 │91 │85 │62 │   │
-└───┴───┴───┴───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>执行<code>ns = new int[] &#123; 1, 2, 3 &#125;;</code>时，它指向一个<em>新的</em>3个元素的数组：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">     ns ──────────────────────┐
+└───┴───┴───┴───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>执行<code>ns = new int[] &#123; 1, 2, 3 &#125;;</code>时，它指向一个<em>新的</em>3个元素的数组：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">     ns ──────────────────────┐
                               │
                               ▼
 ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┐
 │   │68 │79 │91 │85 │62 │   │ 1 │ 2 │ 3 │   │
-└───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>但是，原有的5个元素的数组并没有改变，只是无法通过变量<code>ns</code>引用到它们而已。</p><h3 id="字符串数组"><a href="#字符串数组" class="headerlink" title="字符串数组"></a>字符串数组</h3><p>如果数组元素不是基本类型，而是一个引用类型，那么，修改数组元素会有哪些不同？</p><p>字符串是引用类型，因此我们先定义一个字符串数组：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">String[] names &#x3D; &#123;
+└───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>但是，原有的5个元素的数组并没有改变，只是无法通过变量<code>ns</code>引用到它们而已。</p>
+<h3 id="字符串数组"><a href="#字符串数组" class="headerlink" title="字符串数组"></a>字符串数组</h3><p>如果数组元素不是基本类型，而是一个引用类型，那么，修改数组元素会有哪些不同？</p>
+<p>字符串是引用类型，因此我们先定义一个字符串数组：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">String[] names &#x3D; &#123;
     &quot;ABC&quot;, &quot;XYZ&quot;, &quot;zoo&quot;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>对于<code>String[]</code>类型的数组变量<code>names</code>，它实际上包含3个元素，但每个元素都指向某个字符串对象：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">          ┌─────────────────────────┐
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>对于<code>String[]</code>类型的数组变量<code>names</code>，它实际上包含3个元素，但每个元素都指向某个字符串对象：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">          ┌─────────────────────────┐
     names │   ┌─────────────────────┼───────────┐
       │   │   │                     │           │
       ▼   │   │                     ▼           ▼
@@ -71,7 +487,9 @@ public class Main &#123;
 │   │░░░│░░░│░░░│   │ &quot;ABC&quot; │   │ &quot;XYZ&quot; │   │ &quot;zoo&quot; │   │
 └───┴─┬─┴───┴───┴───┴───────┴───┴───────┴───┴───────┴───┘
       │                 ▲
-      └─────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>对<code>names[1]</code>进行赋值，例如<code>names[1] = &quot;cat&quot;;</code>，效果如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">          ┌─────────────────────────────────────────────────┐
+      └─────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>对<code>names[1]</code>进行赋值，例如<code>names[1] = &quot;cat&quot;;</code>，效果如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">          ┌─────────────────────────────────────────────────┐
     names │   ┌─────────────────────────────────┐           │
       │   │   │                                 │           │
       ▼   │   │                                 ▼           ▼
@@ -79,7 +497,10 @@ public class Main &#123;
 │   │░░░│░░░│░░░│   │ &quot;ABC&quot; │   │ &quot;XYZ&quot; │   │ &quot;zoo&quot; │   │ &quot;cat&quot; │   │
 └───┴─┬─┴───┴───┴───┴───────┴───┴───────┴───┴───────┴───┴───────┴───┘
       │                 ▲
-      └─────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这里注意到原来<code>names[1]</code>指向的字符串<code>&quot;XYZ&quot;</code>并没有改变，仅仅是将<code>names[1]</code>的引用从指向<code>&quot;XYZ&quot;</code>改成了指向<code>&quot;cat&quot;</code>，其结果是字符串<code>&quot;XYZ&quot;</code>再也无法通过<code>names[1]</code>访问到了。</p><p>对“指向”有了更深入的理解后，试解释如下代码：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
+      └─────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这里注意到原来<code>names[1]</code>指向的字符串<code>&quot;XYZ&quot;</code>并没有改变，仅仅是将<code>names[1]</code>的引用从指向<code>&quot;XYZ&quot;</code>改成了指向<code>&quot;cat&quot;</code>，其结果是字符串<code>&quot;XYZ&quot;</code>再也无法通过<code>names[1]</code>访问到了。</p>
+<p>对“指向”有了更深入的理解后，试解释如下代码：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         String[] names &#x3D; &#123;&quot;ABC&quot;, &quot;XYZ&quot;, &quot;zoo&quot;&#125;;
@@ -87,7 +508,10 @@ public class Main &#123;
         names[1] &#x3D; &quot;cat&quot;;
         System.out.println(s); &#x2F;&#x2F; s是&quot;XYZ&quot;还是&quot;cat&quot;?
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="数组操作"><a href="#数组操作" class="headerlink" title="数组操作"></a>数组操作</h3><h4 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h4><p>我们在Java程序基础里介绍了数组这种数据类型。有了数组，我们还需要来操作它。而数组最常见的一个操作就是遍历。</p><p>通过<code>for</code>循环就可以遍历数组。因为数组的每个元素都可以通过索引来访问，因此，使用标准的<code>for</code>循环可以完成一个数组的遍历：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="数组操作"><a href="#数组操作" class="headerlink" title="数组操作"></a>数组操作</h3><h4 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h4><p>我们在Java程序基础里介绍了数组这种数据类型。有了数组，我们还需要来操作它。而数组最常见的一个操作就是遍历。</p>
+<p>通过<code>for</code>循环就可以遍历数组。因为数组的每个元素都可以通过索引来访问，因此，使用标准的<code>for</code>循环可以完成一个数组的遍历：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         int[] ns &#x3D; &#123; 1, 4, 9, 16, 25 &#125;;
@@ -96,7 +520,10 @@ public class Main &#123;
             System.out.println(n);
         &#125;
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>为了实现<code>for</code>循环遍历，初始条件为<code>i=0</code>，因为索引总是从<code>0</code>开始，继续循环的条件为<code>i，因为当</code>i=ns.length<code>时，</code>i<code>已经超出了索引范围（索引范围是</code>0<code>~</code>ns.length-1<code>），每次循环后，</code>i++`。</p><p>第二种方式是使用<code>for each</code>循环，直接迭代数组的每个元素：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>为了实现<code>for</code>循环遍历，初始条件为<code>i=0</code>，因为索引总是从<code>0</code>开始，继续循环的条件为<code>i，因为当</code>i=ns.length<code>时，</code>i<code>已经超出了索引范围（索引范围是</code>0<code>~</code>ns.length-1<code>），每次循环后，</code>i++`。</p>
+<p>第二种方式是使用<code>for each</code>循环，直接迭代数组的每个元素：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         int[] ns &#x3D; &#123; 1, 4, 9, 16, 25 &#125;;
@@ -104,11 +531,19 @@ public class Main &#123;
             System.out.println(n);
         &#125;
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>注意：在<code>for (int n : ns)</code>循环中，变量<code>n</code>直接拿到<code>ns</code>数组的元素，而不是索引。</p><p>显然<code>for each</code>循环更加简洁。但是，<code>for each</code>循环无法拿到数组的索引，因此，到底用哪一种<code>for</code>循环，取决于我们的需要。</p><h4 id="打印数组内容"><a href="#打印数组内容" class="headerlink" title="打印数组内容"></a>打印数组内容</h4><p>直接打印数组变量，得到的是数组在JVM中的引用地址：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[] ns &#x3D; &#123; 1, 1, 2, 3, 5, 8 &#125;;
-System.out.println(ns); &#x2F;&#x2F; 类似 [I@7852e922<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>这并没有什么意义，因为我们希望打印的数组的元素内容。因此，使用<code>for each</code>循环来打印它：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[] ns &#x3D; &#123; 1, 1, 2, 3, 5, 8 &#125;;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>注意：在<code>for (int n : ns)</code>循环中，变量<code>n</code>直接拿到<code>ns</code>数组的元素，而不是索引。</p>
+<p>显然<code>for each</code>循环更加简洁。但是，<code>for each</code>循环无法拿到数组的索引，因此，到底用哪一种<code>for</code>循环，取决于我们的需要。</p>
+<h4 id="打印数组内容"><a href="#打印数组内容" class="headerlink" title="打印数组内容"></a>打印数组内容</h4><p>直接打印数组变量，得到的是数组在JVM中的引用地址：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[] ns &#x3D; &#123; 1, 1, 2, 3, 5, 8 &#125;;
+System.out.println(ns); &#x2F;&#x2F; 类似 [I@7852e922<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这并没有什么意义，因为我们希望打印的数组的元素内容。因此，使用<code>for each</code>循环来打印它：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[] ns &#x3D; &#123; 1, 1, 2, 3, 5, 8 &#125;;
 for (int n : ns) &#123;
     System.out.print(n + &quot;, &quot;);
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>使用<code>for each</code>循环打印也很麻烦。幸好Java标准库提供了<code>Arrays.toString()</code>，可以快速打印数组内容：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用<code>for each</code>循环打印也很麻烦。幸好Java标准库提供了<code>Arrays.toString()</code>，可以快速打印数组内容：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
 import java.util.Arrays;
 
 public class Main &#123;
@@ -116,14 +551,19 @@ public class Main &#123;
         int[] ns &#x3D; &#123; 1, 1, 2, 3, 5, 8 &#125;;
         System.out.println(Arrays.toString(ns));
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>倒序遍历数组</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class Main &#123;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>倒序遍历数组</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class Main &#123;
     public static void main(String[] args) &#123;
         int[] ns &#x3D; &#123;1, 1, 2, 3, 5, 8&#125;;
         for (int i&#x3D;ns.length-1; i&gt;&#x3D;0; i--) &#123;
             System.out.println(ns[i]);
         &#125;
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><p>对数组进行排序是程序中非常基本的需求。常用的排序算法有冒泡排序、插入排序和快速排序等。</p><p>我们来看一下如何使用冒泡排序算法对一个整型数组从小到大进行排序：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 冒泡排序
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><p>对数组进行排序是程序中非常基本的需求。常用的排序算法有冒泡排序、插入排序和快速排序等。</p>
+<p>我们来看一下如何使用冒泡排序算法对一个整型数组从小到大进行排序：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 冒泡排序
 import java.util.Arrays;
 
 public class Main &#123;
@@ -144,16 +584,23 @@ public class Main &#123;
         &#x2F;&#x2F; 排序后:
         System.out.println(Arrays.toString(ns));
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>冒泡排序的特点是，每一轮循环后，最大的一个数被交换到末尾，因此，下一轮循环就可以“刨除”最后的数，每一轮循环都比上一轮循环的结束位置靠前一位。</p><p>另外，注意到交换两个变量的值必须借助一个临时变量。像这么写是错误的：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int x &#x3D; 1;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>冒泡排序的特点是，每一轮循环后，最大的一个数被交换到末尾，因此，下一轮循环就可以“刨除”最后的数，每一轮循环都比上一轮循环的结束位置靠前一位。</p>
+<p>另外，注意到交换两个变量的值必须借助一个临时变量。像这么写是错误的：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int x &#x3D; 1;
 int y &#x3D; 2;
 
 x &#x3D; y; &#x2F;&#x2F; x现在是2
-y &#x3D; x; &#x2F;&#x2F; y现在还是2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>正确的写法是：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int x &#x3D; 1;
+y &#x3D; x; &#x2F;&#x2F; y现在还是2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>正确的写法是：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int x &#x3D; 1;
 int y &#x3D; 2;
 
 int t &#x3D; x; &#x2F;&#x2F; 把x的值保存在临时变量t中, t现在是1
 x &#x3D; y; &#x2F;&#x2F; x现在是2
-y &#x3D; t; &#x2F;&#x2F; y现在是t的值1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>实际上，Java的标准库已经内置了排序功能，我们只需要调用JDK提供的<code>Arrays.sort()</code>就可以排序：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 排序
+y &#x3D; t; &#x2F;&#x2F; y现在是t的值1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>实际上，Java的标准库已经内置了排序功能，我们只需要调用JDK提供的<code>Arrays.sort()</code>就可以排序：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 排序
 import java.util.Arrays;
 
 public class Main &#123;
@@ -162,44 +609,68 @@ public class Main &#123;
         Arrays.sort(ns);
         System.out.println(Arrays.toString(ns));
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>必须注意，对数组排序实际上修改了数组本身。例如，排序前的数组是：</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">int[] ns &#x3D; &#123; 9, 3, 6, 5 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在内存中，这个整型数组表示如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">      ┌───┬───┬───┬───┐
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>必须注意，对数组排序实际上修改了数组本身。例如，排序前的数组是：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int[] ns &#x3D; &#123; 9, 3, 6, 5 &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在内存中，这个整型数组表示如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">      ┌───┬───┬───┬───┐
 ns───&gt;│ 9 │ 3 │ 6 │ 5 │
-      └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>当我们调用<code>Arrays.sort(ns);</code>后，这个整型数组在内存中变为：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">      ┌───┬───┬───┬───┐
+      └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>当我们调用<code>Arrays.sort(ns);</code>后，这个整型数组在内存中变为：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">      ┌───┬───┬───┬───┐
 ns───&gt;│ 3 │ 5 │ 6 │ 9 │
-      └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>即变量<code>ns</code>指向的数组内容已经被改变了。</p><p>如果对一个字符串数组进行排序，例如：</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">String[] ns &#x3D; &#123; &quot;banana&quot;, &quot;apple&quot;, &quot;pear&quot; &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>排序前，这个数组在内存中表示如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                   ┌──────────────────────────────────┐
+      └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>即变量<code>ns</code>指向的数组内容已经被改变了。</p>
+<p>如果对一个字符串数组进行排序，例如：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">String[] ns &#x3D; &#123; &quot;banana&quot;, &quot;apple&quot;, &quot;pear&quot; &#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>排序前，这个数组在内存中表示如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                   ┌──────────────────────────────────┐
                ┌───┼──────────────────────┐           │
                │   │                      ▼           ▼
          ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐
 ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │
          └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘
            │                 ▲
-           └─────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>调用<code>Arrays.sort(ns);</code>排序后，这个数组在内存中表示如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                   ┌──────────────────────────────────┐
+           └─────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>调用<code>Arrays.sort(ns);</code>排序后，这个数组在内存中表示如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                   ┌──────────────────────────────────┐
                ┌───┼──────────┐                       │
                │   │          ▼                       ▼
          ┌───┬─┴─┬─┴─┬───┬────────┬───┬───────┬───┬──────┬───┐
 ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&quot;│   │&quot;apple&quot;│   │&quot;pear&quot;│   │
          └─┬─┴───┴───┴───┴────────┴───┴───────┴───┴──────┴───┘
            │                              ▲
-           └──────────────────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p><h4 id="典型的数组处理代码"><a href="#典型的数组处理代码" class="headerlink" title="典型的数组处理代码"></a>典型的数组处理代码</h4><p>找出数组中最大的元素</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">double max &#x3D; a[0];
+           └──────────────────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p>
+<h4 id="典型的数组处理代码"><a href="#典型的数组处理代码" class="headerlink" title="典型的数组处理代码"></a>典型的数组处理代码</h4><p>找出数组中最大的元素</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">double max &#x3D; a[0];
 for (int i &#x3D; 1; i &lt; a.lenth; i++)&#123;
     if (a[i] &gt; max)&#123;
         max &#x3D; a[i];
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>计算数组元素的平均值</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>计算数组元素的平均值</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
 double sum &#x3D; 0.0;
 for (int i &#x3D; 0; i &lt; N; i++)&#123;
     sum +&#x3D; a[i];
 &#125;
-double average &#x3D; sum &#x2F; N;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>复制数组</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
+double average &#x3D; sum &#x2F; N;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>复制数组</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
 double[] b &#x3D; new double[N];
 for (int i &#x3D; 0; i &lt; N; i++)&#123;
    b[i] &#x3D; a[i]; 
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>颠倒数组元素的顺序</p><pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>颠倒数组元素的顺序</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
 for (int i &#x3D; 0; i &lt; N&#x2F;2; i++)&#123;    
     double temp &#x3D; a[i];
     a[i] &#x3D; a[N-1-i];
     a[N-i-1] &#x3D; temp;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>矩阵相乘（方阵）<code>a[][] * b[][] = c[][]</code></p><pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>矩阵相乘（方阵）<code>a[][] * b[][] = c[][]</code></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">int N &#x3D; a.length;
 double[][] c &#x3D; new double[N][N];
 for (int i &#x3D; 0; i &lt; N; i++)&#123;
     for (int j &#x3D; 0; j &lt; N; j++)&#123;
@@ -208,7 +679,9 @@ for (int i &#x3D; 0; i &lt; N; i++)&#123;
             c[i][j] +&#x3D; a[i][k]*b[k][j];
         &#125;
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h4><p>二维数组就是数组的数组。定义一个二维数组如下：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h4><p>二维数组就是数组的数组。定义一个二维数组如下：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         int[][] ns &#x3D; &#123;
@@ -218,7 +691,9 @@ public class Main &#123;
         &#125;;
         System.out.println(ns.length); &#x2F;&#x2F; 3
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>因为<code>ns</code>包含3个数组，因此，<code>ns.length</code>为<code>3</code>。实际上<code>ns</code>在内存中的结构如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                    ┌───┬───┬───┬───┐
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>因为<code>ns</code>包含3个数组，因此，<code>ns.length</code>为<code>3</code>。实际上<code>ns</code>在内存中的结构如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                    ┌───┬───┬───┬───┐
          ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │
 ns ─────&gt;│░░░│──┘   └───┴───┴───┴───┘
          ├───┤      ┌───┬───┬───┬───┐
@@ -226,7 +701,9 @@ ns ─────&gt;│░░░│──┘   └───┴───┴─�
          ├───┤      └───┴───┴───┴───┘
          │░░░│──┐   ┌───┬───┬───┬───┐
          └───┘  └──&gt;│ 9 │10 │11 │12 │
-                    └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果我们定义一个普通数组<code>arr0</code>，然后把<code>ns[0]</code>赋值给它：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
+                    └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果我们定义一个普通数组<code>arr0</code>，然后把<code>ns[0]</code>赋值给它：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
 public class Main &#123;
     public static void main(String[] args) &#123;
         int[][] ns &#x3D; &#123;
@@ -238,7 +715,9 @@ public class Main &#123;
         System.out.println(arr0.length); &#x2F;&#x2F; 4
     &#125;
 &#125;
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>实际上<code>arr0</code>就获取了<code>ns</code>数组的第0个元素。因为<code>ns</code>数组的每个元素也是一个数组，因此，<code>arr0</code>指向的数组就是<code>&#123; 1, 2, 3, 4 &#125;</code>。在内存中，结构如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">            arr0 ─────┐
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>实际上<code>arr0</code>就获取了<code>ns</code>数组的第0个元素。因为<code>ns</code>数组的每个元素也是一个数组，因此，<code>arr0</code>指向的数组就是<code>&#123; 1, 2, 3, 4 &#125;</code>。在内存中，结构如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">            arr0 ─────┐
                       ▼
                     ┌───┬───┬───┬───┐
          ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │
@@ -248,11 +727,17 @@ ns ─────&gt;│░░░│──┘   └───┴───┴─�
          ├───┤      └───┴───┴───┴───┘
          │░░░│──┐   ┌───┬───┬───┬───┐
          └───┘  └──&gt;│ 9 │10 │11 │12 │
-                    └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>访问二维数组的某个元素需要使用<code>array[row][col]</code>，例如：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">System.out.println(ns[1][2]); &#x2F;&#x2F; 7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>二维数组的每个数组元素的长度并不要求相同，例如，可以这么定义<code>ns</code>数组：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[][] ns &#x3D; &#123;
+                    └───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>访问二维数组的某个元素需要使用<code>array[row][col]</code>，例如：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">System.out.println(ns[1][2]); &#x2F;&#x2F; 7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>二维数组的每个数组元素的长度并不要求相同，例如，可以这么定义<code>ns</code>数组：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[][] ns &#x3D; &#123;
     &#123; 1, 2, 3, 4 &#125;,
     &#123; 5, 6 &#125;,
     &#123; 7, 8, 9 &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这个二维数组在内存中的结构如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                    ┌───┬───┬───┬───┐
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个二维数组在内存中的结构如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                    ┌───┬───┬───┬───┐
          ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │ 4 │
 ns ─────&gt;│░░░│──┘   └───┴───┴───┴───┘
          ├───┤      ┌───┬───┐
@@ -260,13 +745,17 @@ ns ─────&gt;│░░░│──┘   └───┴───┴─�
          ├───┤      └───┴───┘
          │░░░│──┐   ┌───┬───┬───┐
          └───┘  └──&gt;│ 7 │ 8 │ 9 │
-                    └───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>要打印一个二维数组，可以使用两层嵌套的for循环：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">for (int[] arr : ns) &#123;
+                    └───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>要打印一个二维数组，可以使用两层嵌套的for循环：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">for (int[] arr : ns) &#123;
     for (int n : arr) &#123;
         System.out.print(n);
         System.out.print(&#39;, &#39;);
     &#125;
     System.out.println();
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>或者使用Java标准库的<code>Arrays.deepToString()</code>：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>或者使用Java标准库的<code>Arrays.deepToString()</code>：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
 import java.util.Arrays;
 
 public class Main &#123;
@@ -278,7 +767,9 @@ public class Main &#123;
         &#125;;
         System.out.println(Arrays.deepToString(ns));
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h4><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p><pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[][][] ns &#x3D; &#123;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h4><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
+<pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[][][] ns &#x3D; &#123;
     &#123;
         &#123;1, 2, 3&#125;,
         &#123;4, 5, 6&#125;,
@@ -292,7 +783,9 @@ public class Main &#123;
         &#123;14, 15, 16&#125;,
         &#123;17, 18&#125;
     &#125;
-&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>它在内存中的结构如下：</p><pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                              ┌───┬───┬───┐
+&#125;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>它在内存中的结构如下：</p>
+<pre class="line-numbers language-ascii" data-language="ascii"><code class="language-ascii">                              ┌───┬───┬───┐
                    ┌───┐  ┌──&gt;│ 1 │ 2 │ 3 │
                ┌──&gt;│░░░│──┘   └───┴───┴───┘
                │   ├───┤      ┌───┬───┬───┐
@@ -312,7 +805,10 @@ ns ────&gt;│░░░│──┘              └───┴──�
                    ├───┤      └───┴───┴───┘
                    │░░░│──┐   ┌───┬───┐
                    └───┘  └──&gt;│17 │18 │
-                              └───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p><p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p><h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">import java.util.ArrayList;
+                              └───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p>
+<p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p>
+<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java">import java.util.ArrayList;
 
 public class Basis &#123;
     public static void main(String[] args) &#123;
@@ -339,7 +835,220 @@ public class Basis &#123;
 
 
     &#125;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2></div><hr><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/Java/"><span class="chip bg-color">Java</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/js/social-share.min.js"></script></div></div></div></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/2020/04/06/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/16.jpg" class="responsive-img" alt="Java多线程"> <span class="card-title">Java多线程</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-04-06</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Java/" class="post-category">Java</a> <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="post-category">多线程</a></span></div></div><div class="card-action article-tags"><a href="/tags/Java/"><span class="chip bg-color">Java</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/2020/04/06/Django/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/13.jpg" class="responsive-img" alt="Django"> <span class="card-title">Django</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-04-06</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Python/" class="post-category">Python</a> <a href="/categories/Python/Django/" class="post-category">Django</a></span></div></div><div class="card-action article-tags"><a href="/tags/Django/"><span class="chip bg-color">Django</span></a> <a href="/tags/Python/"><span class="chip bg-color">Python</span></a></div></div></div></div></article></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeBlockFuction.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeLang.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeCopy.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2>
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/04/06/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Java多线程">
+                        
+                        <span class="card-title">Java多线程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-06
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            <a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="post-category">
+                                    多线程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/04/06/Django/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Django">
+                        
+                        <span class="card-title">Django</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-04-06
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Python/" class="post-category">
+                                    Python
+                                </a>
+                            
+                            <a href="/categories/Python/Django/" class="post-category">
+                                    Django
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Django/">
+                        <span class="chip bg-color">Django</span>
+                    </a>
+                    
+                    <a href="/tags/Python/">
+                        <span class="chip bg-color">Python</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
@@ -410,4 +1119,216 @@ public class Basis &#123;
             fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
-    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:0!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2019-2020</span> <span id="year">2019</span> <a href="/about" target="_blank">Lanqulu</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script>$(function(){!function(t,a,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),r=document.getElementById(a),n=document.getElementById(s);r.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);n.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var r=!0,n=t.title.trim().toLowerCase(),a=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),e=t.url;e=0===e.indexOf("/")?t.url:"/"+e;var s=-1,i=-1,l=-1;if(""!==n&&""!==a&&m.forEach(function(t,e){s=n.indexOf(t),i=a.indexOf(t),s<0&&i<0?r=!1:(i<0&&(i=0),0===e&&(l=i))}),r){f+="<li><a href='"+e+"' class='search-result-title'>"+n+"</a>";var c=t.content.trim().replace(/<[^>]+>/g,"");if(0<=l){var u=l-20,o=l+80;u<0&&(u=0),0===u&&(o=100),o>c.length&&(o=c.length);var h=c.substr(u,o);m.forEach(function(t){var e=new RegExp(t,"gi");h=h.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+h+"...</p>"}f+="</li>"}}),f+="</ul>",n.innerHTML=f)})}})}("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/masonry/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/scrollprogress/scrollProgress.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/others/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/instantpage/instantpage.js" type="module"></script></body></html>
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2020</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Lanqulu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+       
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

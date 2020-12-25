@@ -1,5 +1,449 @@
-<!DOCTYPE HTML><html lang="zh-CN"><head><meta charset="utf-8"><meta name="keywords" content="Java后端Linux环境搭建, HALO"><meta name="description" content=""><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><title>Java后端Linux环境搭建 | HALO</title><link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/apple-touch-icon-next.png"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/awesome/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/animate/animate.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/matery.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/css/my.css"><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/jquery/jquery.min.js"></script><meta name="generator" content="Hexo 5.3.0"></head><body><header class="navbar-fixed"><nav id="headNav" class="bg-color nav-transparent"><div id="navContainer" class="nav-wrapper container"><div class="brand-logo"><a href="/" class="waves-effect waves-light"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img" alt="LOGO"> <span class="logo-span">HALO</span></a></div><a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a><ul class="right nav-menu"><li class="hide-on-med-and-down nav-item"><a href="/" class="waves-effect waves-light"><i class="fas fa-home" style="zoom:.6"></i> <span>首页</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fas fa-tags" style="zoom:.6"></i> <span>标签</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fas fa-bookmark" style="zoom:.6"></i> <span>分类</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fas fa-archive" style="zoom:.6"></i> <span>归档</span></a></li><li class="hide-on-med-and-down nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fas fa-address-book" style="zoom:.6"></i> <span>友情链接</span></a></li><li><a href="#searchModal" class="modal-trigger waves-effect waves-light"><i id="searchIcon" class="fas fa-search" title="搜索" style="zoom:.85"></i></a></li></ul><div id="mobile-nav" class="side-nav sidenav"><div class="mobile-head bg-color"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/logo.png" class="logo-img circle responsive-img"><div class="logo-name">HALO</div><div class="logo-desc">Never really desperate, only the lost of the soul.</div></div><ul class="menu-list mobile-menu-list"><li class="m-nav-item"><a href="/" class="waves-effect waves-light"><i class="fa-fw fas fa-home"></i> 首页</a></li><li class="m-nav-item"><a href="/tags" class="waves-effect waves-light"><i class="fa-fw fas fa-tags"></i> 标签</a></li><li class="m-nav-item"><a href="/categories" class="waves-effect waves-light"><i class="fa-fw fas fa-bookmark"></i> 分类</a></li><li class="m-nav-item"><a href="/archives" class="waves-effect waves-light"><i class="fa-fw fas fa-archive"></i> 归档</a></li><li class="m-nav-item"><a href="/friends" class="waves-effect waves-light"><i class="fa-fw fas fa-address-book"></i> 友情链接</a></li></ul></div></div></nav></header><div class="bg-cover pd-header post-cover" style="background-image:url(https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/2.jpg)"><div class="container" style="right:0;left:0"><div class="row"><div class="col s12 m12 l12"><div class="brand"><h1 class="description center-align post-title">Java后端Linux环境搭建</h1></div></div></div></div></div><main class="post-container content"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.css"><style>#articleContent h1::before,#articleContent h2::before,#articleContent h3::before,#articleContent h4::before,#articleContent h5::before,#articleContent h6::before{display:block;content:" ";height:100px;margin-top:-100px;visibility:hidden}#articleContent :focus{outline:0}.toc-fixed{position:fixed;top:64px}.toc-widget{width:345px;padding-left:20px}.toc-widget .toc-title{padding:35px 0 15px 17px;font-size:1.5rem;font-weight:700;line-height:1.5rem}.toc-widget ol{padding:0;list-style:none}#toc-content{padding-bottom:30px;overflow:auto}#toc-content ol{padding-left:10px}#toc-content ol li{padding-left:10px}#toc-content .toc-link:hover{color:#42b983;font-weight:700;text-decoration:underline}#toc-content .toc-link::before{background-color:transparent;max-height:25px;position:absolute;right:23.5vw;display:block}#toc-content .is-active-link{color:#42b983}#floating-toc-btn{position:fixed;right:15px;bottom:76px;padding-top:15px;margin-bottom:0;z-index:998}#floating-toc-btn .btn-floating{width:48px;height:48px}#floating-toc-btn .btn-floating i{line-height:48px;font-size:1.4rem}</style><div class="row"><div id="main-content" class="col s12 m12 l9"><div id="artDetail"><div class="card"><div class="card-content article-info"><div class="row tag-cate"><div class="col s7"><div class="article-tag"><a href="/tags/Linux/"><span class="chip bg-color">Linux</span></a></div></div><div class="col s5 right-align"><div class="post-cate"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Linux/" class="post-category">Linux</a></div></div></div><div class="post-info"><div class="post-date info-break-policy"><i class="far fa-calendar-minus fa-fw"></i> 发布日期:&nbsp;&nbsp; 2020-06-11</div></div></div><hr class="clearfix"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/prism/prism.css"><div class="card-content article-card-content"><div id="articleContent"><p>参考<a target="_blank" rel="noopener" href="https://github.com/hansonwang99/JavaCollection">文档</a>，基于CentOS 7.7.1908</p><hr><h2 id="安装须知"><a href="#安装须知" class="headerlink" title="安装须知"></a>安装须知</h2><h3 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h3><p>准备以下软件的Linux安装文件</p><ul><li>Maven</li><li>Tomcat</li><li>Zookeeper</li><li>Git</li><li>JDK</li><li>Kafka</li><li>MySQL</li><li>Nginx</li><li>Node</li><li>Python</li><li>Redis</li></ul><h3 id="安装的基本步骤"><a href="#安装的基本步骤" class="headerlink" title="安装的基本步骤"></a>安装的基本步骤</h3><ol><li>解压安装文件至/usr/local/下创建的文件夹下</li><li>修改软件的配置文件（可选）</li><li>配置软件路径到/etc/profile文件中，刷新环境变量<code>source /ect/profile</code></li><li>查看软件安装是否成功，查看软件的版本</li></ol><h3 id="各软件版本查看方式整理"><a href="#各软件版本查看方式整理" class="headerlink" title="各软件版本查看方式整理"></a>各软件版本查看方式整理</h3><ol><li><p>Git：<code>git --version</code></p></li><li><p>Java：<code>java -version</code></p></li><li><p>Node：<code>node -v</code>、<code>npm version</code>、<code>npx -v</code></p></li><li><p>Python：<code>python -V</code>、<code>python3 -V</code>（注意<code>V</code>大写）</p></li><li><p>Maven：<code>mvn -v</code></p></li><li><p>Nginx：<code>nginx -v</code></p></li></ol><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="通过yum包管理器安装"><a href="#通过yum包管理器安装" class="headerlink" title="通过yum包管理器安装"></a>通过yum包管理器安装</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>通过<code>git --version</code>查看是否安装成功</p><p>安装的版本是<code>git version 1.8.3.1</code></p><h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><p>安装Oracle JDK</p><h2 id="node环境安装"><a href="#node环境安装" class="headerlink" title="node环境安装"></a>node环境安装</h2><p><img src="http://img.whl123456.top/image/image-20200611002658715.png" alt="node"></p><p><img src="http://img.whl123456.top/image/image-20200611002658715.png" alt="image-20200611002658715"></p><h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>在配置Maven环境变量中失误在<code>$MAVEN_HOME</code>和<code>/bin:$path</code>之间打了个空格</p><p><img src="http://img.whl123456.top/image/image-20200612155538407.png" alt="image-20200612155538407"></p><p>在退出vim，执行<code>source /etc/profile</code>报错</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&#x2F;usr&#x2F;libexec&#x2F;grepconf.sh: line 5: grep: command not found
--bash: export: &#96;&#x2F;bin:&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;node&#x2F;node-v12.16.3-linux-x64&#x2F;bin:&#x2F;usr&#x2F;local&#x2F;maven&#x2F;apache-maven-3.6.3:&#x2F;root&#x2F;bin:&#x2F;usr&#x2F;local&#x2F;java&#x2F;jdk1.8.0_161&#x2F;bin&#39;: not a valid identifier<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>此后，导致如<code>ls</code>、<code>vim</code>等命令不能使用，也不能使用其他命令修改profile，可先执行</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">export PATH&#x3D;&#x2F;bin:&#x2F;usr&#x2F;bin:$PATH<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>临时更改环境变量在找出配置错误的环境变量并修改</p><h2 id="MySQL（多次安装失败）"><a href="#MySQL（多次安装失败）" class="headerlink" title="MySQL（多次安装失败）"></a>MySQL（多次安装失败）</h2><p>前提</p><p>卸载系统自带的Mariadb</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">rpm -qa|grep mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果有Mariadb包，使用如下方式全部卸载</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum -y remove 包名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>下载或者使用准备好的安装包</p><pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;dev.mysql.com&#x2F;get&#x2F;Downloads&#x2F;MySQL-5.7&#x2F;mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>解压并重命名文件夹</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">tar -zxvf &#x2F;root&#x2F;mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz -C &#x2F;usr&#x2F;local&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mv mysql-5.7.24-linux-glibc2.12-x86_64 mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>创建MySQL用户和用户组</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">groupadd mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">useradd -g mysql mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>创建data目录</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>修改MySQL目录的归属用户</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">chown -R mysql:mysql &#x2F;usr&#x2F;local&#x2F;mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>配置MySQL的配置文件</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vim &#x2F;etc&#x2F;my.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>加入内容</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">[mysql]
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Java后端Linux环境搭建, Halo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Java后端Linux环境搭建 | Halo</title>
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Halo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Halo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Java后端Linux环境搭建</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Linux/" class="post-category">
+                                Linux
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-06-11
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>参考<a target="_blank" rel="noopener" href="https://github.com/hansonwang99/JavaCollection">文档</a>，基于CentOS 7.7.1908</p>
+<hr>
+<h2 id="安装须知"><a href="#安装须知" class="headerlink" title="安装须知"></a>安装须知</h2><h3 id="安装文件"><a href="#安装文件" class="headerlink" title="安装文件"></a>安装文件</h3><p>准备以下软件的Linux安装文件</p>
+<ul>
+<li>Maven</li>
+<li>Tomcat</li>
+<li>Zookeeper</li>
+<li>Git</li>
+<li>JDK</li>
+<li>Kafka</li>
+<li>MySQL</li>
+<li>Nginx</li>
+<li>Node</li>
+<li>Python</li>
+<li>Redis</li>
+</ul>
+<h3 id="安装的基本步骤"><a href="#安装的基本步骤" class="headerlink" title="安装的基本步骤"></a>安装的基本步骤</h3><ol>
+<li>解压安装文件至/usr/local/下创建的文件夹下</li>
+<li>修改软件的配置文件（可选）</li>
+<li>配置软件路径到/etc/profile文件中，刷新环境变量<code>source /ect/profile</code></li>
+<li>查看软件安装是否成功，查看软件的版本</li>
+</ol>
+<h3 id="各软件版本查看方式整理"><a href="#各软件版本查看方式整理" class="headerlink" title="各软件版本查看方式整理"></a>各软件版本查看方式整理</h3><ol>
+<li><p>Git：<code>git --version</code></p>
+</li>
+<li><p>Java：<code>java -version</code></p>
+</li>
+<li><p>Node：<code>node -v</code>、<code>npm version</code>、<code>npx -v</code></p>
+</li>
+<li><p>Python：<code>python -V</code>、<code>python3 -V</code>（注意<code>V</code>大写）</p>
+</li>
+<li><p>Maven：<code>mvn -v</code></p>
+</li>
+<li><p>Nginx：<code>nginx -v</code></p>
+</li>
+</ol>
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="通过yum包管理器安装"><a href="#通过yum包管理器安装" class="headerlink" title="通过yum包管理器安装"></a>通过yum包管理器安装</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum install git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>通过<code>git --version</code>查看是否安装成功</p>
+<p>安装的版本是<code>git version 1.8.3.1</code></p>
+<h2 id="JDK安装"><a href="#JDK安装" class="headerlink" title="JDK安装"></a>JDK安装</h2><p>安装Oracle JDK</p>
+<h2 id="node环境安装"><a href="#node环境安装" class="headerlink" title="node环境安装"></a>node环境安装</h2><p><img src="http://img.whl123456.top/image/image-20200611002658715.png" alt="node"></p>
+<p><img src="http://img.whl123456.top/image/image-20200611002658715.png" alt="image-20200611002658715"></p>
+<h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><h3 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h3><p>在配置Maven环境变量中失误在<code>$MAVEN_HOME</code>和<code>/bin:$path</code>之间打了个空格</p>
+<p><img src="http://img.whl123456.top/image/image-20200612155538407.png" alt="image-20200612155538407"></p>
+<p>在退出vim，执行<code>source /etc/profile</code>报错</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">&#x2F;usr&#x2F;libexec&#x2F;grepconf.sh: line 5: grep: command not found
+-bash: export: &#96;&#x2F;bin:&#x2F;usr&#x2F;local&#x2F;sbin:&#x2F;usr&#x2F;sbin:&#x2F;usr&#x2F;local&#x2F;node&#x2F;node-v12.16.3-linux-x64&#x2F;bin:&#x2F;usr&#x2F;local&#x2F;maven&#x2F;apache-maven-3.6.3:&#x2F;root&#x2F;bin:&#x2F;usr&#x2F;local&#x2F;java&#x2F;jdk1.8.0_161&#x2F;bin&#39;: not a valid identifier<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>此后，导致如<code>ls</code>、<code>vim</code>等命令不能使用，也不能使用其他命令修改profile，可先执行</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">export PATH&#x3D;&#x2F;bin:&#x2F;usr&#x2F;bin:$PATH<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>临时更改环境变量在找出配置错误的环境变量并修改</p>
+<h2 id="MySQL（多次安装失败）"><a href="#MySQL（多次安装失败）" class="headerlink" title="MySQL（多次安装失败）"></a>MySQL（多次安装失败）</h2><p>前提</p>
+<p>卸载系统自带的Mariadb</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">rpm -qa|grep mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>如果有Mariadb包，使用如下方式全部卸载</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum -y remove 包名<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>下载或者使用准备好的安装包</p>
+<pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;dev.mysql.com&#x2F;get&#x2F;Downloads&#x2F;MySQL-5.7&#x2F;mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>解压并重命名文件夹</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">tar -zxvf &#x2F;root&#x2F;mysql-5.7.24-linux-glibc2.12-x86_64.tar.gz -C &#x2F;usr&#x2F;local&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mv mysql-5.7.24-linux-glibc2.12-x86_64 mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>创建MySQL用户和用户组</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">groupadd mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">useradd -g mysql mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>创建data目录</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>修改MySQL目录的归属用户</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">chown -R mysql:mysql &#x2F;usr&#x2F;local&#x2F;mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>配置MySQL的配置文件</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vim &#x2F;etc&#x2F;my.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>加入内容</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">[mysql]
 # 设置mysql客户端默认字符集
 default-character-set&#x3D;utf8
 socket&#x3D;&#x2F;var&#x2F;lib&#x2F;mysql&#x2F;mysql.sock
@@ -19,20 +463,86 @@ character-set-server&#x3D;utf8
 # 创建新表时将使⽤的默认存储引擎
 default-storage-engine&#x3D;INNODB
 lower_case_table_names&#x3D;1
-max_allowed_packet&#x3D;16M<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &#x2F;var&#x2F;lib&#x2F;mysql
-chmod 777 &#x2F;var&#x2F;lib&#x2F;mysql<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>安装MySQL</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;usr&#x2F;local&#x2F;mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;bin&#x2F;mysqld --initialize --user&#x3D;mysql --basedir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql --datadir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>此时遇到一个问题</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum install libaio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在重新</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;bin&#x2F;mysqld --initialize --user&#x3D;mysql --basedir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql --datadir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>记下<code>root@localhost：</code>后的密码</p><p><img src="http://img.whl123456.top/image/image-20200612162005461.png" alt="image-20200612162005461"></p><p>启动MySQL</p><pre class="line-numbers language-none"><code class="language-none">service mysqld start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>报错无法启动MySQL，原因是MariaDB</p><p>对于以下报错，个人尝试多种方式都未能解决，故不使用MySQL转向MariaDB</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Failed to restart mysqld.service: Unit not found.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>问题2</p><p>使用的阿里云ECS，再一次修改MySQL配置文件后，无法使用Workbench远程连接，但可以使用VNC进行连接</p><p>阿里云ECS登录实例失败，原因：拒绝连接</p><p>问题未找到，最后无奈通过重新初始化磁盘才可以连接</p><h2 id="MariaDB"><a href="#MariaDB" class="headerlink" title="MariaDB"></a>MariaDB</h2><p>MariaDB数据库管理系统是MySQL的一个分支，主要由开源社区在维护，采用GPL授权许可 MariaDB的目的是完全兼容MySQL，包括API和命令行，使之能轻松成为MySQL的代替品。</p><p>MariaDB由MySQL的创始人Michael Widenius（英语：Michael Widenius）主导开发，他早前曾以10亿美元的价格，将自己创建的公司MySQL AB卖给了SUN，此后，随着SUN被甲骨文收购，MySQL的所有权也落入Oracle的手中。</p><blockquote><p>MariaDB数据库安装<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/85ad52c88399">参考</a></p></blockquote><p>使用yum命令安装mariaDB</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum -y install mariadb mariadb-server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>启动mariaDB</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl start mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>设置开机启动</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl enable mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>进行简单相关配置</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mysql_secure_installation<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="http://img.whl123456.top/image/image-20200612205521591.png" alt="image-20200612205521591"></p><p>配置mariaDB字符集</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;my.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>添加</p><pre class="line-numbers language-none"><code class="language-none">init_connect&#x3D;&#39;SET collation_connection &#x3D; utf8_unicode_ci&#39;
+max_allowed_packet&#x3D;16M<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mkdir &#x2F;var&#x2F;lib&#x2F;mysql
+chmod 777 &#x2F;var&#x2F;lib&#x2F;mysql<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>安装MySQL</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd &#x2F;usr&#x2F;local&#x2F;mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;bin&#x2F;mysqld --initialize --user&#x3D;mysql --basedir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql --datadir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>此时遇到一个问题</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;mysqld: error while loading shared libraries: libaio.so.1: cannot open shared object file: No such file or directory<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>安装</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum install libaio<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在重新</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">.&#x2F;bin&#x2F;mysqld --initialize --user&#x3D;mysql --basedir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql --datadir&#x3D;&#x2F;usr&#x2F;local&#x2F;mysql&#x2F;data<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>记下<code>root@localhost：</code>后的密码</p>
+<p><img src="http://img.whl123456.top/image/image-20200612162005461.png" alt="image-20200612162005461"></p>
+<p>启动MySQL</p>
+<pre class="line-numbers language-none"><code class="language-none">service mysqld start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>报错无法启动MySQL，原因是MariaDB</p>
+<p>对于以下报错，个人尝试多种方式都未能解决，故不使用MySQL转向MariaDB</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">Failed to restart mysqld.service: Unit not found.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>问题2</p>
+<p>使用的阿里云ECS，再一次修改MySQL配置文件后，无法使用Workbench远程连接，但可以使用VNC进行连接</p>
+<p>阿里云ECS登录实例失败，原因：拒绝连接</p>
+<p>问题未找到，最后无奈通过重新初始化磁盘才可以连接</p>
+<h2 id="MariaDB"><a href="#MariaDB" class="headerlink" title="MariaDB"></a>MariaDB</h2><p>MariaDB数据库管理系统是MySQL的一个分支，主要由开源社区在维护，采用GPL授权许可 MariaDB的目的是完全兼容MySQL，包括API和命令行，使之能轻松成为MySQL的代替品。</p>
+<p>MariaDB由MySQL的创始人Michael Widenius（英语：Michael Widenius）主导开发，他早前曾以10亿美元的价格，将自己创建的公司MySQL AB卖给了SUN，此后，随着SUN被甲骨文收购，MySQL的所有权也落入Oracle的手中。</p>
+<blockquote>
+<p>MariaDB数据库安装<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/85ad52c88399">参考</a></p>
+</blockquote>
+<p>使用yum命令安装mariaDB</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">yum -y install mariadb mariadb-server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>启动mariaDB</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl start mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>设置开机启动</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl enable mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>进行简单相关配置</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">mysql_secure_installation<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="http://img.whl123456.top/image/image-20200612205521591.png" alt="image-20200612205521591"></p>
+<p>配置mariaDB字符集</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;my.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>添加</p>
+<pre class="line-numbers language-none"><code class="language-none">init_connect&#x3D;&#39;SET collation_connection &#x3D; utf8_unicode_ci&#39;
 init_connect&#x3D;&#39;SET NAMES utf8&#39;
 character-set-server&#x3D;utf8
 collation-server&#x3D;utf8_unicode_ci
-skip-character-set-client-handshake<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="http://img.whl123456.top/image/image-20200612205634824.png" alt="image-20200612205634824"></p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;my.cnf.d&#x2F;client.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>添加</p><pre class="line-numbers language-none"><code class="language-none">default-character-set&#x3D;utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="http://img.whl123456.top/image/image-20200612205809998.png" alt="image-20200612205809998"></p><pre class="line-numbers language-none"><code class="language-none">vi &#x2F;etc&#x2F;my.cnf.d&#x2F;mysql-clients.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>添加</p><pre class="line-numbers language-none"><code class="language-none">default-character-set&#x3D;utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><img src="http://img.whl123456.top/image/image-20200612205933709.png" alt="image-20200612205933709"></p><p>重启mariadb</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl restart mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>登录mariaDB，查看MariaDB字符集</p><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql -uroot -p
+skip-character-set-client-handshake<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="http://img.whl123456.top/image/image-20200612205634824.png" alt="image-20200612205634824"></p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">vi &#x2F;etc&#x2F;my.cnf.d&#x2F;client.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>添加</p>
+<pre class="line-numbers language-none"><code class="language-none">default-character-set&#x3D;utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="http://img.whl123456.top/image/image-20200612205809998.png" alt="image-20200612205809998"></p>
+<pre class="line-numbers language-none"><code class="language-none">vi &#x2F;etc&#x2F;my.cnf.d&#x2F;mysql-clients.cnf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>添加</p>
+<pre class="line-numbers language-none"><code class="language-none">default-character-set&#x3D;utf8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><img src="http://img.whl123456.top/image/image-20200612205933709.png" alt="image-20200612205933709"></p>
+<p>重启mariadb</p>
+<pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">systemctl restart mariadb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>登录mariaDB，查看MariaDB字符集</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql -uroot -p
 
 show variables like &quot;%character%&quot;;
 
-show variables like &quot;%collation%&quot;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>远程连接</p><p>在登录情况下输入以下SQL语句</p><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">use mysql;
+show variables like &quot;%collation%&quot;;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>远程连接</p>
+<p>在登录情况下输入以下SQL语句</p>
+<pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">use mysql;
 
-select host,user,password from user;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p><img src="http://img.whl123456.top/image/image-20200612210519878.png" alt="image-20200612210519878"></p><pre class="line-numbers language-SQL" data-language="SQL"><code class="language-SQL">GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;为远程连接设置的密码&#39;；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><blockquote><p>参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/lanuage/p/8179589.html">文章</a></p></blockquote><p>以Navicat为例连接远程MariaDB</p><p><img src="http://img.whl123456.top/image/image-20200612213409377.png" alt="image-20200612213409377"></p><h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><pre class="line-numbers language-none"><code class="language-none">yum install nginx
+select host,user,password from user;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><img src="http://img.whl123456.top/image/image-20200612210519878.png" alt="image-20200612210519878"></p>
+<pre class="line-numbers language-SQL" data-language="SQL"><code class="language-SQL">GRANT ALL PRIVILEGES ON *.* TO &#39;root&#39;@&#39;%&#39; IDENTIFIED BY &#39;为远程连接设置的密码&#39;；<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/lanuage/p/8179589.html">文章</a></p>
+</blockquote>
+<p>以Navicat为例连接远程MariaDB</p>
+<p><img src="http://img.whl123456.top/image/image-20200612213409377.png" alt="image-20200612213409377"></p>
+<h2 id="Nginx"><a href="#Nginx" class="headerlink" title="Nginx"></a>Nginx</h2><pre class="line-numbers language-none"><code class="language-none">yum install nginx
 
-nginx -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>查看安装目录</p><pre class="line-numbers language-none"><code class="language-none">rpm -ql nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">&#x2F;etc&#x2F;logrotate.d&#x2F;nginx
+nginx -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>查看安装目录</p>
+<pre class="line-numbers language-none"><code class="language-none">rpm -ql nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;etc&#x2F;logrotate.d&#x2F;nginx
 &#x2F;etc&#x2F;nginx&#x2F;fastcgi.conf
 &#x2F;etc&#x2F;nginx&#x2F;fastcgi.conf.default
 &#x2F;etc&#x2F;nginx&#x2F;fastcgi_params
@@ -77,7 +587,220 @@ nginx -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
 &#x2F;usr&#x2F;share&#x2F;vim&#x2F;vimfiles&#x2F;syntax&#x2F;nginx.vim
 &#x2F;var&#x2F;lib&#x2F;nginx
 &#x2F;var&#x2F;lib&#x2F;nginx&#x2F;tmp
-&#x2F;var&#x2F;log&#x2F;nginx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>启动nginx</p><pre class="line-numbers language-none"><code class="language-none">&#x2F;usr&#x2F;sbin&#x2F;nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>设置配置文件</p><pre class="line-numbers language-none"><code class="language-none">vi &#x2F;etc&#x2F;nginx&#x2F;nginx.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>停止服务</p><pre class="line-numbers language-none"><code class="language-none">&#x2F;usr&#x2F;sbin&#x2F;nginx -s stop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>重新加载</p><pre class="line-numbers language-none"><code class="language-none">&#x2F;usr&#x2F;sbin&#x2F;nginx -s reload<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div><hr><div class="tag_share" style="display:block"><div class="post-meta__tag-list" style="display:inline-block"><div class="article-tag"><a href="/tags/Linux/"><span class="chip bg-color">Linux</span></a></div></div><div class="post_share" style="zoom:80%;width:fit-content;display:inline-block;float:right;margin:-.15rem 0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/css/share.min.css"><div id="article-share"><div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/share/js/social-share.min.js"></script></div></div></div></div></div><article id="prenext-posts" class="prev-next articles"><div class="row article-row"><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge left-badge text-color"><i class="fas fa-chevron-left"></i> &nbsp;上一篇</div><div class="card"><a href="/2020/06/13/Java%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/16.jpg" class="responsive-img" alt="Java注解和反射"> <span class="card-title">Java注解和反射</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-06-13</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Java/" class="post-category">Java</a></span></div></div><div class="card-action article-tags"><a href="/tags/Java/"><span class="chip bg-color">Java</span></a></div></div></div><div class="article col s12 m6" data-aos="fade-up"><div class="article-badge right-badge text-color">下一篇&nbsp;<i class="fas fa-chevron-right"></i></div><div class="card"><a href="/2020/05/26/JavaEE-02-Servlet/"><div class="card-image"><img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/medias/featureimages/15.png" class="responsive-img" alt="Servlet"> <span class="card-title">Servlet</span></div></a><div class="card-content article-content"><div class="summary block-with-text"></div><div class="publish-info"><span class="publish-date"><i class="far fa-clock fa-fw icon-date"></i> 2020-05-26</span><span class="publish-author"><i class="fas fa-bookmark fa-fw icon-category"></i> <a href="/categories/Java/" class="post-category">Java</a></span></div></div><div class="card-action article-tags"><a href="/tags/Java/"><span class="chip bg-color">Java</span></a> <a href="/tags/Servlet/"><span class="chip bg-color">Servlet</span></a></div></div></div></div></article></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeBlockFuction.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeLang.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeCopy.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/codeBlock/codeShrink.js"></script></div><div id="toc-aside" class="expanded col l3 hide-on-med-and-down"><div class="toc-widget card" style="background-color:#fff"><div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div><div id="toc-content"></div></div></div></div><div id="floating-toc-btn" class="hide-on-med-and-down"><a class="btn-floating btn-large bg-color"><i class="fas fa-list-ul"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/tocbot/tocbot.min.js"></script><script>$(function () {
+&#x2F;var&#x2F;log&#x2F;nginx<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>启动nginx</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;usr&#x2F;sbin&#x2F;nginx<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>设置配置文件</p>
+<pre class="line-numbers language-none"><code class="language-none">vi &#x2F;etc&#x2F;nginx&#x2F;nginx.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>停止服务</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;usr&#x2F;sbin&#x2F;nginx -s stop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>重新加载</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;usr&#x2F;sbin&#x2F;nginx -s reload<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2020/06/13/Java%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Java注解和反射">
+                        
+                        <span class="card-title">Java注解和反射</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-06-13
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/05/26/JavaEE-02-Servlet/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.png" class="responsive-img" alt="Servlet">
+                        
+                        <span class="card-title">Servlet</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/Servlet/">
+                        <span class="chip bg-color">Servlet</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
@@ -148,4 +871,216 @@ nginx -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
             fixPostCardWidth('artDetail', 'prenext-posts');
         });
         
-    });</script></main><footer class="page-footer bg-color"><div class="container row center-align" style="margin-bottom:0!important"><div class="col s12 m8 l8 copy-right">Copyright&nbsp;&copy; <span id="year">2019-2020</span> <span id="year">2019</span> <a href="/about" target="_blank">Lanqulu</a> |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a><br><span id="busuanzi_container_site_pv">|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv" class="white-color"></span>&nbsp;次</span> <span id="busuanzi_container_site_uv">|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv" class="white-color"></span>&nbsp;人</span><br><br></div><div class="col s12 m4 l4 social-link social-statis"><a href="https://github.com/lanqilu" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50"><i class="fab fa-github"></i></a></div></div></footer><div class="progress-bar"></div><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i> &nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchResult"></div></div></div><script>$(function(){!function(t,a,s){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){var e=$("entry",t).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),r=document.getElementById(a),n=document.getElementById(s);r.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);n.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var r=!0,n=t.title.trim().toLowerCase(),a=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),e=t.url;e=0===e.indexOf("/")?t.url:"/"+e;var s=-1,i=-1,l=-1;if(""!==n&&""!==a&&m.forEach(function(t,e){s=n.indexOf(t),i=a.indexOf(t),s<0&&i<0?r=!1:(i<0&&(i=0),0===e&&(l=i))}),r){f+="<li><a href='"+e+"' class='search-result-title'>"+n+"</a>";var c=t.content.trim().replace(/<[^>]+>/g,"");if(0<=l){var u=l-20,o=l+80;u<0&&(u=0),0===u&&(o=100),o>c.length&&(o=c.length);var h=c.substr(u,o);m.forEach(function(t){var e=new RegExp(t,"gi");h=h.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+h+"...</p>"}f+="</li>"}}),f+="</ul>",n.innerHTML=f)})}})}("/search.xml","searchInput","searchResult")})</script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-arrow-up"></i></a></div><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/materialize/materialize.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/masonry/masonry.pkgd.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/aos/aos.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/scrollprogress/scrollProgress.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/lightGallery/js/lightgallery-all.min.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/js/matery.js"></script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/others/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.1/libs/instantpage/instantpage.js" type="module"></script></body></html>
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2019-2020</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Lanqulu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+       
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

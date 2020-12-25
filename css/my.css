@@ -1,1 +1,178 @@
-.toc-widget.card.toc-fixed{width:320px;padding-left:10px;padding-right:10px}#articleContent p{margin:2px 2px 10px;font-size:1.12rem;line-height:1.95rem}#articleContent ol li{display:list-item;line-height:1.8rem;font-size:1.12rem}#articleContent ul li{display:list-item;line-height:1.8rem;font-size:1.12rem}h1{font-size:1.625em}h2{font-size:1.525em}h3{font-size:1.425em}.posts-expand h4{font-size:1.325em}h5{font-size:1.225em}h6{font-size:1.125em}p{line-height:185%}.waves-effect{border-radius:15px}u:hover{background-color:#fff;color:#555!important;text-decoration:none}u{color:#395ca3!important;background:#395ca3}.post-body{font-family:'Source Han Sans SC',Helvetica}a:hover{color:#395ca3}.post-body{font-family:'Source Han Sans SC',Helvetica}::selection{background:#395ca3;color:#fff}u{color:#395ca3!important;background:#395ca3}
+/* Here is your custom css styles. */
+
+
+.row .col.l8 {
+  width: 80%;
+}
+
+
+/* 目录*/
+.toc-widget.card.toc-fixed {
+    width: 320px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#articleContent p {
+    margin: 2px 2px 10px;
+    font-size: 1.12rem;
+    line-height: 1.95rem;
+}
+.bg-color{
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+span.logo-span {
+  font-family: 'Comic Sans MS';
+}
+.bg-cover .title {
+  font-size: 4rem;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: 'Comic Sans MS';
+}
+
+.btn-floating{
+  border-radius:25%;
+}
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  height: 50px;
+  line-height: 47px;
+}
+
+#articleContent ol li {
+    display: list-item;
+    line-height: 1.95rem;
+    font-size: 1.2rem;
+    margin: 2px 2px 10px;
+}
+#articleContent ul li{
+  display: list-item;
+  line-height: 1.95rem;
+  font-size: 1.2rem;
+  margin: 2px 2px 10px;
+}
+/* 4~6级标题前置设置 */
+h1 {
+    font-size: 1.625em;
+  }
+  
+h2 {
+font-size: 1.525em;
+}
+
+h3 {
+font-size: 1.425em;
+}
+
+.posts-expand h4 {
+font-size: 1.325em;
+}
+
+h5 {
+font-size: 1.225em;
+}
+
+h6 {
+font-size: 1.125em;
+}
+
+p {
+line-height: 185%;
+}
+
+.waves-effect {
+    border-radius: 15px;
+}
+
+u:hover {
+    background-color: #fff;
+    color: #555 !important;
+    text-decoration: none;
+  }
+/* 字体设置 */
+.post-body {
+    font-family: 'Source Han Sans SC', Helvetica;
+  }
+/* 鼠标放在链接上的样式 */
+a:hover { /* 鼠标放在链接上的样式 */
+    color: #395ca3;
+  }
+
+/* 字体设置 */
+.post-body {
+    font-family: 'Source Han Sans SC', Helvetica;
+  }
+
+/* 修改选择字体块背景颜色 */
+::selection { /* 修改选择字体块背景颜色 */
+    background: #395ca3;
+    color: #ffffff;
+}
+
+u {
+    color: #395ca3 !important;
+    background: #395ca3;
+    border-radius: 3px;
+}
+a:hover { /* 鼠标放在链接上的样式 */
+  color: #395ca3;
+}
+
+#toc-content .toc-link:hover {
+  color: #395ca3;
+  font-weight: 700;
+  text-decoration: auto;
+}
+
+article a:hover {
+  font-weight: bold;
+  color: #395ca3;
+  text-decoration: underline;
+}
+
+
+#artDetail .tag_share .article-tag .chip {
+  font-size: 1rem;
+  font-weight: 400;
+  height: 25px;
+  line-height: 23px;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  color: #395ca3;
+  background: #fff;
+  border: 1px solid;
+  transition: all 0.6s ease-in-out;
+}
+
+#artDetail .tag_share .article-tag .chip:hover {
+  color: #fff;
+  background: #395ca3;
+}
+
+#artDetail .post-cate {
+  float: right;
+  color: #395ca3;
+}
+
+#artDetail .post-cate a {
+  padding-right: 5px;
+  color: #395ca3;
+  font-weight: 500;
+}
+
+#articleContent a {
+  padding: 0 2px;
+  color: #395ca3;
+  font-weight: 500;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+#toc-content .is-active-link {
+  color: #395ca3;
+}
