@@ -1365,6 +1365,25 @@
     
     
     <entry>
+      <title>日语输入法的使用</title>
+      <link href="2019/06/17/%E6%97%A5%E8%AF%AD%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <url>2019/06/17/%E6%97%A5%E8%AF%AD%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<p>微软日语输入法的简单使用来自该<a href="https://www.bilibili.com/video/av37827841">视频</a></p><hr><a id="more"></a><p><img src="https://pic.superbed.cn/item/5db3013b8b58bc7bf70c5c2b.jpg" alt="桜"></p><h2 id="切换输入模式"><a href="#切换输入模式" class="headerlink" title="切换输入模式"></a>切换输入模式</h2><ul><li><p>所有语言所有输入法之间切换Win+space（空格）</p></li><li><p>多语言默认输入法之间切换Alt+Shift</p></li><li><p>同一语言下输入法切换Ctrl+Shift  </p></li><li><p>英文输入：快捷键Alt + ~（Esc键下边,数字1左边的那个键）<br>可以在直接输入【罗马字】（图标A）和当前假名输入法间切换</p></li><li><p>平假名：Ctrl + Caps Lock<br>日文模式下切换到【平假名】Hiragana（图标あ），<br>罗马字，英文输入（图标A）下则是切换回日文模式，如原先不在Hiragana，则必须多按一次。</p></li><li><p>片假名：Alt + Caps Lock<br>日文模式下切换到【片假名】，全角片假名Full-width Katakana</p></li></ul><blockquote><p>**说明:**罗马字，英文输入（图标A）下则是切换回日文模式，如原先不在Full-width Katakana，则必须多按一次。</p></blockquote><h2 id="字符选择快捷键"><a href="#字符选择快捷键" class="headerlink" title="字符选择快捷键"></a>字符选择快捷键</h2><p>敲完字母后<strong>不敲空格键或回车键</strong>，加按</p><ul><li>F5，转成字符集（选字或造字）</li><li>F6，恢复平假名（全角）</li><li>F7，转成片假名（全角）</li><li>F8，转成片假名（半角）</li><li>F9，转成罗马字母（全角），连续按击可以在全大写，全小写，首字母大写之间转换。</li><li>F10，转成罗马字母（半角），连续按击可以在全大写，全小写，首字母大写之间转换。</li></ul><h2 id="输入规则"><a href="#输入规则" class="headerlink" title="输入规则"></a>输入规则</h2><ol><li>促音的输入法：促音后的第一个字母连续输入两次。例: 設定　せってい　settei<br>单独输入促音也可以用ltu或xtu，<blockquote><p>同理 小写假名都是x或者l加原来的拼写如xaぁ 与aあ</p></blockquote></li><li>拨音的输入法:按两下”n”。例:　漫画　まんが　mannga</li><li>拗音的输入法:例:きゃきゅきょ kya kyu kyo （亦即是罗马字拼写法则）</li><li>长音输入法：片假名按数字0右边的-号键（减号键），平假名前面的元音多打一个</li><li>助词“を”的输入方法是“wo”</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 日语 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo博客搭建</title>
       <link href="2019/06/17/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
       <url>2019/06/17/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
@@ -1384,25 +1403,6 @@
             <tag> GitHub </tag>
             
             <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日语输入法的使用</title>
-      <link href="2019/06/17/%E6%97%A5%E8%AF%AD%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-      <url>2019/06/17/%E6%97%A5%E8%AF%AD%E8%BE%93%E5%85%A5%E6%B3%95%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-      
-        <content type="html"><![CDATA[<p>微软日语输入法的简单使用来自该<a href="https://www.bilibili.com/video/av37827841">视频</a></p><hr><a id="more"></a><p><img src="https://pic.superbed.cn/item/5db3013b8b58bc7bf70c5c2b.jpg" alt="桜"></p><h2 id="切换输入模式"><a href="#切换输入模式" class="headerlink" title="切换输入模式"></a>切换输入模式</h2><ul><li><p>所有语言所有输入法之间切换Win+space（空格）</p></li><li><p>多语言默认输入法之间切换Alt+Shift</p></li><li><p>同一语言下输入法切换Ctrl+Shift  </p></li><li><p>英文输入：快捷键Alt + ~（Esc键下边,数字1左边的那个键）<br>可以在直接输入【罗马字】（图标A）和当前假名输入法间切换</p></li><li><p>平假名：Ctrl + Caps Lock<br>日文模式下切换到【平假名】Hiragana（图标あ），<br>罗马字，英文输入（图标A）下则是切换回日文模式，如原先不在Hiragana，则必须多按一次。</p></li><li><p>片假名：Alt + Caps Lock<br>日文模式下切换到【片假名】，全角片假名Full-width Katakana</p></li></ul><blockquote><p>**说明:**罗马字，英文输入（图标A）下则是切换回日文模式，如原先不在Full-width Katakana，则必须多按一次。</p></blockquote><h2 id="字符选择快捷键"><a href="#字符选择快捷键" class="headerlink" title="字符选择快捷键"></a>字符选择快捷键</h2><p>敲完字母后<strong>不敲空格键或回车键</strong>，加按</p><ul><li>F5，转成字符集（选字或造字）</li><li>F6，恢复平假名（全角）</li><li>F7，转成片假名（全角）</li><li>F8，转成片假名（半角）</li><li>F9，转成罗马字母（全角），连续按击可以在全大写，全小写，首字母大写之间转换。</li><li>F10，转成罗马字母（半角），连续按击可以在全大写，全小写，首字母大写之间转换。</li></ul><h2 id="输入规则"><a href="#输入规则" class="headerlink" title="输入规则"></a>输入规则</h2><ol><li>促音的输入法：促音后的第一个字母连续输入两次。例: 設定　せってい　settei<br>单独输入促音也可以用ltu或xtu，<blockquote><p>同理 小写假名都是x或者l加原来的拼写如xaぁ 与aあ</p></blockquote></li><li>拨音的输入法:按两下”n”。例:　漫画　まんが　mannga</li><li>拗音的输入法:例:きゃきゅきょ kya kyu kyo （亦即是罗马字拼写法则）</li><li>长音输入法：片假名按数字0右边的-号键（减号键），平假名前面的元音多打一个</li><li>助词“を”的输入方法是“wo”</li></ol>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 日语 </tag>
             
         </tags>
       
