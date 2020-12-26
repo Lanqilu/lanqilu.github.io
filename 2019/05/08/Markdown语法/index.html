@@ -373,54 +373,96 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br>Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。(来自<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">百度百科</a>)</p>
+                <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<p>Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。</p>
+<p>Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+<p>因为增强版等存在不同软件和网站有各自特殊的语法规则，本文档仅整理常用的通用规则。</p>
 <hr>
-<h2 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h2><p>使用 # 标记</p>
-<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 一级标题</span>
-<span class="token title important"><span class="token punctuation">##</span> 二级标题</span>
-<span class="token title important"><span class="token punctuation">###</span> 三级标题</span>
-<span class="token title important"><span class="token punctuation">####</span> 四级标题</span>
-<span class="token title important"><span class="token punctuation">#####</span> 五级标题</span>
-<span class="token title important"><span class="token punctuation">######</span> 六级标题</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="Markdown-字体"><a href="#Markdown-字体" class="headerlink" title="Markdown 字体"></a>Markdown 字体</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token italic"><span class="token punctuation">*</span><span class="token content">斜体文本</span><span class="token punctuation">*</span></span>
+<h2 id="Markdown-标题"><a href="#Markdown-标题" class="headerlink" title="Markdown 标题"></a>Markdown 标题</h2><p>顶格使用 <code>#</code> 标记，并在<code>#</code>号后加入1个空格，根据空格前的<code>#</code>数量确定标题的级数</p>
+<pre class="line-numbers language-none"><code class="language-none"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>标题分为四级：</p>
+<ul>
+<li>一级标题：文章的标题</li>
+<li>二级标题：文章主要部分的大标题</li>
+<li>三级标题：二级标题下面一级的小标题</li>
+<li>四级标题：三级标题下面某一方面的小标题</li>
+</ul>
+<p>标题使用原则：</p>
+<p>一级标题下，不能直接出现三级标题。示例：下面的文章结构，缺少二级标题。</p>
+<pre class="line-numbers language-none"><code class="language-none"># 一级标题
+
+### 三级标题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>标题要避免孤立编号（即同级标题只有一个）。示例：下面的文章结构，<code>二级标题 A</code>只包含一个三级标题，完全可以省略<code>三级标题 A</code>。</p>
+<pre class="line-numbers language-none"><code class="language-none">## 二级标题 A
+
+### 三级标题 A
+
+## 二级标题 B<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>下级标题不重复上一级标题的名字。示例：下面的文章结构，二级标题与下属的三级标题同名，建议避免。</p>
+<pre class="line-numbers language-none"><code class="language-none">## 概述
+
+### 概述<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>谨慎使用四级标题，尽量避免出现，保持层级的简单，防止出现过于复杂的章节。如果三级标题下有并列性的内容，建议只使用项目列表（Item list）。示例：下面的结构二要好于结构一。结构一适用的场景，主要是较长篇幅的内容。</p>
+<pre class="line-numbers language-none"><code class="language-none">结构一
+
+### 三级标题
+
+#### 四级标题 A
+
+#### 四级标题 B
+
+#### 四级标题 C
+
+结构二
+
+### 三级标题
+
+**（1）A**
+
+**（2）B**
+
+**（3）C**<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Markdown-文本"><a href="#Markdown-文本" class="headerlink" title="Markdown 文本"></a>Markdown 文本</h2><p>通过<code>*</code>和<code>_</code>对文本的包围使用可以实现以下几种效果</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token italic"><span class="token punctuation">*</span><span class="token content">斜体文本</span><span class="token punctuation">*</span></span>
 <span class="token italic"><span class="token punctuation">_</span><span class="token content">斜体文本</span><span class="token punctuation">_</span></span>
 <span class="token bold"><span class="token punctuation">**</span><span class="token content">粗体文本</span><span class="token punctuation">**</span></span>
 <span class="token bold"><span class="token punctuation">__</span><span class="token content">粗体文本</span><span class="token punctuation">__</span></span>
 <span class="token bold"><span class="token punctuation">**</span><span class="token content"><span class="token italic"><span class="token punctuation">*</span><span class="token content">粗斜体文本</span><span class="token punctuation">*</span></span></span><span class="token punctuation">**</span></span>
-<span class="token bold"><span class="token punctuation">__</span><span class="token content"><span class="token italic"><span class="token punctuation">_</span><span class="token content">粗斜体文本</span><span class="token punctuation">_</span></span></span><span class="token punctuation">__</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token bold"><span class="token punctuation">__</span><span class="token content"><span class="token italic"><span class="token punctuation">_</span><span class="token content">粗斜体文本</span><span class="token punctuation">_</span></span></span><span class="token punctuation">__</span></span>
+<span class="token strike"><span class="token punctuation">~~</span><span class="token content">删除线</span><span class="token punctuation">~~</span></span>
+<span class="token code keyword">`代码`</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>若单使用<code>***</code> <code>---</code>可实现如下分隔线的效果 </p>
 <hr>
-<p>分隔线 <code>***</code> <code>---</code></p>
+<p>此外使用Html标签中的<code>&lt;u&gt;下划线&lt;/u&gt;</code> 实现下划线效果</p>
+<blockquote>
+<p>该网站修改下划线效果，改成如下样式：<u>下划线</u>。以实现遮盖效果</p>
+</blockquote>
+<h2 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h2><p>列表分为无序和有序两种，实现起来也非常简单</p>
+<p>无序列表：使用星号(<code>*</code>)、加号(<code>+</code>)或是减号(<code>-</code>)作为列表标记：</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">*</span> 123
+<span class="token list punctuation">+</span> 456
+<span class="token list punctuation">-</span> 789<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>但为了方便修改，建议一篇文档只使用一种实现方式，推荐统一使用<code>+</code>来实现</p>
+</blockquote>
 <hr>
-<p>删除线 <code>~~删除线~~</code>   Alt + Shift +5</p>
-<p><del>删除线</del></p>
-<hr>
-<p>下划线 <code>&lt;u&gt;下划线&lt;/u&gt;</code>  Ctl + u</p>
-<p><u>下划线</u></p>
-<hr>
-<h2 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h2><p>无序列表<br>使用星号(*)、加号(+)或是减号(-)作为列表标记：</p>
-<ul>
-<li>123</li>
-<li>456</li>
-</ul>
-<hr>
-<p>有序列表</p>
-<ol>
-<li>a</li>
-<li>b</li>
-<li>c</li>
-</ol>
-<hr>
-<p>列表嵌套</p>
-<ol>
-<li><p>第一项:</p>
-<ul>
-<li>第一项嵌套的第一个元素</li>
-<li>第一项嵌套的第二个元素</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><p><code>&gt; 最外层</code><br><code>&gt; &gt; 第一层嵌套</code><br><code>&gt; &gt; &gt; 第二层嵌套</code></p>
+<p>有序列表：<code>1.</code>只需在数字后加上半角句号并添加一个空格即可实现</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> a
+<span class="token list punctuation">2.</span> b
+<span class="token list punctuation">3.</span> c<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>列表之间可以相互嵌套，但要注意层次间的缩进</p>
+</blockquote>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token list punctuation">1.</span> 第一项:
+   <span class="token list punctuation">+</span> 第一项嵌套的第一个元素
+   <span class="token list punctuation">+</span> 第一项嵌套的第二个元素<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2><p>区块使用<code>&gt;</code>符号加空格实现，同样可以进行嵌套</p>
+<p><code>&gt; 最外层</code><br><code>&gt; &gt; 第一层嵌套</code><br><code>&gt; &gt; &gt; 第二层嵌套</code></p>
 <blockquote>
 <p>最外层</p>
 <blockquote>
@@ -430,30 +472,24 @@
 </blockquote>
 </blockquote>
 </blockquote>
-<h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><p><code>printf()</code> 函数</p>
-<h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><blockquote>
-<p><code>[链接名称](链接地址)</code>或者<code>&lt;链接地址&gt;</code><br>这是一个链接<a target="_blank" rel="noopener" href="http://www.baidu.com/">百度</a></p>
-</blockquote>
-<p>高级链接</p>
-<p>链接也可以用变量来代替，文档末尾附带变量地址：<br>这个链接用 1 作为网址变量 <a target="_blank" rel="noopener" href="http://www.google.com/">Google</a><br>这个链接用 2 作为网址变量 <a target="_blank" rel="noopener" href="http://www.baidu.com/">Baidu</a><br>然后在文档的结尾为变量赋值（网址）</p>
-<h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><code>![alt 属性文本](图片地址)</code></p>
-<p><code>![alt 属性文本](图片地址 &quot;可选标题&quot;)</code></p>
-<ul>
-<li>开头一个感叹号 !</li>
-<li>接着一个方括号，里面放上图片的替代文字</li>
-<li>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</li>
-<li>也可以像网址那样对图片网址使用变量</li>
-</ul>
+<h2 id="Markdown-代码"><a href="#Markdown-代码" class="headerlink" title="Markdown 代码"></a>Markdown 代码</h2><p>如<code>printf()</code> 所示，表示代码，使用该符号`（键盘上在数字1前）将内容包裹</p>
+<p>连续的3个反单引号包裹的片段就可以，实现代码块样式</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token code"><span class="token punctuation">```</span><span class="token code-language">python</span>
+<span class="token code-block language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Hello,world!"</span><span class="token punctuation">)</span></span>
+<span class="token punctuation">```</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><p>使用该形式<code>[链接名称](链接地址)</code>可创建一个链接</p>
+<p>这是一个链接<a target="_blank" rel="noopener" href="http://www.baidu.com/">百度</a></p>
+<h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><p><img src="https://pic.downk.cc/item/5fe748a83ffa7d37b3ef621f.jpg" alt="Markdown" title="Hello"></p>
+<p>上图的实现方法</p>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token url">![<span class="token content">Markdown</span>](https://pic.downk.cc/item/5fe748a83ffa7d37b3ef621f.jpg <span class="token string">"Hello"</span>)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>![图名](图片地址)</code></p>
+<p><code>![图名](图片地址 &quot;可选标题&quot;)</code></p>
+<p>开头一个感叹号<code>!</code>,接着一个方括号，里面放上图片的替代文字,接着一个普通括号，里面放上图片的网址(或者本地文件地址)，最后还可以用引号包住并加上选择性的 ‘title’ 属性的文字。</p>
 <p>Markdown 还没有办法指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code> 标签</p>
 <h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important">  表头   </span><span class="token punctuation">|</span><span class="token table-header important"> 表头  </span><span class="token punctuation">|</span>
 </span><span class="token table-line"><span class="token punctuation">|</span>  <span class="token punctuation">----</span>  <span class="token punctuation">|</span> <span class="token punctuation">----</span>  <span class="token punctuation">|</span>
 </span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> 单元格  </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span>
 <span class="token punctuation">|</span><span class="token table-data"> 单元格  </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li>-: 设置内容和标题栏居右对齐。</li>
-<li>:- 设置内容和标题栏居左对齐。</li>
-<li>:-: 设置内容和标题栏居中对齐。</li>
-</ul>
 <table>
 <thead>
 <tr>
@@ -470,6 +506,15 @@
 <td align="center">单元格</td>
 </tr>
 </tbody></table>
+<ul>
+<li>-: 设置内容和标题栏居右对齐。</li>
+<li>:- 设置内容和标题栏居左对齐。</li>
+<li>:-: 设置内容和标题栏居中对齐。</li>
+</ul>
+<pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown"><span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> 左对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 右对齐 </span><span class="token punctuation">|</span><span class="token table-header important"> 居中对齐 </span><span class="token punctuation">|</span>
+</span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">:-----</span> <span class="token punctuation">|</span> <span class="token punctuation">-----:</span> <span class="token punctuation">|</span> <span class="token punctuation">:------:</span> <span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data">  单元格  </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data"> 单元格 </span><span class="token punctuation">|</span><span class="token table-data">  单元格  </span><span class="token punctuation">|</span></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <table>
 <thead>
 <tr>
@@ -489,9 +534,10 @@
 <td align="center">单元格</td>
 </tr>
 </tbody></table>
-<h2 id="Markdown高级"><a href="#Markdown高级" class="headerlink" title="Markdown高级"></a>Markdown高级</h2><blockquote>
-<p>对Next主题的Hexo博客编辑更多详见<a href="https://lanqilu.github.io/2019/06/24/Archive/Blog/Next%E7%BC%96%E8%BE%91%E6%8B%93%E5%B1%95/">Next编辑拓展</a></p>
-</blockquote>
+<p>参考资料：</p>
+<ul>
+<li>阮一峰，<a target="_blank" rel="noopener" href="https://github.com/ruanyf/document-style-guide">中文技术文档的写作规范</a></li>
+</ul>
 
                 
             </div>
