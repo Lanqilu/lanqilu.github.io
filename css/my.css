@@ -1,5 +1,26 @@
 /* Here is your custom css styles. */
 
+div#mobile-nav {
+  height: 1000px;
+}
+
+.circle {
+  border-radius: 0%;
+}
+
+header .side-nav .mobile-head .logo-name {
+  margin-top: -17px;
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+.logo-name {
+  font-family: 'Comic Sans MS',Consolas,Monaco,  Courier, monospace;
+}
+
+.logo-desc {
+  font-family: 'Comic Sans MS',Consolas,Monaco,  Courier, monospace;
+}
 
 .top-scroll .btn-floating{
   background: rgba(0,0,0,0.8);
@@ -43,14 +64,14 @@ h1.friend-name {
 }
 
 span.logo-span {
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS' ,Consolas, Consolas;
 }
 .bg-cover .title {
   font-size: 4rem;
   line-height: 1.2em;
   margin-bottom: 20px;
   position: relative;
-  font-family: 'Comic Sans MS';
+  font-family: 'Comic Sans MS', Consolas;
 }
 
 .btn-floating{
