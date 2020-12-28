@@ -4,7 +4,11 @@ div#mobile-nav {
   height: 1000px;
 }
 
-
+.toc-widget {
+  width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 
 .circle {

@@ -17,17 +17,17 @@
 
 
     <title>Java容器 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,7 +366,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -375,7 +375,8 @@
             <div id="articleContent">
                 <p>Java数组与集合</p>
 <hr>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>如果我们有一组类型相同的变量，例如，5位同学的成绩，可以这么写：</p>
+<h2 id="数组">数组</h2>
+<p>如果我们有一组类型相同的变量，例如，5位同学的成绩，可以这么写：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">public class Main &#123;
     public static void main(String[] args) &#123;
         &#x2F;&#x2F; 5位同学的成绩:
@@ -401,7 +402,8 @@ public class Main &#123;
 &#125;
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>数组能够顺序存储相同类型的多个数据。除了存储数据，我们也希望能够访问数据。访问数组中的某个元素的方法是将其编号然后<strong>索引</strong>。如果我们有 N 个值，它们的编号则为 0 至 N-1。这样对于 0 到 N-1 之间任意的 i，我们就能够在 Java 代码中用 <code>a[i]</code> 唯一地表示第 i 个元素的值。在 Java中这种数组被称为一维数组。</p>
-<h3 id="创建并初始化数组"><a href="#创建并初始化数组" class="headerlink" title="创建并初始化数组"></a>创建并初始化数组</h3><p>在 Java 程序中创建一个数组需要三步：</p>
+<h3 id="创建并初始化数组">创建并初始化数组</h3>
+<p>在 Java 程序中创建一个数组需要三步：</p>
 <ul>
 <li>声明数组的名字和类型；</li>
 <li>创建数组；</li>
@@ -413,7 +415,7 @@ public class Main &#123;
 <li>数组所有元素初始化为默认值，整型都是<code>0</code>，浮点型是<code>0.0</code>，布尔型是<code>false</code>；</li>
 <li>数组一旦创建后，大小就不可改变。</li>
 </ul>
-<p>要访问数组中的某一个元素，需要使用索引。数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~`4`。</p>
+<p>要访问数组中的某一个元素，需要使用索引。数组索引从<code>0</code>开始，例如，5个元素的数组，索引范围是<code>0</code>~<code>4</code>。</p>
 <p>可以修改数组中的某一个元素，使用赋值语句，例如，<code>ns[1] = 79;</code>。</p>
 <p>可以用<code>数组变量.length</code>获取数组大小：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 数组
@@ -473,7 +475,8 @@ public class Main &#123;
 │   │68 │79 │91 │85 │62 │   │ 1 │ 2 │ 3 │   │
 └───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>但是，原有的5个元素的数组并没有改变，只是无法通过变量<code>ns</code>引用到它们而已。</p>
-<h3 id="字符串数组"><a href="#字符串数组" class="headerlink" title="字符串数组"></a>字符串数组</h3><p>如果数组元素不是基本类型，而是一个引用类型，那么，修改数组元素会有哪些不同？</p>
+<h3 id="字符串数组">字符串数组</h3>
+<p>如果数组元素不是基本类型，而是一个引用类型，那么，修改数组元素会有哪些不同？</p>
 <p>字符串是引用类型，因此我们先定义一个字符串数组：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">String[] names &#x3D; &#123;
     &quot;ABC&quot;, &quot;XYZ&quot;, &quot;zoo&quot;
@@ -509,7 +512,9 @@ public class Main &#123;
         System.out.println(s); &#x2F;&#x2F; s是&quot;XYZ&quot;还是&quot;cat&quot;?
     &#125;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="数组操作"><a href="#数组操作" class="headerlink" title="数组操作"></a>数组操作</h3><h4 id="遍历数组"><a href="#遍历数组" class="headerlink" title="遍历数组"></a>遍历数组</h4><p>我们在Java程序基础里介绍了数组这种数据类型。有了数组，我们还需要来操作它。而数组最常见的一个操作就是遍历。</p>
+<h3 id="数组操作">数组操作</h3>
+<h4 id="遍历数组">遍历数组</h4>
+<p>我们在Java程序基础里介绍了数组这种数据类型。有了数组，我们还需要来操作它。而数组最常见的一个操作就是遍历。</p>
 <p>通过<code>for</code>循环就可以遍历数组。因为数组的每个元素都可以通过索引来访问，因此，使用标准的<code>for</code>循环可以完成一个数组的遍历：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 遍历数组
 public class Main &#123;
@@ -534,7 +539,8 @@ public class Main &#123;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>注意：在<code>for (int n : ns)</code>循环中，变量<code>n</code>直接拿到<code>ns</code>数组的元素，而不是索引。</p>
 <p>显然<code>for each</code>循环更加简洁。但是，<code>for each</code>循环无法拿到数组的索引，因此，到底用哪一种<code>for</code>循环，取决于我们的需要。</p>
-<h4 id="打印数组内容"><a href="#打印数组内容" class="headerlink" title="打印数组内容"></a>打印数组内容</h4><p>直接打印数组变量，得到的是数组在JVM中的引用地址：</p>
+<h4 id="打印数组内容">打印数组内容</h4>
+<p>直接打印数组变量，得到的是数组在JVM中的引用地址：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[] ns &#x3D; &#123; 1, 1, 2, 3, 5, 8 &#125;;
 System.out.println(ns); &#x2F;&#x2F; 类似 [I@7852e922<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>这并没有什么意义，因为我们希望打印的数组的元素内容。因此，使用<code>for each</code>循环来打印它：</p>
@@ -561,7 +567,8 @@ public class Main &#123;
         &#125;
     &#125;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="数组排序"><a href="#数组排序" class="headerlink" title="数组排序"></a>数组排序</h4><p>对数组进行排序是程序中非常基本的需求。常用的排序算法有冒泡排序、插入排序和快速排序等。</p>
+<h4 id="数组排序">数组排序</h4>
+<p>对数组进行排序是程序中非常基本的需求。常用的排序算法有冒泡排序、插入排序和快速排序等。</p>
 <p>我们来看一下如何使用冒泡排序算法对一个整型数组从小到大进行排序：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 冒泡排序
 import java.util.Arrays;
@@ -642,7 +649,8 @@ ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&
            │                              ▲
            └──────────────────────────────┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>原来的3个字符串在内存中均没有任何变化，但是<code>ns</code>数组的每个元素指向变化了。</p>
-<h4 id="典型的数组处理代码"><a href="#典型的数组处理代码" class="headerlink" title="典型的数组处理代码"></a>典型的数组处理代码</h4><p>找出数组中最大的元素</p>
+<h4 id="典型的数组处理代码">典型的数组处理代码</h4>
+<p>找出数组中最大的元素</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">double</span> max <span class="token operator">=</span> a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> a<span class="token punctuation">.</span>lenth<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
     <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">></span> max<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
@@ -680,7 +688,9 @@ ns ─────&gt;│░░░│░░░│░░░│   │&quot;banana&
         <span class="token punctuation">&#125;</span>
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h4><p>二维数组就是数组的数组。定义一个二维数组如下：</p>
+<h3 id="多维数组">多维数组</h3>
+<h4 id="二维数组">二维数组</h4>
+<p>二维数组就是数组的数组。定义一个二维数组如下：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">&#x2F;&#x2F; 二维数组
 public class Main &#123;
     public static void main(String[] args) &#123;
@@ -768,7 +778,8 @@ public class Main &#123;
         System.out.println(Arrays.deepToString(ns));
     &#125;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="三维数组"><a href="#三维数组" class="headerlink" title="三维数组"></a>三维数组</h4><p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
+<h4 id="三维数组">三维数组</h4>
+<p>三维数组就是二维数组的数组。可以这么定义一个三维数组：</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">int[][][] ns &#x3D; &#123;
     &#123;
         &#123;1, 2, 3&#125;,
@@ -808,7 +819,8 @@ ns ────&gt;│░░░│──┘              └───┴──�
                               └───┴───┘<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>如果我们要访问三维数组的某个元素，例如，<code>ns[2][0][1]</code>，只需要顺着定位找到对应的最终元素<code>15</code>即可。</p>
 <p>理论上，我们可以定义任意的N维数组。但在实际应用中，除了二维数组在某些时候还能用得上，更高维度的数组很少使用。</p>
-<h2 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
+<h2 id="集合">集合</h2>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">import</span> <span class="token namespace">java<span class="token punctuation">.</span>util<span class="token punctuation">.</span></span><span class="token class-name">ArrayList</span><span class="token punctuation">;</span>
 
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Basis</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -836,7 +848,8 @@ ns ────&gt;│░░░│──┘              └───┴──�
 
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2>
+<h2 id="泛型">泛型</h2>
+
                 
             </div>
             <hr/>
@@ -858,12 +871,12 @@ ns ────&gt;│░░░│──┘              └───┴──�
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -903,7 +916,7 @@ ns ────&gt;│░░░│──┘              └───┴──�
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/16.jpg" class="responsive-img" alt="Java多线程">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Java多线程">
                         
                         <span class="card-title">Java多线程</span>
                     </div>
@@ -956,7 +969,7 @@ ns ────&gt;│░░░│──┘              └───┴──�
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/13.jpg" class="responsive-img" alt="Django">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Django">
                         
                         <span class="card-title">Django</span>
                     </div>
@@ -1011,21 +1024,21 @@ ns ────&gt;│░░░│──┘              └───┴──�
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -1046,7 +1059,7 @@ ns ────&gt;│░░░│──┘              └───┴──�
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1283,12 +1296,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1310,7 +1323,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1326,7 +1339,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

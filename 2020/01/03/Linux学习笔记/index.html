@@ -17,17 +17,17 @@
 
 
     <title>Linux学习笔记 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/4.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,7 +366,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -375,7 +375,8 @@
             <div id="articleContent">
                 <p>用于记录Linux学习过程,基于CentOS</p>
 <hr>
-<h2 id="Linux简单介绍"><a href="#Linux简单介绍" class="headerlink" title="Linux简单介绍"></a>Linux简单介绍</h2><p>Linux可划分为以下四个部分：</p>
+<h2 id="Linux简单介绍">Linux简单介绍</h2>
+<p>Linux可划分为以下四个部分：</p>
 <ul>
 <li>Linux内核：主要负责系统内存管理、软件程序管理、硬件设备管理和文件系统管理四种功能</li>
 <li>GNU工具：</li>
@@ -383,17 +384,20 @@
 <li>应用软件</li>
 </ul>
 <p><img src="http://img.whl123456.top/image/Linux.png" alt="Linux系统"></p>
-<h3 id="内存管理系统"><a href="#内存管理系统" class="headerlink" title="内存管理系统"></a>内存管理系统</h3><p>Linux内核不仅管理服务器上的可用物理内存，还可以创建和管理虚拟内存。</p>
+<h3 id="内存管理系统">内存管理系统</h3>
+<p>Linux内核不仅管理服务器上的可用物理内存，还可以创建和管理虚拟内存。</p>
 <p>内核通过硬盘上的存储空间来实现虚拟内存，这块区域称为<strong>交换空间</strong>（swap space）。</p>
 <p>内存存储单元按组划分成很多块，这些块称作页面（page）。内核将每个内存页面放在物理 内存或交换空间。然后，内核会维护一个内存页面表，指明哪些页面位于物理内存内，哪些页面被换到了磁盘上。</p>
 <p>内核会记录哪些内存页面正在使用中，并自动把一段时间未访问的内存页面复制到交换空间区域（称为换出，swapping out）——即使还有可用内存。当程序要访问一个已被换出的内存页面时，内核必须从物理内存换出另外一个内存页面给它让出空间，然后从交换空间换入请求的内存页面。显然，这个过程要花费时间，拖慢运行中的进程。只要Linux系统在运行，为运行中的程序换出内存页面的过程就不会停歇。</p>
-<h3 id="软件程序管理"><a href="#软件程序管理" class="headerlink" title="软件程序管理"></a>软件程序管理</h3><p>Linux操作系统将运行中的程序称为<strong>进程</strong>。内核控制着Linux系统如何管理运行在系统上的所有进程。</p>
+<h3 id="软件程序管理">软件程序管理</h3>
+<p>Linux操作系统将运行中的程序称为<strong>进程</strong>。内核控制着Linux系统如何管理运行在系统上的所有进程。</p>
 <p>内核创建了第一个进程（称为init进程）来启动系统上所有其他进程。</p>
 <blockquote>
 <p>脚本通过到/etc/init.d目录下的入口启动</p>
 </blockquote>
 <p>当内核启动时，它会将init进程加载到虚拟内存中。内核在启动任何其他进程时，都会在虚拟内存中给新进程分配一 块专有区域来存储该进程用到的数据和代码。</p>
-<h3 id="硬件设备管理"><a href="#硬件设备管理" class="headerlink" title="硬件设备管理"></a>硬件设备管理</h3><p>任何Linux系统需要与之通信的设备，都需要在内核代码中加入其驱动程序代码。驱动程序代码相当于应用程序和硬件设备的中间人，允许内核与设备之间交换数据。</p>
+<h3 id="硬件设备管理">硬件设备管理</h3>
+<p>任何Linux系统需要与之通信的设备，都需要在内核代码中加入其驱动程序代码。驱动程序代码相当于应用程序和硬件设备的中间人，允许内核与设备之间交换数据。</p>
 <p>在Linux内核中有两种方法用于插入设备驱动代码：</p>
 <ul>
 <li>编译进内核的设备驱动代码</li>
@@ -410,23 +414,34 @@
 <p>块设备文件是指处理数据时每次能处理大块数据的设备，比如硬盘。</p>
 <p>网络设备文件是指采用数据包发送和接收数据的设备，包括各种网卡和一个特殊的回环设备。这个回环设备允许Linux系统使用常见的网络编程协议同自身通信。</p>
 <p>Linux为系统上的每个设备都创建一种称为<strong>节点</strong>的特殊文件。与设备的所有通信都通过设备节点完成。每个节点都有唯一的数值对供Linux内核标识它。数值对包括一个主设备号和一个次设备号。类似的设备被划分到同样的主设备号下。次设备号用于标识主设备组下的某个特定设备。</p>
-<h3 id="文件系统管理"><a href="#文件系统管理" class="headerlink" title="文件系统管理"></a>文件系统管理</h3><p><img src="http://img.whl123456.top/image/image-20200611200821228.png" alt="Linux文件系统"></p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
-<li><p>Linux严格区分大小写</p>
+<h3 id="文件系统管理">文件系统管理</h3>
+<p><img src="http://img.whl123456.top/image/image-20200611200821228.png" alt="Linux文件系统"></p>
+<h2 id="注意事项">注意事项</h2>
+<ul>
+<li>
+<p>Linux严格区分大小写</p>
 </li>
-<li><p>Linux中所有的内容以文件形式保存，包括硬件</p>
+<li>
+<p>Linux中所有的内容以文件形式保存，包括硬件</p>
 </li>
-<li><p>Linux不靠扩展名区分文件类型，基于权限</p>
+<li>
+<p>Linux不靠扩展名区分文件类型，基于权限</p>
 <blockquote>
-<p>压缩包：.gz、.bz2、.tar.bz2、.tgz<br>二进制包：.rpm<br>脚本文件：.sh<br>配置文件：.conf</p>
+<p>压缩包：.gz、.bz2、.tar.bz2、.tgz<br>
+二进制包：.rpm<br>
+脚本文件：.sh<br>
+配置文件：.conf</p>
 </blockquote>
 </li>
-<li><p>设备需要挂载后才能使用</p>
+<li>
+<p>设备需要挂载后才能使用</p>
 </li>
-<li><p>Linux使用正斜线（\）在文件路径中划分目录，反斜线（/）用来标志转义字符</p>
+<li>
+<p>Linux使用正斜线（\）在文件路径中划分目录，反斜线（/）用来标志转义字符</p>
 </li>
 </ul>
-<h2 id="Linux各目录的作用"><a href="#Linux各目录的作用" class="headerlink" title="Linux各目录的作用"></a>Linux各目录的作用</h2><ul>
+<h2 id="Linux各目录的作用">Linux各目录的作用</h2>
+<ul>
 <li>/bin/：存放系统命令目录，所有用户都可以执行</li>
 <li>/sbin/：只有root可以设置</li>
 <li>/usr/bin/：存放与系统启动无关的命令，单用户下无法执行</li>
@@ -447,9 +462,12 @@
 <li>/usr/：系统软件资源目录</li>
 <li>/var/：动态数据保存位置，日志，软件运行产生的文件</li>
 </ul>
-<h2 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h2><p>命令格式：命令 [-选项]  [参数]</p>
-<h3 id="目录处理"><a href="#目录处理" class="headerlink" title="目录处理"></a>目录处理</h3><ol>
-<li><p>显示目录文件：<code>ls</code></p>
+<h2 id="Linux常用命令">Linux常用命令</h2>
+<p>命令格式：命令 [-选项]  [参数]</p>
+<h3 id="目录处理">目录处理</h3>
+<ol>
+<li>
+<p>显示目录文件：<code>ls</code></p>
 <p>命令英文原意：list</p>
 <ul>
 <li><code>-a</code> 显示所有文件，包括隐藏文件</li>
@@ -466,41 +484,55 @@
 <p>r读、w写、x执行</p>
 </blockquote>
 </li>
-<li><p>创建目录：<code>mkdir</code><br>命令英文原意：make directories</p>
+<li>
+<p>创建目录：<code>mkdir</code><br>
+命令英文原意：make directories</p>
 <ul>
 <li><code>-p</code> 递归创建</li>
 </ul>
 </li>
-<li><p>切换目录：<code>cd</code></p>
+<li>
+<p>切换目录：<code>cd</code></p>
 <p>命令英文原意：change directory</p>
 </li>
-<li><p>查看当前目录：<code>pwd</code></p>
+<li>
+<p>查看当前目录：<code>pwd</code></p>
 </li>
-<li><p>删除空目录：<code>rmdir</code><br>命令英文原意：remove empty directories</p>
+<li>
+<p>删除空目录：<code>rmdir</code><br>
+命令英文原意：remove empty directories</p>
 </li>
-<li><p>复制文件或目录：<code>cp</code><br>命令英文原意：copy</p>
+<li>
+<p>复制文件或目录：<code>cp</code><br>
+命令英文原意：copy</p>
 <ul>
 <li><code>-rp</code>[原目录] [目标目录]</li>
 <li><code>-r</code> 复制目录</li>
 <li><code>-p</code> 保留文件属性</li>
 </ul>
 </li>
-<li><p>剪切或改名文件：<code>mv</code><br>命令英文原意：move</p>
+<li>
+<p>剪切或改名文件：<code>mv</code><br>
+命令英文原意：move</p>
 <ul>
 <li>mv [原目录] [目标目录]</li>
 </ul>
 </li>
-<li><p>删除文件：<code>rm</code><br>命令英文原意：remove</p>
+<li>
+<p>删除文件：<code>rm</code><br>
+命令英文原意：remove</p>
 <ul>
 <li><code>-r</code> 删除目录</li>
 <li><code>-f</code> 强制删除</li>
 </ul>
 </li>
 </ol>
-<h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><ol>
+<h3 id="文件处理">文件处理</h3>
+<ol>
 <li>创建空文件：<code>touch</code></li>
 <li>显示文件内容：<code>cat</code> ；<code>tac</code>（反向展示）[-n]</li>
-<li>分页显示文件内容：more；less<ul>
+<li>分页显示文件内容：more；less
+<ul>
 <li>空格或f翻页</li>
 <li>回车换行</li>
 <li>q退出</li>
@@ -511,7 +543,8 @@
 <li>显示文件前几行：<code>head</code> [-n]指定行数</li>
 <li>显示文件后几行：<code>tail</code> [-f] 查看动态变化[-n]</li>
 </ol>
-<h3 id="链接命令"><a href="#链接命令" class="headerlink" title="链接命令"></a>链接命令</h3><p>生成链接文件：<code>ln</code>（link）[-s]创建软链接</p>
+<h3 id="链接命令">链接命令</h3>
+<p>生成链接文件：<code>ln</code>（link）[-s]创建软链接</p>
 
                 
             </div>
@@ -534,12 +567,12 @@
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -579,7 +612,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/16.jpg" class="responsive-img" alt="五十音图">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="五十音图">
                         
                         <span class="card-title">五十音图</span>
                     </div>
@@ -624,13 +657,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2019/10/18/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/">
+                <a href="/2019/12/25/%E8%84%9A%E6%B3%A8%E6%B5%8B%E8%AF%95%E9%A1%B5/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/9.jpg" class="responsive-img" alt="面向对象">
+                        <img src="/medias/featureimages/3.png" class="responsive-img" alt="脚注测试页">
                         
-                        <span class="card-title">面向对象</span>
+                        <span class="card-title">脚注测试页</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -641,14 +674,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2019-10-18
+                                <i class="far fa-clock fa-fw icon-date"></i>2019-12-25
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Python/" class="post-category">
-                                    Python
+                            <a href="/categories/%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    测试
                                 </a>
                             
                             
@@ -658,8 +691,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Python/">
-                        <span class="chip bg-color">Python</span>
+                    <a href="/tags/%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">测试</span>
                     </a>
                     
                 </div>
@@ -675,21 +708,21 @@
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -710,7 +743,7 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -947,12 +980,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -974,7 +1007,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -990,7 +1023,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

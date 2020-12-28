@@ -17,17 +17,17 @@
 
 
     <title>SpringBoot2 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/1.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,21 +366,23 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="SpringBoot实现RESTful风格Web应用"><a href="#SpringBoot实现RESTful风格Web应用" class="headerlink" title="SpringBoot实现RESTful风格Web应用"></a>SpringBoot实现RESTful风格Web应用</h2><p>REST（REpresentational State Transfer）全称是 Resource Representational State Transfer：通俗来讲就是：资源在网络中以某种表现形式进行状态转移。分解开来：</p>
+                <h2 id="SpringBoot实现RESTful风格Web应用">SpringBoot实现RESTful风格Web应用</h2>
+<p>REST（REpresentational State Transfer）全称是 Resource Representational State Transfer：通俗来讲就是：资源在网络中以某种表现形式进行状态转移。分解开来：</p>
 <ul>
 <li>Resource：资源，即数据（前面说过网络的核心）。比如 newsfeed，friends等；</li>
 <li>Representational：某种表现形式，比如用JSON，XML，JPEG等；</li>
 <li>State Transfer：状态变化。通过HTTP动词实现。</li>
 </ul>
 <p>URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作。</p>
-<h3 id="创建类BolgController"><a href="#创建类BolgController" class="headerlink" title="创建类BolgController"></a>创建类BolgController</h3><p>在包controller中创建类BolgController</p>
+<h3 id="创建类BolgController">创建类BolgController</h3>
+<p>在包controller中创建类BolgController</p>
 <pre class="line-numbers language-Java" data-language="Java"><code class="language-Java">package com.example.restful.controller;
 
 import org.springframework.stereotype.Controller;
@@ -409,7 +411,8 @@ public class BolgController &#123;
         return mav;
     &#125;
 &#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="创建文件-index-html"><a href="#创建文件-index-html" class="headerlink" title="创建文件 index.html"></a>创建文件 index.html</h3><p>在 resource/static 目录下创建文件 index.html </p>
+<h3 id="创建文件-index-html">创建文件 index.html</h3>
+<p>在 resource/static 目录下创建文件 index.html</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -421,7 +424,8 @@ public class BolgController &#123;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/blog/query?q=123456><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>搜索<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="创建文件-bolg-html"><a href="#创建文件-bolg-html" class="headerlink" title="创建文件 bolg.html"></a>创建文件 bolg.html</h3><p>在 resource/templates 目录下创建文件 blog.html </p>
+<h3 id="创建文件-bolg-html">创建文件 bolg.html</h3>
+<p>在 resource/templates 目录下创建文件 blog.html</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">HTML</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>th</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.thymeleaf.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -432,7 +436,8 @@ public class BolgController &#123;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name"><span class="token namespace">th:</span>text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">'</span>博客编号:<span class="token punctuation">'</span> + $&#123;id&#125; + <span class="token punctuation">'</span>!<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="创建文件-query-html"><a href="#创建文件-query-html" class="headerlink" title="创建文件 query.html"></a>创建文件 query.html</h3><p>在 resource/templates 目录下创建文件 query.html </p>
+<h3 id="创建文件-query-html">创建文件 query.html</h3>
+<p>在 resource/templates 目录下创建文件 query.html</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">HTML</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name"><span class="token namespace">xmlns:</span>th</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.thymeleaf.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
@@ -443,12 +448,16 @@ public class BolgController &#123;
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name"><span class="token namespace">th:</span>text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">'</span>查询,<span class="token punctuation">'</span> + $&#123;q&#125; + <span class="token punctuation">'</span>!<span class="token punctuation">'</span><span class="token punctuation">"</span></span><span class="token punctuation">/></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="运行程序"><a href="#运行程序" class="headerlink" title="运行程序"></a>运行程序</h3><p>运行程序后，在浏览器中输入 localhost:8080</p>
+<h3 id="运行程序">运行程序</h3>
+<p>运行程序后，在浏览器中输入 localhost:8080</p>
 <p>![image-20201029185618289](E:\OneDrive - lanqilu\我的图片库\blogimg\Java-01-SpringBoot\image-20201029185618289.png)</p>
 <p>点击博客或搜索显示如下页面</p>
 <p>![image-20201029191916914](E:\OneDrive - lanqilu\我的图片库\blogimg\Java-01-SpringBoot\image-20201029191916914.png)</p>
 <p>![image-20201029191930191](E:\OneDrive - lanqilu\我的图片库\blogimg\Java-01-SpringBoot\image-20201029191930191.png)</p>
-<h2 id="带-Bootstrap-和-JQuery-的-Web-应用"><a href="#带-Bootstrap-和-JQuery-的-Web-应用" class="headerlink" title="带 Bootstrap 和 JQuery  的 Web 应用"></a>带 Bootstrap 和 JQuery  的 Web 应用</h2><h3 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h3><h2 id="接口文档-Swagger-入门"><a href="#接口文档-Swagger-入门" class="headerlink" title="接口文档 Swagger 入门"></a>接口文档 Swagger <a target="_blank" rel="noopener" href="http://www.iocoder.cn/Spring-Boot/Swagger/">入门</a></h2><p>目前，大多数系统都采用前后端分离。在享受前后端分离的<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28207685">好处</a>的同时，接口联调往往成为团队效率的瓶颈，甚至产生前后端的矛盾。简单归结来说，有几方面的原因：</p>
+<h2 id="带-Bootstrap-和-JQuery-的-Web-应用">带 Bootstrap 和 JQuery  的 Web 应用</h2>
+<h3 id="添加依赖">添加依赖</h3>
+<h2 id="接口文档-Swagger-入门">接口文档 Swagger <a target="_blank" rel="noopener" href="http://www.iocoder.cn/Spring-Boot/Swagger/">入门</a></h2>
+<p>目前，大多数系统都采用前后端分离。在享受前后端分离的<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28207685">好处</a>的同时，接口联调往往成为团队效率的瓶颈，甚至产生前后端的矛盾。简单归结来说，有几方面的原因：</p>
 <ul>
 <li>问题一，<strong>接口设计滞后。</strong> 后端团队往往不喜欢 API 接口设计先行，提前和前端沟通好接口。而在开发阶段的中后期，在后端提供 API 接口后，而这些接口和前端的预期有一些偏差，很容易就产生抱怨，特别是项目周期比较紧张的情况下。</li>
 <li>问题二，<strong>接口不规范。</strong> 当团队里没有同意明确的接口规范时，又或者代码 Review 做的不是很好的情况下，千奇百怪、各式各样的 API 接口可能就产生了。前端在对接这样的 API 接口，苦不堪言，在一口 mmp 一嘴 fuck xxx 之中，调完接口。</li>
@@ -462,7 +471,8 @@ public class BolgController &#123;
 <p>对于<strong>问题三</strong>，就进入了本文的<strong>主角 Swagger</strong> 。通过在 API 接口上，添加相应的 Swagger 提供的注解，自动生成 API 文档。酱紫，API 接口和文档就在一起了，从此过上了幸福快乐的生活。</p>
 <p>Swagger 是一个规范和完整的框架，用于生成、描述、调用和可视化 RESTful 风格的 Web 服务。</p>
 <p>总体目标是使客户端和文件系统作为服务器以同样的速度来更新。文件的方法、参数和模型紧密集成到服务器端的代码，允许 API 来始终保持同步。Swagger 让部署管理和使用功能强大的 API 从未如此简单。</p>
-<h3 id="引入依赖"><a href="#引入依赖" class="headerlink" title="引入依赖"></a>引入依赖</h3><p>在 <code>pom.xml</code>文件中，引入相关依赖。</p>
+<h3 id="引入依赖">引入依赖</h3>
+<p>在 <code>pom.xml</code>文件中，引入相关依赖。</p>
 <pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependencies</span><span class="token punctuation">></span></span>
      <span class="token comment">&lt;!-- 实现对 Spring MVC 的自动化配置 --></span>
      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
@@ -485,7 +495,8 @@ public class BolgController &#123;
      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 
  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependencies</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="SwaggerConfiguration"><a href="#SwaggerConfiguration" class="headerlink" title="SwaggerConfiguration"></a>SwaggerConfiguration</h3><p>因为 Spring Boot 暂未提供 Swagger 内置的支持，所以我们需要自己定义配置类。</p>
+<h3 id="SwaggerConfiguration">SwaggerConfiguration</h3>
+<p>因为 Spring Boot 暂未提供 Swagger 内置的支持，所以我们需要自己定义配置类。</p>
 <p>在 <code>*.apidoc.config</code> 包路径下，创建 SwaggerConfiguration 配置类，用于配置 Swagger 。代码如下：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Configuration</span>
 <span class="token annotation punctuation">@EnableSwagger2</span>
@@ -523,15 +534,17 @@ public class BolgController &#123;
 
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>在类上，添加 <a target="_blank" rel="noopener" href="http://springfox.github.io/springfox/javadoc/2.5.0/index.html?springfox/documentation/swagger2/annotations/EnableSwagger2.html"><code>@EnableSwagger2</code></a> 注解， 标记项目启用 Swagger API 接口文档。</p>
-<h3 id="Application"><a href="#Application" class="headerlink" title="Application"></a>Application</h3><p>创建 <a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs/blob/master/lab-24/lab-24-apidoc-swagger/src/main/java/cn/iocoder/springboot/lab24/apidoc/Application.java"><code>Application.java</code></a> 类，配置 <code>@SpringBootApplication</code> 注解即可。代码如下：</p>
+<h3 id="Application">Application</h3>
+<p>创建 <a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs/blob/master/lab-24/lab-24-apidoc-swagger/src/main/java/cn/iocoder/springboot/lab24/apidoc/Application.java"><code>Application.java</code></a> 类，配置 <code>@SpringBootApplication</code> 注解即可。代码如下：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@SpringBootApplication</span>
 <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Application</span> <span class="token punctuation">&#123;</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
         <span class="token class-name">SpringApplication</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token class-name">Application</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>先暂时不启动项目。等我们添加好 Controller </p>
-<h3 id="UserController"><a href="#UserController" class="headerlink" title="UserController"></a>UserController</h3><p>在 <code>*.apidoc.controller</code> 包路径下，创建 <a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs/blob/master/lab-24/lab-24-apidoc-swagger/src/main/java/cn/iocoder/springboot/lab24/apidoc/controller/TestController.java">UserController</a> 类，提供用户 API 接口。代码如下：</p>
+<p>先暂时不启动项目。等我们添加好 Controller</p>
+<h3 id="UserController">UserController</h3>
+<p>在 <code>*.apidoc.controller</code> 包路径下，创建 <a target="_blank" rel="noopener" href="https://github.com/YunaiV/SpringBoot-Labs/blob/master/lab-24/lab-24-apidoc-swagger/src/main/java/cn/iocoder/springboot/lab24/apidoc/controller/TestController.java">UserController</a> 类，提供用户 API 接口。代码如下：</p>
 <ul>
 <li>相比我们之前使用 SpringMVC 来说，我们在类和接口上，额外增加了 Swagger 提供的注解。</li>
 <li>从使用习惯上，我比较喜欢先添加 SpringMVC 的注解，再添加 Swagger 的注解。</li>
@@ -563,12 +576,12 @@ public class BolgController &#123;
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -608,7 +621,7 @@ public class BolgController &#123;
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/6.png" class="responsive-img" alt="Tomcat">
+                        <img src="/medias/featureimages/6.png" class="responsive-img" alt="Tomcat">
                         
                         <span class="card-title">Tomcat</span>
                     </div>
@@ -661,7 +674,7 @@ public class BolgController &#123;
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/15.png" class="responsive-img" alt="Thymeleaf">
+                        <img src="/medias/featureimages/15.png" class="responsive-img" alt="Thymeleaf">
                         
                         <span class="card-title">Thymeleaf</span>
                     </div>
@@ -708,21 +721,21 @@ public class BolgController &#123;
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -743,7 +756,7 @@ public class BolgController &#123;
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -980,12 +993,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1007,7 +1020,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1023,7 +1036,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

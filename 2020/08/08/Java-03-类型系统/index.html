@@ -17,17 +17,17 @@
 
 
     <title>Java类型系统 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/8.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -366,7 +366,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -379,14 +379,16 @@
 <p>Java 的类型系统不仅涉及类和基本类型，还涉及与类的基本概念相关的其他引用类型，但这些引用类型有些不同，javac 或 JVM 往往会使用特殊的方式处理。</p>
 <p>我们已经介绍了数组和类，它们是使用最广泛的两种 Java 引用类型。本章先介绍另一种重要的引用类型——接口。然后介绍 Java 的泛型，泛型在 Java 的类型系统中扮演着重要角色。掌握这些知识后，我们再介绍 Java 中编译时和运行时类型之间的区别。</p>
 <p>为了完整介绍 Java 的引用类型，我们要介绍两种特殊的类和接口——枚举和注解。本章最后介绍嵌套类型和 Java 8 引入的 lambda 表达式。</p>
-<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>一个 Java 类只能继承一个类。这对我们要编写的面向对象程序来说是个相当严格的限制。Java 的设计者知道这一点，但他们也是为了确保Java 实现面向对象编程的方式比其他语言（例如 C++）简单。他们选择的方式是提出接口这个概念。和类一样，接口定义一种新的引用类型。如“接口”这个名称所示，接口的作用只是描绘 API，因此，接口提供类型的描述信息，以及实现这个 API 的类应该提供的方法（和签名）。</p>
+<h2 id="接口">接口</h2>
+<p>一个 Java 类只能继承一个类。这对我们要编写的面向对象程序来说是个相当严格的限制。Java 的设计者知道这一点，但他们也是为了确保Java 实现面向对象编程的方式比其他语言（例如 C++）简单。他们选择的方式是提出接口这个概念。和类一样，接口定义一种新的引用类型。如“接口”这个名称所示，接口的作用只是描绘 API，因此，接口提供类型的描述信息，以及实现这个 API 的类应该提供的方法（和签名）。</p>
 <p>一般来说，Java 的接口不为它描述的方法提供实现代码。这些方法是强制要实现的——想实现接口的类必须实现这些方法。</p>
 <p>不过，接口可能想把 API 中的某些方法标记为可选，如果实现接口的类不想实现就不用实现。这种机制通过 <code>default</code> 关键字实现，接口必须为可选的方法提供默认实现，未实现这些方法的类会使用默认实现。</p>
 <blockquote>
 <p>接口中的可选方法是 Java 8 的新功能，之前的版本中没有。</p>
 </blockquote>
 <p>接口不能直接实例化，也不能创建这种接口类型的成员。接口必须通过类实现，而且类要提供所需的方法主体。这个类的实例既属于这个类定义的类型，也属于这个接口定义的类型。不属于同一个类或超类的对象，通过实现同一个接口，也能属于同一种类型。</p>
-<h3 id="定义接口"><a href="#定义接口" class="headerlink" title="定义接口"></a>定义接口</h3><p>定义接口的方式和定义类差不多，不过所有（非默认的）方法都是抽象方法，而且关键字<code>class</code> 要换成 <code>interface</code>。例如，下述代码定义了一个名为 <code>Centered</code> 的接口：</p>
+<h3 id="定义接口">定义接口</h3>
+<p>定义接口的方式和定义类差不多，不过所有（非默认的）方法都是抽象方法，而且关键字<code>class</code> 要换成 <code>interface</code>。例如，下述代码定义了一个名为 <code>Centered</code> 的接口：</p>
 <pre class="line-numbers language-Java、" data-language="Java、"><code class="language-Java、">interface Centered &#123; 
   void setCenter(double x, double y); 
   double getCenterX(); 
@@ -401,7 +403,8 @@
 <li>接口中可以包含嵌套类型。嵌套类型隐式使用 <code>public</code> 和 <code>static</code> 声明。</li>
 <li>从 Java 8 开始，接口中可以包含静态方法。</li>
 </ul>
-<h3 id="扩展接口"><a href="#扩展接口" class="headerlink" title="扩展接口"></a>扩展接口</h3><p>接口可以扩展其他接口，而且和类的定义一样，接口的定义可以包含一个 <code>extends</code> 子句。接口扩展另一个接口时，会继承父接口中的所有方法和常量，而且可以定义新方法和常量。不过，和类不同的是，接口的 <code>extends</code> 子句可以包含<strong>多个</strong>父接口。例如，下述接口扩展了其他接口：</p>
+<h3 id="扩展接口">扩展接口</h3>
+<p>接口可以扩展其他接口，而且和类的定义一样，接口的定义可以包含一个 <code>extends</code> 子句。接口扩展另一个接口时，会继承父接口中的所有方法和常量，而且可以定义新方法和常量。不过，和类不同的是，接口的 <code>extends</code> 子句可以包含<strong>多个</strong>父接口。例如，下述接口扩展了其他接口：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">interface</span> <span class="token class-name">Positionable</span> <span class="token keyword">extends</span> <span class="token class-name">Centered</span> <span class="token punctuation">&#123;</span> 
   <span class="token keyword">void</span> <span class="token function">setUpperRightCorner</span><span class="token punctuation">(</span><span class="token keyword">double</span> x<span class="token punctuation">,</span> <span class="token keyword">double</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span> 
   <span class="token keyword">double</span> <span class="token function">getUpperRightX</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
@@ -410,7 +413,8 @@
 <span class="token keyword">interface</span> <span class="token class-name">Transformable</span> <span class="token keyword">extends</span> <span class="token class-name">Scalable</span><span class="token punctuation">,</span> <span class="token class-name">Translatable</span><span class="token punctuation">,</span> <span class="token class-name">Rotatable</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span> 
 <span class="token keyword">interface</span> <span class="token class-name">SuperShape</span> <span class="token keyword">extends</span> <span class="token class-name">Positionable</span><span class="token punctuation">,</span> <span class="token class-name">Transformable</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>扩展多个接口的接口，会继承每个父接口中的所有方法和常量，而且可以定义属于自己的方法和常量。实现这个接口的类必须实现这个接口直接定义的抽象方法，以及从所有父接口中继承的全部抽象方法。</p>
-<h3 id="实现接口"><a href="#实现接口" class="headerlink" title="实现接口"></a>实现接口</h3><p>类使用 <code>extends</code> 指定超类，类似地，类使用 <code>implements</code> 列出它支持的一个或多个接口。<code>implements</code> 是一个 Java 关键字，可以出现在类声明中，但要放在 <code>extends</code> 子句后面。<code>implements</code> 关键字后面是这个类要实现的一组接口，接口之间使用逗号分隔。</p>
+<h3 id="实现接口">实现接口</h3>
+<p>类使用 <code>extends</code> 指定超类，类似地，类使用 <code>implements</code> 列出它支持的一个或多个接口。<code>implements</code> 是一个 Java 关键字，可以出现在类声明中，但要放在 <code>extends</code> 子句后面。<code>implements</code> 关键字后面是这个类要实现的一组接口，接口之间使用逗号分隔。</p>
 <p>类在 <code>implements</code> 子句中声明接口时，表明这个类要为接口中的每个强制方法提供实现（即主体）。如果实现接口的类没有为接口中的每个强制方法提供实现，那么这个类从接口中继承未实现的抽象方法，而且这个类本身必须使用 <code>abstract</code> 声明。如果类实现多个接口，必须实现每个接口中的所有强制方法（否则这个类要使用 <code>abstract</code> 声明）。</p>
 <p>下述代码展示了如何定义 <code>CenteredRectangle</code> 类，这个类扩展第定义的 <code>Rectangle</code> 类，而且实现 <code>Centered</code> 接口：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">CenteredRectangle</span> <span class="token keyword">extends</span> <span class="token class-name">Rectangle</span> <span class="token keyword">implements</span> <span class="token class-name">Centered</span> <span class="token punctuation">&#123;</span> 
@@ -463,14 +467,17 @@ shapes<span class="token punctuation">[</span><span class="token number">2</span
 <p>在 Java 中，接口和类一样，也是数据类型。如果一个类实现了一个接口，那么这个类的实例可以赋值给这个接口类型的变量。</p>
 </blockquote>
 <p>看过这个示例之后，别错误地认为必须先把 <code>CenteredRectangle</code> 对象赋值给 <code>Centered</code> 类型的变量才能调用 <code>setCenter()</code> 方法，或者要先赋值给 <code>Shape</code> 类型的变量才能调用 <code>area()</code>方法。<code>CenteredRectangle</code> 类定义了 <code>setCenter()</code> 方法，而且从超类 <code>Rectangle</code> 中继承了<code>area()</code> 方法，所以始终可以调用这两个方法。</p>
-<h3 id="实现多个接口"><a href="#实现多个接口" class="headerlink" title="实现多个接口"></a>实现多个接口</h3><p>假设我们不仅想通过中心点摆放形状对象，也想通过右上角摆放形状对象，而且还想放大和缩小形状。还记得吗？虽然一个类只能扩展一个超类，但可以实现任意多个接口。假设我们已经定义好了合适的 <code>UpperRightCornered</code> 和 <code>Scalable</code> 接口，那么可以按照下述方式声明类：</p>
+<h3 id="实现多个接口">实现多个接口</h3>
+<p>假设我们不仅想通过中心点摆放形状对象，也想通过右上角摆放形状对象，而且还想放大和缩小形状。还记得吗？虽然一个类只能扩展一个超类，但可以实现任意多个接口。假设我们已经定义好了合适的 <code>UpperRightCornered</code> 和 <code>Scalable</code> 接口，那么可以按照下述方式声明类：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SuperDuperSquare</span> <span class="token keyword">extends</span> <span class="token class-name">Shape</span> 
   <span class="token keyword">implements</span> <span class="token class-name">Centered</span><span class="token punctuation">,</span> <span class="token class-name">UpperRightCornered</span><span class="token punctuation">,</span> <span class="token class-name">Scalable</span> <span class="token punctuation">&#123;</span> 
   <span class="token comment">// 类的成员省略了 </span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>一个类实现多个接口只是表明这个类要实现所有接口中的全部抽象方法（即强制方法）。</p>
-<h3 id="默认方法"><a href="#默认方法" class="headerlink" title="默认方法"></a>默认方法</h3><p>Java 8 出现后，接口中的方法可以包含实现了。本节介绍这种方法——在接口描述的 API中通过可选的方法表示，一般叫作默认方法。首先说明为什么需要这种默认机制。</p>
-<h4 id="向后兼容性"><a href="#向后兼容性" class="headerlink" title="向后兼容性"></a>向后兼容性</h4><p>Java 平台始终关注向后兼容性。这意味着，为前一版平台编写（或者已经编译）的代码在最新版平台中必须能继续使用。这个原则让开发团队坚信，升级 JDK 或 JRE 后不会破坏之前能正常运行的应用。</p>
+<h3 id="默认方法">默认方法</h3>
+<p>Java 8 出现后，接口中的方法可以包含实现了。本节介绍这种方法——在接口描述的 API中通过可选的方法表示，一般叫作默认方法。首先说明为什么需要这种默认机制。</p>
+<h4 id="向后兼容性">向后兼容性</h4>
+<p>Java 平台始终关注向后兼容性。这意味着，为前一版平台编写（或者已经编译）的代码在最新版平台中必须能继续使用。这个原则让开发团队坚信，升级 JDK 或 JRE 后不会破坏之前能正常运行的应用。</p>
 <p>向后兼容性是 Java 平台的一大优势，但是为此，Java 平台有诸多约束。其中一个约束是，新发布的接口不能添加新的强制方法。</p>
 <p>例如，假设我们要升级 <code>Positionable</code> 接口，添加获取和设定左下角顶点的功能：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Positionable</span> <span class="token keyword">extends</span> <span class="token class-name">Centered</span> <span class="token punctuation">&#123;</span> 
@@ -487,7 +494,8 @@ shapes<span class="token punctuation">[</span><span class="token number">2</span
 </blockquote>
 <p>Java 8 的设计者注意到了这个缺陷，因为设计者的目标之一是升级 Java 核心中的集合库，引入使用 lambda 表达式的方法。</p>
 <p>若想解决这个问题，需要一种新机制。这种机制必须要允许向接口中添加可选的新方法，而不破坏向后兼容性。</p>
-<h4 id="实现默认方法"><a href="#实现默认方法" class="headerlink" title="实现默认方法"></a>实现默认方法</h4><p>在接口中添加新方法而不破坏向后兼容性，这需要为接口的旧实现提供一些新实现，以便接口能继续使用。这个机制是默认方法，在 JDK 8 中首次添加到 Java 平台。</p>
+<h4 id="实现默认方法">实现默认方法</h4>
+<p>在接口中添加新方法而不破坏向后兼容性，这需要为接口的旧实现提供一些新实现，以便接口能继续使用。这个机制是默认方法，在 JDK 8 中首次添加到 Java 平台。</p>
 <blockquote>
 <p>默认方法（有时也叫可选方法）可以添加到任何接口中。默认方法必须包含实现，即默认实现，写在接口定义中。</p>
 </blockquote>
@@ -506,7 +514,8 @@ shapes<span class="token punctuation">[</span><span class="token number">2</span
   <span class="token punctuation">&#125;</span> 
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>因此，从 Java 8 开始，实现 List 接口的对象都有一个名为 <code>sort()</code> 的实例方法，使用合适的 <code>Comparator</code> 排序列表。因为返回类型是 <code>void</code>，所以我们猜测这是就地排序，而事实确实如此。</p>
-<h3 id="标记接口"><a href="#标记接口" class="headerlink" title="标记接口"></a>标记接口</h3><p>有时，定义全空的接口很有用。类实现这种接口时只需在 <code>implements</code> 子句中列出这个接口，而不用实现任何方法。此时，这个类的任何实例都是这个接口的有效实例。Java 代码可以使用 <code>instanceof</code> 运算符检查实例是否属于这个接口，因此这种技术是为对象提供额外信息的有力方式。</p>
+<h3 id="标记接口">标记接口</h3>
+<p>有时，定义全空的接口很有用。类实现这种接口时只需在 <code>implements</code> 子句中列出这个接口，而不用实现任何方法。此时，这个类的任何实例都是这个接口的有效实例。Java 代码可以使用 <code>instanceof</code> 运算符检查实例是否属于这个接口，因此这种技术是为对象提供额外信息的有力方式。</p>
 <p><code>java.io.Serializable</code> 接口就是一种标记接口。实现 <code>Serializable</code> 接口的类告诉<code>ObjectOutputStream</code> 类，这个类的实例可以安全地序列化。<code>java.util.RandomAccess</code> 也是标记接口：<code>java.util.List</code> 接口实现了这个接口，表明这个接口能快速随机访问列表中的元素。例如，<code>ArrayList</code> 类实现了 <code>RandomAccess</code> 接口，而 <code>LinkedList</code> 类没实现。注重随机访问操作性能的算法可以使用下述方式测试 <code>RandomAccess</code>：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 排序任意长度的列表元素之前，我们或许想确认列表是否支持快速随机访问 </span>
 <span class="token comment">// 如果不支持，先创建一个支持随机访问的副本再排序，速度可能更快 </span>
@@ -515,11 +524,13 @@ shapes<span class="token punctuation">[</span><span class="token number">2</span
 <span class="token keyword">if</span> <span class="token punctuation">(</span>l<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">2</span> <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span><span class="token punctuation">(</span>l <span class="token keyword">instanceof</span> <span class="token class-name">RandomAccess</span><span class="token punctuation">)</span><span class="token punctuation">)</span> l <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">;</span>  
 <span class="token function">sortListInPlace</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>后面会看到，Java 的类型系统和类型的名称联系紧密，这种方式叫作名义类型（nominal typing）。标记接口是个很好的例子，因为它除了名称什么都没有。</p>
-<h2 id="Java泛型"><a href="#Java泛型" class="headerlink" title="Java泛型"></a>Java泛型</h2><p>Java 平台的一大优势是它提供的标准库。标准库提供了大量有用的功能，特别是实现了健壮的通用数据结构。这些实现使用起来相当简单，而且文档编写良好。虽然这些库一直很有用，但在早期版本中有相当大的不足——数据结构（经常叫作容器）完全隐藏了存储其中的数据类型。</p>
+<h2 id="Java泛型">Java泛型</h2>
+<p>Java 平台的一大优势是它提供的标准库。标准库提供了大量有用的功能，特别是实现了健壮的通用数据结构。这些实现使用起来相当简单，而且文档编写良好。虽然这些库一直很有用，但在早期版本中有相当大的不足——数据结构（经常叫作容器）完全隐藏了存储其中的数据类型。</p>
 <blockquote>
 <p>数据隐藏和封装是面向对象编程的重要原则，但在这种情况下，容器的不透明会为开发者带来很多问题。</p>
 </blockquote>
-<h3 id="介绍泛型"><a href="#介绍泛型" class="headerlink" title="介绍泛型"></a>介绍泛型</h3><p>如果想构建一个由 Shape 实例组成的集合，可以把这个集合保存在一个 List 对象中，如下所示：</p>
+<h3 id="介绍泛型">介绍泛型</h3>
+<p>如果想构建一个由 Shape 实例组成的集合，可以把这个集合保存在一个 List 对象中，如下所示：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">List</span> shapes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 创建一个List对象，保存形状 </span>
  
 <span class="token comment">// 指定中心点，创建一些形状，保存在这个列表中 </span>
@@ -552,7 +563,8 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
   <span class="token class-name">T</span> <span class="token function">unbox</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>上述代码表明，<code>Box</code> 接口是通用结构，可以保存任意类型的负载。这不是一个完整的接口，更像是一系列接口的通用描述，每个接口对应的类型都能用在 <code>T</code> 的位置上。</p>
-<h3 id="泛型和类型参数"><a href="#泛型和类型参数" class="headerlink" title="泛型和类型参数"></a>泛型和类型参数</h3><p>我们已经知道如何使用泛型增强程序的安全性——使用编译时信息避免简单的类型错误。本节深入介绍泛型的特性。</p>
+<h3 id="泛型和类型参数">泛型和类型参数</h3>
+<p>我们已经知道如何使用泛型增强程序的安全性——使用编译时信息避免简单的类型错误。本节深入介绍泛型的特性。</p>
 <p><code>&lt;T&gt;</code> 句法有个专门的名称——类型参数（type parameter）。因此，泛型还有一个名称——参数化类型（parameterized type）。这表明，容器类型（例如 <code>List</code>）由其他类型（负载类型）参数化。把类型写为 <code>Map&lt;String, Integer&gt;</code> 时，我们就为类型参数指定了具体的值。</p>
 <p>定义有参数的类型时，要使用一种不对类型参数做任何假设的方式指定具体的值。所以<code>List</code> 类型使用通用的方式 <code>List&lt;E&gt;</code> 声明，而且自始至终都使用类型参数 <code>E</code> 作占位符，代表程序员使用 <code>List</code> 数据结构时负载的真实类型。</p>
 <p>类型参数可以在方法的签名和主体中使用，就像是真正的类型一样，例如：</p>
@@ -562,12 +574,14 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
   <span class="token comment">// 其他方法省略了 </span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>注意，类型参数 E 既可以作为返回类型的参数，也可以作为方法参数类型的参数。我们不假设负载类型有任何具体的特性，只对一致性做了基本假设，即存入的类型和后来取回的类型一致。</p>
-<h3 id="菱形句法"><a href="#菱形句法" class="headerlink" title="菱形句法"></a>菱形句法</h3><p>创建泛型的实例时，赋值语句的右侧会重复类型参数的值。一般情况下，这个信息是不必要的，因为编译器能推导出类型参数的值。在 Java 的现代版本中，可以使用菱形句法省略重复的类型值。</p>
+<h3 id="菱形句法">菱形句法</h3>
+<p>创建泛型的实例时，赋值语句的右侧会重复类型参数的值。一般情况下，这个信息是不必要的，因为编译器能推导出类型参数的值。在 Java 的现代版本中，可以使用菱形句法省略重复的类型值。</p>
 <p>下面通过一个示例说明如何使用菱形句法，这个例子改自之前的示例：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">// 使用菱形句法创建一个由CenteredCircle对象组成的List </span>
 <span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">CenteredCircle</span><span class="token punctuation">></span></span> shapes <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>对这种冗长的赋值语句来说，这是个小改进，能少输入几个字符。本章末尾介绍 lambda 表达式时会再次讨论类型推导。</p>
-<h3 id="类型擦除"><a href="#类型擦除" class="headerlink" title="类型擦除"></a>类型擦除</h3><p>Java 平台十分看重向后兼容性。Java 5 添加的泛型又是一个会导致向后兼容性问题的新语言特性。</p>
+<h3 id="类型擦除">类型擦除</h3>
+<p>Java 平台十分看重向后兼容性。Java 5 添加的泛型又是一个会导致向后兼容性问题的新语言特性。</p>
 <p>问题的关键是，如何让类型系统既能使用旧的非泛型集合类又能使用新的泛型集合类。设计者选择的解决方式是使用校正：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">List</span> someThings <span class="token operator">=</span> <span class="token function">getSomeThings</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
 <span class="token comment">// 这种校正不安全，但我们知道someThings的内容确实是字符串 </span>
@@ -584,10 +598,10 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
   <span class="token comment">// 把名称映射到目前已下订单的总数上 </span>
   <span class="token keyword">int</span> <span class="token function">totalOrders</span><span class="token punctuation">(</span><span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Integer</span><span class="token punctuation">></span></span> orders<span class="token punctuation">)</span><span class="token punctuation">;</span> 
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-<h2 id="枚举和注解"><a href="#枚举和注解" class="headerlink" title="枚举和注解"></a>枚举和注解</h2><p>Java 有两种特殊形式的类和接口，在类型系统中扮演着特定的角色。这两种类型是枚举类型（enumerated type）和注解类型（annotation type），一般直接称为枚举和注解。</p>
-<h3 id="枚举"><a href="#枚举" class="headerlink" title="枚举"></a>枚举</h3><p>枚举是类的变种，功能有限，而且允许使用的值很少。</p>
+<h2 id="枚举和注解">枚举和注解</h2>
+<p>Java 有两种特殊形式的类和接口，在类型系统中扮演着特定的角色。这两种类型是枚举类型（enumerated type）和注解类型（annotation type），一般直接称为枚举和注解。</p>
+<h3 id="枚举">枚举</h3>
+<p>枚举是类的变种，功能有限，而且允许使用的值很少。</p>
 <blockquote>
 <p>类的对象只有有限个，确定的。如果枚举只有一个对象，则可以作为一种单例模式的实现方式。</p>
 </blockquote>
@@ -639,9 +653,11 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
 <blockquote>
 <p>当需要定义一组常量时，强烈建议使用枚举类</p>
 </blockquote>
-<h3 id="Enum类的主要方法"><a href="#Enum类的主要方法" class="headerlink" title="Enum类的主要方法"></a>Enum类的主要方法</h3><p><code>values()</code>方法：返回枚举类型的对象数组。可以遍历所有的枚举值。</p>
+<h3 id="Enum类的主要方法">Enum类的主要方法</h3>
+<p><code>values()</code>方法：返回枚举类型的对象数组。可以遍历所有的枚举值。</p>
 <p><code>valueOf(String objName)</code>：把一个字符串转换为对应的枚举对象</p>
-<h3 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h3><p>注解是一种特殊的接口。如名称所示，其作用是注解 Java 程序的某个部分。</p>
+<h3 id="注解">注解</h3>
+<p>注解是一种特殊的接口。如名称所示，其作用是注解 Java 程序的某个部分。</p>
 <p>注解能为编译器和集成开发环境（Integrated Development Environment，IDE）提供有用的提示。如果开发者把方法的名称拼写错了，而这个方法本来是要覆盖超类的方法，那么，在这个名称拼错的方法上使用 @Override 注解，可以提醒编译器什么地方出错了。</p>
 <p>注解不能改变程序的语义，只能提供可选的元信息。严格说来，这意味着注解不能影响程序的执行，只能为编译器和其他预执行阶段提供信息。</p>
 <p>Java 平 台 在 java.lang 中 定 义 了 为 数 不 多 的 基 本 注 解。 一 开 始 只 支 持 <code>@Override</code>、 <code>@Deprecated</code> 和 <code>@SuppressWarnings</code>，这三个注解的作用分别是：注明方法是覆盖的，注明方法废弃了，以及静默编译器生成的警告。</p>
@@ -656,7 +672,9 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
 <li>方法的返回类型有限制；</li>
 <li>方法可以有一个默认返回值。</li>
 </ul>
-<h2 id="嵌套类型"><a href="#嵌套类型" class="headerlink" title="嵌套类型"></a>嵌套类型</h2><h2 id="lambda表达式"><a href="#lambda表达式" class="headerlink" title="lambda表达式"></a>lambda表达式</h2>
+<h2 id="嵌套类型">嵌套类型</h2>
+<h2 id="lambda表达式">lambda表达式</h2>
+
                 
             </div>
             <hr/>
@@ -678,12 +696,12 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -723,7 +741,7 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/12.png" class="responsive-img" alt="Java集合">
+                        <img src="/medias/featureimages/12.png" class="responsive-img" alt="Java集合">
                         
                         <span class="card-title">Java集合</span>
                     </div>
@@ -772,7 +790,7 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/17.jpg" class="responsive-img" alt="Redis">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Redis">
                         
                         <span class="card-title">Redis</span>
                     </div>
@@ -823,21 +841,21 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -858,7 +876,7 @@ shapes<span class="token punctuation">.</span><span class="token function">add</
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1095,12 +1113,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1122,7 +1140,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1138,7 +1156,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>

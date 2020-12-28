@@ -17,17 +17,17 @@
 
 
     <title>正则表达式 | Halo</title>
-    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/apple-touch-icon-next.png">
+    <link rel="icon" type="image/png" href="/apple-touch-icon-next.png">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/css/my.css">
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/jquery/jquery.min.js"></script>
+    <script src="/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"></head>
 
@@ -41,7 +41,7 @@
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
                     
-                    <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img" alt="LOGO">
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
                     
                     <span class="logo-span">Halo</span>
                 </a>
@@ -118,7 +118,7 @@
 
     <div class="mobile-head bg-color">
         
-        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/logo.png" class="logo-img circle responsive-img">
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
         <div class="logo-name">Halo</div>
         <div class="logo-desc">
@@ -203,7 +203,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/3.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -221,7 +221,7 @@
 <main class="post-container content">
 
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
 <style>
     #articleContent h1::before,
     #articleContent h2::before,
@@ -370,7 +370,7 @@
 
         
         <!-- 是否加载使用自带的 prismjs. -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/prism/prism.css">
+        <link rel="stylesheet" href="/libs/prism/prism.css">
         
 
         
@@ -386,197 +386,206 @@
 <li>搜索，在字符串任意部分中搜索匹配的模式。<code>search()</code></li>
 <li>匹配，是判断一个字符串能否从起始处全部或者部分地匹配某个模式。<code>match()</code></li>
 </ul>
-<p><code>compile</code>函数根据一个模式字符串和可选的标志参数生成一个正则表达式对象。<br>该对象拥有一系列方法用于正则表达式匹配和替换。</p>
+<p><code>compile</code>函数根据一个模式字符串和可选的标志参数生成一个正则表达式对象。<br>
+该对象拥有一系列方法用于正则表达式匹配和替换。</p>
 <p>re 模块也提供了与这些方法功能完全一致的函数，这些函数使用一个模式字符串做为它们的第一个参数。</p>
-<h2 id="特殊符号和字符"><a href="#特殊符号和字符" class="headerlink" title="特殊符号和字符"></a>特殊符号和字符</h2><center>常见正则表达式符号和特殊字符</center>
-
-
+<h2 id="特殊符号和字符">特殊符号和字符</h2>
+<center>常见正则表达式符号和特殊字符</center>
 <table>
 <thead>
 <tr>
-<th align="left">表示法</th>
-<th align="left">描述</th>
+<th style="text-align:left">表示法</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left"><em>literal</em></td>
-<td align="left">匹配文本字符串的字面值<em>literal</em></td>
+<tbody>
+<tr>
+<td style="text-align:left"><em>literal</em></td>
+<td style="text-align:left">匹配文本字符串的字面值<em>literal</em></td>
 </tr>
 <tr>
-<td align="left">re1`</td>
-<td align="left">`re2</td>
+<td style="text-align:left">re1<code>|</code>re2</td>
+<td style="text-align:left">匹配正则表达式 re1 或者 re2（管道符号）</td>
 </tr>
 <tr>
-<td align="left"><code>.</code></td>
-<td align="left">匹配任何字符（除了<code>\n</code>之外）</td>
+<td style="text-align:left"><code>.</code></td>
+<td style="text-align:left">匹配任何字符（除了<code>\n</code>之外）</td>
 </tr>
 <tr>
-<td align="left"><code>^</code></td>
-<td align="left">匹配字符串起始部分</td>
+<td style="text-align:left"><code>^</code></td>
+<td style="text-align:left">匹配字符串起始部分</td>
 </tr>
 <tr>
-<td align="left"><code>$</code></td>
-<td align="left">匹配字符串终止部分</td>
+<td style="text-align:left"><code>$</code></td>
+<td style="text-align:left">匹配字符串终止部分</td>
 </tr>
 <tr>
-<td align="left"><code>*</code></td>
-<td align="left">匹配 0 次或者多次前面出现的正则表达式</td>
+<td style="text-align:left"><code>*</code></td>
+<td style="text-align:left">匹配 0 次或者多次前面出现的正则表达式</td>
 </tr>
 <tr>
-<td align="left"><code>+</code></td>
-<td align="left">匹配 1 次或者多次前面出现的正则表达式</td>
+<td style="text-align:left"><code>+</code></td>
+<td style="text-align:left">匹配 1 次或者多次前面出现的正则表达式</td>
 </tr>
 <tr>
-<td align="left"><code>?</code></td>
-<td align="left">匹配 0 次或者 1 次前面出现的正则表达式，<strong>非贪婪</strong></td>
+<td style="text-align:left"><code>?</code></td>
+<td style="text-align:left">匹配 0 次或者 1 次前面出现的正则表达式，<strong>非贪婪</strong></td>
 </tr>
 <tr>
-<td align="left"><code>&#123;</code>N<code>&#125;</code></td>
-<td align="left">匹配 N 次前面出现的正则表达式</td>
+<td style="text-align:left"><code>&#123;</code>N<code>&#125;</code></td>
+<td style="text-align:left">匹配 N 次前面出现的正则表达式</td>
 </tr>
 <tr>
-<td align="left"><code>&#123;</code>M<code>,</code>N<code>&#125;</code></td>
-<td align="left">匹配 M～N 次前面出现的正则表达式</td>
+<td style="text-align:left"><code>&#123;</code>M<code>,</code>N<code>&#125;</code></td>
+<td style="text-align:left">匹配 M～N 次前面出现的正则表达式</td>
 </tr>
 <tr>
-<td align="left"><code>[</code>…<code>]</code></td>
-<td align="left">匹配来自字符集的任意单一字符</td>
+<td style="text-align:left"><code>[</code>…<code>]</code></td>
+<td style="text-align:left">匹配来自字符集的任意单一字符</td>
 </tr>
 <tr>
-<td align="left"><code>[</code>..x−y..<code>]</code></td>
-<td align="left">匹配 x ～ y 范围中的任意单一字符</td>
+<td style="text-align:left"><code>[</code>…x−y…<code>]</code></td>
+<td style="text-align:left">匹配 x ～ y 范围中的任意单一字符</td>
 </tr>
 <tr>
-<td align="left"><code>[^</code>…<code>]</code></td>
-<td align="left">不匹配此字符集中出现的任何一个字符，包括某一范围的字符</td>
+<td style="text-align:left"><code>[^</code>…<code>]</code></td>
+<td style="text-align:left">不匹配此字符集中出现的任何一个字符，包括某一范围的字符</td>
 </tr>
 <tr>
-<td align="left"><code>(</code>…<code>)</code></td>
-<td align="left">匹配封闭的正则表达式，然后另存为子组</td>
+<td style="text-align:left"><code>(</code>…<code>)</code></td>
+<td style="text-align:left">匹配封闭的正则表达式，然后另存为子组</td>
 </tr>
 <tr>
-<td align="left"><code>\d</code></td>
-<td align="left">匹配任何十进制数字，与<code>[0-9]</code>一致(<code>\D</code>与之相反)</td>
+<td style="text-align:left"><code>\d</code></td>
+<td style="text-align:left">匹配任何十进制数字，与<code>[0-9]</code>一致(<code>\D</code>与之相反)</td>
 </tr>
 <tr>
-<td align="left"><code>\b</code></td>
-<td align="left">匹配任何单词边界，指单词和空格间的位置（<code>\B</code>与之相反）</td>
+<td style="text-align:left"><code>\b</code></td>
+<td style="text-align:left">匹配任何单词边界，指单词和空格间的位置（<code>\B</code>与之相反）</td>
 </tr>
 <tr>
-<td align="left"><code>\w</code></td>
-<td align="left">匹配任何字母数字字符，与<code>[A-Za-z0-9_]</code>相同(<code>\W</code>与之相反)</td>
+<td style="text-align:left"><code>\w</code></td>
+<td style="text-align:left">匹配任何字母数字字符，与<code>[A-Za-z0-9_]</code>相同(<code>\W</code>与之相反)</td>
 </tr>
 <tr>
-<td align="left"><code>\s</code></td>
-<td align="left">匹配任何空格字符，与<code>[\n\t\r\v\f]</code>相同（<code>\S</code>与之相反）</td>
+<td style="text-align:left"><code>\s</code></td>
+<td style="text-align:left">匹配任何空格字符，与<code>[\n\t\r\v\f]</code>相同（<code>\S</code>与之相反）</td>
 </tr>
 <tr>
-<td align="left"><code>\N</code></td>
-<td align="left">匹配已保存的子组 N（参见上面的<code>(</code>…<code>)</code>)</td>
+<td style="text-align:left"><code>\N</code></td>
+<td style="text-align:left">匹配已保存的子组 N（参见上面的<code>(</code>…<code>)</code>)</td>
 </tr>
 <tr>
-<td align="left"><code>\</code><em>c</em></td>
-<td align="left">逐字匹配任何特殊字符<em>c</em>(即仅按照字面意义匹配，不匹配特殊含义)</td>
+<td style="text-align:left"><code>\</code><em>c</em></td>
+<td style="text-align:left">逐字匹配任何特殊字符<em>c</em>(即仅按照字面意义匹配，不匹配特殊含义)</td>
 </tr>
 <tr>
-<td align="left"><code>\A(\Z)</code></td>
-<td align="left">匹配字符串的起始（结束）（另见上面介绍的<code>^</code>和<code>$</code>）</td>
+<td style="text-align:left"><code>\A(\Z)</code></td>
+<td style="text-align:left">匹配字符串的起始（结束）（另见上面介绍的<code>^</code>和<code>$</code>）</td>
 </tr>
 <tr>
-<td align="left"><code>(?</code>iLmsux<code>)</code></td>
-<td align="left">嵌入一个或者多个特殊“标记”参数（或者通过函数/方法）</td>
+<td style="text-align:left"><code>(?</code>iLmsux<code>)</code></td>
+<td style="text-align:left">嵌入一个或者多个特殊“标记”参数（或者通过函数/方法）</td>
 </tr>
 <tr>
-<td align="left"><code>(?:</code>…<code>)</code></td>
-<td align="left">表示一个匹配不用保存的分组</td>
+<td style="text-align:left"><code>(?:</code>…<code>)</code></td>
+<td style="text-align:left">表示一个匹配不用保存的分组</td>
 </tr>
 <tr>
-<td align="left"><code>(?P</code>&lt;*name*&gt;…<code>)</code></td>
-<td align="left">像一个仅由name标识而不是数字 ID 标识的正则分组匹配</td>
+<td style="text-align:left"><code>(?P</code>&lt;<em>name</em>&gt;…<code>)</code></td>
+<td style="text-align:left">像一个仅由name标识而不是数字 ID 标识的正则分组匹配</td>
 </tr>
 <tr>
-<td align="left"><code>(?P=</code><em>name</em><code>)</code></td>
-<td align="left">在同一字符串中匹配由<code>(?P&lt;name)</code>分组的之前文本</td>
+<td style="text-align:left"><code>(?P=</code><em>name</em><code>)</code></td>
+<td style="text-align:left">在同一字符串中匹配由<code>(?P&lt;name)</code>分组的之前文本</td>
 </tr>
 <tr>
-<td align="left"><code>(?#</code>…<code>)</code></td>
-<td align="left">表示注释，所有内容都被忽略</td>
+<td style="text-align:left"><code>(?#</code>…<code>)</code></td>
+<td style="text-align:left">表示注释，所有内容都被忽略</td>
 </tr>
 <tr>
-<td align="left"><code>(?=</code>…<code>)</code></td>
-<td align="left">匹配条件是如果…出现在之后的位置，而不使用输入字符串；称作正向前视断言</td>
+<td style="text-align:left"><code>(?=</code>…<code>)</code></td>
+<td style="text-align:left">匹配条件是如果…出现在之后的位置，而不使用输入字符串；称作正向前视断言</td>
 </tr>
 <tr>
-<td align="left"><code>(?!</code>…<code>)</code></td>
-<td align="left">匹配条件是如果…不出现在之后的位置，而不使用输入字符串；称作负向前视断言</td>
+<td style="text-align:left"><code>(?!</code>…<code>)</code></td>
+<td style="text-align:left">匹配条件是如果…不出现在之后的位置，而不使用输入字符串；称作负向前视断言</td>
 </tr>
 <tr>
-<td align="left"><code>(?&lt;=</code>…<code>)</code></td>
-<td align="left">匹配条件是如果…出现在之前的位置，而不使用输入字符串；称作正向后视断言</td>
+<td style="text-align:left"><code>(?&lt;=</code>…<code>)</code></td>
+<td style="text-align:left">匹配条件是如果…出现在之前的位置，而不使用输入字符串；称作正向后视断言</td>
 </tr>
 <tr>
-<td align="left"><code>(?&lt;!</code>…<code>)</code></td>
-<td align="left">匹配条件是如果…不出现在之前的位置，而不使用输入字符串；称作负向后视断言</td>
+<td style="text-align:left"><code>(?&lt;!</code>…<code>)</code></td>
+<td style="text-align:left">匹配条件是如果…不出现在之前的位置，而不使用输入字符串；称作负向后视断言</td>
 </tr>
-</tbody></table>
-<h2 id="常用正则表达式"><a href="#常用正则表达式" class="headerlink" title="常用正则表达式"></a>常用正则表达式</h2><table>
+</tbody>
+</table>
+<h2 id="常用正则表达式">常用正则表达式</h2>
+<table>
 <thead>
 <tr>
-<th align="center">用处</th>
+<th style="text-align:center">用处</th>
 <th>值</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">用户名</td>
+<tbody>
+<tr>
+<td style="text-align:center">用户名</td>
 <td><code>/^\[a-z0-9_-\]&#123;3,16&#125;$/</code></td>
 </tr>
 <tr>
-<td align="center">密码</td>
+<td style="text-align:center">密码</td>
 <td><code>/^\[a-z0-9_-\]&#123;6,18&#125;$/</code></td>
 </tr>
 <tr>
-<td align="center">十六进制值</td>
-<td><code>/^#?(\[a-f0-9\]&#123;6&#125;|\[a-f0-9\]&#123;3&#125;)$/</code></td>
+<td style="text-align:center">十六进制值</td>
+<td><code>/^#?(\[a-f0-9\]&#123;6&#125;\|\[a-f0-9\]&#123;3&#125;)$/</code></td>
 </tr>
 <tr>
-<td align="center">电子邮箱</td>
+<td style="text-align:center">电子邮箱</td>
 <td><code>/^(\[a-z0-9_\.-]+)@(\[\da-z\.-\]+)\.(\[a-z\.\]&#123;2,6&#125;)\$/ </code><br /><code>/^\[a-z\d\]+(\.\[a-z\d\]+)*@(\[\da-z](-\[\da-z\])?)+(\.&#123;1,2&#125;\[a-z\]+)+$/</code></td>
 </tr>
 <tr>
-<td align="center">URL</td>
+<td style="text-align:center">URL</td>
 <td><code>/^(https?:\/\/)?(\[\da-z\.-\]+)\.(\[a-z\.\]&#123;2,6&#125;)([\/\w \.-]*)*\/?$/</code></td>
 </tr>
 <tr>
-<td align="center">IP 地址</td>
-<td><code>/((2\[0-4\]\d|25\[0-5\]|[01]?\d\d?)\.)&#123;3&#125;(2[0-4]\d|25[0-5]|[01]?\d\d?)/ &lt;br /&gt;/^(?:(?:25[0-5]|2\[0-4][0-9]|[01]?\[0-9][0-9]?)\.)&#123;3&#125;(?:25[0-5]|2\[0-4][0-9]|[01]?\[0-9][0-9]?)$/</code></td>
+<td style="text-align:center">IP 地址</td>
+<td><code>/((2\[0-4\]\d\|25\[0-5\]\|[01]?\d\d?)\.)&#123;3&#125;(2[0-4]\d\|25[0-5]\|[01]?\d\d?)/ &lt;br /&gt;/^(?:(?:25[0-5]\|2\[0-4][0-9]\|[01]?\[0-9][0-9]?)\.)&#123;3&#125;(?:25[0-5]\|2\[0-4][0-9]\|[01]?\[0-9][0-9]?)$/</code></td>
 </tr>
 <tr>
-<td align="center">HTML 标签</td>
-<td><code>/\^&lt;([a-z]+)(\[^&lt;]+)\*(?:&gt;(.*)&lt;\/\1&gt;|\s+\/&gt;)$/</code></td>
+<td style="text-align:center">HTML 标签</td>
+<td><code>/\^&lt;([a-z]+)(\[^&lt;]+)\*(?:&gt;(.*)&lt;\/\1&gt;\|\s+\/&gt;)$/</code></td>
 </tr>
 <tr>
-<td align="center">删除代码\注释</td>
-<td><code>(?&lt;!http:|\S)//.*$</code></td>
+<td style="text-align:center">删除代码\注释</td>
+<td><code>(?&lt;!http:\|\S)//.*$</code></td>
 </tr>
 <tr>
-<td align="center">Unicode编码中的汉字范围</td>
+<td style="text-align:center">Unicode编码中的汉字范围</td>
 <td><code>/^[\u2E80-\u9FFF]+$/</code></td>
 </tr>
-</tbody></table>
-<h2 id="re-search"><a href="#re-search" class="headerlink" title="re.search()"></a><code>re.search()</code></h2><p><code>re.search</code> 扫描整个字符串并返回第一个成功的匹配。</p>
+</tbody>
+</table>
+<h2 id="re-search"><code>re.search()</code></h2>
+<p><code>re.search</code> 扫描整个字符串并返回第一个成功的匹配。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">'www'</span><span class="token punctuation">,</span> <span class="token string">'www.runoob.com'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>span<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">'com'</span><span class="token punctuation">,</span> <span class="token string">'www.runoob.com'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>span<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>search<span class="token punctuation">(</span><span class="token string">'com'</span><span class="token punctuation">,</span> <span class="token string">'www.runoob.com.com'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>span<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span>
 <span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">)</span>
 <span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="re-match"><a href="#re-match" class="headerlink" title="re.match()"></a><code>re.match()</code></h2><p><code>re.match</code>尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，<code>match()</code>就返回none。</p>
+<h2 id="re-match"><code>re.match()</code></h2>
+<p><code>re.match</code>尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，<code>match()</code>就返回none。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> re
 <span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'www'</span><span class="token punctuation">,</span> <span class="token string">'www.runoob.com'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>span<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># 在起始位置匹配</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'com'</span><span class="token punctuation">,</span> <span class="token string">'www.runoob.com'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>         <span class="token comment"># 不在起始位置匹配</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 <pre><code>(0, 3)
-None</code></pre>
-<h2 id="group-和groups"><a href="#group-和groups" class="headerlink" title="group()和groups()"></a><code>group()</code>和<code>groups()</code></h2><p><code>group(num)</code>或<code>groups() </code>匹配对象函数来获取匹配表达式。</p>
+None
+</code></pre>
+<h2 id="group-和groups"><code>group()</code>和<code>groups()</code></h2>
+<p><code>group(num)</code>或<code>groups() </code>匹配对象函数来获取匹配表达式。</p>
 <p><code>group(num=0)</code>匹配的整个表达式的字符串，<code>group()</code>可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</p>
 <p><code>groups()</code>返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">line <span class="token operator">=</span> <span class="token string">"Cats are smarter than dogs"</span>
@@ -593,8 +602,10 @@ matchObj <span class="token operator">=</span> re<span class="token punctuation"
 <pre><code>matchObj.group() :  Cats are smarter than dogs
 matchObj.group(1) :  Cats
 matchObj.group(2) :  smarter
-matchObj.groups() : (&#39;Cats&#39;, &#39;smarter&#39;)</code></pre>
-<h2 id="re-sub"><a href="#re-sub" class="headerlink" title="re.sub()"></a><code>re.sub()</code></h2><p><code>re.sub</code>用于替换字符串中的匹配项。</p>
+matchObj.groups() : ('Cats', 'smarter')
+</code></pre>
+<h2 id="re-sub"><code>re.sub()</code></h2>
+<p><code>re.sub</code>用于替换字符串中的匹配项。</p>
 <p><code>re.sub(pattern, repl, string, count=0, flags=0)</code></p>
 <ul>
 <li><code>pattern</code> : 正则中的模式字符串。</li>
@@ -619,16 +630,19 @@ num <span class="token operator">=</span> re<span class="token punctuation">.</s
  
 s <span class="token operator">=</span> <span class="token string">'A23G4HFD567'</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>re<span class="token punctuation">.</span>sub<span class="token punctuation">(</span><span class="token string">'(?P&lt;value>\d+)'</span><span class="token punctuation">,</span> double<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># A46G8HFD1134</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="re-compile"><a href="#re-compile" class="headerlink" title="re.compile"></a><code>re.compile</code></h2><p><code>compile</code>函数用于编译正则表达式,生成一个正则表达式(Pattern)对象,供<code>match()</code>和<code>search()</code>这两个函数使用。<br><code>re.compile(pattern[, flags])</code></p>
+<h2 id="re-compile"><code>re.compile</code></h2>
+<p><code>compile</code>函数用于编译正则表达式,生成一个正则表达式(Pattern)对象,供<code>match()</code>和<code>search()</code>这两个函数使用。<br>
+<code>re.compile(pattern[, flags])</code></p>
 <ul>
 <li><code>pattern</code> : 一个字符串形式的正则表达式</li>
-<li><code>flags</code> 可选，表示匹配模式，比如忽略大小写，多行模式等，具体参数为：<ul>
+<li><code>flags</code> 可选，表示匹配模式，比如忽略大小写，多行模式等，具体参数为：
+<ul>
 <li><code>re.I</code> 忽略大小写</li>
 <li><code>re.L</code> 表示特殊字符集 \w, \W, \b, \B, \s, \S 依赖于当前环境</li>
 <li><code>re.M</code> 多行模式</li>
-<li><code>re.S</code> 即为’ . ‘并且包括换行符在内的任意字符（’ . ‘不包括换行符）</li>
+<li><code>re.S</code> 即为’ . ‘并且包括换行符在内的任意字符（’ . '不包括换行符）</li>
 <li><code>re.U</code>表示特殊字符集 \w, \W, \b, \B, \d, \D, \s, \S 依赖于 Unicode 字符属性数据库</li>
-<li><code>re.X</code> 为了增加可读性，忽略空格和’ # ‘后面的注释</li>
+<li><code>re.X</code> 为了增加可读性，忽略空格和’ # '后面的注释</li>
 </ul>
 </li>
 </ul>
@@ -639,7 +653,8 @@ m <span class="token operator">=</span> pattern<span class="token punctuation">.
 m <span class="token operator">=</span> pattern<span class="token punctuation">.</span>match<span class="token punctuation">(</span><span class="token string">'one12twothree34four'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token comment"># 从'1'的位置开始匹配，正好匹配</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span>  <span class="token comment"># &lt;re.Match object; span=(3, 5), match='12'>     # 返回一个 Match 对象</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>m<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># 12</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="re-findall"><a href="#re-findall" class="headerlink" title="re.findall()"></a><code>re.findall()</code></h2><p>在字符串中找到正则表达式所匹配的所有子串，并返回一个列表，如果没有找到匹配的，则返回空列表。</p>
+<h2 id="re-findall"><code>re.findall()</code></h2>
+<p>在字符串中找到正则表达式所匹配的所有子串，并返回一个列表，如果没有找到匹配的，则返回空列表。</p>
 <p><code>re.findall(string[, pos[, endpos]])</code></p>
 <ul>
 <li><code>string</code> 待匹配的字符串。</li>
@@ -652,11 +667,13 @@ result2 <span class="token operator">=</span> pattern<span class="token punctuat
  
 <span class="token keyword">print</span><span class="token punctuation">(</span>result1<span class="token punctuation">)</span>  <span class="token comment"># ['123', '456']</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>result2<span class="token punctuation">)</span>  <span class="token comment"># ['88', '12']</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="re-finditer"><a href="#re-finditer" class="headerlink" title="re.finditer()"></a><code>re.finditer()</code></h2><p>和 <code>findall</code> 类似，在字符串中找到正则表达式所匹配的所有子串，并把它们作为一个迭代器返回。</p>
+<h2 id="re-finditer"><code>re.finditer()</code></h2>
+<p>和 <code>findall</code> 类似，在字符串中找到正则表达式所匹配的所有子串，并把它们作为一个迭代器返回。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">it <span class="token operator">=</span> re<span class="token punctuation">.</span>finditer<span class="token punctuation">(</span><span class="token string">r"\d+"</span><span class="token punctuation">,</span><span class="token string">"12a32bc43jf3"</span><span class="token punctuation">)</span> 
 <span class="token keyword">for</span> match <span class="token keyword">in</span> it<span class="token punctuation">:</span> 
     <span class="token keyword">print</span> <span class="token punctuation">(</span>match<span class="token punctuation">.</span>group<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token comment">## 12 32 43 3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h2 id="re-split"><a href="#re-split" class="headerlink" title="re.split"></a><code>re.split</code></h2><p><code>split</code>方法按照能够匹配的子串将字符串分割后返回列表，它的使用形式如下：</p>
+<h2 id="re-split"><code>re.split</code></h2>
+<p><code>split</code>方法按照能够匹配的子串将字符串分割后返回列表，它的使用形式如下：</p>
 <p><code>re.split(pattern, string[, maxsplit=0, flags=0])</code></p>
 <ul>
 <li><code>pattern</code>匹配的正则表达式</li>
@@ -698,12 +715,12 @@ result2 <span class="token operator">=</span> pattern<span class="token punctuat
                     
                 </div>
                 <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/css/share.min.css">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
 <div id="article-share">
 
     
     <div class="social-share" data-sites="qq,wechat,weibo" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/share/js/social-share.min.js"></script>
+    <script src="/libs/share/js/social-share.min.js"></script>
     
 
     
@@ -743,7 +760,7 @@ result2 <span class="token operator">=</span> pattern<span class="token punctuat
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/13.jpg" class="responsive-img" alt="Django">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Django">
                         
                         <span class="card-title">Django</span>
                     </div>
@@ -800,7 +817,7 @@ result2 <span class="token operator">=</span> pattern<span class="token punctuat
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/medias/featureimages/6.png" class="responsive-img" alt="Python网络数据采集">
+                        <img src="/medias/featureimages/6.png" class="responsive-img" alt="Python网络数据采集">
                         
                         <span class="card-title">Python网络数据采集</span>
                     </div>
@@ -851,21 +868,21 @@ result2 <span class="token operator">=</span> pattern<span class="token punctuat
 
 
 <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeBlockFuction.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeLang.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
 
 
 <!-- 代码块复制 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
 
 
 <!-- 代码块收缩 -->
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/codeBlock/codeShrink.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
@@ -886,7 +903,7 @@ result2 <span class="token operator">=</span> pattern<span class="token punctuat
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/tocbot/tocbot.min.js"></script>
+<script src="/libs/tocbot/tocbot.min.js"></script>
 <script>
     $(function () {
         tocbot.init({
@@ -1123,12 +1140,12 @@ $(function () {
 </div>
 
 
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/materialize/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/aos/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/js/matery.js"></script>
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
 
@@ -1150,7 +1167,7 @@ $(function () {
 
     
     
-    <script async src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/others/busuanzi.pure.mini.js"></script>
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
@@ -1166,7 +1183,7 @@ $(function () {
     
 
     
-    <script src="https://cdn.jsdelivr.net/gh/Lanqilu/Lanqilu.github.io@0.7/libs/instantpage/instantpage.js" type="module"></script>
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
 </body>
