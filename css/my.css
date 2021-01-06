@@ -130,6 +130,15 @@ h3 {
   line-height: 1.7;
 }
 
+h4.post-title {
+  color: white;
+}
+h4 {
+  font-size: 1.425em;
+  color: #3b6b79;
+  line-height: 1.7;
+}
+
 .posts-expand h4 {
 font-size: 1.325em;
 }
