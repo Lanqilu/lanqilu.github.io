@@ -1511,7 +1511,7 @@ White培养基：无机盐浓度较低；使用广泛；在生根培养、胚胎
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
             collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h2'
         });
 
         // modify the toc link href to support Chinese.
@@ -1523,7 +1523,7 @@ White培养基：无机盐浓度较低；使用广泛；在生根培养、胚胎
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h2').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
