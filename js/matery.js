@@ -64,8 +64,8 @@ $(function () {
 
     AOS.init({
         easing: 'ease-in-out-sine',
-        duration: 700,
-        delay: 100
+        duration: 400,
+        delay: 10
     });
 
     /*文章内容详情的一些初始化特性*/
